@@ -1,9 +1,9 @@
-import { createClient } from "https://esm.sh/@supabase/supabase-js@2.39.0"
 import * as jose from "https://deno.land/x/jose@v4.14.4/index.ts"
 
 const MODEL_API = "http://192.168.0.121:8000/v1/chat/completions"
 const MODEL_NAME = "mlx-community/gemma-4-12B-it-8bit"
 const JSON_HEADERS = { "Content-Type": "application/json" }
+const FETCH_TIMEOUT = 120000
 
 Deno.serve(async (req) => {
   try {
@@ -38,10 +38,9 @@ Deno.serve(async (req) => {
       return new Response(JSON.stringify({ error: "Mensaje requerido" }), { status: 400, headers: JSON_HEADERS })
     }
 
-    const openaiMessages = [...messages]
+    const openaiMessages = JSON.parse(JSON.stringify(messages))
 
     if (image) {
-      const lastUserIdx = openaiMessages.length - 1
       for (let i = openaiMessages.length - 1; i >= 0; i--) {
         if (openaiMessages[i].role === "user") {
           openaiMessages[i] = {
@@ -56,25 +55,33 @@ Deno.serve(async (req) => {
       }
     }
 
-    const modelResp = await fetch(MODEL_API, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        model: MODEL_NAME,
-        messages: openaiMessages,
-        stream: false,
-      }),
-    })
+    const controller = new AbortController()
+    const timeoutId = setTimeout(() => controller.abort(), FETCH_TIMEOUT)
 
-    if (!modelResp.ok) {
-      const text = await modelResp.text()
-      return new Response(JSON.stringify({ error: `Error del modelo: ${text}` }), { status: 502, headers: JSON_HEADERS })
+    try {
+      const modelResp = await fetch(MODEL_API, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: MODEL_NAME,
+          messages: openaiMessages,
+          stream: false,
+        }),
+        signal: controller.signal,
+      })
+
+      if (!modelResp.ok) {
+        const text = await modelResp.text()
+        return new Response(JSON.stringify({ error: `Error del modelo: ${text}` }), { status: 502, headers: JSON_HEADERS })
+      }
+
+      const data = await modelResp.json()
+      const responseText = data.choices?.[0]?.message?.content || ""
+
+      return new Response(JSON.stringify({ response: responseText }), { headers: JSON_HEADERS })
+    } finally {
+      clearTimeout(timeoutId)
     }
-
-    const data = await modelResp.json()
-    const responseText = data.choices?.[0]?.message?.content || ""
-
-    return new Response(JSON.stringify({ response: responseText }), { headers: JSON_HEADERS })
   } catch (err) {
     return new Response(JSON.stringify({ error: `Error interno: ${err.message}` }), { status: 500, headers: JSON_HEADERS })
   }
