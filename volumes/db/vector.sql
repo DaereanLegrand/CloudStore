@@ -1,12 +1,13 @@
 CREATE EXTENSION IF NOT EXISTS vector;
 
-ALTER TABLE products ADD COLUMN IF NOT EXISTS embedding vector(768);
+ALTER TABLE products ADD COLUMN IF NOT EXISTS embedding vector(1024);
 
+DROP INDEX IF EXISTS products_embedding_idx;
 CREATE INDEX IF NOT EXISTS products_embedding_idx
   ON products USING hnsw (embedding vector_cosine_ops);
 
 CREATE OR REPLACE FUNCTION match_products(
-  query_embedding vector(768),
+  query_embedding vector(1024),
   match_count int DEFAULT 20
 )
 RETURNS TABLE(id UUID, vendedor_id UUID, titulo TEXT, descripcion TEXT,
