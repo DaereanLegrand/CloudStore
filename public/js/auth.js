@@ -1,12 +1,12 @@
 async function getCurrentUser() {
-  const { data: { session } } = await supabase.auth.getSession()
+  const { data: { session } } = await supabaseClient.auth.getSession()
   return session?.user || null
 }
 
 async function getCurrentProfile() {
   const user = await getCurrentUser()
   if (!user) return null
-  const { data } = await supabase.from('profiles').select('*').eq('id', user.id).single()
+  const { data } = await supabaseClient.from('profiles').select('*').eq('id', user.id).single()
   return data
 }
 
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   if (logoutBtn) {
     logoutBtn.addEventListener('click', async () => {
-      await supabase.auth.signOut()
+      await supabaseClient.auth.signOut()
       window.location.href = '/'
     })
   }

@@ -2,7 +2,7 @@ async function loadProducts(categoria = '', search = '') {
   const grid = document.getElementById('products-grid')
   if (!grid) return
 
-  let query = supabase.from('products').select('*').order('created_at', { ascending: false })
+  let query = supabaseClient.from('products').select('*').order('created_at', { ascending: false })
 
   if (categoria) {
     query = query.eq('categoria', categoria)

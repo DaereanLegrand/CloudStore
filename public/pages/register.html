@@ -57,13 +57,13 @@
       const errEl = document.getElementById('register-error')
       errEl.textContent = ''
 
-      const { data, error } = await supabase.auth.signUp({ email, password })
+      const { data, error } = await supabaseClient.auth.signUp({ email, password })
       if (error) {
         errEl.textContent = error.message
         return
       }
 
-      const { error: profileError } = await supabase.from('profiles').insert({
+      const { error: profileError } = await supabaseClient.from('profiles').insert({
         id: data.user.id,
         nombre,
         email,

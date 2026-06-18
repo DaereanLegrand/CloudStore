@@ -78,7 +78,7 @@
       const fileExt = file.name.split('.').pop()
       const fileName = `${user.id}/${Date.now()}.${fileExt}`
 
-      const { error: uploadError } = await supabase.storage
+      const { error: uploadError } = await supabaseClient.storage
         .from('productos')
         .upload(fileName, file)
 
@@ -87,7 +87,7 @@
         return
       }
 
-      const { data: { publicUrl } } = supabase.storage
+      const { data: { publicUrl } } = supabaseClient.storage
         .from('productos')
         .getPublicUrl(fileName)
 
@@ -97,7 +97,7 @@
       const stock = parseInt(document.getElementById('stock').value)
       const categoria = document.getElementById('categoria').value
 
-      const { error: insertError } = await supabase.from('products').insert({
+      const { error: insertError } = await supabaseClient.from('products').insert({
         vendedor_id: user.id,
         titulo,
         descripcion,

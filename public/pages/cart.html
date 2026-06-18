@@ -102,13 +102,13 @@
         await removeItem(cartItemId)
         return
       }
-      await supabase.from('cart_items').update({ cantidad: newQty }).eq('id', cartItemId)
+      await supabaseClient.from('cart_items').update({ cantidad: newQty }).eq('id', cartItemId)
       loadCart()
       updateCartCount()
     }
 
     async function removeItem(cartItemId) {
-      await supabase.from('cart_items').delete().eq('id', cartItemId)
+      await supabaseClient.from('cart_items').delete().eq('id', cartItemId)
       loadCart()
       updateCartCount()
     }
@@ -127,7 +127,7 @@
         cantidad: item.cantidad,
       }))
 
-      const { data, error } = await supabase.functions.invoke('checkout', {
+      const { data, error } = await supabaseClient.functions.invoke('checkout', {
         body: { items },
       })
 

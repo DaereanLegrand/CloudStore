@@ -44,7 +44,7 @@
       const errEl = document.getElementById('login-error')
       errEl.textContent = ''
 
-      const { error } = await supabase.auth.signInWithPassword({ email, password })
+      const { error } = await supabaseClient.auth.signInWithPassword({ email, password })
       if (error) {
         errEl.textContent = error.message
       } else {
