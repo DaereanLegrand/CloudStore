@@ -13,6 +13,10 @@ export default function RecipeDetail() {
   const [loading, setLoading] = useState(true)
   const [adding, setAdding] = useState(false)
   const [toast, setToast] = useState(null)
+  const [replacingId, setReplacingId] = useState(null)
+  const [searchQuery, setSearchQuery] = useState('')
+  const [searchResults, setSearchResults] = useState(null)
+  const [searching, setSearching] = useState(false)
   const { fetchCartCount } = useCart()
 
   useEffect(() => { loadRecipe() }, [slug])
@@ -61,6 +65,38 @@ export default function RecipeDetail() {
     fetchCartCount(); setAdding(false)
     setToast(`${count} productos agregados`)
     setTimeout(() => setToast(null), 3000)
+  }
+
+  async function replaceProduct(ingId, newProduct) {
+    const { error } = await supabase
+      .from('recipe_ingredients')
+      .update({ product_id: newProduct.id, mapeado: true, notas: newProduct.titulo, cantidad_producto: 1 })
+      .eq('id', ingId)
+    if (!error) {
+      setIngredients(prev => prev.map(ing =>
+        ing.id === ingId
+          ? { ...ing, product_id: newProduct.id, mapeado: true, notas: newProduct.titulo, products: newProduct }
+          : ing
+      ))
+    }
+    setReplacingId(null)
+    setSearchQuery('')
+    setSearchResults(null)
+    setToast(`Reemplazado: ${newProduct.titulo}`)
+    setTimeout(() => setToast(null), 2000)
+  }
+
+  async function handleSearchProducts(query) {
+    setSearchQuery(query)
+    if (!query.trim()) { setSearchResults(null); return }
+    setSearching(true)
+    const { data } = await supabase
+      .from('products')
+      .select('id, titulo, precio, categoria, imagen_url')
+      .or(`titulo.ilike.%${query}%,categoria.ilike.%${query}%`)
+      .limit(8)
+    setSearchResults(data || [])
+    setSearching(false)
   }
 
   if (loading) return <div className="aspect-[16/6] rounded-2xl bg-white/[0.03]" />
@@ -122,24 +158,74 @@ export default function RecipeDetail() {
           </div>
           <div className="space-y-1 overflow-y-auto scrollbar-thin flex-1 pr-1">
             {ingredients.map(ing => (
-              <div key={ing.id} className={`flex items-center justify-between gap-3 py-2 ${!ing.mapeado ? 'opacity-40' : ''}`}>
-                <div className="flex-1 min-w-0">
-                  <span className="text-sm text-white/65">{ing.ingredient_raw}</span>
-                  {ing.mapeado && ing.products && (
-                    <div className="mt-0.5 space-y-0.5">
-                      <span className="text-xs text-emerald/50">→ {ing.products.titulo}</span>
-                      <span className="text-xs text-white/25 block">
-                        {ing.cantidad_producto} {Math.round(ing.cantidad_producto) === 1 ? 'unidad' : 'unidades'}
-                        {ing.notas && <span className="italic"> ({ing.notas})</span>}
-                      </span>
+              <div key={ing.id} className={`${!ing.mapeado ? 'opacity-40' : ''}`}>
+                {replacingId === ing.id ? (
+                  <div className="space-y-2 py-2">
+                    <div className="flex items-center gap-2">
+                      <input
+                        type="text"
+                        className="glass-input text-xs flex-1"
+                        placeholder="Buscar producto..."
+                        value={searchQuery}
+                        onChange={e => handleSearchProducts(e.target.value)}
+                        autoFocus
+                      />
+                      <button className="text-xs text-white/30 hover:text-white/60 px-2 py-1" onClick={() => { setReplacingId(null); setSearchQuery(''); setSearchResults(null) }}>×</button>
                     </div>
-                  )}
-                  {!ing.mapeado && <span className="text-xs text-rose-400/40 italic block">No disponible</span>}
-                </div>
-                {ing.mapeado && ing.products && (
-                  <button className="btn-primary text-xs px-3 py-1.5 flex-shrink-0" onClick={() => addToCart(ing.product_id, Math.max(1, Math.round(ing.cantidad_producto)))}>
-                    +1
-                  </button>
+                    {searching && <p className="text-xs text-white/25">Buscando...</p>}
+                    {searchResults && searchResults.length === 0 && <p className="text-xs text-white/20">Sin resultados</p>}
+                    {searchResults && searchResults.length > 0 && (
+                      <div className="space-y-1 max-h-48 overflow-y-auto">
+                        {searchResults.map(p => (
+                          <button
+                            key={p.id}
+                            className="w-full text-left flex items-center gap-2 px-3 py-2 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] transition-all text-xs"
+                            onClick={() => replaceProduct(ing.id, p)}
+                          >
+                            {p.imagen_url && <img src={p.imagen_url} alt="" className="w-8 h-8 rounded object-cover flex-shrink-0" />}
+                            <div className="min-w-0 flex-1">
+                              <span className="text-white/75 block truncate">{p.titulo}</span>
+                              <span className="text-white/30">S/.{p.precio}</span>
+                            </div>
+                            <span className="text-[0.5rem] text-emerald/50 uppercase flex-shrink-0">{p.categoria}</span>
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <div className="flex items-center justify-between gap-3 py-2">
+                    <div className="flex-1 min-w-0">
+                      <span className="text-sm text-white/65">{ing.ingredient_raw}</span>
+                      {ing.mapeado && ing.products && (
+                        <div className="mt-0.5 space-y-0.5">
+                          <span className="text-xs text-emerald/50">→ {ing.products.titulo}</span>
+                          <span className="text-xs text-white/25 block">
+                            {ing.cantidad_producto} {Math.round(ing.cantidad_producto) === 1 ? 'unidad' : 'unidades'}
+                            {ing.notas && <span className="italic"> ({ing.notas})</span>}
+                          </span>
+                        </div>
+                      )}
+                      {!ing.mapeado && <span className="text-xs text-rose-400/40 italic block">No disponible</span>}
+                    </div>
+                    <div className="flex items-center gap-1 flex-shrink-0">
+                      {ing.mapeado && ing.products && (
+                        <>
+                          <button className="text-[0.5rem] text-white/25 hover:text-white/60 transition-colors px-1.5 py-1" onClick={() => { setReplacingId(ing.id); setSearchQuery(''); setSearchResults(null) }} title="Reemplazar producto">
+                            ↻
+                          </button>
+                          <button className="btn-primary text-xs px-3 py-1.5" onClick={() => addToCart(ing.product_id, Math.max(1, Math.round(ing.cantidad_producto)))}>
+                            +1
+                          </button>
+                        </>
+                      )}
+                      {!ing.mapeado && (
+                        <button className="text-[0.5rem] text-white/25 hover:text-white/60 transition-colors px-1.5 py-1" onClick={() => { setReplacingId(ing.id); setSearchQuery(''); setSearchResults(null) }} title="Buscar producto">
+                          ↻
+                        </button>
+                      )}
+                    </div>
+                  </div>
                 )}
               </div>
             ))}
