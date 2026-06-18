@@ -1,0 +1,2152 @@
+[
+  {
+    "recipe_slug": "keke-vainilla-chispas-nestle-chocolate",
+    "product_id": null,
+    "ingredient_raw": "6 Cucharadas de SUBLIME® Pops",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: SUBLIME® Pops"
+  },
+  {
+    "recipe_slug": "keke-vainilla-chispas-nestle-chocolate",
+    "product_id": null,
+    "ingredient_raw": "3/4 Taza de Aceite",
+    "cantidad_recipe": 0.75,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite"
+  },
+  {
+    "recipe_slug": "keke-vainilla-chispas-nestle-chocolate",
+    "product_id": null,
+    "ingredient_raw": "3 Unidades de Huevo",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevo"
+  },
+  {
+    "recipe_slug": "keke-vainilla-chispas-nestle-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 1/2 Taza de IDEAL® AMANECER",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® AMANECER"
+  },
+  {
+    "recipe_slug": "keke-vainilla-chispas-nestle-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 1/2 Taza de Azúcar",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar"
+  },
+  {
+    "recipe_slug": "keke-vainilla-chispas-nestle-chocolate",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas de Harina de Trigo",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina de Trigo"
+  },
+  {
+    "recipe_slug": "keke-vainilla-chispas-nestle-chocolate",
+    "product_id": null,
+    "ingredient_raw": "3/4Taza de Coco Rallado",
+    "cantidad_recipe": 0.75,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Coco Rallado"
+  },
+  {
+    "recipe_slug": "keke-vainilla-chispas-nestle-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Bicarbonato de Sodio",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Bicarbonato de Sodio"
+  },
+  {
+    "recipe_slug": "brigadeiros-banados-chocolate-grageas",
+    "product_id": null,
+    "ingredient_raw": "300 g Cobertura Bitter NESTLÉ®",
+    "cantidad_recipe": 300,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: g Cobertura Bitter NESTLÉ®"
+  },
+  {
+    "recipe_slug": "brigadeiros-banados-chocolate-grageas",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de COCOA D'ONOFRIO®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: COCOA D'ONOFRIO®"
+  },
+  {
+    "recipe_slug": "brigadeiros-banados-chocolate-grageas",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (393 g) de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (393 g) de LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "brigadeiros-banados-chocolate-grageas",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Mantequilla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla"
+  },
+  {
+    "recipe_slug": "brigadeiros-banados-chocolate-grageas",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Grageas de colores",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Grageas de colores"
+  },
+  {
+    "recipe_slug": "bombones-crujientes",
+    "product_id": null,
+    "ingredient_raw": "200 g Cobertura Bitter NESTLÉ®",
+    "cantidad_recipe": 200,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: g Cobertura Bitter NESTLÉ®"
+  },
+  {
+    "recipe_slug": "bombones-crujientes",
+    "product_id": null,
+    "ingredient_raw": "200 Gramos Chocolate Blanco",
+    "cantidad_recipe": 200,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Gramos Chocolate Blanco"
+  },
+  {
+    "recipe_slug": "bombones-crujientes",
+    "product_id": null,
+    "ingredient_raw": "4 Paquetes de Galleta Vainilla",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "paquetes de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Galleta Vainilla"
+  },
+  {
+    "recipe_slug": "bombones-crujientes",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas de EL MANJAR NESTLÉ®",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: EL MANJAR NESTLÉ®"
+  },
+  {
+    "recipe_slug": "arbol-de-pan-de-miel",
+    "product_id": null,
+    "ingredient_raw": "300 g Cobertura Bitter NESTLÉ®",
+    "cantidad_recipe": 300,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: g Cobertura Bitter NESTLÉ®"
+  },
+  {
+    "recipe_slug": "arbol-de-pan-de-miel",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas de EL MANJAR NESTLÉ®",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: EL MANJAR NESTLÉ®"
+  },
+  {
+    "recipe_slug": "arbol-de-pan-de-miel",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de IDEAL® CREMOSITA",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "arbol-de-pan-de-miel",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Azúcar Rubia",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar Rubia"
+  },
+  {
+    "recipe_slug": "arbol-de-pan-de-miel",
+    "product_id": null,
+    "ingredient_raw": "1/4 Taza de Azúcar Blanca",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar Blanca"
+  },
+  {
+    "recipe_slug": "arbol-de-pan-de-miel",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Canela en Polvo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Canela en Polvo"
+  },
+  {
+    "recipe_slug": "arbol-de-pan-de-miel",
+    "product_id": null,
+    "ingredient_raw": "1/2 Cucharadita de Clavo de Olor en Polvo",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Clavo de Olor en Polvo"
+  },
+  {
+    "recipe_slug": "arbol-de-pan-de-miel",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Miel",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Miel"
+  },
+  {
+    "recipe_slug": "arbol-de-pan-de-miel",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de COCOA D'ONOFRIO®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: COCOA D'ONOFRIO®"
+  },
+  {
+    "recipe_slug": "arbol-de-pan-de-miel",
+    "product_id": null,
+    "ingredient_raw": "3 Tazas de Harina de Trigo",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina de Trigo"
+  },
+  {
+    "recipe_slug": "arbol-de-pan-de-miel",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Levadura en Polvo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Levadura en Polvo"
+  },
+  {
+    "recipe_slug": "arbol-de-pan-de-miel",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Bicarbonato de Sodio",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Bicarbonato de Sodio"
+  },
+  {
+    "recipe_slug": "torta-napolitana",
+    "product_id": null,
+    "ingredient_raw": "100 g Cobertura Bitter NESTLÉ®",
+    "cantidad_recipe": 100,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: g Cobertura Bitter NESTLÉ®"
+  },
+  {
+    "recipe_slug": "torta-napolitana",
+    "product_id": null,
+    "ingredient_raw": "2/3 Lata (160 g) de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 0.6666666666666666,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (160 g) de CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "torta-napolitana",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (393 g) de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (393 g) de LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "torta-napolitana",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de IDEAL® CREMOSITA",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "torta-napolitana",
+    "product_id": null,
+    "ingredient_raw": "3 Cucharadas de Maicena",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Maicena"
+  },
+  {
+    "recipe_slug": "torta-napolitana",
+    "product_id": null,
+    "ingredient_raw": "2/3Lata (300 g) de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 0.6666666666666666,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (300 g) de CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "torta-napolitana",
+    "product_id": null,
+    "ingredient_raw": "2/3Taza de IDEAL® CREMOSITA",
+    "cantidad_recipe": 0.6666666666666666,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "torta-napolitana",
+    "product_id": null,
+    "ingredient_raw": "3 Cucharadas de Gelatina de Fresa",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Gelatina de Fresa"
+  },
+  {
+    "recipe_slug": "torta-napolitana",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de IDEAL® CREMOSITA",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "torta-napolitana",
+    "product_id": null,
+    "ingredient_raw": "3 Cucharadas de Maicena",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Maicena"
+  },
+  {
+    "recipe_slug": "torta-napolitana",
+    "product_id": null,
+    "ingredient_raw": "5 Cucharadas de COCOA D'ONOFRIO®",
+    "cantidad_recipe": 5,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: COCOA D'ONOFRIO®"
+  },
+  {
+    "recipe_slug": "relampago-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "100 g Cobertura Bitter NESTLE®",
+    "cantidad_recipe": 100,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: g Cobertura Bitter NESTLE®"
+  },
+  {
+    "recipe_slug": "relampago-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1/2 Lata (393 g) de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (393 g) de LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "relampago-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Mantequilla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla"
+  },
+  {
+    "recipe_slug": "relampago-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "3 Cucharadas de COCOA D'ONOFRIO®",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: COCOA D'ONOFRIO®"
+  },
+  {
+    "recipe_slug": "relampago-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Agua",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "relampago-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Mantequilla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla"
+  },
+  {
+    "recipe_slug": "relampago-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "relampago-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Azúcar",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar"
+  },
+  {
+    "recipe_slug": "relampago-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Harina de Trigo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina de Trigo"
+  },
+  {
+    "recipe_slug": "relampago-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "4 Unidades de Huevo",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevo"
+  },
+  {
+    "recipe_slug": "donuts-y-cake-pops-decorados",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Agua",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "donuts-y-cake-pops-decorados",
+    "product_id": null,
+    "ingredient_raw": "3 Tazas de Harina de Trigo",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina de Trigo"
+  },
+  {
+    "recipe_slug": "donuts-y-cake-pops-decorados",
+    "product_id": null,
+    "ingredient_raw": "4 Cucharadas de Azúcar en Polvo",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar en Polvo"
+  },
+  {
+    "recipe_slug": "donuts-y-cake-pops-decorados",
+    "product_id": null,
+    "ingredient_raw": "3 Cucharadas de Mantequilla",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla"
+  },
+  {
+    "recipe_slug": "donuts-y-cake-pops-decorados",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "donuts-y-cake-pops-decorados",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Levadura",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Levadura"
+  },
+  {
+    "recipe_slug": "donuts-y-cake-pops-decorados",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad de Huevo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Huevo"
+  },
+  {
+    "recipe_slug": "donuts-y-cake-pops-decorados",
+    "product_id": null,
+    "ingredient_raw": "1/4 de tableta de Cobertura Nestlé® Bitter",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de tableta de Cobertura Nestlé® Bitter"
+  },
+  {
+    "recipe_slug": "donuts-y-cake-pops-decorados",
+    "product_id": null,
+    "ingredient_raw": "100 Gramos de Cobertura de Chocolate Blanco",
+    "cantidad_recipe": 100,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cobertura de Chocolate Blanco"
+  },
+  {
+    "recipe_slug": "donuts-y-cake-pops-decorados",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Chispas o Grajeas de Chocolate",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Chispas o Grajeas de Chocolate"
+  },
+  {
+    "recipe_slug": "donuts-y-cake-pops-decorados",
+    "product_id": null,
+    "ingredient_raw": "1/2 Lata (393 g) de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (393 g) de LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "donuts-y-cake-pops-decorados",
+    "product_id": null,
+    "ingredient_raw": "2 Pedazos de Queque de Chocolate",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pedazos de Queque de Chocolate"
+  },
+  {
+    "recipe_slug": "donuts-y-cake-pops-decorados",
+    "product_id": null,
+    "ingredient_raw": "1/2 tableta de Cobertura Nestlé® Bitter",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: tableta de Cobertura Nestlé® Bitter"
+  },
+  {
+    "recipe_slug": "donuts-y-cake-pops-decorados",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Chispas o Grajeas de Chocolate",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Chispas o Grajeas de Chocolate"
+  },
+  {
+    "recipe_slug": "lomo-a-la-pimienta-2",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (160 g) de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (160 g) de CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "lomo-a-la-pimienta-2",
+    "product_id": null,
+    "ingredient_raw": "4 Chuletas de Lomo de Cerdo",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Chuletas de Lomo de Cerdo"
+  },
+  {
+    "recipe_slug": "lomo-a-la-pimienta-2",
+    "product_id": null,
+    "ingredient_raw": "2 Ramitas de Tomillo",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ramitas de Tomillo"
+  },
+  {
+    "recipe_slug": "lomo-a-la-pimienta-2",
+    "product_id": null,
+    "ingredient_raw": "16 Espárragos",
+    "cantidad_recipe": 16,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Espárragos"
+  },
+  {
+    "recipe_slug": "lomo-a-la-pimienta-2",
+    "product_id": null,
+    "ingredient_raw": "4 Papas Huayro Medianas",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Papas Huayro Medianas"
+  },
+  {
+    "recipe_slug": "lomo-a-la-pimienta-2",
+    "product_id": null,
+    "ingredient_raw": "4 Dientes de Ajo",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "dientes de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ajo"
+  },
+  {
+    "recipe_slug": "lomo-a-la-pimienta-2",
+    "product_id": null,
+    "ingredient_raw": "1 Berenjena",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Berenjena"
+  },
+  {
+    "recipe_slug": "lomo-a-la-pimienta-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla blanca",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla blanca"
+  },
+  {
+    "recipe_slug": "lomo-a-la-pimienta-2",
+    "product_id": null,
+    "ingredient_raw": "4 Cucharadas de Pimienta Negra",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimienta Negra"
+  },
+  {
+    "recipe_slug": "lomo-a-la-pimienta-2",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas de Caldo de Carne",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Caldo de Carne"
+  },
+  {
+    "recipe_slug": "tiramisu-de-chocoton",
+    "product_id": null,
+    "ingredient_raw": "4 Cucharadas de NESCAFÉ ® TRADICIÓN",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: NESCAFÉ ® TRADICIÓN"
+  },
+  {
+    "recipe_slug": "tiramisu-de-chocoton",
+    "product_id": null,
+    "ingredient_raw": "4 Cucharadas de Azúcar",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar"
+  },
+  {
+    "recipe_slug": "tiramisu-de-chocoton",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Agua caliente",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua caliente"
+  },
+  {
+    "recipe_slug": "tiramisu-de-chocoton",
+    "product_id": null,
+    "ingredient_raw": "1/2 Chocotón D'ONOFRIO®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Chocotón D'ONOFRIO®"
+  },
+  {
+    "recipe_slug": "tiramisu-de-chocoton",
+    "product_id": null,
+    "ingredient_raw": "2 Unidades de Yema de Huevo",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Yema de Huevo"
+  },
+  {
+    "recipe_slug": "tiramisu-de-chocoton",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Azúcar",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar"
+  },
+  {
+    "recipe_slug": "tiramisu-de-chocoton",
+    "product_id": null,
+    "ingredient_raw": "3/4Taza de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 0.75,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "tiramisu-de-chocoton",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Queso Crema",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Queso Crema"
+  },
+  {
+    "recipe_slug": "tiramisu-de-chocoton",
+    "product_id": null,
+    "ingredient_raw": "1/4Taza de Almendras",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Almendras"
+  },
+  {
+    "recipe_slug": "empanada-de-chocoton",
+    "product_id": null,
+    "ingredient_raw": "1 Chocotón D'ONOFRIO®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Chocotón D'ONOFRIO®"
+  },
+  {
+    "recipe_slug": "empanada-de-chocoton",
+    "product_id": null,
+    "ingredient_raw": "4 Manzanas Verdes",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Manzanas Verdes"
+  },
+  {
+    "recipe_slug": "empanada-de-chocoton",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Jugo de Limón",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Jugo de Limón"
+  },
+  {
+    "recipe_slug": "empanada-de-chocoton",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Azúcar Rubia",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar Rubia"
+  },
+  {
+    "recipe_slug": "empanada-de-chocoton",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Canela Molida",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Canela Molida"
+  },
+  {
+    "recipe_slug": "empanada-de-chocoton",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Mantequilla",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla"
+  },
+  {
+    "recipe_slug": "pionono-integral",
+    "product_id": null,
+    "ingredient_raw": "1 Panetón D'ONOFRIO® Integral",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Panetón D'ONOFRIO® Integral"
+  },
+  {
+    "recipe_slug": "pionono-integral",
+    "product_id": null,
+    "ingredient_raw": "1 Bolsa (200g) de EL MANJAR NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Bolsa (200g) de EL MANJAR NESTLÉ®"
+  },
+  {
+    "recipe_slug": "pionono-integral",
+    "product_id": null,
+    "ingredient_raw": "1/3 Taza de Almendras",
+    "cantidad_recipe": 0.3333333333333333,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Almendras"
+  },
+  {
+    "recipe_slug": "pionono-integral",
+    "product_id": null,
+    "ingredient_raw": "1/3 Tazade Arándanos",
+    "cantidad_recipe": 0.3333333333333333,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tazade Arándanos"
+  },
+  {
+    "recipe_slug": "pionono-integral",
+    "product_id": null,
+    "ingredient_raw": "1/3 Taza de Fresas",
+    "cantidad_recipe": 0.3333333333333333,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Fresas"
+  },
+  {
+    "recipe_slug": "delicia-de-manjar-y-paneton",
+    "product_id": null,
+    "ingredient_raw": "1 Chocotón D'ONOFRIO®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Chocotón D'ONOFRIO®"
+  },
+  {
+    "recipe_slug": "delicia-de-manjar-y-paneton",
+    "product_id": null,
+    "ingredient_raw": "1 1/2 Taza de Fresas",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Fresas"
+  },
+  {
+    "recipe_slug": "delicia-de-manjar-y-paneton",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (200 g) de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (200 g) de CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "delicia-de-manjar-y-paneton",
+    "product_id": null,
+    "ingredient_raw": "1/2 Lata de IDEAL® CREMOSITA",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "delicia-de-manjar-y-paneton",
+    "product_id": null,
+    "ingredient_raw": "1/2 Bolsa (200 g) de EL MANJAR NESTLÉ®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Bolsa (200 g) de EL MANJAR NESTLÉ®"
+  },
+  {
+    "recipe_slug": "delicia-de-manjar-y-paneton",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Colapez en Polvo",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Colapez en Polvo"
+  },
+  {
+    "recipe_slug": "delicia-de-manjar-y-paneton",
+    "product_id": null,
+    "ingredient_raw": "1/2 Bolsa (200 g) de EL MANJAR NESTLÉ®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Bolsa (200 g) de EL MANJAR NESTLÉ®"
+  },
+  {
+    "recipe_slug": "delicia-de-manjar-y-paneton",
+    "product_id": null,
+    "ingredient_raw": "1/2 Cucharada de Colapez en Polvo",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Colapez en Polvo"
+  },
+  {
+    "recipe_slug": "bastones-de-paneton",
+    "product_id": null,
+    "ingredient_raw": "1/2Panetón D'ONOFRIO®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Panetón D'ONOFRIO®"
+  },
+  {
+    "recipe_slug": "bastones-de-paneton",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Almendras",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Almendras"
+  },
+  {
+    "recipe_slug": "bastones-de-paneton",
+    "product_id": null,
+    "ingredient_raw": "1/4 de tableta de Cobertura Nestlé® Bitter",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de tableta de Cobertura Nestlé® Bitter"
+  },
+  {
+    "recipe_slug": "torta-helada-de-paneton",
+    "product_id": null,
+    "ingredient_raw": "1/3 Panetón D'ONOFRIO®",
+    "cantidad_recipe": 0.3333333333333333,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Panetón D'ONOFRIO®"
+  },
+  {
+    "recipe_slug": "torta-helada-de-paneton",
+    "product_id": null,
+    "ingredient_raw": "1 Lata de IDEAL® CREMOSITA",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "torta-helada-de-paneton",
+    "product_id": null,
+    "ingredient_raw": "4 Cucharadas de Colapez",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Colapez"
+  },
+  {
+    "recipe_slug": "torta-helada-de-paneton",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Azúcar",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar"
+  },
+  {
+    "recipe_slug": "torta-helada-de-paneton",
+    "product_id": null,
+    "ingredient_raw": "1Taza de EL MANJAR NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: EL MANJAR NESTLÉ®"
+  },
+  {
+    "recipe_slug": "torta-helada-de-paneton",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de IDEAL® CREMOSITA",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "torta-helada-de-paneton",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Colapez en Polvo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Colapez en Polvo"
+  },
+  {
+    "recipe_slug": "torta-helada-de-paneton",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Frambuesas",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Frambuesas"
+  },
+  {
+    "recipe_slug": "torta-helada-de-paneton",
+    "product_id": null,
+    "ingredient_raw": "1/2Taza de Arándanos",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Arándanos"
+  },
+  {
+    "recipe_slug": "tronco-navidadeno-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "2Tabletas (100 g) de NESTLÉ® CHOCOLATERÍA Cobertura de Leche",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tabletas (100 g) de NESTLÉ® CHOCOLATERÍA Cobertura de Leche"
+  },
+  {
+    "recipe_slug": "tronco-navidadeno-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de COCOA D'ONOFRIO®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: COCOA D'ONOFRIO®"
+  },
+  {
+    "recipe_slug": "tronco-navidadeno-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "5 Huevos",
+    "cantidad_recipe": 5,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevos"
+  },
+  {
+    "recipe_slug": "tronco-navidadeno-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Azúcar",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar"
+  },
+  {
+    "recipe_slug": "tronco-navidadeno-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1/2Taza de Harina de trigo",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina de trigo"
+  },
+  {
+    "recipe_slug": "tronco-navidadeno-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "4 Cucharadas de Agua",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "tronco-navidadeno-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (160 g) de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (160 g) de CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "tronco-navidadeno-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de IDEAL® LIGHT",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® LIGHT"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "1 1/2 Taza de Cebolla picada",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla picada"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "1 1/2 Taza de Zanahorias picadas",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Zanahorias picadas"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "1 1/2 Taza Apio picado",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Apio picado"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "1 1/2 Taza Tomate",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tomate"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "1 Hoja De Laurel",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "hoja de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Laurel"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "1 Litro Agua",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "litro",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca Pimienta",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimienta"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "24 Unidades Masa wantán",
+    "cantidad_recipe": 24,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Masa wantán"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "3 Unidades Ají Amarillo",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Ají Amarillo"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "4 Unidades Dientes de ajo",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Dientes de ajo"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad Cebolla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "1 1/4 Taza de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "1 1/2 Taza Albahaca Fresca",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Albahaca Fresca"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "1/4 Taza Pecanas",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pecanas"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas Aceite De Oliva",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cucharadas Aceite De Oliva"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "1 Taza Agua",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "1 1/2 Taza Espinacas",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Espinacas"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "3 Tazas Espinacas",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tazas Espinacas"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "3 Tazas Tomate",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tazas Tomate"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "6 Unidades AlcachofaCocida",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades AlcachofaCocida"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza Choclo desgranado cocido",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Choclo desgranado cocido"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "8 Cucharaditas Jugo de limón",
+    "cantidad_recipe": 8,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cucharaditas Jugo de limón"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca Pimienta",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimienta"
+  },
+  {
+    "recipe_slug": "canelones-de-asado-en-salsa-verde",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "cups-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 Lata de IDEAL® CREMOSITA",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "cups-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Miel",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Miel"
+  },
+  {
+    "recipe_slug": "cups-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "3 Tazas de CHOCAPIC® Minis",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: CHOCAPIC® Minis"
+  },
+  {
+    "recipe_slug": "cups-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 Sobre de Colapiz o Gelatina s/Sabor",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "sobre de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Colapiz o Gelatina s/Sabor"
+  },
+  {
+    "recipe_slug": "cups-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "4 Unidades de Fresas",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Fresas"
+  },
+  {
+    "recipe_slug": "banana-brunch",
+    "product_id": null,
+    "ingredient_raw": "1 Plátano",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Plátano"
+  },
+  {
+    "recipe_slug": "banana-brunch",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Mantequilla de Maní",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla de Maní"
+  },
+  {
+    "recipe_slug": "banana-brunch",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Cereal CHOCAPIC® Minis",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cereal CHOCAPIC® Minis"
+  },
+  {
+    "recipe_slug": "banana-brunch",
+    "product_id": null,
+    "ingredient_raw": "4 Palitos de Helado",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Palitos de Helado"
+  },
+  {
+    "recipe_slug": "desayunito-de-yogurt-trix",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Yogurt Natural",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Yogurt Natural"
+  },
+  {
+    "recipe_slug": "desayunito-de-yogurt-trix",
+    "product_id": null,
+    "ingredient_raw": "2/3 Sobre de Colapiz o Gelatina s/Sabor",
+    "cantidad_recipe": 0.6666666666666666,
+    "unidad_recipe": "sobre de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Colapiz o Gelatina s/Sabor"
+  },
+  {
+    "recipe_slug": "desayunito-de-yogurt-trix",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas de TRIX® Minis",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: TRIX® Minis"
+  },
+  {
+    "recipe_slug": "desayuno-de-chocoplatano",
+    "product_id": null,
+    "ingredient_raw": "1 Plátano",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Plátano"
+  },
+  {
+    "recipe_slug": "desayuno-de-chocoplatano",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Yogurt Natural",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Yogurt Natural"
+  },
+  {
+    "recipe_slug": "desayuno-de-chocoplatano",
+    "product_id": null,
+    "ingredient_raw": "3/4 Taza del Cereal CHOCAPIC® Minis",
+    "cantidad_recipe": 0.75,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: del Cereal CHOCAPIC® Minis"
+  },
+  {
+    "recipe_slug": "donitas-mananeras",
+    "product_id": null,
+    "ingredient_raw": "1 Manzana Verde",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Manzana Verde"
+  },
+  {
+    "recipe_slug": "donitas-mananeras",
+    "product_id": null,
+    "ingredient_raw": "3 Cucharadas de Mantequilla de Maní",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla de Maní"
+  },
+  {
+    "recipe_slug": "donitas-mananeras",
+    "product_id": null,
+    "ingredient_raw": "2Tazasde CerealTRIX® Minis",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tazasde CerealTRIX® Minis"
+  },
+  {
+    "recipe_slug": "galletitas-trix",
+    "product_id": null,
+    "ingredient_raw": "2/3 Taza de Mantequilla",
+    "cantidad_recipe": 0.6666666666666666,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla"
+  },
+  {
+    "recipe_slug": "galletitas-trix",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Azúcar",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar"
+  },
+  {
+    "recipe_slug": "galletitas-trix",
+    "product_id": null,
+    "ingredient_raw": "3 Huevos",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevos"
+  },
+  {
+    "recipe_slug": "galletitas-trix",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas de Harina de Trigo",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina de Trigo"
+  },
+  {
+    "recipe_slug": "galletitas-trix",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Polvo de Hornear",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Polvo de Hornear"
+  },
+  {
+    "recipe_slug": "galletitas-trix",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Esencia de Vainilla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Esencia de Vainilla"
+  },
+  {
+    "recipe_slug": "galletitas-trix",
+    "product_id": null,
+    "ingredient_raw": "2 Tazasdel Cereal TRIX® Minis",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tazasdel Cereal TRIX® Minis"
+  },
+  {
+    "recipe_slug": "mini-muffins-trix",
+    "product_id": null,
+    "ingredient_raw": "3/4 Taza de Yogurt Natural",
+    "cantidad_recipe": 0.75,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Yogurt Natural"
+  },
+  {
+    "recipe_slug": "mini-muffins-trix",
+    "product_id": null,
+    "ingredient_raw": "5 Huevos",
+    "cantidad_recipe": 5,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevos"
+  },
+  {
+    "recipe_slug": "mini-muffins-trix",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Aceite Vegetal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "mini-muffins-trix",
+    "product_id": null,
+    "ingredient_raw": "2Tazas de Harina",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina"
+  },
+  {
+    "recipe_slug": "mini-muffins-trix",
+    "product_id": null,
+    "ingredient_raw": "3Tazas de Cereal TRIX® Mini",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cereal TRIX® Mini"
+  },
+  {
+    "recipe_slug": "spaguetrix",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de IDEAL® CREMOSITA",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "spaguetrix",
+    "product_id": null,
+    "ingredient_raw": "1 Huevo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevo"
+  },
+  {
+    "recipe_slug": "spaguetrix",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Azúcar",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar"
+  },
+  {
+    "recipe_slug": "spaguetrix",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Esencia de Vainilla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Esencia de Vainilla"
+  },
+  {
+    "recipe_slug": "spaguetrix",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Harina de Trigo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina de Trigo"
+  },
+  {
+    "recipe_slug": "spaguetrix",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Aceite Vegetal",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "spaguetrix",
+    "product_id": null,
+    "ingredient_raw": "3/4 Taza de Cereal TRIX® Mini",
+    "cantidad_recipe": 0.75,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cereal TRIX® Mini"
+  },
+  {
+    "recipe_slug": "spaguetrix",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Aceite Vegetal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "spaguetrix",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Polvo de Hornear",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Polvo de Hornear"
+  },
+  {
+    "recipe_slug": "paletitas-de-hot-cakes",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza IDEAL® CREMOSITA",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "paletitas-de-hot-cakes",
+    "product_id": null,
+    "ingredient_raw": "1 Huevo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevo"
+  },
+  {
+    "recipe_slug": "paletitas-de-hot-cakes",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Mantequilla (derretida)",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla (derretida)"
+  },
+  {
+    "recipe_slug": "paletitas-de-hot-cakes",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Esencia de Vainilla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Esencia de Vainilla"
+  },
+  {
+    "recipe_slug": "paletitas-de-hot-cakes",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Harina",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina"
+  },
+  {
+    "recipe_slug": "paletitas-de-hot-cakes",
+    "product_id": null,
+    "ingredient_raw": "1 Bastón de Canela",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Bastón de Canela"
+  },
+  {
+    "recipe_slug": "paletitas-de-hot-cakes",
+    "product_id": null,
+    "ingredient_raw": "4 Unidades de Fresas",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Fresas"
+  },
+  {
+    "recipe_slug": "paletitas-de-hot-cakes",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Crema de Maní",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Crema de Maní"
+  },
+  {
+    "recipe_slug": "paletitas-de-hot-cakes",
+    "product_id": null,
+    "ingredient_raw": "3/4Taza de CHOCAPIC® Mini",
+    "cantidad_recipe": 0.75,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: CHOCAPIC® Mini"
+  },
+  {
+    "recipe_slug": "waffles-trix",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de IDEAL LIGHT®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL LIGHT®"
+  },
+  {
+    "recipe_slug": "waffles-trix",
+    "product_id": null,
+    "ingredient_raw": "2 Huevos",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevos"
+  },
+  {
+    "recipe_slug": "waffles-trix",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Mantequilla (derretida)",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla (derretida)"
+  },
+  {
+    "recipe_slug": "waffles-trix",
+    "product_id": null,
+    "ingredient_raw": "1 1/2 Taza de Harina",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina"
+  },
+  {
+    "recipe_slug": "waffles-trix",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Aceite Vegetal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "waffles-trix",
+    "product_id": null,
+    "ingredient_raw": "3/4 Taza de Cereal TRIX® Minis",
+    "cantidad_recipe": 0.75,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cereal TRIX® Minis"
+  },
+  {
+    "recipe_slug": "waffles-trix",
+    "product_id": null,
+    "ingredient_raw": "3 Unidades de Fresas",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Fresas"
+  },
+  {
+    "recipe_slug": "mousse-de-maracuya-2",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Jugo de Maracuyá",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Jugo de Maracuyá"
+  },
+  {
+    "recipe_slug": "mousse-de-maracuya-2",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (393 g) de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (393 g) de LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "mousse-de-maracuya-2",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (300 g) de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (300 g) de CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "mousse-de-maracuya-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Colapez",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Colapez"
+  },
+  {
+    "recipe_slug": "mousse-de-maracuya-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Azúcar",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar"
+  },
+  {
+    "recipe_slug": "mousse-de-maracuya-2",
+    "product_id": null,
+    "ingredient_raw": "1/2Taza de Pulpa Maracuyá",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pulpa Maracuyá"
+  },
+  {
+    "recipe_slug": "mousse-de-maracuya-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Colapez",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Colapez"
+  },
+  {
+    "recipe_slug": "arroz-con-leche-sin-lactosa",
+    "product_id": null,
+    "ingredient_raw": "3/4 Taza de Arroz",
+    "cantidad_recipe": 0.75,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Arroz"
+  },
+  {
+    "recipe_slug": "arroz-con-leche-sin-lactosa",
+    "product_id": null,
+    "ingredient_raw": "3 Tazas de Agua",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "arroz-con-leche-sin-lactosa",
+    "product_id": null,
+    "ingredient_raw": "3 Unidades de Clavos de Olor",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Clavos de Olor"
+  },
+  {
+    "recipe_slug": "arroz-con-leche-sin-lactosa",
+    "product_id": null,
+    "ingredient_raw": "1 Pedazo de Cáscara de Naranja",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pedazo de Cáscara de Naranja"
+  },
+  {
+    "recipe_slug": "arroz-con-leche-sin-lactosa",
+    "product_id": null,
+    "ingredient_raw": "2Tazas de Nature's Heart® Origen",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Nature's Heart® Origen"
+  },
+  {
+    "recipe_slug": "arroz-con-leche-sin-lactosa",
+    "product_id": null,
+    "ingredient_raw": "1 Lata de LECHE CONDENSADA NESTLÉ® Sin Lactosa",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: LECHE CONDENSADA NESTLÉ® Sin Lactosa"
+  },
+  {
+    "recipe_slug": "arroz-con-leche-sin-lactosa",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharaditas de Canela (polvo)",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharaditas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Canela (polvo)"
+  }
+]

@@ -1,0 +1,3022 @@
+[
+  {
+    "recipe_slug": "pie-de-frutos",
+    "product_id": null,
+    "ingredient_raw": "6 Paquetes de Galleta MOROCHAS®",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "paquetes de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Galleta MOROCHAS®"
+  },
+  {
+    "recipe_slug": "pie-de-frutos",
+    "product_id": null,
+    "ingredient_raw": "80 Gramos Mantequilla Sin Sal",
+    "cantidad_recipe": 80,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Gramos Mantequilla Sin Sal"
+  },
+  {
+    "recipe_slug": "pie-de-frutos",
+    "product_id": null,
+    "ingredient_raw": "1 Lata de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "pie-de-frutos",
+    "product_id": null,
+    "ingredient_raw": "150 Gramos Queso Crema Bajo En Grasa",
+    "cantidad_recipe": 150,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Gramos Queso Crema Bajo En Grasa"
+  },
+  {
+    "recipe_slug": "pie-de-frutos",
+    "product_id": null,
+    "ingredient_raw": "3/4 Taza Mermelada de Fresa Light",
+    "cantidad_recipe": 0.75,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mermelada de Fresa Light"
+  },
+  {
+    "recipe_slug": "pie-de-frutos",
+    "product_id": null,
+    "ingredient_raw": "1 1/2 Cucharadas Colapez en Polvo",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cucharadas Colapez en Polvo"
+  },
+  {
+    "recipe_slug": "queso-helado",
+    "product_id": null,
+    "ingredient_raw": "1 Taza Leche Fresca",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Leche Fresca"
+  },
+  {
+    "recipe_slug": "queso-helado",
+    "product_id": null,
+    "ingredient_raw": "1/2 Lata de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "queso-helado",
+    "product_id": null,
+    "ingredient_raw": "1 Lata de IDEAL® CREMOSITA",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "queso-helado",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza Agua",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "queso-helado",
+    "product_id": null,
+    "ingredient_raw": "1 Bastón Canela",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Bastón Canela"
+  },
+  {
+    "recipe_slug": "queso-helado",
+    "product_id": null,
+    "ingredient_raw": "6 Cucharadas CocoRallado",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cucharadas CocoRallado"
+  },
+  {
+    "recipe_slug": "queso-helado",
+    "product_id": null,
+    "ingredient_raw": "3 Unidades Yema de Huevo",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Yema de Huevo"
+  },
+  {
+    "recipe_slug": "queso-helado",
+    "product_id": null,
+    "ingredient_raw": "1/2 Cucharada Maicena",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "cucharada",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Maicena"
+  },
+  {
+    "recipe_slug": "queso-helado",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita Extracto De Vainilla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Extracto De Vainilla"
+  },
+  {
+    "recipe_slug": "queso-helado",
+    "product_id": null,
+    "ingredient_raw": "4 Cucharadas Azúcar",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cucharadas Azúcar"
+  },
+  {
+    "recipe_slug": "spaghetti-a-lo-alfredo",
+    "product_id": null,
+    "ingredient_raw": "4 Tazas Fideos Spaguetti Cocidos",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tazas Fideos Spaguetti Cocidos"
+  },
+  {
+    "recipe_slug": "spaghetti-a-lo-alfredo",
+    "product_id": null,
+    "ingredient_raw": "200 Gramos Jamón De Pavo",
+    "cantidad_recipe": 200,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Gramos Jamón De Pavo"
+  },
+  {
+    "recipe_slug": "spaghetti-a-lo-alfredo",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de IDEAL® CREMOSITA",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "spaghetti-a-lo-alfredo",
+    "product_id": null,
+    "ingredient_raw": "1 Taza Agua",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "spaghetti-a-lo-alfredo",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca Perejil",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Perejil"
+  },
+  {
+    "recipe_slug": "spaghetti-a-lo-alfredo",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "spaghetti-a-lo-alfredo",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada Queso ParmesanoRallado",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Queso ParmesanoRallado"
+  },
+  {
+    "recipe_slug": "spaghetti-a-lo-alfredo",
+    "product_id": null,
+    "ingredient_raw": "1/2 Cucharadita Pimienta",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "cucharadita",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimienta"
+  },
+  {
+    "recipe_slug": "spaghetti-a-lo-alfredo",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada Aceite de Oliva",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite de Oliva"
+  },
+  {
+    "recipe_slug": "crackers-de-manjar-y-chocolate-2",
+    "product_id": null,
+    "ingredient_raw": "1 Bolsa (500 g) de EL MANJAR NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Bolsa (500 g) de EL MANJAR NESTLÉ®"
+  },
+  {
+    "recipe_slug": "crackers-de-manjar-y-chocolate-2",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Chocolate Negro",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Chocolate Negro"
+  },
+  {
+    "recipe_slug": "crackers-de-manjar-y-chocolate-2",
+    "product_id": null,
+    "ingredient_raw": "6 Cucharadas de Almendras Sin Sal Tostadas",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Almendras Sin Sal Tostadas"
+  },
+  {
+    "recipe_slug": "crackers-de-manjar-y-chocolate-2",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Avena Instantánea",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Avena Instantánea"
+  },
+  {
+    "recipe_slug": "crackers-de-manjar-y-chocolate-2",
+    "product_id": null,
+    "ingredient_raw": "8 Unidades Galleta De Trigo Integral",
+    "cantidad_recipe": 8,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Galleta De Trigo Integral"
+  },
+  {
+    "recipe_slug": "brownie-sublime",
+    "product_id": null,
+    "ingredient_raw": "6 Unidades de Huevo",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevo"
+  },
+  {
+    "recipe_slug": "brownie-sublime",
+    "product_id": null,
+    "ingredient_raw": "500 Gramos de Azúcar Blanca",
+    "cantidad_recipe": 500,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar Blanca"
+  },
+  {
+    "recipe_slug": "brownie-sublime",
+    "product_id": null,
+    "ingredient_raw": "300 Gramos de Margarina c/Sal",
+    "cantidad_recipe": 300,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Margarina c/Sal"
+  },
+  {
+    "recipe_slug": "brownie-sublime",
+    "product_id": null,
+    "ingredient_raw": "200 Gramos de Cobertura Bitter NESTLÉ®",
+    "cantidad_recipe": 200,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cobertura Bitter NESTLÉ®"
+  },
+  {
+    "recipe_slug": "brownie-sublime",
+    "product_id": null,
+    "ingredient_raw": "200 Gramos de Harina s/Preparar",
+    "cantidad_recipe": 200,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina s/Preparar"
+  },
+  {
+    "recipe_slug": "brownie-sublime",
+    "product_id": null,
+    "ingredient_raw": "250 Gramos de SUBLIME®Tabletón (500 g)",
+    "cantidad_recipe": 250,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: SUBLIME®Tabletón (500 g)"
+  },
+  {
+    "recipe_slug": "brownie-sublime",
+    "product_id": null,
+    "ingredient_raw": "40 Gramos de Cobertura Bitter NESTLÉ®",
+    "cantidad_recipe": 40,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cobertura Bitter NESTLÉ®"
+  },
+  {
+    "recipe_slug": "pancitos-de-anchor",
+    "product_id": null,
+    "ingredient_raw": "12 Cucharadas Anchor",
+    "cantidad_recipe": 12,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cucharadas Anchor"
+  },
+  {
+    "recipe_slug": "pancitos-de-anchor",
+    "product_id": null,
+    "ingredient_raw": "1 1/2 Cucharadita Polvo De Hornear",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "cucharadita",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Polvo De Hornear"
+  },
+  {
+    "recipe_slug": "pancitos-de-anchor",
+    "product_id": null,
+    "ingredient_raw": "2 Unidades Huevos",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Huevos"
+  },
+  {
+    "recipe_slug": "pancitos-de-anchor",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada Aceite Vegetal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "panqueques-con-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "4 Cucharadas de Anchor™",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Anchor™"
+  },
+  {
+    "recipe_slug": "panqueques-con-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Agua",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "panqueques-con-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "1 Huevo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevo"
+  },
+  {
+    "recipe_slug": "panqueques-con-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Mantequilla Light",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla Light"
+  },
+  {
+    "recipe_slug": "panqueques-con-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Esencia de Vainilla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Esencia de Vainilla"
+  },
+  {
+    "recipe_slug": "panqueques-con-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Harina",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina"
+  },
+  {
+    "recipe_slug": "panqueques-con-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharaditas de Azúcar",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharaditas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar"
+  },
+  {
+    "recipe_slug": "panqueques-con-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Polvo de Hornear",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Polvo de Hornear"
+  },
+  {
+    "recipe_slug": "panqueques-con-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Aceite Vegetal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "panqueques-con-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "3 Cucharadas de EL MANJAR NESTLÉ®",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: EL MANJAR NESTLÉ®"
+  },
+  {
+    "recipe_slug": "fudge-rapido",
+    "product_id": null,
+    "ingredient_raw": "3 Cucharadas Anchor",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cucharadas Anchor"
+  },
+  {
+    "recipe_slug": "fudge-rapido",
+    "product_id": null,
+    "ingredient_raw": "4 Cucharaditas de Cocoa D'ONOFRIO®",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "cucharaditas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cocoa D'ONOFRIO®"
+  },
+  {
+    "recipe_slug": "fudge-rapido",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada Azúcar en Polvo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar en Polvo"
+  },
+  {
+    "recipe_slug": "fudge-rapido",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada Agua",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "pop-corn-con-anchor",
+    "product_id": null,
+    "ingredient_raw": "1 Taza Anchor",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Anchor"
+  },
+  {
+    "recipe_slug": "pop-corn-con-anchor",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza Agua",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "pop-corn-con-anchor",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza Aceite Vegetal",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "pop-corn-con-anchor",
+    "product_id": null,
+    "ingredient_raw": "3/4 Taza Azúcar",
+    "cantidad_recipe": 0.75,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar"
+  },
+  {
+    "recipe_slug": "pop-corn-con-anchor",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Pop Corn",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pop Corn"
+  },
+  {
+    "recipe_slug": "merengado-bicolor",
+    "product_id": null,
+    "ingredient_raw": "4 Claras de Huevo",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Claras de Huevo"
+  },
+  {
+    "recipe_slug": "merengado-bicolor",
+    "product_id": null,
+    "ingredient_raw": "1/4Taza de Azúcar",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar"
+  },
+  {
+    "recipe_slug": "merengado-bicolor",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Azúcar en Polvo",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar en Polvo"
+  },
+  {
+    "recipe_slug": "merengado-bicolor",
+    "product_id": null,
+    "ingredient_raw": "1/2 Lata (393 g) de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (393 g) de LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "merengado-bicolor",
+    "product_id": null,
+    "ingredient_raw": "1/4 Unidad de Pulpa de Chirimoya",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Pulpa de Chirimoya"
+  },
+  {
+    "recipe_slug": "merengado-bicolor",
+    "product_id": null,
+    "ingredient_raw": "1/3Taza de COCOA D'ONOFRIO®",
+    "cantidad_recipe": 0.3333333333333333,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: COCOA D'ONOFRIO®"
+  },
+  {
+    "recipe_slug": "merengado-bicolor",
+    "product_id": null,
+    "ingredient_raw": "2 Fresas",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Fresas"
+  },
+  {
+    "recipe_slug": "merengado-bicolor",
+    "product_id": null,
+    "ingredient_raw": "8 Arándanos",
+    "cantidad_recipe": 8,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Arándanos"
+  },
+  {
+    "recipe_slug": "macarrones-gratinados",
+    "product_id": null,
+    "ingredient_raw": "250 Gramos Fideos Coditos",
+    "cantidad_recipe": 250,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Gramos Fideos Coditos"
+  },
+  {
+    "recipe_slug": "macarrones-gratinados",
+    "product_id": null,
+    "ingredient_raw": "4 Unidades Pechuga de Pollo",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Pechuga de Pollo"
+  },
+  {
+    "recipe_slug": "macarrones-gratinados",
+    "product_id": null,
+    "ingredient_raw": "1 Lata de IDEAL® CREMOSITA",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "macarrones-gratinados",
+    "product_id": null,
+    "ingredient_raw": "4 Cucharaditas de Caldo en polvo MAGGI® Sabor Gallina",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "cucharaditas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Caldo en polvo MAGGI® Sabor Gallina"
+  },
+  {
+    "recipe_slug": "macarrones-gratinados",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada Mantequilla Sin Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla Sin Sal"
+  },
+  {
+    "recipe_slug": "macarrones-gratinados",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada Harina",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina"
+  },
+  {
+    "recipe_slug": "macarrones-gratinados",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas Espinaca en tiras delgadas",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tazas Espinaca en tiras delgadas"
+  },
+  {
+    "recipe_slug": "macarrones-gratinados",
+    "product_id": null,
+    "ingredient_raw": "2 Unidades Tomate",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Tomate"
+  },
+  {
+    "recipe_slug": "macarrones-gratinados",
+    "product_id": null,
+    "ingredient_raw": "40 Gramos Parmesano Rallado",
+    "cantidad_recipe": 40,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Gramos Parmesano Rallado"
+  },
+  {
+    "recipe_slug": "macarrones-gratinados",
+    "product_id": null,
+    "ingredient_raw": "50 Gramos Queso Mozzarella",
+    "cantidad_recipe": 50,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Gramos Queso Mozzarella"
+  },
+  {
+    "recipe_slug": "macarrones-gratinados",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Pan Rallado",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pan Rallado"
+  },
+  {
+    "recipe_slug": "macarrones-gratinados",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada Aceite",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite"
+  },
+  {
+    "recipe_slug": "ensalada-costena-2",
+    "product_id": null,
+    "ingredient_raw": "4 Corazones de Alcachofa",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Corazones de Alcachofa"
+  },
+  {
+    "recipe_slug": "ensalada-costena-2",
+    "product_id": null,
+    "ingredient_raw": "12 Espárragos",
+    "cantidad_recipe": 12,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Espárragos"
+  },
+  {
+    "recipe_slug": "ensalada-costena-2",
+    "product_id": null,
+    "ingredient_raw": "1/2 Coliflor",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Coliflor"
+  },
+  {
+    "recipe_slug": "ensalada-costena-2",
+    "product_id": null,
+    "ingredient_raw": "4 Cucharadas de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "ensalada-costena-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Aceite de Oliva",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite de Oliva"
+  },
+  {
+    "recipe_slug": "ensalada-costena-2",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Vinagre Balsámico",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Vinagre Balsámico"
+  },
+  {
+    "recipe_slug": "ensalada-costena-2",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "ensalada-costena-2",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Pimienta",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimienta"
+  },
+  {
+    "recipe_slug": "ensalada-costena-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cabeza de Lechuga Romana",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cabeza de Lechuga Romana"
+  },
+  {
+    "recipe_slug": "ensalada-costena-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cabeza de Lechuga Crespa",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cabeza de Lechuga Crespa"
+  },
+  {
+    "recipe_slug": "ensalada-costena-2",
+    "product_id": null,
+    "ingredient_raw": "1 Pimiento",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimiento"
+  },
+  {
+    "recipe_slug": "ensalada-costena-2",
+    "product_id": null,
+    "ingredient_raw": "1 Palta pequeña",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Palta pequeña"
+  },
+  {
+    "recipe_slug": "ensalada-costena-2",
+    "product_id": null,
+    "ingredient_raw": "1 Manzana Verde",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Manzana Verde"
+  },
+  {
+    "recipe_slug": "ensalada-costena-2",
+    "product_id": null,
+    "ingredient_raw": "2 Rebanadas de Queso fresco",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "rebanadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Queso fresco"
+  },
+  {
+    "recipe_slug": "ensalada-costena-2",
+    "product_id": null,
+    "ingredient_raw": "6 Aceitunas verdes",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceitunas verdes"
+  },
+  {
+    "recipe_slug": "tres-leches-chocolate",
+    "product_id": null,
+    "ingredient_raw": "5 Unidades de Huevo",
+    "cantidad_recipe": 5,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevo"
+  },
+  {
+    "recipe_slug": "tres-leches-chocolate",
+    "product_id": null,
+    "ingredient_raw": "150 Gramos de Azúcar Blanca",
+    "cantidad_recipe": 150,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar Blanca"
+  },
+  {
+    "recipe_slug": "tres-leches-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Esencia de Vainilla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Esencia de Vainilla"
+  },
+  {
+    "recipe_slug": "tres-leches-chocolate",
+    "product_id": null,
+    "ingredient_raw": "150 Gramos de Harina preparada",
+    "cantidad_recipe": 150,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina preparada"
+  },
+  {
+    "recipe_slug": "tres-leches-chocolate",
+    "product_id": null,
+    "ingredient_raw": "20 Gramos de COCOA D'ONOFRIO®",
+    "cantidad_recipe": 20,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: COCOA D'ONOFRIO®"
+  },
+  {
+    "recipe_slug": "tres-leches-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 Lata de IDEAL® CREMOSITA",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "tres-leches-chocolate",
+    "product_id": null,
+    "ingredient_raw": "400 Gramos de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 400,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "tres-leches-chocolate",
+    "product_id": null,
+    "ingredient_raw": "250 Gramos de NESTILLY®",
+    "cantidad_recipe": 250,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: NESTILLY®"
+  },
+  {
+    "recipe_slug": "tres-leches-chocolate",
+    "product_id": null,
+    "ingredient_raw": "200 Gramos de NESTILLY®",
+    "cantidad_recipe": 200,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: NESTILLY®"
+  },
+  {
+    "recipe_slug": "tres-leches-chocolate",
+    "product_id": null,
+    "ingredient_raw": "2 Gramos de Canela en Polvo",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Canela en Polvo"
+  },
+  {
+    "recipe_slug": "fideos-a-la-bolognesa",
+    "product_id": null,
+    "ingredient_raw": "4 Tazas de Pasta Corta",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pasta Corta"
+  },
+  {
+    "recipe_slug": "fideos-a-la-bolognesa",
+    "product_id": null,
+    "ingredient_raw": "2 Litros de Agua",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "litros de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "fideos-a-la-bolognesa",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "fideos-a-la-bolognesa",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla Roja",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla Roja"
+  },
+  {
+    "recipe_slug": "fideos-a-la-bolognesa",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Aceite Vegetal",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "fideos-a-la-bolognesa",
+    "product_id": null,
+    "ingredient_raw": "5 Tomates",
+    "cantidad_recipe": 5,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tomates"
+  },
+  {
+    "recipe_slug": "fideos-a-la-bolognesa",
+    "product_id": null,
+    "ingredient_raw": "4 Ramitas de Apio",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ramitas de Apio"
+  },
+  {
+    "recipe_slug": "fideos-a-la-bolognesa",
+    "product_id": null,
+    "ingredient_raw": "1 Zanahoria",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Zanahoria"
+  },
+  {
+    "recipe_slug": "fideos-a-la-bolognesa",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de LA ROJITA",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: LA ROJITA"
+  },
+  {
+    "recipe_slug": "fideos-a-la-bolognesa",
+    "product_id": null,
+    "ingredient_raw": "4 Onzas de Vino Tinto",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Onzas de Vino Tinto"
+  },
+  {
+    "recipe_slug": "fideos-a-la-bolognesa",
+    "product_id": null,
+    "ingredient_raw": "300 Gramos de Carne Molida de Res",
+    "cantidad_recipe": 300,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Carne Molida de Res"
+  },
+  {
+    "recipe_slug": "fideos-a-la-bolognesa",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad de MAGGI® Cubo Carne",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de MAGGI® Cubo Carne"
+  },
+  {
+    "recipe_slug": "fideos-a-la-bolognesa",
+    "product_id": null,
+    "ingredient_raw": "1 Hoja De Laurel",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "hoja de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Laurel"
+  },
+  {
+    "recipe_slug": "fideos-a-la-bolognesa",
+    "product_id": null,
+    "ingredient_raw": "4 Cucharadas de Queso Parmesano Rallado",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Queso Parmesano Rallado"
+  },
+  {
+    "recipe_slug": "fideos-a-la-bolognesa",
+    "product_id": null,
+    "ingredient_raw": "4 Hojas de Albahaca Fresca",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "hojas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Albahaca Fresca"
+  },
+  {
+    "recipe_slug": "estofado-de-pollo-2",
+    "product_id": null,
+    "ingredient_raw": "4 Presas de Pollo s/Piel",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Presas de Pollo s/Piel"
+  },
+  {
+    "recipe_slug": "estofado-de-pollo-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla Roja",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla Roja"
+  },
+  {
+    "recipe_slug": "estofado-de-pollo-2",
+    "product_id": null,
+    "ingredient_raw": "3 Cucharadas de Pasta de Tomate",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pasta de Tomate"
+  },
+  {
+    "recipe_slug": "estofado-de-pollo-2",
+    "product_id": null,
+    "ingredient_raw": "1 Sobre de Caldo Maggi® en Polvo Sabor Gallina",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "sobre de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Caldo Maggi® en Polvo Sabor Gallina"
+  },
+  {
+    "recipe_slug": "estofado-de-pollo-2",
+    "product_id": null,
+    "ingredient_raw": "2Tomates (pelados y picados)",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tomates (pelados y picados)"
+  },
+  {
+    "recipe_slug": "estofado-de-pollo-2",
+    "product_id": null,
+    "ingredient_raw": "2PapasAmarilla",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: PapasAmarilla"
+  },
+  {
+    "recipe_slug": "estofado-de-pollo-2",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Arvejas (cocidas)",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Arvejas (cocidas)"
+  },
+  {
+    "recipe_slug": "estofado-de-pollo-2",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Zanahorias (rodajas)",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Zanahorias (rodajas)"
+  },
+  {
+    "recipe_slug": "estofado-de-pollo-2",
+    "product_id": null,
+    "ingredient_raw": "1/4 de Taza de Aceite Vegetal",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Taza de Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "estofado-de-pollo-2",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas deAgua",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tazas deAgua"
+  },
+  {
+    "recipe_slug": "estofado-de-pollo-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Ajo Molido",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ajo Molido"
+  },
+  {
+    "recipe_slug": "estofado-de-pollo-2",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "estofado-de-pollo-2",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Pimienta",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimienta"
+  },
+  {
+    "recipe_slug": "estofado-de-pollo-2",
+    "product_id": null,
+    "ingredient_raw": "1 Hoja de Laurel",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "hoja de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Laurel"
+  },
+  {
+    "recipe_slug": "crema-cebollas-poro-con-crema-leche",
+    "product_id": null,
+    "ingredient_raw": "3 Cebollas Rojas",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebollas Rojas"
+  },
+  {
+    "recipe_slug": "crema-cebollas-poro-con-crema-leche",
+    "product_id": null,
+    "ingredient_raw": "2 Cebollas Blancas",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebollas Blancas"
+  },
+  {
+    "recipe_slug": "crema-cebollas-poro-con-crema-leche",
+    "product_id": null,
+    "ingredient_raw": "8 Tallos de Cebolla China",
+    "cantidad_recipe": 8,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tallos de Cebolla China"
+  },
+  {
+    "recipe_slug": "crema-cebollas-poro-con-crema-leche",
+    "product_id": null,
+    "ingredient_raw": "2 Poros Medianos",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Poros Medianos"
+  },
+  {
+    "recipe_slug": "crema-cebollas-poro-con-crema-leche",
+    "product_id": null,
+    "ingredient_raw": "1 1/4Litro de Agua",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "litro de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "crema-cebollas-poro-con-crema-leche",
+    "product_id": null,
+    "ingredient_raw": "1/2 Lata (160 g) de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (160 g) de CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "crema-cebollas-poro-con-crema-leche",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Salsa Inglesa",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Salsa Inglesa"
+  },
+  {
+    "recipe_slug": "crema-cebollas-poro-con-crema-leche",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Vinagre de Jerez",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Vinagre de Jerez"
+  },
+  {
+    "recipe_slug": "crema-cebollas-poro-con-crema-leche",
+    "product_id": null,
+    "ingredient_raw": "1/2 Cucharada de Mantequilla light",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla light"
+  },
+  {
+    "recipe_slug": "pollo-marroqui-crema-aji-limo-cilantro",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Aceite de Oliva",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite de Oliva"
+  },
+  {
+    "recipe_slug": "pollo-marroqui-crema-aji-limo-cilantro",
+    "product_id": null,
+    "ingredient_raw": "1 Pechuga de Pollo deshuesada",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pechuga de Pollo deshuesada"
+  },
+  {
+    "recipe_slug": "pollo-marroqui-crema-aji-limo-cilantro",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla Roja",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla Roja"
+  },
+  {
+    "recipe_slug": "pollo-marroqui-crema-aji-limo-cilantro",
+    "product_id": null,
+    "ingredient_raw": "5 Dientes de Ajo",
+    "cantidad_recipe": 5,
+    "unidad_recipe": "dientes de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ajo"
+  },
+  {
+    "recipe_slug": "pollo-marroqui-crema-aji-limo-cilantro",
+    "product_id": null,
+    "ingredient_raw": "2 Pimientos Rojos",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimientos Rojos"
+  },
+  {
+    "recipe_slug": "pollo-marroqui-crema-aji-limo-cilantro",
+    "product_id": null,
+    "ingredient_raw": "1/2 Coliflor",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Coliflor"
+  },
+  {
+    "recipe_slug": "pollo-marroqui-crema-aji-limo-cilantro",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas de Zapallo Loche",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Zapallo Loche"
+  },
+  {
+    "recipe_slug": "pollo-marroqui-crema-aji-limo-cilantro",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Vainitas",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Vainitas"
+  },
+  {
+    "recipe_slug": "pollo-marroqui-crema-aji-limo-cilantro",
+    "product_id": null,
+    "ingredient_raw": "3 Papas Amarillas",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Papas Amarillas"
+  },
+  {
+    "recipe_slug": "pollo-marroqui-crema-aji-limo-cilantro",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Agua",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "pollo-marroqui-crema-aji-limo-cilantro",
+    "product_id": null,
+    "ingredient_raw": "1/2 Cucharadita de Páprika",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Páprika"
+  },
+  {
+    "recipe_slug": "pollo-marroqui-crema-aji-limo-cilantro",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Comino",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Comino"
+  },
+  {
+    "recipe_slug": "pollo-marroqui-crema-aji-limo-cilantro",
+    "product_id": null,
+    "ingredient_raw": "1/2 Cucharadita de Palillo",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Palillo"
+  },
+  {
+    "recipe_slug": "pollo-marroqui-crema-aji-limo-cilantro",
+    "product_id": null,
+    "ingredient_raw": "1/2 Cucharadita de Pimienta",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimienta"
+  },
+  {
+    "recipe_slug": "pollo-marroqui-crema-aji-limo-cilantro",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (160 g) de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (160 g) de CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "pollo-marroqui-crema-aji-limo-cilantro",
+    "product_id": null,
+    "ingredient_raw": "4 Unidades de Ají Limo",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ají Limo"
+  },
+  {
+    "recipe_slug": "pollo-marroqui-crema-aji-limo-cilantro",
+    "product_id": null,
+    "ingredient_raw": "10 Ramitas de Culantro",
+    "cantidad_recipe": 10,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ramitas de Culantro"
+  },
+  {
+    "recipe_slug": "pollo-marroqui-crema-aji-limo-cilantro",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "risotto-de-berenjena-2",
+    "product_id": null,
+    "ingredient_raw": "2 Berenjenas",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Berenjenas"
+  },
+  {
+    "recipe_slug": "risotto-de-berenjena-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Aceite de Oliva",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite de Oliva"
+  },
+  {
+    "recipe_slug": "risotto-de-berenjena-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Mantequilla light",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla light"
+  },
+  {
+    "recipe_slug": "risotto-de-berenjena-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla blanca",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla blanca"
+  },
+  {
+    "recipe_slug": "risotto-de-berenjena-2",
+    "product_id": null,
+    "ingredient_raw": "1 1/2 Taza de Arroz arbóreo",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Arroz arbóreo"
+  },
+  {
+    "recipe_slug": "risotto-de-berenjena-2",
+    "product_id": null,
+    "ingredient_raw": "5 Tazas de Agua",
+    "cantidad_recipe": 5,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "risotto-de-berenjena-2",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (160 g) de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (160 g) de CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "risotto-de-berenjena-2",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "risotto-de-berenjena-2",
+    "product_id": null,
+    "ingredient_raw": "2 Tajadas de Queso fresco",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tajadas de Queso fresco"
+  },
+  {
+    "recipe_slug": "risotto-de-berenjena-2",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Queso Parmesano rallado",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Queso Parmesano rallado"
+  },
+  {
+    "recipe_slug": "risotto-de-berenjena-2",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas de Tomate Cherry",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tomate Cherry"
+  },
+  {
+    "recipe_slug": "risotto-de-berenjena-2",
+    "product_id": null,
+    "ingredient_raw": "12 Espárragos",
+    "cantidad_recipe": 12,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Espárragos"
+  },
+  {
+    "recipe_slug": "risotto-de-berenjena-2",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas de Arúgula",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Arúgula"
+  },
+  {
+    "recipe_slug": "salmon-dorado-con-vegetales",
+    "product_id": null,
+    "ingredient_raw": "4 Filetes o 320 g de Salmón",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Filetes o 320 g de Salmón"
+  },
+  {
+    "recipe_slug": "salmon-dorado-con-vegetales",
+    "product_id": null,
+    "ingredient_raw": "2 Unidades Betarraga",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Betarraga"
+  },
+  {
+    "recipe_slug": "salmon-dorado-con-vegetales",
+    "product_id": null,
+    "ingredient_raw": "12 Unidades Zanahorias Bebe",
+    "cantidad_recipe": 12,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Zanahorias Bebe"
+  },
+  {
+    "recipe_slug": "salmon-dorado-con-vegetales",
+    "product_id": null,
+    "ingredient_raw": "1/2 Unidad Brócoli",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Brócoli"
+  },
+  {
+    "recipe_slug": "salmon-dorado-con-vegetales",
+    "product_id": null,
+    "ingredient_raw": "4 Tazas Arroz Cocido",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tazas Arroz Cocido"
+  },
+  {
+    "recipe_slug": "salmon-dorado-con-vegetales",
+    "product_id": null,
+    "ingredient_raw": "16 Unidades Espárragos",
+    "cantidad_recipe": 16,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Espárragos"
+  },
+  {
+    "recipe_slug": "salmon-dorado-con-vegetales",
+    "product_id": null,
+    "ingredient_raw": "2/3 Taza de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 0.6666666666666666,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "salmon-dorado-con-vegetales",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Pimienta",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimienta"
+  },
+  {
+    "recipe_slug": "salmon-dorado-con-vegetales",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "salmon-dorado-con-vegetales",
+    "product_id": null,
+    "ingredient_raw": "3 Cucharaditas de Tomillo",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "cucharaditas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tomillo"
+  },
+  {
+    "recipe_slug": "salmon-dorado-con-vegetales",
+    "product_id": null,
+    "ingredient_raw": "6 Unidades Dientes de Ajo (cortados en láminas)",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Dientes de Ajo (cortados en láminas)"
+  },
+  {
+    "recipe_slug": "salmon-dorado-con-vegetales",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada Aceite De Oliva",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite De Oliva"
+  },
+  {
+    "recipe_slug": "salmon-dorado-con-vegetales",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada Mantequilla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla"
+  },
+  {
+    "recipe_slug": "crema-de-coliflor-rostizada-2",
+    "product_id": null,
+    "ingredient_raw": "1 Coliflor Grande",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Coliflor Grande"
+  },
+  {
+    "recipe_slug": "crema-de-coliflor-rostizada-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla Blanca Grande",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla Blanca Grande"
+  },
+  {
+    "recipe_slug": "crema-de-coliflor-rostizada-2",
+    "product_id": null,
+    "ingredient_raw": "6 Dientes de Ajo",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "dientes de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ajo"
+  },
+  {
+    "recipe_slug": "crema-de-coliflor-rostizada-2",
+    "product_id": null,
+    "ingredient_raw": "6 Tazas de Agua o Caldo de Verduras",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua o Caldo de Verduras"
+  },
+  {
+    "recipe_slug": "crema-de-coliflor-rostizada-2",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Nuez Moscada",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Nuez Moscada"
+  },
+  {
+    "recipe_slug": "crema-de-coliflor-rostizada-2",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca deSal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: deSal"
+  },
+  {
+    "recipe_slug": "crema-de-coliflor-rostizada-2",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Pimienta",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimienta"
+  },
+  {
+    "recipe_slug": "crema-de-coliflor-rostizada-2",
+    "product_id": null,
+    "ingredient_raw": "1/2 Lata (160 g) de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (160 g) de CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "crema-de-coliflor-rostizada-2",
+    "product_id": null,
+    "ingredient_raw": "1 Ramita deEstragón",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ramita deEstragón"
+  },
+  {
+    "recipe_slug": "entrana-fina-crema-aji-huacatay",
+    "product_id": null,
+    "ingredient_raw": "4 Filetes medianos de Entraña de Res",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Filetes medianos de Entraña de Res"
+  },
+  {
+    "recipe_slug": "entrana-fina-crema-aji-huacatay",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Sal Gruesa",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal Gruesa"
+  },
+  {
+    "recipe_slug": "entrana-fina-crema-aji-huacatay",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas de Papa Cocktail",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Papa Cocktail"
+  },
+  {
+    "recipe_slug": "entrana-fina-crema-aji-huacatay",
+    "product_id": null,
+    "ingredient_raw": "2 Camotes Amarillos",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Camotes Amarillos"
+  },
+  {
+    "recipe_slug": "entrana-fina-crema-aji-huacatay",
+    "product_id": null,
+    "ingredient_raw": "4 Unidades de Ají Amarillo",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ají Amarillo"
+  },
+  {
+    "recipe_slug": "entrana-fina-crema-aji-huacatay",
+    "product_id": null,
+    "ingredient_raw": "4 Ramitas de Huacatay",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ramitas de Huacatay"
+  },
+  {
+    "recipe_slug": "entrana-fina-crema-aji-huacatay",
+    "product_id": null,
+    "ingredient_raw": "4 Rebanadas de Queso fresco descremado",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "rebanadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Queso fresco descremado"
+  },
+  {
+    "recipe_slug": "entrana-fina-crema-aji-huacatay",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (160 g) de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (160 g) de CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "entrana-fina-crema-aji-huacatay",
+    "product_id": null,
+    "ingredient_raw": "1/3 Taza de Almendras",
+    "cantidad_recipe": 0.3333333333333333,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Almendras"
+  },
+  {
+    "recipe_slug": "entrana-fina-crema-aji-huacatay",
+    "product_id": null,
+    "ingredient_raw": "12 Espárragos",
+    "cantidad_recipe": 12,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Espárragos"
+  },
+  {
+    "recipe_slug": "entrana-fina-crema-aji-huacatay",
+    "product_id": null,
+    "ingredient_raw": "1 Pimiento Rojo mediano",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimiento Rojo mediano"
+  },
+  {
+    "recipe_slug": "entrana-fina-crema-aji-huacatay",
+    "product_id": null,
+    "ingredient_raw": "1 Zapallito Italiano",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Zapallito Italiano"
+  },
+  {
+    "recipe_slug": "entrana-fina-crema-aji-huacatay",
+    "product_id": null,
+    "ingredient_raw": "1/2 Berenjena",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Berenjena"
+  },
+  {
+    "recipe_slug": "lasana-de-vegetales-y-pollo",
+    "product_id": null,
+    "ingredient_raw": "6 Corazónes de Alcachofa",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Corazónes de Alcachofa"
+  },
+  {
+    "recipe_slug": "lasana-de-vegetales-y-pollo",
+    "product_id": null,
+    "ingredient_raw": "3 Tazas de Champiñones",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Champiñones"
+  },
+  {
+    "recipe_slug": "lasana-de-vegetales-y-pollo",
+    "product_id": null,
+    "ingredient_raw": "4 Unidades de Espárragos Blancos",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Espárragos Blancos"
+  },
+  {
+    "recipe_slug": "lasana-de-vegetales-y-pollo",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad de Zapallito Italiano",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Zapallito Italiano"
+  },
+  {
+    "recipe_slug": "lasana-de-vegetales-y-pollo",
+    "product_id": null,
+    "ingredient_raw": "3 Tazas de Espinacas",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Espinacas"
+  },
+  {
+    "recipe_slug": "lasana-de-vegetales-y-pollo",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla Blanca",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla Blanca"
+  },
+  {
+    "recipe_slug": "lasana-de-vegetales-y-pollo",
+    "product_id": null,
+    "ingredient_raw": "2 Dientes de Ajo",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "dientes de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ajo"
+  },
+  {
+    "recipe_slug": "lasana-de-vegetales-y-pollo",
+    "product_id": null,
+    "ingredient_raw": "1 Lata de IDEAL® LIGHT",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® LIGHT"
+  },
+  {
+    "recipe_slug": "lasana-de-vegetales-y-pollo",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (160 g) de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (160 g) de CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "lasana-de-vegetales-y-pollo",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Agua",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "lasana-de-vegetales-y-pollo",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Harina de Trigo",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina de Trigo"
+  },
+  {
+    "recipe_slug": "lasana-de-vegetales-y-pollo",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Mantequilla Light",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla Light"
+  },
+  {
+    "recipe_slug": "lasana-de-vegetales-y-pollo",
+    "product_id": null,
+    "ingredient_raw": "30 Unidades de Masa wantán",
+    "cantidad_recipe": 30,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Masa wantán"
+  },
+  {
+    "recipe_slug": "lasana-de-vegetales-y-pollo",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Queso Parmesano",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Queso Parmesano"
+  },
+  {
+    "recipe_slug": "lasana-de-vegetales-y-pollo",
+    "product_id": null,
+    "ingredient_raw": "1 Pechuga de Pollo pequeña",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pechuga de Pollo pequeña"
+  },
+  {
+    "recipe_slug": "lasana-de-vegetales-y-pollo",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "lasana-de-vegetales-y-pollo",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Pimienta",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimienta"
+  },
+  {
+    "recipe_slug": "lomo-cerdo-salsa-manzana-salvia",
+    "product_id": null,
+    "ingredient_raw": "4 Chuletas de Lomo de Cerdo",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Chuletas de Lomo de Cerdo"
+  },
+  {
+    "recipe_slug": "lomo-cerdo-salsa-manzana-salvia",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "lomo-cerdo-salsa-manzana-salvia",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Páprika",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Páprika"
+  },
+  {
+    "recipe_slug": "lomo-cerdo-salsa-manzana-salvia",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Pimienta Cayena",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimienta Cayena"
+  },
+  {
+    "recipe_slug": "lomo-cerdo-salsa-manzana-salvia",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (160 g) de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (160 g) de CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "lomo-cerdo-salsa-manzana-salvia",
+    "product_id": null,
+    "ingredient_raw": "2 Manzanas Verdes",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Manzanas Verdes"
+  },
+  {
+    "recipe_slug": "lomo-cerdo-salsa-manzana-salvia",
+    "product_id": null,
+    "ingredient_raw": "2 Tallos de Poro",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tallos de Poro"
+  },
+  {
+    "recipe_slug": "lomo-cerdo-salsa-manzana-salvia",
+    "product_id": null,
+    "ingredient_raw": "10 Ramitas de Salvia",
+    "cantidad_recipe": 10,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ramitas de Salvia"
+  },
+  {
+    "recipe_slug": "lomo-cerdo-salsa-manzana-salvia",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas de Agua",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "lomo-cerdo-salsa-manzana-salvia",
+    "product_id": null,
+    "ingredient_raw": "1 Yuca Pequeña",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Yuca Pequeña"
+  },
+  {
+    "recipe_slug": "lomo-cerdo-salsa-manzana-salvia",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Aceite de Oliva",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite de Oliva"
+  },
+  {
+    "recipe_slug": "lomo-cerdo-salsa-manzana-salvia",
+    "product_id": null,
+    "ingredient_raw": "3 Tazas de Espinaca",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Espinaca"
+  },
+  {
+    "recipe_slug": "lomo-cerdo-salsa-manzana-salvia",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla blanca",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla blanca"
+  },
+  {
+    "recipe_slug": "pollo-en-crema-de-brocoli",
+    "product_id": null,
+    "ingredient_raw": "4 Filetes de Pechuga de Pollo",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Filetes de Pechuga de Pollo"
+  },
+  {
+    "recipe_slug": "pollo-en-crema-de-brocoli",
+    "product_id": null,
+    "ingredient_raw": "1 Brócoli",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Brócoli"
+  },
+  {
+    "recipe_slug": "pollo-en-crema-de-brocoli",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas de Arroz Integral",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Arroz Integral"
+  },
+  {
+    "recipe_slug": "pollo-en-crema-de-brocoli",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla Blanca",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla Blanca"
+  },
+  {
+    "recipe_slug": "pollo-en-crema-de-brocoli",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Ajo molido",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ajo molido"
+  },
+  {
+    "recipe_slug": "pollo-en-crema-de-brocoli",
+    "product_id": null,
+    "ingredient_raw": "8 Espárragos Blancos",
+    "cantidad_recipe": 8,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Espárragos Blancos"
+  },
+  {
+    "recipe_slug": "pollo-en-crema-de-brocoli",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Aceite Vegetal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "pollo-en-crema-de-brocoli",
+    "product_id": null,
+    "ingredient_raw": "1/2 Cucharadita de Páprika",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Páprika"
+  },
+  {
+    "recipe_slug": "pollo-en-crema-de-brocoli",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Sillao",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sillao"
+  },
+  {
+    "recipe_slug": "pollo-en-crema-de-brocoli",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Maicena",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Maicena"
+  },
+  {
+    "recipe_slug": "pollo-en-crema-de-brocoli",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (160 g) de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (160 g) de CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "pollo-en-crema-de-brocoli",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas de Caldo de pollo",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Caldo de pollo"
+  },
+  {
+    "recipe_slug": "pollo-en-crema-de-brocoli",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "pollo-en-crema-de-brocoli",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Pimienta",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimienta"
+  },
+  {
+    "recipe_slug": "pollo-en-crema-de-brocoli",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Tomillo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tomillo"
+  },
+  {
+    "recipe_slug": "pastel-zanahoria-chispas-chocolate",
+    "product_id": null,
+    "ingredient_raw": "6 Cucharadas de SUBLIME® Pops",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: SUBLIME® Pops"
+  },
+  {
+    "recipe_slug": "pastel-zanahoria-chispas-chocolate",
+    "product_id": null,
+    "ingredient_raw": "2 Unidades de Zanahoria",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Zanahoria"
+  },
+  {
+    "recipe_slug": "pastel-zanahoria-chispas-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Aceite Vegetal",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "pastel-zanahoria-chispas-chocolate",
+    "product_id": null,
+    "ingredient_raw": "2 Unidades de Huevo",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevo"
+  },
+  {
+    "recipe_slug": "pastel-zanahoria-chispas-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Azúcar",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar"
+  },
+  {
+    "recipe_slug": "pastel-zanahoria-chispas-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 1/2Taza de Harina",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina"
+  },
+  {
+    "recipe_slug": "pastel-zanahoria-chispas-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Bicarbonato de Sodio",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Bicarbonato de Sodio"
+  },
+  {
+    "recipe_slug": "pastel-zanahoria-chispas-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Polvo de Hornear",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Polvo de Hornear"
+  },
+  {
+    "recipe_slug": "pastel-zanahoria-chispas-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de COCOA D'ONOFRIO®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: COCOA D'ONOFRIO®"
+  },
+  {
+    "recipe_slug": "pastel-zanahoria-chispas-chocolate",
+    "product_id": null,
+    "ingredient_raw": "3/4 Taza de Azúcar en Polvo",
+    "cantidad_recipe": 0.75,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar en Polvo"
+  },
+  {
+    "recipe_slug": "pastel-zanahoria-chispas-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Mantequilla sin Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla sin Sal"
+  },
+  {
+    "recipe_slug": "pastel-zanahoria-chispas-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Agua",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "pollo-salsa-tomate-seco-ciboulette",
+    "product_id": null,
+    "ingredient_raw": "2 Unidades de Berenjena",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Berenjena"
+  },
+  {
+    "recipe_slug": "pollo-salsa-tomate-seco-ciboulette",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Mantequilla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla"
+  },
+  {
+    "recipe_slug": "pollo-salsa-tomate-seco-ciboulette",
+    "product_id": null,
+    "ingredient_raw": "4 Filetes de Pechuga de Pollo",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Filetes de Pechuga de Pollo"
+  },
+  {
+    "recipe_slug": "pollo-salsa-tomate-seco-ciboulette",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Tomates Secos",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tomates Secos"
+  },
+  {
+    "recipe_slug": "pollo-salsa-tomate-seco-ciboulette",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Agua",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "pollo-salsa-tomate-seco-ciboulette",
+    "product_id": null,
+    "ingredient_raw": "8 Tallos de Ciboulette o Cebolla China",
+    "cantidad_recipe": 8,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tallos de Ciboulette o Cebolla China"
+  },
+  {
+    "recipe_slug": "pollo-salsa-tomate-seco-ciboulette",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (160 g) de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (160 g) de CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "pollo-salsa-tomate-seco-ciboulette",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharaditas de Mostaza Dijon",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharaditas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mostaza Dijon"
+  },
+  {
+    "recipe_slug": "pollo-salsa-tomate-seco-ciboulette",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Ajo Molido",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ajo Molido"
+  },
+  {
+    "recipe_slug": "pollo-salsa-tomate-seco-ciboulette",
+    "product_id": null,
+    "ingredient_raw": "4 Papas Amarillas",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Papas Amarillas"
+  },
+  {
+    "recipe_slug": "pollo-salsa-tomate-seco-ciboulette",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "pollo-salsa-tomate-seco-ciboulette",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Pimienta",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimienta"
+  },
+  {
+    "recipe_slug": "deditos-de-queso-con-dip-de-tomate",
+    "product_id": null,
+    "ingredient_raw": "500 Gramos de Queso Mozzarella Light",
+    "cantidad_recipe": 500,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Queso Mozzarella Light"
+  },
+  {
+    "recipe_slug": "deditos-de-queso-con-dip-de-tomate",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Pasta de Tomate",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pasta de Tomate"
+  },
+  {
+    "recipe_slug": "deditos-de-queso-con-dip-de-tomate",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla Roja",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla Roja"
+  },
+  {
+    "recipe_slug": "deditos-de-queso-con-dip-de-tomate",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Ajo Molido",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ajo Molido"
+  },
+  {
+    "recipe_slug": "deditos-de-queso-con-dip-de-tomate",
+    "product_id": null,
+    "ingredient_raw": "4 Tomates",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tomates"
+  },
+  {
+    "recipe_slug": "deditos-de-queso-con-dip-de-tomate",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Agua",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "deditos-de-queso-con-dip-de-tomate",
+    "product_id": null,
+    "ingredient_raw": "1 1/2 Sobre de MAGGI® Mezcla Lista para Apanar",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "sobre de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: MAGGI® Mezcla Lista para Apanar"
+  },
+  {
+    "recipe_slug": "deditos-de-queso-con-dip-de-tomate",
+    "product_id": null,
+    "ingredient_raw": "1 Huevo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevo"
+  },
+  {
+    "recipe_slug": "deditos-de-queso-con-dip-de-tomate",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Aceite Vegetal",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "carrot-cake-marmoleado",
+    "product_id": null,
+    "ingredient_raw": "2Tazas de Harina Sin Preparar",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina Sin Preparar"
+  },
+  {
+    "recipe_slug": "carrot-cake-marmoleado",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Polvo de Hornear",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Polvo de Hornear"
+  },
+  {
+    "recipe_slug": "carrot-cake-marmoleado",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Bicarbonato",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Bicarbonato"
+  },
+  {
+    "recipe_slug": "carrot-cake-marmoleado",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "carrot-cake-marmoleado",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Canela",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Canela"
+  },
+  {
+    "recipe_slug": "carrot-cake-marmoleado",
+    "product_id": null,
+    "ingredient_raw": "1/2Taza de COCOA D'ONOFRIO®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: COCOA D'ONOFRIO®"
+  },
+  {
+    "recipe_slug": "carrot-cake-marmoleado",
+    "product_id": null,
+    "ingredient_raw": "11/4 Taza de Azúcar",
+    "cantidad_recipe": 2.75,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar"
+  },
+  {
+    "recipe_slug": "carrot-cake-marmoleado",
+    "product_id": null,
+    "ingredient_raw": "3/4 Taza de Aceite Vegetal",
+    "cantidad_recipe": 0.75,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "carrot-cake-marmoleado",
+    "product_id": null,
+    "ingredient_raw": "3 Unidades de Huevos",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevos"
+  },
+  {
+    "recipe_slug": "carrot-cake-marmoleado",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Esencia de Vainilla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Esencia de Vainilla"
+  },
+  {
+    "recipe_slug": "carrot-cake-marmoleado",
+    "product_id": null,
+    "ingredient_raw": "1 3/4 Taza de Zanahoria Rallada",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Zanahoria Rallada"
+  },
+  {
+    "recipe_slug": "carrot-cake-marmoleado",
+    "product_id": null,
+    "ingredient_raw": "1/2Taza de Pecanas",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pecanas"
+  },
+  {
+    "recipe_slug": "carrot-cake-marmoleado",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (100 g) de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (100 g) de LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "carrot-cake-marmoleado",
+    "product_id": null,
+    "ingredient_raw": "1/4 Taza de Yogurt Natural",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Yogurt Natural"
+  },
+  {
+    "recipe_slug": "carrot-cake-marmoleado",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Queso Crema Light",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Queso Crema Light"
+  }
+]

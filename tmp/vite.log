@@ -178,3 +178,8 @@
 1:29:27 AM [vite] hmr update /src/pages/Home.jsx
 1:29:31 AM [vite] hmr update /src/pages/Products.jsx
 1:29:39 AM [vite] hmr update /src/pages/Promotions.jsx
+1:33:19 AM [vite] hmr update /src/components/SmartSearch.jsx
+1:33:26 AM [vite] hmr update /src/components/SmartSearch.jsx
+1:34:33 AM [vite] vite.config.js changed, restarting server...
+1:34:33 AM [vite] server restarted.
+1:35:00 AM [vite] hmr update /src/components/SmartSearch.jsx

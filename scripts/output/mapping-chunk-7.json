@@ -1,0 +1,2272 @@
+[
+  {
+    "recipe_slug": "flan-helado-de-queso-con-frutas-2",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (300 g) de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (300 g) de CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "flan-helado-de-queso-con-frutas-2",
+    "product_id": null,
+    "ingredient_raw": "3 Cucharadas de Colapez en polvo",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Colapez en polvo"
+  },
+  {
+    "recipe_slug": "flan-helado-de-queso-con-frutas-2",
+    "product_id": null,
+    "ingredient_raw": "6 Cucharadas de Agua",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "flan-helado-de-queso-con-frutas-2",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Fresas",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Fresas"
+  },
+  {
+    "recipe_slug": "flan-helado-de-queso-con-frutas-2",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Mango",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mango"
+  },
+  {
+    "recipe_slug": "flan-helado-de-queso-con-frutas-2",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Azúcar",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar"
+  },
+  {
+    "recipe_slug": "flan-helado-de-queso-con-frutas-2",
+    "product_id": null,
+    "ingredient_raw": "1 Limón",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Limón"
+  },
+  {
+    "recipe_slug": "flan-helado-de-queso-con-frutas-2",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Queso Crema bajo en grasa",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Queso Crema bajo en grasa"
+  },
+  {
+    "recipe_slug": "delicia-de-primavera-2",
+    "product_id": null,
+    "ingredient_raw": "1 Clara de Huevo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Clara de Huevo"
+  },
+  {
+    "recipe_slug": "delicia-de-primavera-2",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (393 g) de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (393 g) de LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "delicia-de-primavera-2",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (300 g) de CREMA DE LECHE ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (300 g) de CREMA DE LECHE ®"
+  },
+  {
+    "recipe_slug": "delicia-de-primavera-2",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Azúcar en polvo",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar en polvo"
+  },
+  {
+    "recipe_slug": "delicia-de-primavera-2",
+    "product_id": null,
+    "ingredient_raw": "1 Paquete de Galleta Vainilla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "paquete de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Galleta Vainilla"
+  },
+  {
+    "recipe_slug": "delicia-de-primavera-2",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Kiwi",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Kiwi"
+  },
+  {
+    "recipe_slug": "delicia-de-primavera-2",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Fresas",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Fresas"
+  },
+  {
+    "recipe_slug": "delicia-de-primavera-2",
+    "product_id": null,
+    "ingredient_raw": "8 Hojas de Menta Fresca",
+    "cantidad_recipe": 8,
+    "unidad_recipe": "hojas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Menta Fresca"
+  },
+  {
+    "recipe_slug": "delicia-de-primavera-2",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad Limón",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Limón"
+  },
+  {
+    "recipe_slug": "keke-de-fresas-y-camu-camu",
+    "product_id": null,
+    "ingredient_raw": "2 1/2 Tazas de Harina",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina"
+  },
+  {
+    "recipe_slug": "keke-de-fresas-y-camu-camu",
+    "product_id": null,
+    "ingredient_raw": "100 Mililitros Pulpa de Camu Camu",
+    "cantidad_recipe": 100,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mililitros Pulpa de Camu Camu"
+  },
+  {
+    "recipe_slug": "keke-de-fresas-y-camu-camu",
+    "product_id": null,
+    "ingredient_raw": "100 Mililitros Jugo de Fresa",
+    "cantidad_recipe": 100,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mililitros Jugo de Fresa"
+  },
+  {
+    "recipe_slug": "keke-de-fresas-y-camu-camu",
+    "product_id": null,
+    "ingredient_raw": "100 Gramos de Margarina",
+    "cantidad_recipe": 100,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Margarina"
+  },
+  {
+    "recipe_slug": "keke-de-fresas-y-camu-camu",
+    "product_id": null,
+    "ingredient_raw": "2 Unidades Huevo",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Huevo"
+  },
+  {
+    "recipe_slug": "keke-de-fresas-y-camu-camu",
+    "product_id": null,
+    "ingredient_raw": "3/4 Lata de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 0.75,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "keke-de-fresas-y-camu-camu",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita Polvo de Hornear",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Polvo de Hornear"
+  },
+  {
+    "recipe_slug": "keke-de-fresas-y-camu-camu",
+    "product_id": null,
+    "ingredient_raw": "1/2 Cucharadita Bicarbonato De Sodio",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "cucharadita",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Bicarbonato De Sodio"
+  },
+  {
+    "recipe_slug": "keke-de-fresas-y-camu-camu",
+    "product_id": null,
+    "ingredient_raw": "120 Gramos Queso Crema Bajo En Grasa",
+    "cantidad_recipe": 120,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Gramos Queso Crema Bajo En Grasa"
+  },
+  {
+    "recipe_slug": "keke-de-fresas-y-camu-camu",
+    "product_id": null,
+    "ingredient_raw": "1/4 Lata de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "keke-de-fresas-y-camu-camu",
+    "product_id": null,
+    "ingredient_raw": "1 Taza Azúcar En Polvo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar En Polvo"
+  },
+  {
+    "recipe_slug": "keke-de-fresas-y-camu-camu",
+    "product_id": null,
+    "ingredient_raw": "1 Taza Frambuesas",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Frambuesas"
+  },
+  {
+    "recipe_slug": "mousse-de-algarrobina-2",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (393 g) de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (393 g) de LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "mousse-de-algarrobina-2",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (300 g) de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (300 g) de CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "mousse-de-algarrobina-2",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Yogurt Natural",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Yogurt Natural"
+  },
+  {
+    "recipe_slug": "mousse-de-algarrobina-2",
+    "product_id": null,
+    "ingredient_raw": "1 1/2 Cucharada de Colapez en polvo",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Colapez en polvo"
+  },
+  {
+    "recipe_slug": "mousse-de-algarrobina-2",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Algarrobina",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Algarrobina"
+  },
+  {
+    "recipe_slug": "budin-de-manzana-y-canela",
+    "product_id": null,
+    "ingredient_raw": "1/2 Lata LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "budin-de-manzana-y-canela",
+    "product_id": null,
+    "ingredient_raw": "1/2 Lata IDEAL® CREMOSITA",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "budin-de-manzana-y-canela",
+    "product_id": null,
+    "ingredient_raw": "3 Unidades Pan Francés",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Pan Francés"
+  },
+  {
+    "recipe_slug": "budin-de-manzana-y-canela",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza Margarina",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Margarina"
+  },
+  {
+    "recipe_slug": "budin-de-manzana-y-canela",
+    "product_id": null,
+    "ingredient_raw": "2 Unidades Huevo",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Huevo"
+  },
+  {
+    "recipe_slug": "budin-de-manzana-y-canela",
+    "product_id": null,
+    "ingredient_raw": "3 Unidades Manzana Roja Delicia",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Manzana Roja Delicia"
+  },
+  {
+    "recipe_slug": "budin-de-manzana-y-canela",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas Canela",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cucharadas Canela"
+  },
+  {
+    "recipe_slug": "budin-de-manzana-y-canela",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza Azúcar",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar"
+  },
+  {
+    "recipe_slug": "tres-leches-de-chocolate-2",
+    "product_id": null,
+    "ingredient_raw": "6 Huevos",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevos"
+  },
+  {
+    "recipe_slug": "tres-leches-de-chocolate-2",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Azúcar blanca",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar blanca"
+  },
+  {
+    "recipe_slug": "tres-leches-de-chocolate-2",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Harina sin preparar",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina sin preparar"
+  },
+  {
+    "recipe_slug": "tres-leches-de-chocolate-2",
+    "product_id": null,
+    "ingredient_raw": "10 Cucharadas de Cocoa D'ONOFRIO®",
+    "cantidad_recipe": 10,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cocoa D'ONOFRIO®"
+  },
+  {
+    "recipe_slug": "tres-leches-de-chocolate-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita Polvo de Hornear",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Polvo de Hornear"
+  },
+  {
+    "recipe_slug": "tres-leches-de-chocolate-2",
+    "product_id": null,
+    "ingredient_raw": "1 Lata LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "tres-leches-de-chocolate-2",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (160 g) de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (160 g) de CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "tres-leches-de-chocolate-2",
+    "product_id": null,
+    "ingredient_raw": "1 Lata de IDEAL® CREMOSITA",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "tres-leches-de-chocolate-2",
+    "product_id": null,
+    "ingredient_raw": "2 Claras de Huevo",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Claras de Huevo"
+  },
+  {
+    "recipe_slug": "frescura-de-limon-2",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (393 g) de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (393 g) de LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "frescura-de-limon-2",
+    "product_id": null,
+    "ingredient_raw": "1 Lata de IDEAL® CREMOSITA",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "frescura-de-limon-2",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Jugo de Limón",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Jugo de Limón"
+  },
+  {
+    "recipe_slug": "frescura-de-limon-2",
+    "product_id": null,
+    "ingredient_raw": "3 Paquetes de Galleta de Vainilla",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "paquetes de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Galleta de Vainilla"
+  },
+  {
+    "recipe_slug": "frescura-de-limon-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Ralladura de Limón",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ralladura de Limón"
+  },
+  {
+    "recipe_slug": "frescura-de-limon-2",
+    "product_id": null,
+    "ingredient_raw": "5 Cucharadas de Mantequilla light",
+    "cantidad_recipe": 5,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla light"
+  },
+  {
+    "recipe_slug": "bombones-de-maracuya-2",
+    "product_id": null,
+    "ingredient_raw": "1/2 Lata (100 g) de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (100 g) de LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "bombones-de-maracuya-2",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Chocolate Blanco",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Chocolate Blanco"
+  },
+  {
+    "recipe_slug": "bombones-de-maracuya-2",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Jugo de Maracuyá",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Jugo de Maracuyá"
+  },
+  {
+    "recipe_slug": "bombones-de-maracuya-2",
+    "product_id": null,
+    "ingredient_raw": "1 taza de Cobertura Nestlé® Bitter",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cobertura Nestlé® Bitter"
+  },
+  {
+    "recipe_slug": "cheesecake-de-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "5 Paquetes de Galleta MOROCHAS®",
+    "cantidad_recipe": 5,
+    "unidad_recipe": "paquetes de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Galleta MOROCHAS®"
+  },
+  {
+    "recipe_slug": "cheesecake-de-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "1/4 taza de Mantequilla light",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla light"
+  },
+  {
+    "recipe_slug": "cheesecake-de-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "1/2 Lata (393 g) de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (393 g) de LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "cheesecake-de-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "3/4 Taza de Queso Crema bajo en grasa",
+    "cantidad_recipe": 0.75,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Queso Crema bajo en grasa"
+  },
+  {
+    "recipe_slug": "cheesecake-de-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (160 g) de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (160 g) de CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "cheesecake-de-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "1 Bolsa (200 g) de EL MANJAR NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Bolsa (200 g) de EL MANJAR NESTLÉ®"
+  },
+  {
+    "recipe_slug": "cheesecake-de-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Leche Fresca",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Leche Fresca"
+  },
+  {
+    "recipe_slug": "cheesecake-de-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "1 1/2 Cucharada de Colapez en polvo",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Colapez en polvo"
+  },
+  {
+    "recipe_slug": "cheesecake-de-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "1/4 de Taza de Frutos Rojos",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Taza de Frutos Rojos"
+  },
+  {
+    "recipe_slug": "mousse-de-queso-y-maracuya",
+    "product_id": null,
+    "ingredient_raw": "1 Taza Queso Crema",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Queso Crema"
+  },
+  {
+    "recipe_slug": "mousse-de-queso-y-maracuya",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "mousse-de-queso-y-maracuya",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de EL MANJAR NESTLÉ®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: EL MANJAR NESTLÉ®"
+  },
+  {
+    "recipe_slug": "mousse-de-queso-y-maracuya",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza Jugo de Maracuyá",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Jugo de Maracuyá"
+  },
+  {
+    "recipe_slug": "mousse-de-queso-y-maracuya",
+    "product_id": null,
+    "ingredient_raw": "3 Hojas Colapez",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Hojas Colapez"
+  },
+  {
+    "recipe_slug": "mousse-de-queso-y-maracuya",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "mousse-de-queso-y-maracuya",
+    "product_id": null,
+    "ingredient_raw": "4 Cucharaditas Azúcar",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cucharaditas Azúcar"
+  },
+  {
+    "recipe_slug": "mousse-de-queso-y-maracuya",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita Esencia de Vainilla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Esencia de Vainilla"
+  },
+  {
+    "recipe_slug": "pionono-de-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "5 Unidades de clara de huevo",
+    "cantidad_recipe": 5,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: clara de huevo"
+  },
+  {
+    "recipe_slug": "pionono-de-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de esencia de vainilla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: esencia de vainilla"
+  },
+  {
+    "recipe_slug": "pionono-de-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "1 bolsa (200 g) de EL MANJAR NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: bolsa (200 g) de EL MANJAR NESTLÉ®"
+  },
+  {
+    "recipe_slug": "pionono-de-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "5 Unidades de yema de huevo",
+    "cantidad_recipe": 5,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: yema de huevo"
+  },
+  {
+    "recipe_slug": "pionono-de-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de azúcar blanca",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: azúcar blanca"
+  },
+  {
+    "recipe_slug": "pionono-de-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de harina sin preparar",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: harina sin preparar"
+  },
+  {
+    "recipe_slug": "pionono-de-manjar-2",
+    "product_id": null,
+    "ingredient_raw": "5 Cucharaditas de polvo de hornear",
+    "cantidad_recipe": 5,
+    "unidad_recipe": "cucharaditas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: polvo de hornear"
+  },
+  {
+    "recipe_slug": "keke-de-limon",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Mantequilla light",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla light"
+  },
+  {
+    "recipe_slug": "keke-de-limon",
+    "product_id": null,
+    "ingredient_raw": "3/4 Taza de Azúcar blanca",
+    "cantidad_recipe": 0.75,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar blanca"
+  },
+  {
+    "recipe_slug": "keke-de-limon",
+    "product_id": null,
+    "ingredient_raw": "1/2 Lata (393 g) de LECHE CONDENSADA NESTLÉ ®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (393 g) de LECHE CONDENSADA NESTLÉ ®"
+  },
+  {
+    "recipe_slug": "keke-de-limon",
+    "product_id": null,
+    "ingredient_raw": "2 Limones",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Limones"
+  },
+  {
+    "recipe_slug": "keke-de-limon",
+    "product_id": null,
+    "ingredient_raw": "6 Huevos",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevos"
+  },
+  {
+    "recipe_slug": "keke-de-limon",
+    "product_id": null,
+    "ingredient_raw": "3 1/4 Tazas de Harina",
+    "cantidad_recipe": 0.75,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina"
+  },
+  {
+    "recipe_slug": "keke-de-limon",
+    "product_id": null,
+    "ingredient_raw": "3 1/2 Cucharaditas de Polvo de Hornear",
+    "cantidad_recipe": 1.5,
+    "unidad_recipe": "cucharaditas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Polvo de Hornear"
+  },
+  {
+    "recipe_slug": "keke-de-limon",
+    "product_id": null,
+    "ingredient_raw": "2 1/2 cucharadas de Avellanas picadas",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Avellanas picadas"
+  },
+  {
+    "recipe_slug": "pie-platano-leche-condensada",
+    "product_id": null,
+    "ingredient_raw": "48 Unidades de Galleta Vainilla",
+    "cantidad_recipe": 48,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Galleta Vainilla"
+  },
+  {
+    "recipe_slug": "pie-platano-leche-condensada",
+    "product_id": null,
+    "ingredient_raw": "5 Cucharadas de Mantequilla",
+    "cantidad_recipe": 5,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla"
+  },
+  {
+    "recipe_slug": "pie-platano-leche-condensada",
+    "product_id": null,
+    "ingredient_raw": "7 Unidades de Plátano",
+    "cantidad_recipe": 7,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Plátano"
+  },
+  {
+    "recipe_slug": "pie-platano-leche-condensada",
+    "product_id": null,
+    "ingredient_raw": "3/4 Taza Queso Crema Bajo En Grasa",
+    "cantidad_recipe": 0.75,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Queso Crema Bajo En Grasa"
+  },
+  {
+    "recipe_slug": "pie-platano-leche-condensada",
+    "product_id": null,
+    "ingredient_raw": "1/2 Lata de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "pie-platano-leche-condensada",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Jugo de Limón",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Jugo de Limón"
+  },
+  {
+    "recipe_slug": "pie-platano-leche-condensada",
+    "product_id": null,
+    "ingredient_raw": "1/4 Taza Nueces Pecanas",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Nueces Pecanas"
+  },
+  {
+    "recipe_slug": "choclo-con-queso",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza Choclo",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Choclo"
+  },
+  {
+    "recipe_slug": "choclo-con-queso",
+    "product_id": null,
+    "ingredient_raw": "1 Taja de Queso Fresco",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Taja de Queso Fresco"
+  },
+  {
+    "recipe_slug": "choclo-con-queso",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad Manzana Roja Delicia",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Manzana Roja Delicia"
+  },
+  {
+    "recipe_slug": "torreja-de-verduras",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad Huevo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevo"
+  },
+  {
+    "recipe_slug": "torreja-de-verduras",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada Harina",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina"
+  },
+  {
+    "recipe_slug": "torreja-de-verduras",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada Espinacas",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Espinacas"
+  },
+  {
+    "recipe_slug": "torreja-de-verduras",
+    "product_id": null,
+    "ingredient_raw": "15 Gramos Zanahorias",
+    "cantidad_recipe": 15,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Gramos Zanahorias"
+  },
+  {
+    "recipe_slug": "torreja-de-verduras",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "torreja-de-verduras",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca Pimienta",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimienta"
+  },
+  {
+    "recipe_slug": "torreja-de-verduras",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad Manzana Roja Delicia",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Manzana Roja Delicia"
+  },
+  {
+    "recipe_slug": "torreja-de-verduras",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad MILO RTD",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: MILO RTD"
+  },
+  {
+    "recipe_slug": "butifarra",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad de Pan Francés",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Pan Francés"
+  },
+  {
+    "recipe_slug": "butifarra",
+    "product_id": null,
+    "ingredient_raw": "1 Rebanada de Jamón del País",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "rebanada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Jamón del País"
+  },
+  {
+    "recipe_slug": "butifarra",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Cebolla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla"
+  },
+  {
+    "recipe_slug": "butifarra",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "butifarra",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita Jugo de Limón",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Jugo de Limón"
+  },
+  {
+    "recipe_slug": "butifarra",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad de Mandarina",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Mandarina"
+  },
+  {
+    "recipe_slug": "pan-frances-capresse",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad Pan Baguetino",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pan Baguetino"
+  },
+  {
+    "recipe_slug": "pan-frances-capresse",
+    "product_id": null,
+    "ingredient_raw": "1 Rebanada de Queso Fresco",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "rebanada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Queso Fresco"
+  },
+  {
+    "recipe_slug": "pan-frances-capresse",
+    "product_id": null,
+    "ingredient_raw": "1/2 Unidad de Tomate",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Tomate"
+  },
+  {
+    "recipe_slug": "pan-frances-capresse",
+    "product_id": null,
+    "ingredient_raw": "5 Hojas de Albahaca Fresca",
+    "cantidad_recipe": 5,
+    "unidad_recipe": "hojas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Albahaca Fresca"
+  },
+  {
+    "recipe_slug": "pan-frances-capresse",
+    "product_id": null,
+    "ingredient_raw": "1/2 Cucharadita de Aceite de Oliva",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite de Oliva"
+  },
+  {
+    "recipe_slug": "pan-frances-capresse",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Pimienta",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimienta"
+  },
+  {
+    "recipe_slug": "pan-frances-capresse",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "pan-frances-capresse",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de IDEAL® LIGHT",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® LIGHT"
+  },
+  {
+    "recipe_slug": "pan-frances-capresse",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza Agua",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "pan-frances-capresse",
+    "product_id": null,
+    "ingredient_raw": "3 Cucharaditas de MILO®",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "cucharaditas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: MILO®"
+  },
+  {
+    "recipe_slug": "ensalada-de-frutas-y-quinua",
+    "product_id": null,
+    "ingredient_raw": "1/4 Taza de Sandía",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sandía"
+  },
+  {
+    "recipe_slug": "ensalada-de-frutas-y-quinua",
+    "product_id": null,
+    "ingredient_raw": "1/4 Taza de Papaya",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Papaya"
+  },
+  {
+    "recipe_slug": "ensalada-de-frutas-y-quinua",
+    "product_id": null,
+    "ingredient_raw": "1/2 Unidad de Melocotón",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Melocotón"
+  },
+  {
+    "recipe_slug": "ensalada-de-frutas-y-quinua",
+    "product_id": null,
+    "ingredient_raw": "6 Cucharadas de Quinua Cocida",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Quinua Cocida"
+  },
+  {
+    "recipe_slug": "ensalada-de-frutas-y-quinua",
+    "product_id": null,
+    "ingredient_raw": "1/4 Unidad de Jugo de Naranja",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Jugo de Naranja"
+  },
+  {
+    "recipe_slug": "pollo-a-la-limena",
+    "product_id": null,
+    "ingredient_raw": "4 Unidades Presa de Pollo",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Presa de Pollo"
+  },
+  {
+    "recipe_slug": "pollo-a-la-limena",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad Cebolla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla"
+  },
+  {
+    "recipe_slug": "pollo-a-la-limena",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad Diente de Ajo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Diente de Ajo"
+  },
+  {
+    "recipe_slug": "pollo-a-la-limena",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad Cubo MAGGI Gallina",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cubo MAGGI Gallina"
+  },
+  {
+    "recipe_slug": "pollo-a-la-limena",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas Ají Panca Molido",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cucharadas Ají Panca Molido"
+  },
+  {
+    "recipe_slug": "pollo-a-la-limena",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas Pasas",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cucharadas Pasas"
+  },
+  {
+    "recipe_slug": "pollo-a-la-limena",
+    "product_id": null,
+    "ingredient_raw": "1 Taza Agua",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "pollo-a-la-limena",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad Zanahorias",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Zanahorias"
+  },
+  {
+    "recipe_slug": "pollo-a-la-limena",
+    "product_id": null,
+    "ingredient_raw": "1 1/2 Cucharadas Aceite Vegetal",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cucharadas Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "pollo-a-la-limena",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas Arverjas",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cucharadas Arverjas"
+  },
+  {
+    "recipe_slug": "pollo-a-la-limena",
+    "product_id": null,
+    "ingredient_raw": "2 Unidades Papa Blanca",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Papa Blanca"
+  },
+  {
+    "recipe_slug": "pollo-a-la-limena",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita Culantro",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Culantro"
+  },
+  {
+    "recipe_slug": "pollo-a-la-limena",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca Pimienta",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimienta"
+  },
+  {
+    "recipe_slug": "pollo-a-la-limena",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca Orégano",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Orégano"
+  },
+  {
+    "recipe_slug": "pollo-a-la-limena",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "torta-de-pecanas",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Margarina",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Margarina"
+  },
+  {
+    "recipe_slug": "torta-de-pecanas",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas de Azúcar",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar"
+  },
+  {
+    "recipe_slug": "torta-de-pecanas",
+    "product_id": null,
+    "ingredient_raw": "4 Tazas de Harina (sin preparar)",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina (sin preparar)"
+  },
+  {
+    "recipe_slug": "torta-de-pecanas",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharaditas de Polvo de Hornear",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharaditas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Polvo de Hornear"
+  },
+  {
+    "recipe_slug": "torta-de-pecanas",
+    "product_id": null,
+    "ingredient_raw": "1 1/2 Taza de IDEAL® CREMOSITA",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "torta-de-pecanas",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Agua",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "torta-de-pecanas",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Esencia de Vainilla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Esencia de Vainilla"
+  },
+  {
+    "recipe_slug": "torta-de-pecanas",
+    "product_id": null,
+    "ingredient_raw": "4 Unidades de Huevo",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevo"
+  },
+  {
+    "recipe_slug": "torta-de-pecanas",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Pecanas",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pecanas"
+  },
+  {
+    "recipe_slug": "torta-de-pecanas",
+    "product_id": null,
+    "ingredient_raw": "300 Gramos de EL MANJAR NESTLÉ® (4.5 kg)",
+    "cantidad_recipe": 300,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: EL MANJAR NESTLÉ® (4.5 kg)"
+  },
+  {
+    "recipe_slug": "torta-de-pecanas",
+    "product_id": null,
+    "ingredient_raw": "500 Gramos de EL MANJAR NESTLÉ® (4.5 kg)",
+    "cantidad_recipe": 500,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: EL MANJAR NESTLÉ® (4.5 kg)"
+  },
+  {
+    "recipe_slug": "torta-de-pecanas",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Pecanas",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pecanas"
+  },
+  {
+    "recipe_slug": "pollo-entomatado-con-pure-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Aceite Vegetal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "pollo-entomatado-con-pure-2",
+    "product_id": null,
+    "ingredient_raw": "4 Presas de Pollo",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Presas de Pollo"
+  },
+  {
+    "recipe_slug": "pollo-entomatado-con-pure-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cubo MAGGIsabor Gallina",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cubo MAGGIsabor Gallina"
+  },
+  {
+    "recipe_slug": "pollo-entomatado-con-pure-2",
+    "product_id": null,
+    "ingredient_raw": "1/2 Cebolla Roja",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla Roja"
+  },
+  {
+    "recipe_slug": "pollo-entomatado-con-pure-2",
+    "product_id": null,
+    "ingredient_raw": "1 Diente de Ajo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "diente de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ajo"
+  },
+  {
+    "recipe_slug": "pollo-entomatado-con-pure-2",
+    "product_id": null,
+    "ingredient_raw": "4 Tomates",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tomates"
+  },
+  {
+    "recipe_slug": "pollo-entomatado-con-pure-2",
+    "product_id": null,
+    "ingredient_raw": "1 Rama de Culantro",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "rama de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Culantro"
+  },
+  {
+    "recipe_slug": "pollo-entomatado-con-pure-2",
+    "product_id": null,
+    "ingredient_raw": "4 Papas Amarillas",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Papas Amarillas"
+  },
+  {
+    "recipe_slug": "pollo-entomatado-con-pure-2",
+    "product_id": null,
+    "ingredient_raw": "1 Lata de IDEAL® CREMOSITA",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "pollo-entomatado-con-pure-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Mantequilla Sin Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla Sin Sal"
+  },
+  {
+    "recipe_slug": "pollo-entomatado-con-pure-2",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Nuez Moscada",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Nuez Moscada"
+  },
+  {
+    "recipe_slug": "pollo-entomatado-con-pure-2",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Pimienta",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimienta"
+  },
+  {
+    "recipe_slug": "pollo-entomatado-con-pure-2",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Sal de mesa",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal de mesa"
+  },
+  {
+    "recipe_slug": "pollo-entomatado-con-pure-2",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Orégano",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Orégano"
+  },
+  {
+    "recipe_slug": "inchicapi-de-gallina",
+    "product_id": null,
+    "ingredient_raw": "300 Gramos Gallina",
+    "cantidad_recipe": 300,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Gramos Gallina"
+  },
+  {
+    "recipe_slug": "inchicapi-de-gallina",
+    "product_id": null,
+    "ingredient_raw": "3 Litros Agua",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Litros Agua"
+  },
+  {
+    "recipe_slug": "inchicapi-de-gallina",
+    "product_id": null,
+    "ingredient_raw": "300 Gramos Yuca",
+    "cantidad_recipe": 300,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Gramos Yuca"
+  },
+  {
+    "recipe_slug": "inchicapi-de-gallina",
+    "product_id": null,
+    "ingredient_raw": "1 1/2 Cucharadas Aceite Vegetal",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cucharadas Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "inchicapi-de-gallina",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad Cebolla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla"
+  },
+  {
+    "recipe_slug": "inchicapi-de-gallina",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada Ajo Molido Sin Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ajo Molido Sin Sal"
+  },
+  {
+    "recipe_slug": "inchicapi-de-gallina",
+    "product_id": null,
+    "ingredient_raw": "1Unidad de MAGGI® Cubo Gallina",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de MAGGI® Cubo Gallina"
+  },
+  {
+    "recipe_slug": "inchicapi-de-gallina",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita Palillo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Palillo"
+  },
+  {
+    "recipe_slug": "inchicapi-de-gallina",
+    "product_id": null,
+    "ingredient_raw": "1/4 Taza Harina De Maíz",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina De Maíz"
+  },
+  {
+    "recipe_slug": "inchicapi-de-gallina",
+    "product_id": null,
+    "ingredient_raw": "1/4 Taza Maní Tostado",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Maní Tostado"
+  },
+  {
+    "recipe_slug": "inchicapi-de-gallina",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca Pimienta",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimienta"
+  },
+  {
+    "recipe_slug": "inchicapi-de-gallina",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca Orégano",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Orégano"
+  },
+  {
+    "recipe_slug": "inchicapi-de-gallina",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca Sal De Mesa",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal De Mesa"
+  },
+  {
+    "recipe_slug": "zapallito-italiano-relleno",
+    "product_id": null,
+    "ingredient_raw": "4 Unidades Zapallito Italiano",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Zapallito Italiano"
+  },
+  {
+    "recipe_slug": "zapallito-italiano-relleno",
+    "product_id": null,
+    "ingredient_raw": "250 Gramos de Carne Molida",
+    "cantidad_recipe": 250,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Carne Molida"
+  },
+  {
+    "recipe_slug": "zapallito-italiano-relleno",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad Cebolla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla"
+  },
+  {
+    "recipe_slug": "zapallito-italiano-relleno",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad Diente de Ajo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Diente de Ajo"
+  },
+  {
+    "recipe_slug": "zapallito-italiano-relleno",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad de MAGGI® Cubo Carne",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de MAGGI® Cubo Carne"
+  },
+  {
+    "recipe_slug": "zapallito-italiano-relleno",
+    "product_id": null,
+    "ingredient_raw": "2 Unidades Zanahorias",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Zanahorias"
+  },
+  {
+    "recipe_slug": "zapallito-italiano-relleno",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad Pimiento",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimiento"
+  },
+  {
+    "recipe_slug": "zapallito-italiano-relleno",
+    "product_id": null,
+    "ingredient_raw": "2 Unidades Huevo",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Huevo"
+  },
+  {
+    "recipe_slug": "zapallito-italiano-relleno",
+    "product_id": null,
+    "ingredient_raw": "40 Gramos Queso Parmesano",
+    "cantidad_recipe": 40,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Gramos Queso Parmesano"
+  },
+  {
+    "recipe_slug": "zapallito-italiano-relleno",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca Pimienta",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimienta"
+  },
+  {
+    "recipe_slug": "zapallito-italiano-relleno",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca Sal De Mesa",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal De Mesa"
+  },
+  {
+    "recipe_slug": "zapallito-italiano-relleno",
+    "product_id": null,
+    "ingredient_raw": "4 Tazas Arroz Largo",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tazas Arroz Largo"
+  },
+  {
+    "recipe_slug": "cheesecake-de-fresas",
+    "product_id": null,
+    "ingredient_raw": "6 Paquetes de Galleta MOROCHAS®",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "paquetes de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Galleta MOROCHAS®"
+  },
+  {
+    "recipe_slug": "cheesecake-de-fresas",
+    "product_id": null,
+    "ingredient_raw": "1 Barra (90 g) de Mantequilla Sin Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Barra (90 g) de Mantequilla Sin Sal"
+  },
+  {
+    "recipe_slug": "cheesecake-de-fresas",
+    "product_id": null,
+    "ingredient_raw": "1 Barra (200 g) de Queso Crema",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Barra (200 g) de Queso Crema"
+  },
+  {
+    "recipe_slug": "cheesecake-de-fresas",
+    "product_id": null,
+    "ingredient_raw": "1/2 Lata de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "cheesecake-de-fresas",
+    "product_id": null,
+    "ingredient_raw": "4 Huevos",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevos"
+  },
+  {
+    "recipe_slug": "cheesecake-de-fresas",
+    "product_id": null,
+    "ingredient_raw": "3 Tazas de Fresas",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Fresas"
+  },
+  {
+    "recipe_slug": "cheesecake-de-fresas",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Azúcar Rubia",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar Rubia"
+  },
+  {
+    "recipe_slug": "pudin-de-platano-y-fresas",
+    "product_id": null,
+    "ingredient_raw": "1/3 Taza Harina",
+    "cantidad_recipe": 0.3333333333333333,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina"
+  },
+  {
+    "recipe_slug": "pudin-de-platano-y-fresas",
+    "product_id": null,
+    "ingredient_raw": "2 1/2 Tazas Leche Fresca",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tazas Leche Fresca"
+  },
+  {
+    "recipe_slug": "pudin-de-platano-y-fresas",
+    "product_id": null,
+    "ingredient_raw": "2 Unidades Yema de Huevo",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Yema de Huevo"
+  },
+  {
+    "recipe_slug": "pudin-de-platano-y-fresas",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita Extracto De Vainilla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Extracto De Vainilla"
+  },
+  {
+    "recipe_slug": "pudin-de-platano-y-fresas",
+    "product_id": null,
+    "ingredient_raw": "1/2 Lata Leche Condensada NESTLÉ",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Leche Condensada NESTLÉ"
+  },
+  {
+    "recipe_slug": "pudin-de-platano-y-fresas",
+    "product_id": null,
+    "ingredient_raw": "2 1/2 Unidades Plátano",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Plátano"
+  },
+  {
+    "recipe_slug": "pudin-de-platano-y-fresas",
+    "product_id": null,
+    "ingredient_raw": "1 Taza Fresas",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Fresas"
+  },
+  {
+    "recipe_slug": "pudin-de-platano-y-fresas",
+    "product_id": null,
+    "ingredient_raw": "12 Unidades Bizcotelas",
+    "cantidad_recipe": 12,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Unidades Bizcotelas"
+  },
+  {
+    "recipe_slug": "panna-cotta-de-milo-2",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (300 g) de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (300 g) de CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "panna-cotta-de-milo-2",
+    "product_id": null,
+    "ingredient_raw": "1/2 Lata (393 g) de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (393 g) de LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "panna-cotta-de-milo-2",
+    "product_id": null,
+    "ingredient_raw": "4 Cucharadas de MILO®",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: MILO®"
+  },
+  {
+    "recipe_slug": "panna-cotta-de-milo-2",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Esencia de Vainilla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Esencia de Vainilla"
+  },
+  {
+    "recipe_slug": "panna-cotta-de-milo-2",
+    "product_id": null,
+    "ingredient_raw": "3 Cucharadas de Colapez en polvo",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Colapez en polvo"
+  },
+  {
+    "recipe_slug": "panna-cotta-de-milo-2",
+    "product_id": null,
+    "ingredient_raw": "12 Cucharadas de Agua tibia",
+    "cantidad_recipe": 12,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua tibia"
+  },
+  {
+    "recipe_slug": "trufas-de-frambuesas-2",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (393 g) de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (393 g) de LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "trufas-de-frambuesas-2",
+    "product_id": null,
+    "ingredient_raw": "3/4 de tableta de Cobertura Nestlé® Bitter",
+    "cantidad_recipe": 0.75,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de tableta de Cobertura Nestlé® Bitter"
+  },
+  {
+    "recipe_slug": "trufas-de-frambuesas-2",
+    "product_id": null,
+    "ingredient_raw": "3/4 Taza Pulpa de Frambuesa",
+    "cantidad_recipe": 0.75,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pulpa de Frambuesa"
+  },
+  {
+    "recipe_slug": "trufas-de-frambuesas-2",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Chocolate Blanco",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Chocolate Blanco"
+  },
+  {
+    "recipe_slug": "toffee-leche-condensada",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas Mantequilla Sin Sal",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cucharadas Mantequilla Sin Sal"
+  },
+  {
+    "recipe_slug": "toffee-leche-condensada",
+    "product_id": null,
+    "ingredient_raw": "1 Lata de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "toffee-leche-condensada",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Glucosa",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Glucosa"
+  },
+  {
+    "recipe_slug": "toffee-leche-condensada",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Almendras",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Almendras"
+  }
+]

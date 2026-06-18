@@ -1,0 +1,5016 @@
+[
+  {
+    "id": "2ac128c5-19b7-4510-955d-2d0288cbd4bc",
+    "titulo": "Tocino Ahumado CASA EUROPA Paquete 200g",
+    "status": "ok"
+  },
+  {
+    "id": "03ad83fe-9266-468a-bb09-e02081b3ecba",
+    "titulo": "Suprema de Pollo AVINKA Bolsa 4un",
+    "status": "ok"
+  },
+  {
+    "id": "cd66cb99-a2d3-460c-8bc4-9d4f79df549d",
+    "titulo": "Pack Gaseosa COCA COLA Botella 1L x 2un",
+    "status": "ok"
+  },
+  {
+    "id": "aa1d1a77-4525-485b-bf02-a0556bec6644",
+    "titulo": "Agua sin Gas CIELO Bidón 7L",
+    "status": "ok"
+  },
+  {
+    "id": "bf99519c-2a09-4e77-94e9-17bf8fbec986",
+    "titulo": "Gaseosa COCA COLA sin Azúcar Botella 300ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "6d26bd83-32fa-40c8-97dc-9b89e889c787",
+    "titulo": "Agua con Gas CIELO Gasificada Sabor a Naranja Botella 600ml",
+    "status": "ok"
+  },
+  {
+    "id": "7f1272d5-3589-4695-a046-1389bd4cee36",
+    "titulo": "Gaseosa COCA COLA Botella 600ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "a60f885d-d3ea-40c9-b1e0-00e5f95d6650",
+    "titulo": "Agua Mineral SAN MATEO Sin Gas Bidón 7L",
+    "status": "ok"
+  },
+  {
+    "id": "11c1e8dc-6c93-4237-b5b0-65ad6727f9ca",
+    "titulo": "Agua SAN LUIS sin Gas Caja 20L",
+    "status": "ok"
+  },
+  {
+    "id": "06006047-b077-42cb-a197-0a701941f75a",
+    "titulo": "Agua de Mesa SAN LUIS Sin Gas Bidón 7L",
+    "status": "ok"
+  },
+  {
+    "id": "fcf6330f-8e93-4233-b29d-23edd828e7f7",
+    "titulo": "Gaseosa sin Ázucar INCA KOLA Botella 600ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "08c6b08a-054e-4186-aa33-c58a0f0d6dfa",
+    "titulo": "Cerveza HEINEKEN Barril 5 L",
+    "status": "ok"
+  },
+  {
+    "id": "8d25daf4-b72a-4ffc-9703-4f6c2cacb213",
+    "titulo": "Gaseosa HEY FIT Soda Summer Breeze Botella 600ml",
+    "status": "ok"
+  },
+  {
+    "id": "afda159f-a553-437e-859b-e5af5ebfd56d",
+    "titulo": "Agua de Mesa SAN LUIS Sin Gas Bidón 7L",
+    "status": "ok"
+  },
+  {
+    "id": "5065b7e8-0a36-4ffd-9262-091bf01e14e8",
+    "titulo": "Lechuga Americana BELL's Bolsa 300g aprox.",
+    "status": "ok"
+  },
+  {
+    "id": "43e50ac5-27c5-4169-b26d-65c43ebaf87c",
+    "titulo": "Agua Mineral SAN MATEO Sin Gas Bidón 7L",
+    "status": "ok"
+  },
+  {
+    "id": "89a510bb-0058-446b-a157-1362978206d1",
+    "titulo": "Gaseosa HEY FIT Soda Tango Twist Botella 600ml",
+    "status": "ok"
+  },
+  {
+    "id": "d5cd3f93-1736-4462-b1b1-ec2401f1fda4",
+    "titulo": "Rollo PBMATIC 1.5Kg 14x20",
+    "status": "ok"
+  },
+  {
+    "id": "9c6e9384-cabd-49f2-8c63-c99859863a0f",
+    "titulo": "Jamón Inglés CASA EUROPA Paquete 200g",
+    "status": "ok"
+  },
+  {
+    "id": "633db247-1c62-4247-99ac-b9139b85e356",
+    "titulo": "Cebolla Roja x kg",
+    "status": "ok"
+  },
+  {
+    "id": "2434c57a-4bcf-410f-890e-1958a55b2618",
+    "titulo": "Blueberries BELL'S FRESCOS Bandeja 500g",
+    "status": "ok"
+  },
+  {
+    "id": "c101afc6-7454-49ff-a163-72b8a43e831d",
+    "titulo": "Pack Agua de Mesa CIELO sin Gas Caja 20L x 2un",
+    "status": "ok"
+  },
+  {
+    "id": "192d7568-f266-4425-a909-e67476d39ca9",
+    "titulo": "Vainita Americana Pack x 250g aprox.",
+    "status": "ok"
+  },
+  {
+    "id": "d8ab7cb2-c8dd-40cd-825e-0c782119605b",
+    "titulo": "Gaseosa INCA KOLA sin Azúcar Botella 1.5L Paquete 2un",
+    "status": "ok"
+  },
+  {
+    "id": "65a1ff77-f2ce-4f0d-8c08-a167947d8b11",
+    "titulo": "Fresa IMPERIAL Bandeja 500g",
+    "status": "ok"
+  },
+  {
+    "id": "7a95ae51-a55a-41cd-8466-32486e740198",
+    "titulo": "Ají Amarillo Pack x 2 und aprox.",
+    "status": "ok"
+  },
+  {
+    "id": "9a09dad4-d456-4134-a128-44ac5053e462",
+    "titulo": "Manzana Delicia x kg",
+    "status": "ok"
+  },
+  {
+    "id": "f6d2cf75-5943-4260-94c0-23f4539cc105",
+    "titulo": "Espinaca Bebé BELL'S Bolsa 150g aprox.",
+    "status": "ok"
+  },
+  {
+    "id": "4c2d3f68-45d4-42f9-908b-f259e476a64b",
+    "titulo": "Papaya x kg",
+    "status": "ok"
+  },
+  {
+    "id": "04d9789e-773c-434b-bb45-502e81e07041",
+    "titulo": "Hamburguesa de Carne La Casera SAN FERNANDO Bolsa 14un",
+    "status": "ok"
+  },
+  {
+    "id": "f4684d35-2e89-47c5-920e-59eaded5b972",
+    "titulo": "Champiñon Entero BELL'S Bandeja 200g",
+    "status": "ok"
+  },
+  {
+    "id": "f3ddb249-d36f-4047-8b04-b9c47ec9fd01",
+    "titulo": "Culantro BELL'S Bolsa 60g aprox.",
+    "status": "ok"
+  },
+  {
+    "id": "3b33a263-62b0-4716-ab3f-3fe22e93c21d",
+    "titulo": "Sandía x kg",
+    "status": "ok"
+  },
+  {
+    "id": "a60bf9ee-99dc-4ce4-904a-bca735b0fd8f",
+    "titulo": "Tomate Redondo x kg",
+    "status": "ok"
+  },
+  {
+    "id": "0da34c4f-6a0f-4d51-871c-6c91d4aaca8b",
+    "titulo": "Vino Tinto LAS MORAS Malbec Botella 750ml",
+    "status": "ok"
+  },
+  {
+    "id": "f2f4770c-d496-4a43-af3e-dc70ddd4bfec",
+    "titulo": "Agua sin Gas CIELO Botella 2.5L Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "bb2d7f6b-016d-4421-a1ee-6d424511535f",
+    "titulo": "Lavavajillas SAPOLIO Limón Pote 800g",
+    "status": "ok"
+  },
+  {
+    "id": "7a78a4b8-88c9-423b-995a-779a5a14757b",
+    "titulo": "Zapallo Macre x kg",
+    "status": "ok"
+  },
+  {
+    "id": "0bacfc50-7ce2-4690-b3fe-410c32fd78d7",
+    "titulo": "Piña Golden x kg",
+    "status": "ok"
+  },
+  {
+    "id": "8722578c-8c66-4157-8006-1ea94775cf9e",
+    "titulo": "Agua sin Gas BELL'S Bidón 7L",
+    "status": "ok"
+  },
+  {
+    "id": "d3843343-a73e-41fa-9619-403a482587f9",
+    "titulo": "Zapallo Italiano x und.",
+    "status": "ok"
+  },
+  {
+    "id": "2044baf6-6090-4351-b7cd-da37c25987f2",
+    "titulo": "Nuggets de Pollo Precocido AVINKA Bolsa 15un",
+    "status": "ok"
+  },
+  {
+    "id": "9cf2af00-4a31-48a9-8007-bf57cd460bd2",
+    "titulo": "Espinaca BELL'S Bolsa 350g aprox.",
+    "status": "ok"
+  },
+  {
+    "id": "0b57f111-a660-4065-b77e-e3f9c3e0f10b",
+    "titulo": "Pan Francés Congelado LA FLORENCIA Bolsa 6un",
+    "status": "ok"
+  },
+  {
+    "id": "682f15c1-f6c6-4989-a8b5-08bdfc509642",
+    "titulo": "Brócoli x kg",
+    "status": "ok"
+  },
+  {
+    "id": "c8c187eb-16ff-4e18-a243-26ba5da80e03",
+    "titulo": "Pan Ciabatta Refrigerado LA FLORENCIA Bolsa 6un",
+    "status": "ok"
+  },
+  {
+    "id": "622d9cf3-f406-4624-a55f-44b604af0c91",
+    "titulo": "Dedos de Pollo AVINKA con Queso Bolsa 12un",
+    "status": "ok"
+  },
+  {
+    "id": "b196eacb-47af-4966-b011-aca33d7363d1",
+    "titulo": "Chicharrón de Pollo AVINKA Bolsa 350g",
+    "status": "ok"
+  },
+  {
+    "id": "f22af216-91b2-413f-94ba-da92c1844f84",
+    "titulo": "Pan Ciabatta Congelado LA FLORENCIA Bolsa 6un",
+    "status": "ok"
+  },
+  {
+    "id": "9ac0628f-18dd-476e-a2a9-4f6373729dba",
+    "titulo": "Milanesa de Pollo AVINKA Bolsa 4un",
+    "status": "ok"
+  },
+  {
+    "id": "dc38b435-8a1d-45b5-986e-8a3a5f950acd",
+    "titulo": "Nuggets de Pollo SAN FERNANDO Bolsa 60un",
+    "status": "ok"
+  },
+  {
+    "id": "2f2bb03c-0d70-4756-98d1-57ff07b71d49",
+    "titulo": "Hamburguesa OTTO KUNZ Premium de Res Bolsa 8un",
+    "status": "ok"
+  },
+  {
+    "id": "0f20fb3f-6c39-46d3-9790-e35ce650c066",
+    "titulo": "Pan Francés Refrigerado LA FLORENCIA Bolsa 6un",
+    "status": "ok"
+  },
+  {
+    "id": "c78152f5-fa32-441b-9ba4-b88147878a6a",
+    "titulo": "Dedos de Pollo AVINKA Jalapeño Bolsa 12un",
+    "status": "ok"
+  },
+  {
+    "id": "2b7e0cea-dfcc-4022-93bd-38c59a881bb6",
+    "titulo": "Nuggets Pechuga de Pollo SAN FERNANDO Bolsa 36un",
+    "status": "ok"
+  },
+  {
+    "id": "138ff55a-a17e-46fc-9735-c6221e26d609",
+    "titulo": "Hamburguesa de Res OREGON Foods Bolsa 8un",
+    "status": "ok"
+  },
+  {
+    "id": "57fd7928-a927-4785-b567-96288cf05da8",
+    "titulo": "Hamburguesa de Carne La Super SAN FERNANDO Bolsa 14un",
+    "status": "ok"
+  },
+  {
+    "id": "4f066d72-437d-4ef7-abb7-769d078b5d06",
+    "titulo": "Milanesa de Pechuga de Pollo OREGON FOODS Bolsa 4un",
+    "status": "ok"
+  },
+  {
+    "id": "a6ce7ebb-14b5-463f-a6ee-d23a4337686d",
+    "titulo": "Helado D'ONOFRIO Peziduri Chocolate Cremoso Pote 900ml",
+    "status": "ok"
+  },
+  {
+    "id": "ff15e3d7-b711-4629-8e48-03cb3e1f82cc",
+    "titulo": "Helado D'ONOFRIO Peziduri Chocochips Cremoso Pote 900ml",
+    "status": "ok"
+  },
+  {
+    "id": "a1b3fa5a-abb2-47d3-9b7f-ae8f23eba193",
+    "titulo": "Suprema de Pollo AVINKA Bolsa 4un",
+    "status": "ok"
+  },
+  {
+    "id": "e3f15260-4c89-4145-8782-db44877ff01c",
+    "titulo": "Alitas sabor a la Brasa REDONDOS Caja 400g",
+    "status": "ok"
+  },
+  {
+    "id": "a6b411fe-9446-4f17-b88a-95fc0203d02a",
+    "titulo": "Pop Corn Chicken AVINKA Bolsa 350g",
+    "status": "ok"
+  },
+  {
+    "id": "da6b685c-db5c-4b73-8040-68d04b3e4560",
+    "titulo": "Milanesa de Pollo AVINKA Bolsa 4un",
+    "status": "ok"
+  },
+  {
+    "id": "d5fdd4e2-79a9-44ea-a02f-99a3a29e855d",
+    "titulo": "Pisco SANTIAGO QUEIROLO Acholado Botella 750ml",
+    "status": "ok"
+  },
+  {
+    "id": "05e22cb4-1be9-475f-90e6-2cb1f32dc521",
+    "titulo": "Helado D'ONOFRIO Peziduri Vainilla Cremoso Pote 900ml",
+    "status": "ok"
+  },
+  {
+    "id": "81710f50-4ee4-4d62-a3f2-7a5636a85c7d",
+    "titulo": "Hamburguesa de Carne La Super SAN FERNANDO Bolsa 14un",
+    "status": "ok"
+  },
+  {
+    "id": "f2669062-b69a-429a-a6e7-875ee801b374",
+    "titulo": "Pollo Entero Fresco con Menudencia x kg",
+    "status": "ok"
+  },
+  {
+    "id": "afa547a3-d0a5-4150-b06f-65a0e55ce272",
+    "titulo": "Nuggets de Pechuga de Pollo REDONDOS Caja 23un",
+    "status": "ok"
+  },
+  {
+    "id": "516e428f-3314-46a8-a4f9-66f20dc04629",
+    "titulo": "Toallas Higiénicas NOSOTRAS Buenas Noches Nocturna Natural Paquete 30un",
+    "status": "ok"
+  },
+  {
+    "id": "7f958ac2-763a-47b9-9fb9-cd371a9503d1",
+    "titulo": "Jabón de Tocador BALANZÉ BÁSICOS Avena Paquete 3un x 100g",
+    "status": "ok"
+  },
+  {
+    "id": "d1d8e735-15ea-407b-838c-44d47330d8f3",
+    "titulo": "Helado D'ONOFRIO PEZIDURI Tricolor Pote x 2.2L",
+    "status": "ok"
+  },
+  {
+    "id": "d0d70cd9-1306-4f5e-960d-99105e3a177d",
+    "titulo": "Jabón de Tocador DOVE Original 90g Paquete 3un",
+    "status": "ok"
+  },
+  {
+    "id": "00cbc105-e0b6-444e-8d80-8d2467aeaafb",
+    "titulo": "Toallas Higiénicas NOSOTRAS Natural Alas Gel Paquete 48un",
+    "status": "ok"
+  },
+  {
+    "id": "fdd84916-b74e-4e88-a6ad-1d458af64d18",
+    "titulo": "Jabón Líquido Antibacterial BALANZÉ Coco Vainilla Doypack 800ml",
+    "status": "ok"
+  },
+  {
+    "id": "dde365b2-99dd-485a-8499-4bb270b3c992",
+    "titulo": "Crema Dental COLGATE TOTAL Original Mint Tubo 75ml Paquete 3un",
+    "status": "ok"
+  },
+  {
+    "id": "c54b319c-f91c-4e57-8732-75d499ecc399",
+    "titulo": "Pasta Dental ORAL-B Complete 4en1 3 Tubo 80g Paquete 3un",
+    "status": "ok"
+  },
+  {
+    "id": "bc57c184-360e-4155-9b04-1ec1a855083d",
+    "titulo": "Jabón Líquido BALLERINA Crema Humectante Doypack 750ml",
+    "status": "ok"
+  },
+  {
+    "id": "f1cd6b1f-eb58-4c7b-8b51-8110aa0f9b7f",
+    "titulo": "Film Plástico DARNEL 609Mx45Cm",
+    "status": "ok"
+  },
+  {
+    "id": "80ee9fa5-8f1b-4a16-af5d-5ad94579b926",
+    "titulo": "Hielo Kold Draft ARTISAN Bolsa 3kg",
+    "status": "ok"
+  },
+  {
+    "id": "c66b1062-2a59-446c-a878-cb977da60a8b",
+    "titulo": "Jabón de Tocador DOVE Blanco Barra 90g Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "9d2ac024-0aa4-4857-bfa3-e485d7fa7e2e",
+    "titulo": "Toalla Higiénica LADYSOFT Normal Paquete 60un",
+    "status": "ok"
+  },
+  {
+    "id": "651495e3-7610-4590-97b3-8a390c497e7f",
+    "titulo": "Yogurt Batido GLORIA Griego Sabor Natural Bolsa 800g",
+    "status": "ok"
+  },
+  {
+    "id": "320c6acb-9274-4f43-b59e-cc5ded178853",
+    "titulo": "Pasta Dental Blanqueadora Colgate Luminous White 2x75ml",
+    "status": "ok"
+  },
+  {
+    "id": "60aee268-4ae5-411c-b5c3-3517837910e8",
+    "titulo": "RadioShack 3.5mm Male to Male Audio Cable 3 ft 4203231 &#x2013; Aux Stereo Cable",
+    "status": "ok"
+  },
+  {
+    "id": "27acbb8c-a346-44cd-8fbe-3748f3075f98",
+    "titulo": "Pasta Dental COLGATE Triple Acción Pack 3x60ml",
+    "status": "ok"
+  },
+  {
+    "id": "439d5af8-7b4b-446c-b3a2-e207b910717e",
+    "titulo": "Cepillo de Dientes COLGATE Zig Zag Carbón Pack 4 un - Limpieza Profunda",
+    "status": "ok"
+  },
+  {
+    "id": "9222bb26-be8a-4e2b-9777-9356b9c60371",
+    "titulo": "Jabón Antibacterial en Barra PROTEX Avena Protección y Suavidad Pack 3x110g",
+    "status": "ok"
+  },
+  {
+    "id": "95ac1f0d-a5d0-4b47-b058-d33019f47763",
+    "titulo": "Carne Molida Light EL BUEN CORTE x kg",
+    "status": "ok"
+  },
+  {
+    "id": "9d64daf9-926e-41f8-b037-fc01ca1e92af",
+    "titulo": "Detergente MARSELLA Lavanda y Rosas Bolsa 4kg",
+    "status": "ok"
+  },
+  {
+    "id": "7cd40492-d879-483c-a84f-8ccffb7d615c",
+    "titulo": "Jabón de Tocador DOVE para piel sensible Bolsa 90g Paquete 3un",
+    "status": "ok"
+  },
+  {
+    "id": "9d6b5a5e-6307-4990-9d51-3c207a70c6a2",
+    "titulo": "Jabón en Barra PALMOLIVE Avena y Azúcar Pack 3x110g",
+    "status": "ok"
+  },
+  {
+    "id": "82106cec-f6ab-437f-979b-f8580ed38323",
+    "titulo": "Papel Toalla BOREAL Megarollo Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "178fd769-d747-47ae-b640-02aafb35bbc6",
+    "titulo": "Pack Toallas Higiénicas NOSOTRAS Buenas Noches Nocturna Natural Paquete 30un x 2un",
+    "status": "ok"
+  },
+  {
+    "id": "40e2d7dd-856e-4001-813a-1da7e6d0d6ce",
+    "titulo": "Pack HERBAL ESSENCES Shampoo Rosa Mosqueta Frasco 400ml + Acondicionador Classic Smooth Frasco 400ml",
+    "status": "ok"
+  },
+  {
+    "id": "6a760ca6-d8e9-44ca-a2a5-4001a4ffa35d",
+    "titulo": "Jabón en Barra PALMOLIVE Naturals Oliva y Aloe Vera Pack 3x110g",
+    "status": "ok"
+  },
+  {
+    "id": "3914ffa2-1599-4c8a-8a53-8286cb960140",
+    "titulo": "Jabón en Barra PALMOLIVE Naturals Granada Pack 3x110g",
+    "status": "ok"
+  },
+  {
+    "id": "9ee85d34-6316-4a2d-8c7c-10f07001fd8f",
+    "titulo": "Protectores Diarios NOSOTRAS Normal Caja 150un",
+    "status": "ok"
+  },
+  {
+    "id": "c8b5d375-3509-470e-af95-08ce71fd8ae5",
+    "titulo": "Lejía SAPOLIO Original Galonera 4.8kg",
+    "status": "ok"
+  },
+  {
+    "id": "69fbcc29-178f-4b38-88a7-2235118431a0",
+    "titulo": "Papel Higiénico SUAVE Resistemax Doble Hoja Paquete 40un",
+    "status": "ok"
+  },
+  {
+    "id": "51bcb608-42ab-42df-a5c3-53eb0799f683",
+    "titulo": "Papel Higiénico ELITE Clásico Doble Hoja Paquete 40un",
+    "status": "ok"
+  },
+  {
+    "id": "2d0a13ef-ceb5-4a29-ad58-ce0eb3c46b1b",
+    "titulo": "Papel Toalla PARACAS Premium Rollazo Paquete 4un",
+    "status": "ok"
+  },
+  {
+    "id": "cd4f6cca-f02e-4d0e-bae1-80d75b863f1e",
+    "titulo": "Papel Toalla BOREAL Megarollo Paquete 2un",
+    "status": "ok"
+  },
+  {
+    "id": "b9997840-9b55-4f92-b2f3-acc0c6d5e3b6",
+    "titulo": "Servilletas  de Papel ELITE Dobladas en 4 Paquete 100un",
+    "status": "ok"
+  },
+  {
+    "id": "a00c4293-544e-4bf6-93ed-cc4588d46af4",
+    "titulo": "Pan Artesano Blanco BIMBO Bolsa 560g",
+    "status": "ok"
+  },
+  {
+    "id": "a01370a6-cc24-4829-854f-59b89c412ff3",
+    "titulo": "Papel Higiénico SUAVE Premium Triple Hoja Paquete 12un",
+    "status": "ok"
+  },
+  {
+    "id": "44a091d5-89a1-4b5f-82b5-bfbda5e33c5f",
+    "titulo": "Gaseosa COCA COLA Sabor Original Botella 3L Two Pack",
+    "status": "error",
+    "error": "NaN error after 2 retries"
+  },
+  {
+    "id": "a014b27c-a52c-498e-9d78-78d5b5523b5f",
+    "titulo": "Papel Toalla NOVA Ultra Absorbente Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "70bc0bbe-452a-4f35-bef2-80ccfb1bdffc",
+    "titulo": "Filete de Pierna de Pollo x kg",
+    "status": "ok"
+  },
+  {
+    "id": "2874aa1b-3310-4002-b647-0effade29de4",
+    "titulo": "Cerveza CUSQUEÑA Cero Trigo Botella 310ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "a214da72-98d1-42ec-8d6f-fb769147c698",
+    "titulo": "Detergente en Polvo MARSELLA Brisas del Norte Bolsa 4Kg",
+    "status": "ok"
+  },
+  {
+    "id": "4378920f-cd5f-4910-81d2-c35b99376b04",
+    "titulo": "Jamón Inglés CASA EUROPA Paquete 200g",
+    "status": "ok"
+  },
+  {
+    "id": "6815b7f0-b3bf-4663-a955-5c4beadfab6d",
+    "titulo": "Detergente en Polvo OPAL Ultra Bolsa 4kg",
+    "status": "ok"
+  },
+  {
+    "id": "86ff6b10-d12e-470c-ba62-81175c361667",
+    "titulo": "Papel Toalla ELITE Triple Absorción Paquete 4un",
+    "status": "ok"
+  },
+  {
+    "id": "b24fdc0a-318b-4af8-ab06-9c0ba2961dba",
+    "titulo": "Detergente Líquido BOLÍVAR Cuidado Total Doypack 3L",
+    "status": "ok"
+  },
+  {
+    "id": "33ff0615-a4de-4b5a-84bd-6b00b6a028a6",
+    "titulo": "Papel Toalla NOVA Clásica Gigante Doble Hoja Paquete 1un",
+    "status": "ok"
+  },
+  {
+    "id": "6b986e2a-93d4-4cfa-8778-e3383e209480",
+    "titulo": "Papel Toalla NOVA Clásico Mega Rollo Paquete 4un",
+    "status": "ok"
+  },
+  {
+    "id": "1d685336-c55e-472c-a223-a17ccfed1f20",
+    "titulo": "Filete de Atún en Agua BELL'S Lata 140g",
+    "status": "ok"
+  },
+  {
+    "id": "da321ab8-1754-424c-9351-981079e1738f",
+    "titulo": "Limpiador POETT Frescura de Lavanda Botella 4.5L",
+    "status": "ok"
+  },
+  {
+    "id": "ba1f14e3-6600-46dc-a3ed-f3e1574b923f",
+    "titulo": "Aceite Vegetal Premium PRIMOR Botella 900ml",
+    "status": "ok"
+  },
+  {
+    "id": "c9b49217-c94e-46c8-89a6-15ec860b0770",
+    "titulo": "Limpiatodo SAPOLIO Lavanda Botella 4.9L",
+    "status": "ok"
+  },
+  {
+    "id": "3d2ac512-f80f-4924-be43-3c1d416412d8",
+    "titulo": "Detergente en Polvo BOLIVAR Cuidado Total Bolsa 4kg",
+    "status": "ok"
+  },
+  {
+    "id": "0b762f40-74ee-4923-a28f-a6d72ad05e32",
+    "titulo": "Lenteja Bebé BELL'S Bolsa 500g",
+    "status": "ok"
+  },
+  {
+    "id": "165cb6f4-2130-45dd-9871-12bfd72c4104",
+    "titulo": "Papel Toalla NOVA Clásica Megarrollo 89 Hojas Paquete 2un",
+    "status": "ok"
+  },
+  {
+    "id": "432c90c9-63ee-4910-92d5-46f1d26c940d",
+    "titulo": "Azúcar Rubia BELL'S Bolsa 2Kg",
+    "status": "ok"
+  },
+  {
+    "id": "d922c38b-92bb-4f1b-ba1e-f86335a24452",
+    "titulo": "Galletas VICTORIA Margarita Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "7a7e2285-718b-4c98-ab34-f0282a1001e9",
+    "titulo": "Azúcar Rubia BELL'S Bolsa 5Kg",
+    "status": "ok"
+  },
+  {
+    "id": "c7806c86-89b1-4248-8bca-6cb1b7725b9c",
+    "titulo": "Dedos de Pollo AVINKA Jalapeño Bolsa 12un",
+    "status": "ok"
+  },
+  {
+    "id": "da2de404-562f-474c-b2d0-4107db9334bc",
+    "titulo": "Filete de Atún en Aceite BELL'S Lata 140g",
+    "status": "ok"
+  },
+  {
+    "id": "36ad8ab0-c525-4d07-978a-ce35defd5473",
+    "titulo": "Fideos DON VITTORIO Spaghetti Bolsa 950g",
+    "status": "ok"
+  },
+  {
+    "id": "373821ca-2e25-40d3-acff-aec820c67763",
+    "titulo": "Arroz Añejo Extra COSTEÑO Bolsa 5Kg",
+    "status": "ok"
+  },
+  {
+    "id": "49fd11e2-274b-4881-9387-527115f562a6",
+    "titulo": "Frijol Canario BELL'S Bolsa 500g",
+    "status": "ok"
+  },
+  {
+    "id": "a1c30803-2ad3-4972-8771-ee058cead38a",
+    "titulo": "Fideos DON VITTORIO Spaghetti Bolsa 500g",
+    "status": "ok"
+  },
+  {
+    "id": "7a187140-7600-4372-9c55-8485b7f0f7f1",
+    "titulo": "Milanesa de Pechuga de Pollo OREGON FOODS Bolsa 4un",
+    "status": "ok"
+  },
+  {
+    "id": "cde20571-0813-4bdc-b3d1-3243ee7da971",
+    "titulo": "Fideos Tornillo DON VITTORIO Bolsa 500g",
+    "status": "ok"
+  },
+  {
+    "id": "28bb293b-32d1-4668-857c-05bed8b3a95c",
+    "titulo": "Filete de Tilapia FINE FOODS Bolsa 1kg",
+    "status": "ok"
+  },
+  {
+    "id": "60e08ecd-b746-4f62-9416-91de14c1e078",
+    "titulo": "Cigarros MARLBORO Gold Original Caja 20un",
+    "status": "ok"
+  },
+  {
+    "id": "08ac1ddd-d5d4-4805-8d32-5b7cd8e15217",
+    "titulo": "Café Instantáneo NESCAFÉ Kirma Lata 180g",
+    "status": "ok"
+  },
+  {
+    "id": "155e5a58-b18f-41f3-aea7-c3063b34140d",
+    "titulo": "Trozos de Atún PRIMOR en Aceite Vegetal Lata 140g",
+    "status": "ok"
+  },
+  {
+    "id": "2691a19a-a48c-4795-8101-4e426aa45d04",
+    "titulo": "Aceite de Soya SAO Botella 900ml",
+    "status": "ok"
+  },
+  {
+    "id": "cbd57e08-d29d-4c0d-9934-2a23f99ffa13",
+    "titulo": "Filete de Atún PRIMOR en Aceite Vegetal Lata 140g",
+    "status": "ok"
+  },
+  {
+    "id": "e26def62-be20-472b-87e4-6bc7de44202e",
+    "titulo": "Café Instantáneo ALTOMAYO Gourmet Frasco 170g",
+    "status": "ok"
+  },
+  {
+    "id": "7463d8f9-7dfe-4fd3-af0f-b060d84c00cd",
+    "titulo": "Arverja Partida BELL'S Bolsa 500g",
+    "status": "ok"
+  },
+  {
+    "id": "610ced94-31ca-4173-ac44-9b6cade99d92",
+    "titulo": "Galletas Saladas FIELD Soda Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "903c6291-4aed-4f81-b51c-f6627ea0614e",
+    "titulo": "Filete de Atún en Aceite Vegetal FLORIDA Lata 140g",
+    "status": "ok"
+  },
+  {
+    "id": "eb0f0ca5-dd3e-4fdf-bc93-8a3888acb399",
+    "titulo": "Lentejas BELL'S Bolsa 500g",
+    "status": "ok"
+  },
+  {
+    "id": "78a7a2e0-4131-4da2-b46a-6c310ca3e0c0",
+    "titulo": "Aceite Vegetal PRIMOR Clásico Botella 900ml",
+    "status": "ok"
+  },
+  {
+    "id": "9f774a2f-df1a-48e5-a982-b6c578b0d82b",
+    "titulo": "Manzanilla MC COLIN'S Caja 100un",
+    "status": "ok"
+  },
+  {
+    "id": "7ad61284-909d-4c39-8df7-4a765d62463a",
+    "titulo": "Mermelada Fresa GLORIA Pote 310g",
+    "status": "ok"
+  },
+  {
+    "id": "f2ea364e-9a17-4246-bc88-70180463f5e4",
+    "titulo": "Avena BELL'S Bolsa 1Kg",
+    "status": "ok"
+  },
+  {
+    "id": "8a7997f4-9ff4-4ea0-9cbd-1ea14310f83e",
+    "titulo": "Aceite Vegetal PRIMOR Clásico Botella 1.8L",
+    "status": "ok"
+  },
+  {
+    "id": "e50986c7-d82a-45fe-82e2-eb142190663b",
+    "titulo": "Fortificante Granulado MILO Activ - Go Doypack 350g",
+    "status": "ok"
+  },
+  {
+    "id": "0f89bd36-db78-432c-9999-53a064542ac6",
+    "titulo": "Mermelada GLORIA Fresa Frasco 950g",
+    "status": "ok"
+  },
+  {
+    "id": "d21c5d1b-980e-41d0-8587-96fa9950b334",
+    "titulo": "Avena Clásica 3 OSITOS Premium Bolsa 900g",
+    "status": "ok"
+  },
+  {
+    "id": "696a6bd5-0455-484b-8ad6-9e4b5135e4c9",
+    "titulo": "Café Instantáneo NESCAFÉ Kirma Doypack 230g",
+    "status": "ok"
+  },
+  {
+    "id": "bb90c68d-a199-4aca-b6ba-e8c63048a324",
+    "titulo": "Café NESCAFÉ Gold Signature Frasco 190g",
+    "status": "ok"
+  },
+  {
+    "id": "7f399c60-ec63-423b-80a4-6a3ce3076ed1",
+    "titulo": "Cocoa WINTERS Sobre 40g",
+    "status": "ok"
+  },
+  {
+    "id": "bd85208f-6983-458c-8447-048b0176efa8",
+    "titulo": "Mermelada Fresa GLORIA Doypack 700g",
+    "status": "ok"
+  },
+  {
+    "id": "2896f225-f964-4c42-99cd-112c5c4c3cdf",
+    "titulo": "Café Instantáneo Liofilizado NESCAFÉ Tradición Doypack 230g",
+    "status": "ok"
+  },
+  {
+    "id": "601c6212-4948-4251-ab5e-c6440dbcede8",
+    "titulo": "Cereal KELLOGGS Corn Flakes Caja 410g",
+    "status": "ok"
+  },
+  {
+    "id": "7382823e-1df1-49ca-9303-bbb50e017449",
+    "titulo": "Café Instantáneo ALTOMAYO Gourmet Doypack 140g",
+    "status": "ok"
+  },
+  {
+    "id": "be7a6799-a284-46fb-8d61-bde6bbc06e5d",
+    "titulo": "Café Instántaneo Intenso CAFETAL Frasco 180g",
+    "status": "ok"
+  },
+  {
+    "id": "8ef5e9b1-2e44-457a-a5e8-55b954c3c0f8",
+    "titulo": "Fortificante Granulado MILO Doypack 700g",
+    "status": "ok"
+  },
+  {
+    "id": "6a1d7854-47be-4d91-a8ec-8e1b0be23c67",
+    "titulo": "Sangrecita Criolla REDONDOS Empaque 500g",
+    "status": "ok"
+  },
+  {
+    "id": "66b1f4cc-9b2d-42d2-9ac9-05a5d64f7513",
+    "titulo": "Lejía CLOROX Tradicional Botella 4kg",
+    "status": "ok"
+  },
+  {
+    "id": "3e24f503-fb4f-45d9-9cc1-a1588e626114",
+    "titulo": "Queso Fresco sin Lactosa LAIVE x kg",
+    "status": "ok"
+  },
+  {
+    "id": "54d7e3a1-610b-4e65-845b-a1a8ba2a323d",
+    "titulo": "Bebida Instantánea de Cebada ECCO Doypack 250g",
+    "status": "ok"
+  },
+  {
+    "id": "caa3f971-26f7-47ee-9f1e-39cdfadd72c2",
+    "titulo": "Pan de Molde Blanco XL BIMBO Extra Grande Bolsa 770g",
+    "status": "ok"
+  },
+  {
+    "id": "431e14a5-8ff9-4cf2-a2ff-b0a5bdfde947",
+    "titulo": "Tortillas BIMBO Rapiditas Clásicas Bolsa 12un",
+    "status": "ok"
+  },
+  {
+    "id": "d8b7cc2f-15aa-484b-b49f-2b1a3a21bece",
+    "titulo": "Café Instantáneo NESCAFÉ Tradición Frasco 170g",
+    "status": "ok"
+  },
+  {
+    "id": "c612b944-663a-4dd0-846b-e91615765143",
+    "titulo": "Tortillas BIMBO Rapiditas Cero Cero Bolsa 10un",
+    "status": "ok"
+  },
+  {
+    "id": "e4842898-49a4-446c-a5dd-0c0d3267a819",
+    "titulo": "Miel de abeja LA REYNA OXAPAMPA Frasco 300Gr",
+    "status": "ok"
+  },
+  {
+    "id": "09945726-b24d-4c93-aa0b-1ec3636d4db5",
+    "titulo": "Trigo Atómico Original FORTE GOLPE con Miel Bolsa 125g",
+    "status": "ok"
+  },
+  {
+    "id": "e7446f96-29cf-4fab-8ee7-4def9073cade",
+    "titulo": "Café Tostado y Molido CAFETAL Selecto Bolsa 200g",
+    "status": "ok"
+  },
+  {
+    "id": "928424d3-d0f4-40ae-b356-3853a83949af",
+    "titulo": "Pan Pita BIMBO Cero Cero Bolsa 240g",
+    "status": "ok"
+  },
+  {
+    "id": "e3fe95d9-1db8-49fb-8c9d-bffaf7483ce3",
+    "titulo": "Gelatina UNIVERSAL Sabor a Fresa Bolsa 130g",
+    "status": "ok"
+  },
+  {
+    "id": "dcbf0867-f842-4792-b590-a045257e0654",
+    "titulo": "Pan de Yema LA FLORENCIA Bolsa 6un",
+    "status": "ok"
+  },
+  {
+    "id": "49abaadc-7692-498c-943e-44f9322c8a9f",
+    "titulo": "Pan Baguette Especial x und.",
+    "status": "ok"
+  },
+  {
+    "id": "2640fd8c-f63c-42f7-964c-db2eaede259f",
+    "titulo": "Leche Condensada NESTLÉ Lata 393g",
+    "status": "ok"
+  },
+  {
+    "id": "901ff382-a9d4-4260-a7bd-4770dd046dde",
+    "titulo": "Petit Pan LA FLORENCIA Bolsa 500g",
+    "status": "ok"
+  },
+  {
+    "id": "fd90f781-3b19-478e-8aea-f38f73ed0eaf",
+    "titulo": "Pan Francés x und.",
+    "status": "ok"
+  },
+  {
+    "id": "b13ff4f5-57ae-49f0-bd3a-167003011a91",
+    "titulo": "Masa para Wantán SAN SEN Bolsa 500g",
+    "status": "ok"
+  },
+  {
+    "id": "b1ca849f-9f8c-4eb0-92b8-1e9850d85185",
+    "titulo": "Pan Blanco BIMBO sin Bordes Bolsa 590g",
+    "status": "ok"
+  },
+  {
+    "id": "3f4e228b-cbdc-4e26-aa18-17285d22ea58",
+    "titulo": "Cocoa WINTERS Doypack 150g",
+    "status": "ok"
+  },
+  {
+    "id": "78302665-0c19-4eb8-b1ea-353f131f9b4d",
+    "titulo": "Pan Ciabatta x und.",
+    "status": "ok"
+  },
+  {
+    "id": "f0e95e37-20f1-4773-af20-01f675715e42",
+    "titulo": "Helado D'ONOFRIO Peziduri Chocochips Cremoso Pote 900ml",
+    "status": "ok"
+  },
+  {
+    "id": "0b149f5f-1e44-4122-8acd-25655b8f809c",
+    "titulo": "Pan de Molde Integral XL BIMBO Extra Grande Bolsa 810g",
+    "status": "ok"
+  },
+  {
+    "id": "ef171a7c-29b8-42f9-9709-471aee05ccab",
+    "titulo": "Pan de Molde Integral BIMBO Vital Multicereal Bolsa 600g",
+    "status": "ok"
+  },
+  {
+    "id": "7e573e84-3f43-4018-bc66-2f2becb70673",
+    "titulo": "Pollo Trozado en 8 Piezas x kg",
+    "status": "ok"
+  },
+  {
+    "id": "7a4d3bc9-0b40-410e-b963-c98d2d88a2bd",
+    "titulo": "Tortillas BIMBO Rapiditas de Linaza y Chía Bolsa 10un",
+    "status": "ok"
+  },
+  {
+    "id": "5319ea06-f54e-475b-8e0e-f42c9dadf18a",
+    "titulo": "Queso Gouda BRAEDT Paquete 180g",
+    "status": "ok"
+  },
+  {
+    "id": "b64650eb-f270-41c6-b131-b7195f369ae2",
+    "titulo": "Harina BELL'S De trigo preparada Bolsa 1Kg",
+    "status": "ok"
+  },
+  {
+    "id": "05033008-0666-4b17-bf3a-fafb141d75a3",
+    "titulo": "Tortillas BIMBO Rapiditas Integrales Bolsa 12un",
+    "status": "ok"
+  },
+  {
+    "id": "03b12322-babc-4d7f-b5a0-549851432a84",
+    "titulo": "Alimento para Gato RICOCAT Adulto Pollo, Sardina y Salmón Bolsa 9Kg",
+    "status": "ok"
+  },
+  {
+    "id": "c146a4a1-e01a-4b2a-abf7-87639077cbad",
+    "titulo": "Harina Sin Preparar FAVORITA Paquete 1kg",
+    "status": "ok"
+  },
+  {
+    "id": "b1e5033d-180d-4432-942a-b3a35e9e48eb",
+    "titulo": "Pan Hogaza Centeno LA FLORENCIA x und.",
+    "status": "ok"
+  },
+  {
+    "id": "b16fc8d2-19fe-4d19-9ecd-36b5243c4497",
+    "titulo": "Arena para Gato COOL CAT Bolsa 20Kg",
+    "status": "ok"
+  },
+  {
+    "id": "038c8f91-a98a-4ffd-83a6-27a0282702a3",
+    "titulo": "Arena para Gato DE PATAS Bolsa 20Kg",
+    "status": "ok"
+  },
+  {
+    "id": "b1c55201-38a8-4ddd-b2a8-31e7e54c466d",
+    "titulo": "Arena para Gato DE PATAS Bolsa 10Kg",
+    "status": "ok"
+  },
+  {
+    "id": "5b237d3a-84c6-4801-8c9a-56f5c18af7aa",
+    "titulo": "Alimento para Gatos DE PATAS Adulto Bolsa 9Kg",
+    "status": "ok"
+  },
+  {
+    "id": "c6c1aa44-0cc8-4ed1-848b-6deaaeda67a9",
+    "titulo": "Alimento para Perro RICOCAN Adulto Pequeños Sabor Cordero y Cereales Bolsa 15Kg",
+    "status": "ok"
+  },
+  {
+    "id": "bdede829-075e-4125-838c-dfb69311beea",
+    "titulo": "Arena para Gato KLINKAT Bolsa 20Kg",
+    "status": "ok"
+  },
+  {
+    "id": "8db6965d-0c66-4859-b644-5e3756253d93",
+    "titulo": "Alimento para Perro RICOCAN Adultos Medianos y Grandes Sabor Cordero y Cereales Bolsa 15Kg",
+    "status": "ok"
+  },
+  {
+    "id": "f5826ca7-0bca-44ad-8bc5-89cb3cbba4d1",
+    "titulo": "Alimento para Perros DE PATAS Adulto Bolsa 25Kg",
+    "status": "ok"
+  },
+  {
+    "id": "10f46a69-f8ad-4560-898e-99fb6156c9a4",
+    "titulo": "Helado D'ONOFRIO Peziduri Vainilla Cremoso Pote 900ml",
+    "status": "ok"
+  },
+  {
+    "id": "4dc5ade2-bee2-4880-85bc-dea62bf6edff",
+    "titulo": "Helado D'ONOFRIO Peziduri Chocolate Cremoso Pote 900ml",
+    "status": "ok"
+  },
+  {
+    "id": "8acaaa75-d5ac-4a53-9a5a-c55b7e1798d6",
+    "titulo": "Pack Comida para Gatos FELIX Paté de Salmón Lata 156g x 4un",
+    "status": "ok"
+  },
+  {
+    "id": "a5c6b0d6-3662-4ee1-98b8-49122fd0336f",
+    "titulo": "Leche sin Lactosa LAIVE Light Botella 390g Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "955d9d08-8520-4d35-b019-210817dae4bd",
+    "titulo": "Antipulgas para Perros Proteggo 3M de 10 a 20 Kg x 1 Tableta",
+    "status": "ok"
+  },
+  {
+    "id": "9b1e55fc-6ae6-41a5-bf7f-a7393da28348",
+    "titulo": "Antipulgas Bravecto para perros de 4.5 - 10 kg más Gratis Endal desparasitante",
+    "status": "ok"
+  },
+  {
+    "id": "c7e87b33-72be-485a-8e92-a9764e68429c",
+    "titulo": "Antipulgas Bravecto para perros de 20 - 40 kg más Gratis Endal Desparasitante",
+    "status": "ok"
+  },
+  {
+    "id": "acfb51e5-decc-494a-8a83-665d643cea98",
+    "titulo": "RadioShack USB to Lightning Cable 3 ft 4203261 Fast Charging Cable",
+    "status": "ok"
+  },
+  {
+    "id": "bddb4f22-816c-4ba2-a38e-8332d076fc2d",
+    "titulo": "RadioShack USB 2.0 Flash Drive 128GB 4401147 &#x2013; High-Speed USB Storage",
+    "status": "ok"
+  },
+  {
+    "id": "c600b95f-3341-4b62-b010-dfedd1a7ffa3",
+    "titulo": "Arena para Gato COOL CAT Bolsa 10Kg",
+    "status": "ok"
+  },
+  {
+    "id": "87dcf4f1-22ca-4b36-8399-f7fb9e298d13",
+    "titulo": "Arena para Gato KLINKAT Bolsa 10Kg",
+    "status": "ok"
+  },
+  {
+    "id": "d333ac69-b11c-4968-82bf-7df667cdaebe",
+    "titulo": "Gaseosa COCA COLA sin Azúcar Botella 300ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "0dc45977-1339-4c7d-a03f-735a4cfe1da7",
+    "titulo": "Alimento para Perro MIMASKOT Adulto Medianos y Grandes Sabor Carne Bolsa 22Kg",
+    "status": "ok"
+  },
+  {
+    "id": "f85d86cc-7546-4540-a1ad-4257c55598dc",
+    "titulo": "Alimento para Perro RICOCAN Adulto Todas las Razas Multisabores Bolsa 15Kg",
+    "status": "ok"
+  },
+  {
+    "id": "5813ff14-e954-4763-bd59-bb4f893a9ae6",
+    "titulo": "Alimento para Gato RICOCAT Adulto Esterilizado Bolsa 9Kg",
+    "status": "ok"
+  },
+  {
+    "id": "3bc860fb-454c-45d5-a61e-c050dfa43e03",
+    "titulo": "Arena para Gato DE PATAS Bolsa 5Kg",
+    "status": "ok"
+  },
+  {
+    "id": "9b31eba4-e650-407a-b3b0-7cb721a928b1",
+    "titulo": "Arena para Gato COOL CAT Bolsa 5Kg",
+    "status": "ok"
+  },
+  {
+    "id": "6d433d86-5629-4ec3-abda-b5af063fa1d7",
+    "titulo": "Alimento para Perro MIMASKOT Adulto Medianos y Grandes Sabor Cordero Bolsa 15Kg",
+    "status": "ok"
+  },
+  {
+    "id": "df840ea2-1ea8-479e-8acd-e36ae83887b7",
+    "titulo": "Alimento Húmedo para Gato RICOCAT Adulto Sabor Sardina y Pollo Lata 330g",
+    "status": "ok"
+  },
+  {
+    "id": "d30b3e9b-49e9-453a-80a2-7ddf1699fc7b",
+    "titulo": "Alimento Húmedo para Gato RICOCAT Adulto Sabor Hígado y Pollo Lata 330g",
+    "status": "ok"
+  },
+  {
+    "id": "5a3f0a0e-deed-4d45-b3be-bf4734430954",
+    "titulo": "Zanahoria x kg",
+    "status": "ok"
+  },
+  {
+    "id": "fc95b8f9-4fd4-4e2e-878c-190b4f4d7d69",
+    "titulo": "Pepinillo x kg",
+    "status": "ok"
+  },
+  {
+    "id": "2097856f-4a0d-4d1f-86c3-25d1ee0a250c",
+    "titulo": "Limón Ácido x kg",
+    "status": "ok"
+  },
+  {
+    "id": "6d8d1646-28df-417e-91f1-d163b2c3d448",
+    "titulo": "Queso Fresco BELL'S Paquete 300g",
+    "status": "ok"
+  },
+  {
+    "id": "594f85d6-b337-403a-92c6-9da86ad2e089",
+    "titulo": "Palta Fuerte x kg",
+    "status": "ok"
+  },
+  {
+    "id": "6426d59f-1423-4017-bab0-6030245affec",
+    "titulo": "Cerveza PILSEN Lata 355ml Pack 12un",
+    "status": "ok"
+  },
+  {
+    "id": "bf98b17f-753e-4ea1-9784-6f6da4ec2faf",
+    "titulo": "Papa Amarilla Tumbay x kg",
+    "status": "ok"
+  },
+  {
+    "id": "08b7ca91-ffee-49d7-a5cd-be8cbae28ec5",
+    "titulo": "Queso Edam LAIVE Paquete 440g",
+    "status": "ok"
+  },
+  {
+    "id": "8630d253-c7c3-4f75-af16-3ad9699a5619",
+    "titulo": "Plátano de Seda x kg",
+    "status": "ok"
+  },
+  {
+    "id": "945868a7-51f3-4963-8e9d-451f6819268b",
+    "titulo": "Yogurt Griego VAKIMU Frutos del Bosque Pote 960g",
+    "status": "ok"
+  },
+  {
+    "id": "1a46fbd7-e1f4-4c9c-85b3-5864d046b885",
+    "titulo": "Espumante RICCADONNA Moscato Rose Botella 200ml",
+    "status": "ok"
+  },
+  {
+    "id": "51ec37ef-c7fd-43b2-b062-48db8e9d7b5e",
+    "titulo": "Suavizante SUAVITEL Fresca Primavera 2.3L",
+    "status": "ok"
+  },
+  {
+    "id": "c844a677-2781-443f-8241-1e0521813c72",
+    "titulo": "Jabón de Glicerina BOREAL Natural Barra 100g Paquete 3un",
+    "status": "ok"
+  },
+  {
+    "id": "ce52a3d8-4215-4956-b14b-0d818cc5b36e",
+    "titulo": "Pasta Dental DENTO Triple Acción Tripack Tubo 80g",
+    "status": "ok"
+  },
+  {
+    "id": "cd2caf1c-3e0b-442b-84e7-62dc75a2af90",
+    "titulo": "Pop Corn Chicken AVINKA Bolsa 350g",
+    "status": "ok"
+  },
+  {
+    "id": "f09f16a6-30de-4c50-9109-ffc045597881",
+    "titulo": "Servilletas ELITE Práctica Doblada en 2 Paquete 100un",
+    "status": "ok"
+  },
+  {
+    "id": "e2735e0d-e778-47cb-89db-7914d8831893",
+    "titulo": "Quinua Avena 3 OSITOS Bolsa 900g",
+    "status": "ok"
+  },
+  {
+    "id": "294d3b8a-bf98-4722-adfc-30b2925c8949",
+    "titulo": "Detergente MARSELLA Lavanda y Rosas Bolsa 2kg",
+    "status": "ok"
+  },
+  {
+    "id": "98130abb-e891-46d5-abab-234b1cdf46bb",
+    "titulo": "Papa Blanca Yungay x kg",
+    "status": "ok"
+  },
+  {
+    "id": "50223495-b476-449f-92b2-0643bfc4d32d",
+    "titulo": "Hamburguesa de pollo REDONDOS Bolsa 14un",
+    "status": "ok"
+  },
+  {
+    "id": "bc3caaf5-df65-4614-9b3a-d3b9d18ecb06",
+    "titulo": "Filete de Pechuga de Pollo SADIA Bolsa 1kg",
+    "status": "ok"
+  },
+  {
+    "id": "6f652db6-3768-4cf9-9ef1-a7a2269dc713",
+    "titulo": "Muslos de Pollo x kg",
+    "status": "ok"
+  },
+  {
+    "id": "5d7c97a1-c041-4086-a0e8-fd4209218138",
+    "titulo": "Carne Molida EL BUEN CORTE x kg",
+    "status": "ok"
+  },
+  {
+    "id": "d77bea0b-0346-4808-8dc4-a7488bdccab4",
+    "titulo": "Galletas de Soda SAN JORGE Paquete 7un",
+    "status": "ok"
+  },
+  {
+    "id": "432b9830-7f59-4bc0-b638-6c93179a2e93",
+    "titulo": "Carne Molida Light EL BUEN CORTE x kg",
+    "status": "ok"
+  },
+  {
+    "id": "d8c8d626-d283-4ad8-b611-d9e06e1b1e0b",
+    "titulo": "Agua de Mesa SAN CARLOS sin Gas Botella 500ml Paquete 20un",
+    "status": "ok"
+  },
+  {
+    "id": "2f5676dd-e60a-461d-863a-a52e4737c526",
+    "titulo": "Salchicha de Huacho CASA EUROPA Paquete 150g",
+    "status": "ok"
+  },
+  {
+    "id": "4dd0355c-3834-46d0-ac6e-47583ebaa67e",
+    "titulo": "Cerveza de Maíz KLAUHOFF Lata 310ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "3fdecc0e-28e0-46db-9d40-9e9baec78b7b",
+    "titulo": "Filete de Tilapia BELL'S Bolsa 1Kg",
+    "status": "ok"
+  },
+  {
+    "id": "b96fd3c9-2ad5-49d9-a183-12dc09dabd72",
+    "titulo": "Bisteck EL BUEN CORTE x kg",
+    "status": "ok"
+  },
+  {
+    "id": "d9721b80-8cff-43e6-aabc-09b71eebe558",
+    "titulo": "Pollo Entero Fresco con Menudencia x kg",
+    "status": "ok"
+  },
+  {
+    "id": "0248217b-8845-44ac-ad69-f1f4375b6e75",
+    "titulo": "Leche UHT GLORIA Light Caja 946ml Paquete 3un",
+    "status": "ok"
+  },
+  {
+    "id": "95473f6a-2835-404b-8b5b-ea4ed8593e86",
+    "titulo": "RadioShack Universal Remote Control for Samsung TV with Voice Control",
+    "status": "ok"
+  },
+  {
+    "id": "fe920769-7df2-4db3-aad1-8f3bbbeb21c0",
+    "titulo": "Hígado de Pollo x kg",
+    "status": "ok"
+  },
+  {
+    "id": "5a94b2b6-baa5-40b3-95f5-5d47401014bd",
+    "titulo": "Medallón de Pavita SAN FERNANDO x kg",
+    "status": "ok"
+  },
+  {
+    "id": "0d84d793-156d-44c7-9781-1f69febb5a8a",
+    "titulo": "Pechuga Especial de Pollo Light SAN FERNANDO x kg",
+    "status": "ok"
+  },
+  {
+    "id": "298f7278-c46e-4662-805f-ead8507fc9e3",
+    "titulo": "Carne Molida FRIGON Congelado Empaque 500g",
+    "status": "ok"
+  },
+  {
+    "id": "49ab4222-30fa-4b63-8f27-c91cff27b878",
+    "titulo": "Filete de Pierna de Pollo x kg",
+    "status": "ok"
+  },
+  {
+    "id": "9cfbdb85-edff-4fe9-be71-3f8d31d2798a",
+    "titulo": "Osobuco de Res EL BUEN CORTE x kg",
+    "status": "ok"
+  },
+  {
+    "id": "759f9712-6343-437a-a6b3-9ab58df09f3e",
+    "titulo": "Filete de Tilapia FINE FOODS Bolsa 1kg",
+    "status": "ok"
+  },
+  {
+    "id": "c7f2fa15-a542-4391-82f0-3bd2b59fb94e",
+    "titulo": "Pierna de Pollo SAN FERNANDO x kg",
+    "status": "ok"
+  },
+  {
+    "id": "06131407-a730-4b6c-bee3-c426f89c94a7",
+    "titulo": "Pechuga Entera de Pollo x kg",
+    "status": "ok"
+  },
+  {
+    "id": "79edc63e-b3cf-4f5e-ab78-77c81802356c",
+    "titulo": "Guiso Especial EL BUEN CORTE x kg",
+    "status": "ok"
+  },
+  {
+    "id": "fdc2e51a-268d-4746-9a30-cba84bf1b1b2",
+    "titulo": "Porciones de Trucha PISCIS Bolsa 500g",
+    "status": "ok"
+  },
+  {
+    "id": "e4c9b5fc-f373-4938-ad72-21b87d48fdff",
+    "titulo": "Filete de Trucha BELL'S Congelado con Piel Bolsa 500g",
+    "status": "ok"
+  },
+  {
+    "id": "984fa81a-7bb7-44be-b0c1-5469a739611d",
+    "titulo": "Sangrecita Criolla REDONDOS Empaque 500g",
+    "status": "ok"
+  },
+  {
+    "id": "d0e6b809-24fa-4604-b83f-0755e95e7a29",
+    "titulo": "Molleja de Pollo SADIA Bolsa 1kg",
+    "status": "ok"
+  },
+  {
+    "id": "166a8936-4148-482b-98bc-b1e0e1af0046",
+    "titulo": "Pollo Trozado en 8 Piezas x kg",
+    "status": "ok"
+  },
+  {
+    "id": "8d8af98a-a62d-466b-9844-8d39081bfd79",
+    "titulo": "Gaseosa INCA KOLA sin Azúcar Botella 300ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "9ece7b1d-956b-4158-8581-c9df9dc3fa95",
+    "titulo": "Pack Gaseosa COCA COLA Botella 1L x 2un",
+    "status": "ok"
+  },
+  {
+    "id": "949f973b-5318-4f18-a500-9ba706f29e8a",
+    "titulo": "Chuleta de Brazuelo de Cerdo x kg",
+    "status": "ok"
+  },
+  {
+    "id": "ddb3c763-c82a-46a6-a494-cb3b190c0cf0",
+    "titulo": "Leche UHT sin Lactosa GLORIA Zero Caja 946ml Paquete 3un",
+    "status": "ok"
+  },
+  {
+    "id": "0f29957e-d14f-4324-9d7f-c84983615e34",
+    "titulo": "Agua sin Gas CIELO Botella 2.5L Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "263ab694-6ce9-4f92-b53f-f127445ddcf4",
+    "titulo": "Agua sin Gas BELL'S Bidón 7L",
+    "status": "ok"
+  },
+  {
+    "id": "1c2908fd-f044-48f2-b9df-2e8f8d90a59e",
+    "titulo": "RadioShack USB 2.0 Card Reader 2733315 &#x2013; Multi Memory Card Reader for PC",
+    "status": "ok"
+  },
+  {
+    "id": "c762ec98-cf4b-4c89-bc3a-8fcd1af6872f",
+    "titulo": "RC Metal Racer Remote Control Car 6 mph USB Rechargeable 25 Min Playtime Red and White",
+    "status": "ok"
+  },
+  {
+    "id": "bbc4ae9d-916a-4478-bf9d-be94ba7d5438",
+    "titulo": "Cerveza CUSQUEÑA Negra Botella 310ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "87b84292-61d0-4543-8ef4-d3d37424b720",
+    "titulo": "Mini Hamburguesas de Res OREGON FOODS Paquete 12un",
+    "status": "ok"
+  },
+  {
+    "id": "cb477160-926a-4212-aa93-b8419f7e22a2",
+    "titulo": "Gaseosa COCA COLA Sabor Original Botella 3L Two Pack",
+    "status": "ok"
+  },
+  {
+    "id": "abe06988-5e71-4453-888c-e1465f020ad2",
+    "titulo": "Cerveza PILSEN Lata 355ml Pack 12un",
+    "status": "ok"
+  },
+  {
+    "id": "7ad803c2-4a7a-4855-bc9f-91bf0ad77a81",
+    "titulo": "Pasta Dental DENTO Triple Acción Sixpack Tubo 80g",
+    "status": "ok"
+  },
+  {
+    "id": "f799394f-8511-4743-a03a-f3ed264ea9c5",
+    "titulo": "Leche sin Lactosa LAIVE UHT Caja 946ml Paquete 4un",
+    "status": "ok"
+  },
+  {
+    "id": "b8992714-c32a-46f7-b7ad-a145c815eccc",
+    "titulo": "Agua Mineral SAN MATEO Sin Gas Botella 2.5L",
+    "status": "ok"
+  },
+  {
+    "id": "0eb856c2-e4c1-48c2-bebb-9abd77ce176e",
+    "titulo": "Leche UHT GLORIA Entera Caja 946ml Paquete 3un",
+    "status": "ok"
+  },
+  {
+    "id": "ef9d587a-c4c2-4ac9-8919-597c96ff9258",
+    "titulo": "Agua Mineral SAN MATEO Con Gas Botella 600ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "2620c1cc-ece5-414d-b7be-0280dd2d02e9",
+    "titulo": "Gaseosa COCA COLA Sabor Original + INCA KOLA Sabor Original Botella 3L Paquete 2un",
+    "status": "ok"
+  },
+  {
+    "id": "554e19c0-28d6-47a9-a068-63c96c4e29e1",
+    "titulo": "Agua Mineral SAN MATEO sin Gas Botella 600ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "bd05d64d-1434-484a-a89b-a94e1d6bca43",
+    "titulo": "Bebida FRUGOS DEL VALLE Durazno Caja 235ml Six Pack",
+    "status": "ok"
+  },
+  {
+    "id": "98b280eb-0975-4048-88fc-0240e0ca8033",
+    "titulo": "Agua Mineral SAN MATEO Con Gas Botella 1.5L",
+    "status": "ok"
+  },
+  {
+    "id": "e7b34718-b5f7-4e81-8268-885edbad44f3",
+    "titulo": "Hielo BELL'S Bolsa 3Kg",
+    "status": "ok"
+  },
+  {
+    "id": "4fbeb7dc-77ee-4bf3-b316-7bad5d483fe6",
+    "titulo": "Agua sin Gas CIELO Caja 20L",
+    "status": "ok"
+  },
+  {
+    "id": "3f9f0fed-b584-4b81-960f-4a6161e1bd98",
+    "titulo": "Alitas sabor a la Brasa REDONDOS Caja 400g",
+    "status": "ok"
+  },
+  {
+    "id": "181cbcb8-ab59-497a-9877-7486b5ef7cb0",
+    "titulo": "Cerveza PILSEN Callao Botella 305ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "300df0c9-e2d7-4e56-8fd3-890a9cecaabb",
+    "titulo": "Leche Descremada GLORIA Slim UHT Triple Zero Caja 946ml Paquete 3un",
+    "status": "ok"
+  },
+  {
+    "id": "fcefffef-8343-43aa-a829-400a76c91e4c",
+    "titulo": "Hamburguesa de Carne La Casera SAN FERNANDO Bolsa 14un",
+    "status": "ok"
+  },
+  {
+    "id": "f094d967-ff40-4283-a0a0-9a986760dba0",
+    "titulo": "Cerveza CUSQUEÑA Trigo Botella 310ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "fd977433-82e2-4e85-8edc-4e41eecac51b",
+    "titulo": "Cerveza BUDWEISER Paquete 6un Lata 355ml",
+    "status": "ok"
+  },
+  {
+    "id": "040cd3a9-d1a6-4f42-bffe-489f5049bf91",
+    "titulo": "Cerveza HEINEKEN Lata 310ml Paquete 12un",
+    "status": "ok"
+  },
+  {
+    "id": "4fda2a8f-6388-4125-a0de-ef45afeeca8e",
+    "titulo": "Pack TABERNERO Vino Tinto Borgoña Botella 750ml + Vino Rosé Semiseco Botella 750ml",
+    "status": "ok"
+  },
+  {
+    "id": "5c8c06cb-558c-4fcb-8c6d-d9503d1f02b0",
+    "titulo": "RadioShack MicroSD Card U1 64GB Class 10 4401119 &#x2013; High-Speed Memory Card with Adapter",
+    "status": "ok"
+  },
+  {
+    "id": "b8b35f80-f602-41a6-9f94-92cf3cb492a9",
+    "titulo": "RC RAM Pickup Truck Off Road Remote Control Car 5 mph Suspension Red",
+    "status": "ok"
+  },
+  {
+    "id": "337e37d6-e12a-4547-b09e-7d4df9803d7a",
+    "titulo": "Bebida FRUGOS DEL VALLE Durazno Caja 235ml Six Pack",
+    "status": "error",
+    "error": "NaN error after 2 retries"
+  },
+  {
+    "id": "26aa4d8a-507b-4dcb-a4ff-a5f3b8698443",
+    "titulo": "Jarabe de Goma VIÑA SANTA Natural Botella 750ml",
+    "status": "ok"
+  },
+  {
+    "id": "48f1326c-fa97-4ed0-a4e4-497bdfc520b4",
+    "titulo": "Cerveza CUSQUEÑA Dorada Botella 310ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "8530d699-6cdf-4c0d-bc29-da0d72e6efce",
+    "titulo": "Pisco SANTIAGO QUEIROLO Quebranta Botella 750ml",
+    "status": "ok"
+  },
+  {
+    "id": "5236f505-cfd0-4593-b62e-fda4a0f323c6",
+    "titulo": "Cerveza FLYING FISH con Sabor Lima Limón Lata 355ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "f7b05cd1-f88b-49e6-ac61-ba0b297f22b6",
+    "titulo": "Gin BEEFEATER London Dry Botella 700ml + Vodka ABSOLUT Botella 375ml",
+    "status": "ok"
+  },
+  {
+    "id": "ea773666-3641-4e2f-afb9-452218b1dde3",
+    "titulo": "Cerveza PILSEN 6 Pack Lata 355ml",
+    "status": "ok"
+  },
+  {
+    "id": "2f4c7e09-3921-48a0-ae17-e9457d6839c0",
+    "titulo": "Cerveza CORONITA 6Pack Botella 210ml",
+    "status": "ok"
+  },
+  {
+    "id": "02a73296-1c90-415c-9feb-0532d6b7698c",
+    "titulo": "Ready To Drink (RTD) MIKE'S Hard Passion Fruit Lata 355ml paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "022e4529-cfee-4181-b51d-748bdb87b490",
+    "titulo": "Cerveza CUSQUEÑA Cero Trigo Botella 310ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "23fa3821-899c-404a-8b8f-c070f01ee4fc",
+    "titulo": "Jabón BOLIVAR Cuidado Bebés Bolsa 380g",
+    "status": "ok"
+  },
+  {
+    "id": "093fb7a7-27bf-48e5-9978-272aed149e60",
+    "titulo": "Jabón de Lavar BOLÍVAR Cuidado Total Limón Bolsa 380g",
+    "status": "ok"
+  },
+  {
+    "id": "0e6cd5a2-3c2e-4ff9-b453-253162031da9",
+    "titulo": "Espumante RICCADONNA Moscato Rose Botella 200ml",
+    "status": "ok"
+  },
+  {
+    "id": "c377e7da-f6a6-418f-b7e0-90478eaf2fa4",
+    "titulo": "Cerveza sin Alcohol CUSQUEÑA Cero Trigo Lata 355ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "984dae4e-f7f1-4a50-a764-19b19694357e",
+    "titulo": "Queso Parmesano Rallado LAIVE Paquete 35g",
+    "status": "ok"
+  },
+  {
+    "id": "a2e6b791-aabc-402c-871a-bc94454f46af",
+    "titulo": "Queso Fresco Pasteurizado Light BELL'S Paquete 300g",
+    "status": "ok"
+  },
+  {
+    "id": "0014b7f9-8e6b-43f0-9996-405ad0e1b30a",
+    "titulo": "Queso Fresco GLORIA x kg",
+    "status": "ok"
+  },
+  {
+    "id": "180c7ded-88b8-412b-88d6-0dfb3d2b6f5f",
+    "titulo": "Cigarros MARLBORO Crafted Blue Caja 20un",
+    "status": "ok"
+  },
+  {
+    "id": "ef9e401a-813c-441d-8fcf-b4423f109b17",
+    "titulo": "Queso Mozzarella en Bola GLORIA Paquete 250g",
+    "status": "ok"
+  },
+  {
+    "id": "abccee06-1278-48cb-b53a-0222e2a61d0f",
+    "titulo": "Pack Hot Dog Ahumado SALCHICHERÍA SUIZA Paquete 600g",
+    "status": "ok"
+  },
+  {
+    "id": "c577c4bf-42d3-4e6b-8c81-c6ad856de709",
+    "titulo": "Jamón de Pavita BRAEDT Balance Paquete 200g",
+    "status": "ok"
+  },
+  {
+    "id": "38342442-641f-4636-bab5-ab95a7e2efe3",
+    "titulo": "Pack Jamón Pizza BRAEDT Queso Edam 370g",
+    "status": "ok"
+  },
+  {
+    "id": "87529074-5dac-47f1-82c3-b80ff6c50900",
+    "titulo": "RadioShack Free Beat Bluetooth Headphones 5.3 40mm Drivers 15 Hour Battery Black and Red",
+    "status": "ok"
+  },
+  {
+    "id": "202dc006-3162-4bb8-8b06-4166d3d66b9d",
+    "titulo": "Queso Edam BONLÉ Paquete 500g",
+    "status": "ok"
+  },
+  {
+    "id": "9aee9de7-f3a1-4b8b-a4dc-f90fbfb8f4cd",
+    "titulo": "Pack Mixto Queso Edam + Jamón Americano LAIVE 300g",
+    "status": "ok"
+  },
+  {
+    "id": "a5bdf0f1-da35-4987-bcb0-34815aedcc57",
+    "titulo": "Tocino Ahumado CASA EUROPA Paquete 200g",
+    "status": "ok"
+  },
+  {
+    "id": "68e31a8b-d9d3-4032-99d1-d8b311aabc19",
+    "titulo": "Queso Crema PHILADELPHIA Brick Original Paquete 180g",
+    "status": "ok"
+  },
+  {
+    "id": "48b684a6-eb89-4d01-88b3-6324c37c2cb0",
+    "titulo": "Queso Parmesano Rallado GLORIA Paquete 35g",
+    "status": "ok"
+  },
+  {
+    "id": "5ebbdf52-cbd2-4268-8036-e420e1b1dac5",
+    "titulo": "Queso Edam BRAEDT Paquete 440g",
+    "status": "ok"
+  },
+  {
+    "id": "648dadab-300d-40ad-967f-c683d2604e34",
+    "titulo": "Jamón Pizzero BRAEDT Paquete 480g",
+    "status": "ok"
+  },
+  {
+    "id": "35c30a1e-8db5-4e15-8216-87de382ec4b3",
+    "titulo": "Queso Fundido Cheddar GLORIA Paquete 136g",
+    "status": "ok"
+  },
+  {
+    "id": "ffb64344-abf9-409c-abc7-0f937a72046b",
+    "titulo": "Queso Fundido Natural GLORIA Paquete 136g",
+    "status": "ok"
+  },
+  {
+    "id": "5421c56a-e600-4153-8de0-07f15bebd564",
+    "titulo": "Chorizo Parrillero Precocido BRAEDT Paquete 500g",
+    "status": "ok"
+  },
+  {
+    "id": "0dfbaa94-78fe-4e61-980f-c1ae89a60c10",
+    "titulo": "Queso Cottage PLUSA Paquete 225g",
+    "status": "ok"
+  },
+  {
+    "id": "bc841ad9-a3de-4336-92bc-ed720582aaa0",
+    "titulo": "Queso Edam BRAEDT Paquete 180g",
+    "status": "ok"
+  },
+  {
+    "id": "e81471a8-5d4b-4f0a-8559-ad946682a591",
+    "titulo": "Leche GLORIA Zero Lacto Lata 390g Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "14f84fb7-28eb-4c36-b678-0c222e91a582",
+    "titulo": "Yogurt Parcialmente Descremado GLORIA Fresa Galonera 1.6Kg",
+    "status": "ok"
+  },
+  {
+    "id": "81dcee2f-37d7-41b9-a03c-2aa846745b5d",
+    "titulo": "Leche Light GLORIA Lata 390g Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "0f18a0c8-46db-4eba-8aa5-c83948220785",
+    "titulo": "Leche Reconstituida Entera GLORIA Lata 390g Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "fad91dd5-b826-473f-943b-18ec40780465",
+    "titulo": "Mantequilla con Sal GLORIA Paquete 180g",
+    "status": "ok"
+  },
+  {
+    "id": "6e005691-7ad1-453d-bad0-759e0c3ce4bf",
+    "titulo": "Agua con Gas CIELO Gasificada Sabor a Naranja Botella 600ml",
+    "status": "ok"
+  },
+  {
+    "id": "4d3a1c8b-a923-4cfd-b674-f678c188e750",
+    "titulo": "Huevos Pardos ARTISAN Bandeja 15un",
+    "status": "ok"
+  },
+  {
+    "id": "db34c2bb-3550-48bd-a969-200817cd537d",
+    "titulo": "Leche sin Lactosa LAIVE Botella 390g Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "bec3e70a-0106-4610-9a35-614ee218335d",
+    "titulo": "Yogurt Griego VAKIMU Original Pote 960g",
+    "status": "ok"
+  },
+  {
+    "id": "390af46e-d25f-445c-a88f-bd66293053bb",
+    "titulo": "Gaseosa HEY FIT Soda Tango Twist Botella 600ml",
+    "status": "ok"
+  },
+  {
+    "id": "9d798ff0-cf46-445d-8395-db0d79da0b90",
+    "titulo": "Mantequilla con Sal LAIVE Barra 180g",
+    "status": "ok"
+  },
+  {
+    "id": "5f94c7bc-d263-4796-8d33-7d35f33ae5c0",
+    "titulo": "Gaseosa HEY FIT Soda Summer Breeze Botella 600ml",
+    "status": "ok"
+  },
+  {
+    "id": "0af9611b-5f85-4b56-8977-b6a8207d69c6",
+    "titulo": "Huevos Pardos LA CALERA Paquete 30un",
+    "status": "ok"
+  },
+  {
+    "id": "1e769a8e-61fa-4eca-a04f-2e68940183af",
+    "titulo": "Agua sin Gas SAN LUIS Botella 3L Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "e6ae2421-613c-4b8c-b5f3-6acf59baba4a",
+    "titulo": "RadioShack TWS Earbuds Bluetooth 5.4 ANC IPX5 460mAh Case White",
+    "status": "ok"
+  },
+  {
+    "id": "58b2a77a-99f0-482a-8815-e89132aeff3c",
+    "titulo": "Papa Blanca x kg",
+    "status": "ok"
+  },
+  {
+    "id": "00f49a76-f99d-4a2d-85d6-e9641c951db8",
+    "titulo": "Jabón en Barra Antibacterial PROTEX Avena Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "e42c9fb3-a3e8-452e-9765-5105a7bfe1b7",
+    "titulo": "Tiras de Pechuga de Pollo Empanizados REDONDOS Bolsa 8un",
+    "status": "ok"
+  },
+  {
+    "id": "04104e7f-2f27-49ce-a4ac-2506f6736185",
+    "titulo": "Lavavajilla Líquido AYUDIN Limón y Sábila 1200ml",
+    "status": "ok"
+  },
+  {
+    "id": "e58347fb-2be3-4585-8dec-1831c5215bb2",
+    "titulo": "Papel Toalla NOVA Clásico Mega Rollo Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "f193fb16-56f7-4111-ba46-ad18a49dc6d2",
+    "titulo": "Aceite Vegetal BELL'S Botella 900ml",
+    "status": "ok"
+  },
+  {
+    "id": "e1a8f62f-c496-4f35-9aea-db5304347bf2",
+    "titulo": "Galletas Saladas RITZ sabor Original Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "f180842c-c644-4700-8730-dd0cf5df3cee",
+    "titulo": "Arroz Extra COSTEÑO Bolsa 5Kg",
+    "status": "ok"
+  },
+  {
+    "id": "4f25b0d3-4e18-4a9f-8c49-ace5d14c6ac9",
+    "titulo": "Arroz Extra Añejo FARAON Naranja Bolsa 5kg",
+    "status": "ok"
+  },
+  {
+    "id": "99e73605-ae26-4205-8c7d-10c68380a8ba",
+    "titulo": "Café Tostado y Molido CAFETAL  Selecto Bolsa 454g",
+    "status": "ok"
+  },
+  {
+    "id": "3ed9adb2-007b-481a-a153-53780ea44d3d",
+    "titulo": "Gaseosa sin Ázucar INCA KOLA Botella 600ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "e8c2d02f-54c5-44d5-b9b3-533981c53d89",
+    "titulo": "Mayonesa ALACENA Doypack 850g",
+    "status": "ok"
+  },
+  {
+    "id": "8a64b8f0-c578-44b6-8dfa-a05281c8d951",
+    "titulo": "Mezcla Láctea LAIVE Sin Lactosa Caja 480g Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "9a7015f0-0878-4434-a1e9-6eb8b8d0873e",
+    "titulo": "Leche sin Lactosa LAIVE Light Botella 390g Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "1868a053-c5a9-4787-9091-391889ae3119",
+    "titulo": "Yogurt Parcialmente Descremado GLORIA Vainilla Galonera 1.6Kg",
+    "status": "ok"
+  },
+  {
+    "id": "9cd1654e-161d-4e8a-a603-6095ed741477",
+    "titulo": "Cocoa WINTERS Doypack 150g",
+    "status": "ok"
+  },
+  {
+    "id": "d23f43bd-8d07-41e2-b354-5c301ee9f3d1",
+    "titulo": "Yogurt Griego VAKIMU Frutos del Bosque Pote 960g",
+    "status": "ok"
+  },
+  {
+    "id": "9cdc7275-1d58-4a5b-aafc-a21b776ce71c",
+    "titulo": "Yogurt Funcional DANLAC Estilo Kéfir Botella 900g",
+    "status": "ok"
+  },
+  {
+    "id": "8ae24594-e6b0-4884-a0c5-3f7d6ebfb7aa",
+    "titulo": "Yogurt Batido GLORIA Griego Sabor Natural Bolsa 800g",
+    "status": "ok"
+  },
+  {
+    "id": "0d724626-41fe-486c-a773-f2716d364e3d",
+    "titulo": "Leche Evaporada Entera GLORIA Lata 390g Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "55708e83-23c2-412c-bd73-011ecc5370d6",
+    "titulo": "Yogurt Griego GLORIA Batido Frutos Rojos Bolsa 800g",
+    "status": "ok"
+  },
+  {
+    "id": "dca50a6d-948a-41cf-b993-65aa27658cad",
+    "titulo": "Gaseosa COCA COLA Zero Botella 600ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "a4f7f5b2-ffc1-43bf-9660-7e4a468445e3",
+    "titulo": "Leche GLORIA Light Zero Lacto Lata 390g Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "ae9e5e5d-21e2-40ac-87da-b920f4eefc3d",
+    "titulo": "Leche Reconstituida Entera GLORIA Lata 390g",
+    "status": "ok"
+  },
+  {
+    "id": "a7488fc6-4c97-4c7a-ad30-a5a64e43b09e",
+    "titulo": "RadioShack RGB Wired Gaming Mouse 2607074 &#x2013; LED Lighting, Ergonomic Design",
+    "status": "ok"
+  },
+  {
+    "id": "ef1007e1-2f96-49e3-9e2b-f214ef492301",
+    "titulo": "Avena QUAKER Con Quinua Bolsa 850g",
+    "status": "ok"
+  },
+  {
+    "id": "9e766a40-d519-4e9a-8808-5b1f6ab471fd",
+    "titulo": "Papa Amarilla Tumbay x kg",
+    "status": "ok"
+  },
+  {
+    "id": "860a6059-42f5-4669-9061-ae85ea41c1aa",
+    "titulo": "Tomate Italiano x kg",
+    "status": "ok"
+  },
+  {
+    "id": "860412c0-12fc-4a51-8a7d-0284d5ec3da4",
+    "titulo": "Plátano de Seda x kg",
+    "status": "ok"
+  },
+  {
+    "id": "d1154763-7781-4b3a-b821-2d5be790ffdc",
+    "titulo": "Pack Agua de Mesa CIELO sin Gas Caja 20L x 2un",
+    "status": "ok"
+  },
+  {
+    "id": "3613c65b-c97c-4023-9185-502cdb71c48c",
+    "titulo": "Cebolla Roja x kg",
+    "status": "ok"
+  },
+  {
+    "id": "efd2b476-df5a-4ca9-81a1-87afad273fdb",
+    "titulo": "Tomate Italiano x kg",
+    "status": "ok"
+  },
+  {
+    "id": "e897728a-50f9-49b0-adeb-7516bd4e2090",
+    "titulo": "Filete de Pechuga de Pollo x kg",
+    "status": "ok"
+  },
+  {
+    "id": "3dd682f9-fc17-4d1d-ae85-46c0dc311ccd",
+    "titulo": "Pan de Molde Blanco DON MAMINO sin Corteza Bolsa 560g",
+    "status": "ok"
+  },
+  {
+    "id": "1bfe94e2-9067-427d-a272-0f29a3212f8c",
+    "titulo": "Canela Entera BELL'S Sobre 12g",
+    "status": "ok"
+  },
+  {
+    "id": "9542d87f-da45-4c8b-8756-9d56806056e4",
+    "titulo": "Huevos Pardos BELL'S Bandeja 30un",
+    "status": "ok"
+  },
+  {
+    "id": "362a5f77-6fa7-402a-b76b-ce4f6565f106",
+    "titulo": "Gaseosa INCA KOLA sin Azúcar Botella 1.5L Paquete 2un",
+    "status": "ok"
+  },
+  {
+    "id": "dea1ac3b-9681-443f-9cfc-0d7123af6cb9",
+    "titulo": "Mini Hamburguesas de Res OREGON FOODS Paquete 12un",
+    "status": "ok"
+  },
+  {
+    "id": "319f3222-4f9e-43a1-a693-69102fb8ed1f",
+    "titulo": "Zanahoria x kg",
+    "status": "ok"
+  },
+  {
+    "id": "509863f9-db14-4c13-9b7b-86f118e350af",
+    "titulo": "Margarina LA DANESA Barra 500g",
+    "status": "ok"
+  },
+  {
+    "id": "56277f77-5aac-4520-aca6-36e81e589d39",
+    "titulo": "Jabón en Barra Antibacterial PROTEX Avena Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "9b89dcef-4ec0-41ac-8220-b376b2ccc311",
+    "titulo": "RadioShack 9V Alkaline Battery 2302209 &#x2013; Long Lasting Power",
+    "status": "ok"
+  },
+  {
+    "id": "763d3c13-9113-4f35-bac1-58dff8093471",
+    "titulo": "RadioShack Wireless Gaming Headset Bluetooth 5.4 50mm Drivers 20 Hour Battery",
+    "status": "ok"
+  },
+  {
+    "id": "c8254399-ba17-4624-a3ea-7aa6c736efdc",
+    "titulo": "Camote Amarillo Procesado x kg",
+    "status": "ok"
+  },
+  {
+    "id": "94446398-58ea-42bd-b19f-11bd730560a9",
+    "titulo": "PACK Antipulgas Bravecto para Perros de 10 a 20 Kg + 2 Tabletas* de Endal Plus + 1 Plato Bravecto",
+    "status": "ok"
+  },
+  {
+    "id": "bed58060-a325-47e3-96c0-e7680b6d3883",
+    "titulo": "Palta Fuerte x kg",
+    "status": "ok"
+  },
+  {
+    "id": "d4da18c3-ec63-4b5b-a0b2-20828248df2d",
+    "titulo": "Tomate Redondo x kg",
+    "status": "ok"
+  },
+  {
+    "id": "08730fec-94e7-4a83-b455-6d67abfb4c81",
+    "titulo": "Fresa IMPERIAL Bandeja 500g",
+    "status": "ok"
+  },
+  {
+    "id": "413be905-f810-4dce-a065-3c003b50a894",
+    "titulo": "Champiñon Entero BELL'S Bandeja 200g",
+    "status": "ok"
+  },
+  {
+    "id": "0152934e-f82a-4853-9906-21769226edf0",
+    "titulo": "Espinaca Bebé BELL'S Bolsa 150g aprox.",
+    "status": "ok"
+  },
+  {
+    "id": "c34a897a-83b1-4721-b618-eede8a4cc1c2",
+    "titulo": "Papa Blanca Yungay x kg",
+    "status": "ok"
+  },
+  {
+    "id": "da768087-5f64-42f3-8400-5c0ede912f76",
+    "titulo": "Café Tostado y Molido CAFETAL Selecto Bolsa 900g",
+    "status": "ok"
+  },
+  {
+    "id": "c0549d92-d7ea-4e4d-8f30-907f27e084a1",
+    "titulo": "Blueberries BELL'S FRESCOS Bandeja 500g",
+    "status": "ok"
+  },
+  {
+    "id": "f1050476-484e-4f8b-ae36-a6e8ca4188a4",
+    "titulo": "Jabón de Tocador BALANZÉ BÁSICOS Avena Paquete 3un x 100g",
+    "status": "ok"
+  },
+  {
+    "id": "47e1053f-fb2e-4fb5-9baa-852626bcbba5",
+    "titulo": "Queso Edam sin Lactosa LAIVE Paquete 440g",
+    "status": "ok"
+  },
+  {
+    "id": "06c9e10c-2a96-4a0d-b54f-a6e829643ec0",
+    "titulo": "Culantro BELL'S Bolsa 60g aprox.",
+    "status": "ok"
+  },
+  {
+    "id": "c89e45d7-bfc1-43c1-a55c-9d9492242e65",
+    "titulo": "Toallas Higiénicas NOSOTRAS Natural Alas Gel Paquete 48un",
+    "status": "ok"
+  },
+  {
+    "id": "385c182f-077d-4b5b-abf6-78a16ea8c052",
+    "titulo": "RadioShack Wired Stereo Earphones 3.5mm &#x2013; Mic & Lightweight Design Black",
+    "status": "ok"
+  },
+  {
+    "id": "d44fccb0-7cc9-438c-a597-88c6d62fef26",
+    "titulo": "RadioShack Bluetooth Tower Speaker 240W FM Karaoke USB Remote Control",
+    "status": "ok"
+  },
+  {
+    "id": "4d46fce7-9b78-431c-93e6-24282643ff9c",
+    "titulo": "PACK Antipulgas Bravecto para Perros de 20 a 40 Kg + 4 Tabletas* de Endal Plus + 1 Plato Bravecto",
+    "status": "ok"
+  },
+  {
+    "id": "07bfd8a4-c86e-4c0e-9ee4-560105f67ae2",
+    "titulo": "Piña Golden x kg",
+    "status": "ok"
+  },
+  {
+    "id": "23a6bef0-8b7a-48cd-adc2-9e18725f261c",
+    "titulo": "Agua sin Gas SAN LUIS Botella 3L Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "293fd9b3-dc5d-4f90-8d15-610583a980fa",
+    "titulo": "Alimento para Perro RICOCRACK Galletas Adulto Multisabores Caja 500g",
+    "status": "ok"
+  },
+  {
+    "id": "ef9fea5e-0011-4f69-9a60-b1029e70617b",
+    "titulo": "Pack Vino Rosé TABERNERO Gran Rosé Semi Seco Botella 750ml + Tabla Piqueo Tradicional BELL´S",
+    "status": "ok"
+  },
+  {
+    "id": "af350eb6-2565-4147-94de-41e0e414f36b",
+    "titulo": "Papaya x kg",
+    "status": "ok"
+  },
+  {
+    "id": "5205dd63-eb11-46d7-89f2-e29a222086f0",
+    "titulo": "Sandía x kg",
+    "status": "ok"
+  },
+  {
+    "id": "39ae14a6-eef7-493a-a042-969940783777",
+    "titulo": "Pan de Molde UNIÓN Multisemillas y Avena Bolsa 540g",
+    "status": "ok"
+  },
+  {
+    "id": "065042b5-e634-40db-8d9e-b46a9466f6f9",
+    "titulo": "Mantequilla GLORIA Pote 390g",
+    "status": "ok"
+  },
+  {
+    "id": "03100e3b-c4fa-4068-b30d-8010876b0fa8",
+    "titulo": "Hamburguesa OTTO KUNZ Premium de Res Bolsa 8un",
+    "status": "ok"
+  },
+  {
+    "id": "91e9622e-9114-4977-ac2b-772a953349cb",
+    "titulo": "Hamburguesa de pollo REDONDOS Bolsa 14un",
+    "status": "ok"
+  },
+  {
+    "id": "1e1dd64a-da29-4bf5-824c-0949967c2fa5",
+    "titulo": "Nuggets Pechuga de Pollo SAN FERNANDO Bolsa 36un",
+    "status": "ok"
+  },
+  {
+    "id": "f7443ee0-14e0-4904-ac62-763f682f87e3",
+    "titulo": "Arveja Pack x 250g aprox.",
+    "status": "ok"
+  },
+  {
+    "id": "b271faa2-f45a-4082-83cb-a1bb2b4516a4",
+    "titulo": "RadioShack Wired Stereo Earphones 3.5mm Jack &#x2013; Mic & Volume Control Deep Bass Purple & Black",
+    "status": "ok"
+  },
+  {
+    "id": "be56b01a-67ba-4f4e-a0c5-2b8eb05eb2d2",
+    "titulo": "RadioShack Bluetooth Speaker 80W TWS AUX USB IPX5 RGB Black Orange",
+    "status": "ok"
+  },
+  {
+    "id": "440aecf1-3cc5-44d1-b396-4c0e9b433ad0",
+    "titulo": "RadioShack Dual 10&quot; PA Speaker &#x2013; 3000W Bluetooth, USB&#x2F;SD, FM, RGB Lights with Wheels",
+    "status": "ok"
+  },
+  {
+    "id": "c947f982-fedd-48d0-ad9f-40d46ff58f94",
+    "titulo": "Alimento Húmedo para Perro RICOCAN Adulto Sabor Cordero Lata 330g",
+    "status": "ok"
+  },
+  {
+    "id": "ef9ec269-785f-4b97-818d-4dd4e2a2d451",
+    "titulo": "Esencia de Vainilla UNIVERSAL Frasco 100ml",
+    "status": "ok"
+  },
+  {
+    "id": "d7fdf9f4-6f33-47ce-b497-ec10be68dc94",
+    "titulo": "Sasami de Pollo x kg",
+    "status": "ok"
+  },
+  {
+    "id": "fa9a091b-15ca-4661-a8e7-f78852211ec9",
+    "titulo": "Ají Amarillo Pack x 2 und aprox.",
+    "status": "ok"
+  },
+  {
+    "id": "665ab3e8-dd30-481a-a4f0-dcff0f9a8353",
+    "titulo": "Lechuga Americana BELL's Bolsa 300g aprox.",
+    "status": "ok"
+  },
+  {
+    "id": "c9fd7726-a92d-4ce9-81c4-99d82a3fb5e8",
+    "titulo": "Papa Blanca x kg",
+    "status": "ok"
+  },
+  {
+    "id": "12789783-c679-4b48-9d2d-eba4832f06a6",
+    "titulo": "Vainita Americana Pack x 250g aprox.",
+    "status": "ok"
+  },
+  {
+    "id": "51df026a-4542-4d83-8bf8-7cd88a522976",
+    "titulo": "Huevos de Gallina LA CALERA de Corral Paquete 12un",
+    "status": "ok"
+  },
+  {
+    "id": "fb65333b-6d22-45f0-8d61-24f2c40769ea",
+    "titulo": "Hígado EL BUEN CORTE x kg",
+    "status": "ok"
+  },
+  {
+    "id": "ad7fd44d-a930-4f7c-979c-ab5c82e81663",
+    "titulo": "Leche UHT GLORIA Light Caja 946ml Paquete 3un",
+    "status": "ok"
+  },
+  {
+    "id": "74e5eeea-88a1-4ae1-af79-6c54350fff43",
+    "titulo": "Hot Dog Ahumado SALCHICHERÍA AHUMADO Paquete 200g",
+    "status": "ok"
+  },
+  {
+    "id": "1234d15c-fd3b-4109-94e0-f0ced881810d",
+    "titulo": "Agua Mineral SAN LUIS Con Gas Botella 625ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "5727bc45-3baa-4fa5-b041-fc8f3ab48972",
+    "titulo": "Espinaca BELL'S Bolsa 350g aprox.",
+    "status": "ok"
+  },
+  {
+    "id": "9b54267b-4d02-4674-90ae-abd4cb09bf0d",
+    "titulo": "RadioShack Bluetooth Speaker 30W FM TWS AUX USB IPX5 RGB Gray Green",
+    "status": "ok"
+  },
+  {
+    "id": "ba9e1a4e-2022-4a16-a558-c62caa333cde",
+    "titulo": "RadioShack Asia Travel Adapter 2730363 Type A Plug Converter",
+    "status": "ok"
+  },
+  {
+    "id": "e56f42eb-c75c-4d53-95f3-1e9fbf2acf18",
+    "titulo": "Nuggets de Pollo Precocido AVINKA Bolsa 15un",
+    "status": "ok"
+  },
+  {
+    "id": "60799c06-a7bf-469b-be07-6a78ab8d19c8",
+    "titulo": "Zapallo Italiano x und.",
+    "status": "ok"
+  },
+  {
+    "id": "1c7bfc33-9756-4d2e-92fa-4eef4e8fa4d3",
+    "titulo": "Brócoli x kg",
+    "status": "ok"
+  },
+  {
+    "id": "8cf939da-710c-4ce4-9454-8c78812ea713",
+    "titulo": "Pan Ciabatta Refrigerado LA FLORENCIA Bolsa 6un",
+    "status": "ok"
+  },
+  {
+    "id": "20a351e0-b6ac-4ad6-a0d7-50f98493162b",
+    "titulo": "Deditos de Pollo AVINKA Bolsa 12un",
+    "status": "ok"
+  },
+  {
+    "id": "f9448388-eb1c-4920-9126-ec258ec55a8c",
+    "titulo": "Leche UHT GLORIA Entera Bolsa 800ml Paquete 3un",
+    "status": "ok"
+  },
+  {
+    "id": "52814a09-3380-48fc-8a00-1201b01e58c6",
+    "titulo": "Cerveza STELLA ARTOIS Botella 330ml 6 Pack",
+    "status": "ok"
+  },
+  {
+    "id": "24b63ab1-9580-4a10-a6e7-cfb4b18c6f1a",
+    "titulo": "Chicharrón de Pollo AVINKA Bolsa 350g",
+    "status": "ok"
+  },
+  {
+    "id": "039434f7-efbf-4ae4-8cc3-aaffe374a9c5",
+    "titulo": "Queso Edam en Tajadas BELL'S FRESCOS Paquete 440g",
+    "status": "ok"
+  },
+  {
+    "id": "4e4c7c9d-8f8f-4d5c-b90c-547972552928",
+    "titulo": "Cerveza CORONA Cero sin Alcohol Botella 355ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "393e3dab-8f08-4be0-85f0-d14e2600f79f",
+    "titulo": "Gaseosa COCA COLA sin Azúcar 2Pack Botella 1.5L",
+    "status": "ok"
+  },
+  {
+    "id": "e2b8f3d3-1bb3-4ec0-8aab-5c5c157e8bf7",
+    "titulo": "Queso Edam LAIVE Sin Lactosa Paquete 180g",
+    "status": "ok"
+  },
+  {
+    "id": "92515780-18cd-49cb-8826-daf78a4547af",
+    "titulo": "Guiso EL BUEN CORTE x kg",
+    "status": "ok"
+  },
+  {
+    "id": "b1617e80-1d99-4b28-b282-fae60ca407cc",
+    "titulo": "Dedos de Pollo AVINKA con Queso Bolsa 12un",
+    "status": "ok"
+  },
+  {
+    "id": "58f8884e-033b-484d-ac71-2499e99e70e5",
+    "titulo": "Pan Ciabatta Congelado LA FLORENCIA Bolsa 6un",
+    "status": "ok"
+  },
+  {
+    "id": "07a10a7f-3c3b-49e1-bf99-0a209cd6a1ec",
+    "titulo": "Pan Francés Congelado LA FLORENCIA Bolsa 6un",
+    "status": "ok"
+  },
+  {
+    "id": "3f7a6ba2-f1cd-4ab4-b837-785b8a09b030",
+    "titulo": "Tiras de Pechuga de Pollo Empanizados REDONDOS Bolsa 8un",
+    "status": "ok"
+  },
+  {
+    "id": "a5ea0204-bc95-46da-af77-737a14aea94f",
+    "titulo": "Hamburguesa de Res OREGON Foods Bolsa 8un",
+    "status": "ok"
+  },
+  {
+    "id": "480db292-f559-429e-b497-3d25a163f36d",
+    "titulo": "Pan Francés Refrigerado LA FLORENCIA Bolsa 6un",
+    "status": "ok"
+  },
+  {
+    "id": "4c7f1dc1-da71-49e7-8f82-74e3b2c54945",
+    "titulo": "Nuggets de Pollo SAN FERNANDO Bolsa 60un",
+    "status": "ok"
+  },
+  {
+    "id": "d52c5205-04a0-4a0a-9e4d-b52015d56f66",
+    "titulo": "RadioShack Bluetooth Speaker 20W FM TWS AUX USB IPX5 Blue Orange",
+    "status": "ok"
+  },
+  {
+    "id": "f637a1ee-81f2-47b4-a0e5-22107d43b7fb",
+    "titulo": "RadioShack Wireless Headset Microphone 3301587 Rechargeable Mic System",
+    "status": "ok"
+  },
+  {
+    "id": "b203abe1-e92c-494a-9cb6-cb2a6ce11513",
+    "titulo": "Helado D'ONOFRIO PEZIDURI Choco Lúcuma Pote x 2.2L",
+    "status": "ok"
+  },
+  {
+    "id": "900b5e61-e204-4c16-bc2a-b1297bfbba23",
+    "titulo": "Jabón de Tocador DOVE Original 90g Paquete 3un",
+    "status": "ok"
+  },
+  {
+    "id": "8dc46251-40c4-470c-820f-c6728b2c48ba",
+    "titulo": "Jabón Líquido BALLERINA Avena Doypack 750ml",
+    "status": "ok"
+  },
+  {
+    "id": "a5d128e9-65a7-4246-b1a7-0319f4b572f5",
+    "titulo": "Toallas Higiénicas NOSOTRAS Buenas Noches Nocturna Natural Paquete 30un",
+    "status": "ok"
+  },
+  {
+    "id": "deba8aad-2c2d-4557-89a5-aa5c224d2eeb",
+    "titulo": "Pasta Dental COLGATE Triple Acción Pack 3x100ml - Protección Anticaries",
+    "status": "ok"
+  },
+  {
+    "id": "36b90414-83e4-4e7b-ae3c-f254175f28f2",
+    "titulo": "Crema Dental COLGATE TOTAL Original Mint Tubo 75ml Paquete 3un",
+    "status": "ok"
+  },
+  {
+    "id": "27b44766-9563-415d-9491-0b9674b435bd",
+    "titulo": "Jabón DOVE Karité y Vainilla Barra 90g Paquete 3un",
+    "status": "ok"
+  },
+  {
+    "id": "36ce883b-b6a4-4d9f-be31-82d1f32f12cb",
+    "titulo": "Pasta Dental COLGATE Triple Acción Pack 3x60ml",
+    "status": "ok"
+  },
+  {
+    "id": "bd0373f3-9703-4527-a317-871032151abc",
+    "titulo": "Pasta Dental Blanqueadora Colgate Luminous White 2x75ml",
+    "status": "ok"
+  },
+  {
+    "id": "1a3fd440-2eeb-4c66-b716-cc869ddaeac1",
+    "titulo": "Jabón Antibacterial en Barra PROTEX Avena Protección y Suavidad Pack 3x110g",
+    "status": "ok"
+  },
+  {
+    "id": "ec46f3ec-5397-4304-942c-3f1f084b17a2",
+    "titulo": "Jabón Líquido Antibacterial BALANZÉ Coco Vainilla Doypack 800ml",
+    "status": "ok"
+  },
+  {
+    "id": "3b23cadb-03d3-4dd1-9f5e-d5c2955b73e8",
+    "titulo": "Huevos de Gallina LA CALERA de Corral Paquete 12un",
+    "status": "ok"
+  },
+  {
+    "id": "99e01e9a-0d3e-4d8e-8462-df6846a7961e",
+    "titulo": "RadioShack Bluetooth 9W 1 Channel Portable Speaker with FM 4001766",
+    "status": "ok"
+  },
+  {
+    "id": "492d3b72-a926-431e-ae49-255712d1434d",
+    "titulo": "Jabón Líquido AVAL Antibacterial Frutos Rojos Doypack 800ml",
+    "status": "error",
+    "error": "NaN error after 2 retries"
+  },
+  {
+    "id": "f3cd525d-7b6e-4e5b-a432-80193b27fef4",
+    "titulo": "Pasta Dental DENTO Triple Acción Tripack Tubo 80g",
+    "status": "ok"
+  },
+  {
+    "id": "d09ec12c-548e-41b1-91d8-564f53dc73d7",
+    "titulo": "Jabón de Tocador DOVE Blanco Barra 90g Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "59cdff79-1952-408a-b870-39c07946a359",
+    "titulo": "Toalla Higiénica LADYSOFT Normal Paquete 60un",
+    "status": "ok"
+  },
+  {
+    "id": "272d66dc-50a5-4aed-bc3f-51756869d4d3",
+    "titulo": "Pasta Dental ORAL-B Complete 4en1 3 Tubo 80g Paquete 3un",
+    "status": "ok"
+  },
+  {
+    "id": "809d1076-6858-4e79-95df-d94ec124895a",
+    "titulo": "Jabón Líquido BALLERINA Crema Humectante Doypack 750ml",
+    "status": "ok"
+  },
+  {
+    "id": "f86cd90a-863d-4f36-9e2d-4cbee764dfbd",
+    "titulo": "Jabón en Barra PALMOLIVE Naturals Granada Pack 3x110g",
+    "status": "ok"
+  },
+  {
+    "id": "17cca63c-1227-4f4a-9940-6f7a5bd67260",
+    "titulo": "Jabón en Barra PALMOLIVE Avena y Azúcar Pack 3x110g",
+    "status": "ok"
+  },
+  {
+    "id": "b722031b-6993-4cab-8271-13a27c40f27b",
+    "titulo": "Jabón en Barra PALMOLIVE Naturals Oliva y Aloe Vera Pack 3x110g",
+    "status": "ok"
+  },
+  {
+    "id": "367c55bf-21b8-4a21-b739-942bab13bc7e",
+    "titulo": "Jabón de Glicerina BOREAL Natural Barra 100g Paquete 3un",
+    "status": "ok"
+  },
+  {
+    "id": "336fc579-b9ff-46c0-a341-c36030f94053",
+    "titulo": "RadioShack Dual Wireless Clip-on Microphone System",
+    "status": "ok"
+  },
+  {
+    "id": "0935c0ae-6e20-48c2-a4f9-17c0eec62bd8",
+    "titulo": "RadioShack Digital Photo Frame 10.1 inch 6301722 WiFi HD Touchscreen",
+    "status": "ok"
+  },
+  {
+    "id": "c9bd3cc6-2b0a-426b-972c-36c964d41ed7",
+    "titulo": "Pack HERBAL ESSENCES Anti-Frizz Lavanda y Aceite de Almendra: Shampoo 400ml + Acondicionador 400ml",
+    "status": "ok"
+  },
+  {
+    "id": "4cb0c77b-dd31-40e6-ac9f-73c06007a8bf",
+    "titulo": "Pack HERBAL ESSENCES Shampoo Rosa Mosqueta Frasco 400ml + Acondicionador Classic Smooth Frasco 400ml",
+    "status": "ok"
+  },
+  {
+    "id": "2b5dccff-5d07-4d25-88fb-b768df8dc77f",
+    "titulo": "Jabón de Tocador DOVE para piel sensible Bolsa 90g Paquete 3un",
+    "status": "ok"
+  },
+  {
+    "id": "bf97a47f-75ac-4056-84cd-9c1cfe8eb8e4",
+    "titulo": "Pack Toallas Higiénicas NOSOTRAS Buenas Noches Nocturna Natural Paquete 30un x 2un",
+    "status": "ok"
+  },
+  {
+    "id": "36ca3c53-8797-4f11-9ea1-3f87b4c453e5",
+    "titulo": "Detergente MARSELLA Lavanda y Rosas Bolsa 4kg",
+    "status": "ok"
+  },
+  {
+    "id": "ee7317a5-f277-424c-ab51-58c131547ca3",
+    "titulo": "Lejía SAPOLIO Original Galonera 4.8kg",
+    "status": "ok"
+  },
+  {
+    "id": "55eb4a87-9a15-401c-adf0-e8ce4ee6ad6a",
+    "titulo": "Papel Toalla BOREAL Megarollo Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "0906db92-2841-4072-817d-d3bd57ddfb94",
+    "titulo": "Papel Toalla NOVA Clásico Mega Rollo Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "9c7b0eac-a491-4f62-8f55-4b2fdec94bb8",
+    "titulo": "Papel Higiénico SUAVE Resistemax Doble Hoja Paquete 40un",
+    "status": "ok"
+  },
+  {
+    "id": "860e77cd-2f43-4d6a-9bb8-2e3e2b31d3bf",
+    "titulo": "Papel Toalla BOREAL Megarollo Paquete 2un",
+    "status": "ok"
+  },
+  {
+    "id": "7750c607-e8af-49af-bcf1-7e2900ca1999",
+    "titulo": "Lejía CLOROX Tradicional Botella 4kg",
+    "status": "ok"
+  },
+  {
+    "id": "21160915-2931-439d-8d29-755cf475f4c1",
+    "titulo": "Papel Toalla NOVA Ultra Absorbente Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "b7b6786a-5d41-4f79-b656-98984df28d30",
+    "titulo": "Jabón BOLIVAR Cuidado Bebés Bolsa 380g",
+    "status": "ok"
+  },
+  {
+    "id": "b358c779-9c5f-4302-965d-c40f372ca520",
+    "titulo": "Lavavajilla Líquido AYUDIN Limón y Sábila 1200ml",
+    "status": "ok"
+  },
+  {
+    "id": "b1c0fb3c-487e-4dfd-b39b-40e514db970e",
+    "titulo": "Lavavajillas SAPOLIO Limón Pote 800g",
+    "status": "ok"
+  },
+  {
+    "id": "43257818-1ad8-4d13-af40-594fe832fc18",
+    "titulo": "Papel Toalla PARACAS Premium Rollazo Paquete 4un",
+    "status": "ok"
+  },
+  {
+    "id": "36cc0a89-10d7-4e9d-87f3-85639235467c",
+    "titulo": "Suavizante SUAVITEL Fresca Primavera 2.3L",
+    "status": "ok"
+  },
+  {
+    "id": "d5cbf479-c130-41c2-b6a6-40ca7bac1bde",
+    "titulo": "Servilletas  de Papel ELITE Dobladas en 4 Paquete 100un",
+    "status": "ok"
+  },
+  {
+    "id": "31831e02-1822-42c7-a280-38547dc73cf9",
+    "titulo": "Papel Higiénico SUAVE Premium Triple Hoja Paquete 12un",
+    "status": "ok"
+  },
+  {
+    "id": "2070ac04-53db-4000-a2ba-fc4986430c79",
+    "titulo": "Mermelada Fresa GLORIA Pote 310g",
+    "status": "ok"
+  },
+  {
+    "id": "ce260ac0-60f1-43d2-9839-0ed0f9db8d43",
+    "titulo": "RadioShack USB-C Wireless Microphone 3304389 for Recording and Streaming Black",
+    "status": "ok"
+  },
+  {
+    "id": "47836af5-6083-4e6f-95e2-768d9551813a",
+    "titulo": "Papel Toalla NOVA Clásico Mega Rollo Paquete 4un",
+    "status": "ok"
+  },
+  {
+    "id": "fb3fb834-6654-49f0-9d2f-92fb22099bbc",
+    "titulo": "Pack Lejía SAPOLIO Original Galonera 4.8kg + Lavavajillas SAPOLIO Limón Pote 800g",
+    "status": "ok"
+  },
+  {
+    "id": "4b6e9816-4a69-4bfe-873a-dbcbf59c8039",
+    "titulo": "Papel Toalla ELITE Triple Absorción Paquete 4un",
+    "status": "ok"
+  },
+  {
+    "id": "7170c7cc-f458-4bad-ae4c-e54b928af37b",
+    "titulo": "Detergente Líquido BOLÍVAR Cuidado Total Doypack 3L",
+    "status": "ok"
+  },
+  {
+    "id": "f7775014-4e0c-4b4e-b60a-f5f0b4960747",
+    "titulo": "Detergente MARSELLA Lavanda y Rosas Bolsa 2kg",
+    "status": "ok"
+  },
+  {
+    "id": "ba15a98b-2849-4668-a2fe-b48413887cf5",
+    "titulo": "Papel Toalla NOVA Clásica Gigante Doble Hoja Paquete 1un",
+    "status": "ok"
+  },
+  {
+    "id": "ad8da73f-7822-449f-9a62-6d1d31afcece",
+    "titulo": "Limpiador POETT Frescura de Lavanda Botella 4.5L",
+    "status": "ok"
+  },
+  {
+    "id": "2ec37e66-580c-4842-89e7-fed44f727db1",
+    "titulo": "Limpiatodo SAPOLIO Lavanda Botella 4.9L",
+    "status": "ok"
+  },
+  {
+    "id": "173764a6-faa2-4dc2-b123-7f1fed61f97e",
+    "titulo": "Detergente en Polvo BOLIVAR Cuidado Total Bolsa 4kg",
+    "status": "ok"
+  },
+  {
+    "id": "65ddb0a7-a52d-4f36-8098-b26707292dbd",
+    "titulo": "Jabón de Lavar BOLÍVAR Cuidado Total Limón Bolsa 380g",
+    "status": "ok"
+  },
+  {
+    "id": "23a4127d-48aa-43ce-a9ef-a1ca72078710",
+    "titulo": "Detergente en Polvo OPAL Ultra Bolsa 4kg",
+    "status": "ok"
+  },
+  {
+    "id": "10e1e89d-e8c6-43e6-9d57-2d6030528ff1",
+    "titulo": "Papel Toalla NOVA Clásica Megarrollo 89 Hojas Paquete 2un",
+    "status": "ok"
+  },
+  {
+    "id": "3875d29c-0db4-4803-8311-8360b295de3f",
+    "titulo": "Lenteja Bebé BELL'S Bolsa 500g",
+    "status": "ok"
+  },
+  {
+    "id": "b7657a84-0af0-4ef3-beea-a5e20bbe1f60",
+    "titulo": "Fideos DON VITTORIO Spaghetti Bolsa 950g",
+    "status": "ok"
+  },
+  {
+    "id": "8c7dd0a1-c017-4905-900a-ba914bfd6d52",
+    "titulo": "Aceite Vegetal Premium PRIMOR Botella 900ml",
+    "status": "ok"
+  },
+  {
+    "id": "a44a11c7-c89e-436b-b638-73755635f735",
+    "titulo": "Filete de Atún en Agua BELL'S Lata 140g",
+    "status": "ok"
+  },
+  {
+    "id": "ff7e5b64-86d3-48f7-a26b-0c3a4c37499d",
+    "titulo": "Arroz Extra Añejo FARAON Naranja Bolsa 5kg",
+    "status": "ok"
+  },
+  {
+    "id": "14b5a5db-7a5b-47dc-a154-42da50eee68a",
+    "titulo": "Fortificante Granulado MILO Activ - Go Doypack 350g",
+    "status": "ok"
+  },
+  {
+    "id": "772f0c5e-5ee9-4eb2-9656-f8a8af527273",
+    "titulo": "Azúcar Rubia BELL'S Bolsa 2Kg",
+    "status": "ok"
+  },
+  {
+    "id": "f068b771-0373-44f5-a7fd-5a8c88b914a6",
+    "titulo": "Azúcar Rubia BELL'S Bolsa 5Kg",
+    "status": "ok"
+  },
+  {
+    "id": "09b2dc8d-72b0-4ac6-a3be-3f4bd631e073",
+    "titulo": "RadioShack Slim Voice Recorder 1402008 8GB",
+    "status": "ok"
+  },
+  {
+    "id": "56820a19-5470-440e-9bd0-1be5a90d6976",
+    "titulo": "Avena QUAKER Tradicional Bolsa 900g",
+    "status": "error",
+    "error": "NaN error after 2 retries"
+  },
+  {
+    "id": "69cf749a-9100-4e47-ade3-cbece1a16638",
+    "titulo": "Arroz Extra COSTEÑO Bolsa 5Kg",
+    "status": "ok"
+  },
+  {
+    "id": "b6a88006-5b50-4fc2-89ea-331994ce2d22",
+    "titulo": "Filete de Atún en Aceite BELL'S Lata 140g",
+    "status": "ok"
+  },
+  {
+    "id": "37be113f-580f-48ca-a08c-740e4fbfecc7",
+    "titulo": "Galletas VICTORIA Margarita Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "bea248c5-0378-4f5b-a117-ae3a08fca583",
+    "titulo": "Aceite Vegetal BELL'S Botella 900ml",
+    "status": "ok"
+  },
+  {
+    "id": "1d938545-ded7-4cc7-b2ef-37393624f847",
+    "titulo": "Galletas Saladas RITZ sabor Original Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "31beda38-aa61-47f8-8f6f-47c1f655b433",
+    "titulo": "Filete de Atún PRIMOR en Aceite Vegetal Lata 140g",
+    "status": "ok"
+  },
+  {
+    "id": "8037680d-7aff-4e1e-ba97-4307d741d85b",
+    "titulo": "Fideos DON VITTORIO Spaghetti Bolsa 500g",
+    "status": "ok"
+  },
+  {
+    "id": "05852bfb-c672-4cc2-b9fd-5242ff231221",
+    "titulo": "Arroz Añejo Extra COSTEÑO Bolsa 5Kg",
+    "status": "ok"
+  },
+  {
+    "id": "d3efa617-aac1-48bf-9dad-fa870f996af7",
+    "titulo": "Fideos Tornillo DON VITTORIO Bolsa 500g",
+    "status": "ok"
+  },
+  {
+    "id": "653f3ac5-d658-43f2-8128-4cfe23ce9ee7",
+    "titulo": "Filete de Atún en Aceite Vegetal FLORIDA Lata 140g",
+    "status": "ok"
+  },
+  {
+    "id": "8e19aba8-00ae-431e-af7d-520fe218d5bf",
+    "titulo": "Galletas Saladas FIELD Soda Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "20b23478-1027-4710-b0ea-4be59201f454",
+    "titulo": "Mayonesa ALACENA Doypack 850g",
+    "status": "ok"
+  },
+  {
+    "id": "74ad8f6f-6c3d-4830-a958-b5afc70d7158",
+    "titulo": "Salsa de Tomate POMAROLA Doypack 290g",
+    "status": "ok"
+  },
+  {
+    "id": "af0a81fc-2e12-4967-8459-a596f85d07ac",
+    "titulo": "Trozos de Atún PRIMOR en Aceite Vegetal Lata 140g",
+    "status": "ok"
+  },
+  {
+    "id": "e3c109e8-541d-480d-a897-d0fdb25a6e6d",
+    "titulo": "Aceite Vegetal PRIMOR Clásico Botella 900ml",
+    "status": "ok"
+  },
+  {
+    "id": "90d8e64a-6123-4726-929f-767f0bc02a39",
+    "titulo": "Lentejas BELL'S Bolsa 500g",
+    "status": "ok"
+  },
+  {
+    "id": "e0f69a16-f9c0-4a7e-af02-bda5ff0bdc3d",
+    "titulo": "Fideos Spaghetti MOLITALIA Bolsa 950g",
+    "status": "ok"
+  },
+  {
+    "id": "80e94d37-b1aa-45ad-a34e-18981c6ff059",
+    "titulo": "Aceite de Soya SAO Botella 900ml",
+    "status": "ok"
+  },
+  {
+    "id": "b9ee9c89-438d-4479-bc4b-d7a9fc36308f",
+    "titulo": "Arverja Partida BELL'S Bolsa 500g",
+    "status": "ok"
+  },
+  {
+    "id": "dffb1952-e3d1-4ece-9111-aa42f15b43cc",
+    "titulo": "Café NESCAFÉ Gold Signature Frasco 190g",
+    "status": "ok"
+  },
+  {
+    "id": "9c4f0a9b-f76e-439c-abf8-c2a86751a24b",
+    "titulo": "Café Instantáneo NESCAFÉ Kirma Lata 180g",
+    "status": "ok"
+  },
+  {
+    "id": "ffaee69f-658e-4505-afd4-faee61597ba3",
+    "titulo": "Aceite Vegetal PRIMOR Clásico Botella 1.8L",
+    "status": "ok"
+  },
+  {
+    "id": "f5bde22c-0074-4ddc-aa87-fb5e235413cf",
+    "titulo": "Café Instantáneo ALTOMAYO Gourmet Frasco 170g",
+    "status": "ok"
+  },
+  {
+    "id": "8198658e-667c-4cd2-85b1-1b88d67dfac0",
+    "titulo": "Avena BELL'S Bolsa 1Kg",
+    "status": "ok"
+  },
+  {
+    "id": "4d257d06-02b7-430a-a44c-e372b55c9412",
+    "titulo": "Avena QUAKER Con Quinua Bolsa 850g",
+    "status": "error",
+    "error": "NaN error after 2 retries"
+  },
+  {
+    "id": "aea2c922-e62f-4bbe-97c7-e54d631ab7b1",
+    "titulo": "Avena Clásica 3 OSITOS Premium Bolsa 900g",
+    "status": "ok"
+  },
+  {
+    "id": "575ec6f0-e3e3-468e-a5d2-686bc9429a13",
+    "titulo": "Manzanilla MC COLIN'S Caja 100un",
+    "status": "ok"
+  },
+  {
+    "id": "94c59119-fb6d-44ac-9a9a-d2dfa937246d",
+    "titulo": "Cocoa WINTERS Sobre 40g",
+    "status": "ok"
+  },
+  {
+    "id": "2cd6f665-ace5-4669-aa67-4bf46ab4fafe",
+    "titulo": "Café Instantáneo Liofilizado NESCAFÉ Tradición Doypack 230g",
+    "status": "ok"
+  },
+  {
+    "id": "02c6225d-82ae-45fb-acec-7074c3498210",
+    "titulo": "Café Instantáneo NESCAFÉ Kirma Doypack 230g",
+    "status": "ok"
+  },
+  {
+    "id": "f15d90cd-fbea-467d-ba42-89ccc1393176",
+    "titulo": "Cereal KELLOGGS Corn Flakes Caja 410g",
+    "status": "ok"
+  },
+  {
+    "id": "42c70429-46a0-4b33-9b14-d477d404b437",
+    "titulo": "Fortificante Granulado MILO Doypack 700g",
+    "status": "ok"
+  },
+  {
+    "id": "cc779174-0ad1-416c-8501-9d18b7774a4a",
+    "titulo": "RadioShack Thin Stereo - Ultra-Slim Wired Stereo Headphones 3304284 Blue",
+    "status": "ok"
+  },
+  {
+    "id": "a8deaa3d-bcc2-49ef-a971-3d4bd38e6c86",
+    "titulo": "Café Instántaneo Intenso CAFETAL Frasco 180g",
+    "status": "ok"
+  },
+  {
+    "id": "7b169716-5ce2-4e2b-9b80-8c933b1f64a0",
+    "titulo": "Mermelada GLORIA Fresa Frasco 950g",
+    "status": "ok"
+  },
+  {
+    "id": "cb7a8c7d-f797-4c1c-8950-6e34f2019e69",
+    "titulo": "Mermelada Fresa GLORIA Doypack 700g",
+    "status": "ok"
+  },
+  {
+    "id": "7bf49d68-d8c9-4eea-828b-39458bd264b9",
+    "titulo": "RadioShack Free Beat Bluetooth Headphones 5.3 40mm Drivers 15 Hour Battery White",
+    "status": "ok"
+  },
+  {
+    "id": "cad34ce2-6501-49a6-b4e2-0f70347c36f2",
+    "titulo": "RadioShack Free Beat Bluetooth Headphones 5.3 40mm Drivers 15 Hour Battery Black",
+    "status": "ok"
+  },
+  {
+    "id": "34f8d31b-6056-4ca6-8678-a3d5bcfe5ee1",
+    "titulo": "RadioShack TWS Earbuds Bluetooth 5.4 ANC IPX5 460mAh Case Black",
+    "status": "ok"
+  },
+  {
+    "id": "77a4cf92-140f-4d35-b8a1-7071e1b9300c",
+    "titulo": "RadioShack TWS Earbuds Bluetooth 5.4 ANC IPX5 460mAh Case Navy Blue",
+    "status": "ok"
+  },
+  {
+    "id": "7182b793-7b51-425b-97cd-09f0845ed822",
+    "titulo": "RadioShack Buzzer Bluetooth Headphones 3304277",
+    "status": "ok"
+  },
+  {
+    "id": "0b8e6a8f-eb2a-419e-b73d-46ca42f4a2ce",
+    "titulo": "RadioShack Wireless Earbuds Bluetooth 5.2 ANC IPX5 6 Hour Battery White",
+    "status": "ok"
+  },
+  {
+    "id": "583fc148-1f13-4a3d-bad8-2912f062d443",
+    "titulo": "RadioShack Wired Stereo Earphones 3.5mm Jack &#x2013; Mic & Volume Control Deep Bass Purple & White",
+    "status": "ok"
+  },
+  {
+    "id": "c8c9baae-c749-443f-ac37-f04136e13712",
+    "titulo": "RadioShack Wireless Earbuds Bluetooth 5.3 8 Hour Battery Compact Case Black",
+    "status": "ok"
+  },
+  {
+    "id": "01704067-0f1b-4995-80c7-660ac3650534",
+    "titulo": "True Wireless Earbuds 380mAh ANC ENC IPX5 White 3304380",
+    "status": "ok"
+  },
+  {
+    "id": "4d87bb38-5a93-4bf9-9b2c-ae5e93f0dc6b",
+    "titulo": "RadioShack Wired Stereo Earphones &#x2013; 3.5mm Jack with Mic, Volume Control & Deep Bass",
+    "status": "ok"
+  },
+  {
+    "id": "3451a61c-ef5b-4568-bf7a-c18df72c2685",
+    "titulo": "Picaña FRIGON x kg",
+    "status": "ok"
+  },
+  {
+    "id": "17197d4c-37d1-4d57-a7d9-e804bef69529",
+    "titulo": "Bebida Instantánea de Cebada ECCO Doypack 250g",
+    "status": "ok"
+  },
+  {
+    "id": "95f36946-0c2d-415c-9f6c-fa284364aa53",
+    "titulo": "Quinua Avena 3 OSITOS Bolsa 900g",
+    "status": "ok"
+  },
+  {
+    "id": "17d911d0-af8d-43fd-a9c3-edf6487e956c",
+    "titulo": "Avena Integral GRANO DE ORO Bolsa 500g",
+    "status": "ok"
+  },
+  {
+    "id": "7999388e-d6ac-4c7b-b680-c0c414d291ff",
+    "titulo": "Café Tostado y Molido CAFETAL Selecto Bolsa 900g",
+    "status": "ok"
+  },
+  {
+    "id": "b9c33eda-42a7-41ac-bac6-9ff03f5aaf1f",
+    "titulo": "Miel de abeja LA REYNA OXAPAMPA Frasco 300Gr",
+    "status": "ok"
+  },
+  {
+    "id": "cb2598b8-ebee-4773-84f1-77f47ac3e907",
+    "titulo": "Café Tostado Molido ALTOMAYO Gourmet Bolsa 450g",
+    "status": "ok"
+  },
+  {
+    "id": "f32d9380-8c24-4b64-b136-01bd19fbc9ce",
+    "titulo": "Trigo Atómico Original FORTE GOLPE con Miel Bolsa 125g",
+    "status": "ok"
+  },
+  {
+    "id": "24564ee7-4dea-4de9-ae40-9aa0c3abcc47",
+    "titulo": "Pan de Molde Blanco XL BIMBO Extra Grande Bolsa 770g",
+    "status": "ok"
+  },
+  {
+    "id": "87788cae-e679-4ca3-b54e-1ae68796e184",
+    "titulo": "Tortillas BIMBO Rapiditas Cero Cero Bolsa 10un",
+    "status": "ok"
+  },
+  {
+    "id": "3df0bd4a-bfcc-4fb7-abba-956417a9684f",
+    "titulo": "Pan de Yema LA FLORENCIA Bolsa 6un",
+    "status": "ok"
+  },
+  {
+    "id": "e6a3d15c-522d-463e-84d2-554f1120e835",
+    "titulo": "Tortillas BIMBO Rapiditas Clásicas Bolsa 12un",
+    "status": "ok"
+  },
+  {
+    "id": "a0a25606-c675-4879-9ff9-128b82f72849",
+    "titulo": "Pan de Molde Blanco DON MAMINO sin Corteza Bolsa 560g",
+    "status": "ok"
+  },
+  {
+    "id": "9be55572-3922-4c74-934b-8657c5e86c55",
+    "titulo": "Pan Baguette Especial x und.",
+    "status": "ok"
+  },
+  {
+    "id": "ae4bb72b-b784-46c7-a345-089474aa9bd3",
+    "titulo": "Pan de Molde Integral XL BIMBO Extra Grande Bolsa 810g",
+    "status": "ok"
+  },
+  {
+    "id": "461d5520-4548-422b-a66f-c1a407bdff15",
+    "titulo": "Pan Blanco BIMBO sin Bordes Bolsa 590g",
+    "status": "ok"
+  },
+  {
+    "id": "03024eba-b9ac-4f4a-a852-dd9994c857a5",
+    "titulo": "Gelatina UNIVERSAL Sabor a Fresa Bolsa 130g",
+    "status": "ok"
+  },
+  {
+    "id": "dc65519c-e0e4-41c6-8fab-123889b0c70e",
+    "titulo": "Pan Artesano Blanco BIMBO Bolsa 560g",
+    "status": "ok"
+  },
+  {
+    "id": "15d00e4e-d261-47ec-8b45-04e65cfc1b67",
+    "titulo": "Leche Condensada NESTLÉ Lata 393g",
+    "status": "ok"
+  },
+  {
+    "id": "595fed28-f393-4307-a2cf-8236ad83f04a",
+    "titulo": "Pan Francés x und.",
+    "status": "ok"
+  },
+  {
+    "id": "816446ad-8655-4fe7-9efb-9c7fd3e6494e",
+    "titulo": "Pan de Molde UNIÓN Multisemillas y Avena Bolsa 540g",
+    "status": "ok"
+  },
+  {
+    "id": "20cf1d4d-dac4-4999-b082-8114c875b52f",
+    "titulo": "Masa para Wantán SAN SEN Bolsa 500g",
+    "status": "ok"
+  },
+  {
+    "id": "0a99bed2-2e19-4ebc-adcb-e2687cf75ba4",
+    "titulo": "Tortillas BIMBO Rapiditas Integrales Bolsa 12un",
+    "status": "ok"
+  },
+  {
+    "id": "1ffc63ca-c06f-44ee-8808-f5806ee278aa",
+    "titulo": "Pan Ciabatta x und.",
+    "status": "ok"
+  },
+  {
+    "id": "ba10c56e-aff1-48b7-a0d2-3e2d946cf4d9",
+    "titulo": "Pan de Molde Integral BIMBO Vital Multicereal Bolsa 600g",
+    "status": "ok"
+  },
+  {
+    "id": "8a004c93-5f99-47f2-8527-18dd8c0fc929",
+    "titulo": "Harina de Trigo Preparada BLANCA FLOR Bolsa 1Kg",
+    "status": "ok"
+  },
+  {
+    "id": "8ab5dc51-d9d3-41e4-9801-52b306e7ebdd",
+    "titulo": "Alimento para Perro MIMASKOT Adulto Medianos y Grandes Sabor Carne Bolsa 22Kg",
+    "status": "ok"
+  },
+  {
+    "id": "680b39a1-4599-4cfc-b284-1005e1216695",
+    "titulo": "Canela Entera BELL'S Sobre 12g",
+    "status": "ok"
+  },
+  {
+    "id": "d4cb8e37-ee5b-45fe-a64c-104eeb91c2c3",
+    "titulo": "Harina BELL'S De trigo preparada Bolsa 1Kg",
+    "status": "ok"
+  },
+  {
+    "id": "20e8e31d-986b-482b-929a-641f3a0ce65d",
+    "titulo": "Pan de Molde BIMBO Blanco Familiar Bolsa 590g",
+    "status": "ok"
+  },
+  {
+    "id": "f11c7e47-938f-475e-94b2-15f9cbc2a346",
+    "titulo": "Pan Hogaza Centeno LA FLORENCIA x und.",
+    "status": "ok"
+  },
+  {
+    "id": "28fea757-761b-4600-9b7e-b61ee49c0bcd",
+    "titulo": "Tortillas BIMBO Rapiditas de Linaza y Chía Bolsa 10un",
+    "status": "ok"
+  },
+  {
+    "id": "e77ea315-22ce-4173-af41-89bf61acb0ca",
+    "titulo": "Arena para Gato DE PATAS Bolsa 20Kg",
+    "status": "ok"
+  },
+  {
+    "id": "fb26e811-86cf-4fec-a391-9291644bc170",
+    "titulo": "Alimento para Perro RICOCAN Adultos Medianos y Grandes Sabor Cordero y Cereales Bolsa 15Kg",
+    "status": "ok"
+  },
+  {
+    "id": "72bbb530-85f4-4fa9-9fcf-08673657d619",
+    "titulo": "Arena para Gato COOL CAT Bolsa 20Kg",
+    "status": "ok"
+  },
+  {
+    "id": "23aef942-6037-4321-820f-541ca8ca1b94",
+    "titulo": "Alimento para Perro RICOCAN Adulto Pequeños Sabor Cordero y Cereales Bolsa 15Kg",
+    "status": "ok"
+  },
+  {
+    "id": "0db1bdd6-3bd4-4aa9-a0f1-2dc67acf37a1",
+    "titulo": "Antipulgas Bravecto para perros de 10 a 20 kg más Gratis Endal desparasitante",
+    "status": "ok"
+  },
+  {
+    "id": "088a9d4c-7a0f-4d4c-a02c-3bec6015dbc7",
+    "titulo": "PACK Antipulgas Bravecto para Perros de 10 a 20 Kg + 2 Tabletas* de Endal Plus + 1 Plato Bravecto",
+    "status": "ok"
+  },
+  {
+    "id": "cb86d94e-6412-4712-8de9-039e71cc719b",
+    "titulo": "Arena para Gato DE PATAS Bolsa 10Kg",
+    "status": "ok"
+  },
+  {
+    "id": "15d37b80-430b-4a91-b29f-caff67ce6107",
+    "titulo": "Alimento para Gato RICOCAT Adulto Pollo, Sardina y Salmón Bolsa 9Kg",
+    "status": "ok"
+  },
+  {
+    "id": "3fdd3713-2d2c-4617-a457-791af7336038",
+    "titulo": "Alimento para Gatos DE PATAS Adulto Bolsa 9Kg",
+    "status": "ok"
+  },
+  {
+    "id": "e4d81717-d89e-4d8f-9372-8cab1cfb3169",
+    "titulo": "Arena para Gato KLINKAT Bolsa 20Kg",
+    "status": "ok"
+  },
+  {
+    "id": "2a65a3b8-241c-4fbe-b976-c161e0511d07",
+    "titulo": "Alimento para Perros DE PATAS Adulto Bolsa 25Kg",
+    "status": "ok"
+  },
+  {
+    "id": "36fba614-aa5c-4875-ad64-fd3c35847cf5",
+    "titulo": "Alimento para Perro MIMASKOT Adulto Medianos y Grandes Sabor Cordero Bolsa 15Kg",
+    "status": "ok"
+  },
+  {
+    "id": "d89603a2-6511-414b-98bd-cf3e52e1f4cb",
+    "titulo": "Queso Gouda BRAEDT Paquete 180g",
+    "status": "ok"
+  },
+  {
+    "id": "b44fbf67-9c18-489f-8fe0-db9be02a1cd5",
+    "titulo": "Leche sin Lactosa LAIVE UHT Caja 946ml Paquete 4un",
+    "status": "ok"
+  },
+  {
+    "id": "07dfa60a-7bc7-406b-b9d1-c9f7fbb605d7",
+    "titulo": "Antipulgas Bravecto para perros de 20 - 40 kg más Gratis Endal Desparasitante",
+    "status": "ok"
+  },
+  {
+    "id": "50567545-9625-42ad-a709-3e3c485d3fe6",
+    "titulo": "Pack Comida para Gatos FELIX Paté de Salmón Lata 156g x 4un",
+    "status": "ok"
+  },
+  {
+    "id": "e0ed8fc8-ad51-4e12-a65c-37065e292723",
+    "titulo": "Alimento para Perro DOG CHOW Adultos Medianos y Grandes Sabor Carne y Pollo Bolsa 15Kg",
+    "status": "ok"
+  },
+  {
+    "id": "bd88b0d6-3c1d-4045-bfc3-d446d407a632",
+    "titulo": "Alimento Húmedo para Perro RICOCAN Adulto Sabor Cordero Lata 330g",
+    "status": "ok"
+  },
+  {
+    "id": "430162d8-bcf3-4139-b906-f5dc672b3dfc",
+    "titulo": "Antipulgas para Perros Proteggo 3M de 10 a 20 Kg x 1 Tableta",
+    "status": "ok"
+  },
+  {
+    "id": "d41b4c17-5944-49a7-b182-69ffbdfc0e58",
+    "titulo": "Alimento para Gato RICOCAT Adulto Esterilizado Bolsa 9Kg",
+    "status": "ok"
+  },
+  {
+    "id": "b347c9b1-5910-4956-b524-ea7c06ff522e",
+    "titulo": "Arena para Gato COOL CAT Bolsa 10Kg",
+    "status": "ok"
+  },
+  {
+    "id": "a053c7b3-cbd2-4bfd-b796-91e44dd87795",
+    "titulo": "Alimento Húmedo para Gato RICOCAT Adulto Sabor Pavo e Hígado Lata 330g",
+    "status": "ok"
+  },
+  {
+    "id": "3634d9e6-a20d-4789-87c7-63e5ef8b5e24",
+    "titulo": "Arena para Gato COOL CAT Bolsa 5Kg",
+    "status": "ok"
+  },
+  {
+    "id": "23c301d3-6ad5-436a-afd9-380f440e5cff",
+    "titulo": "Alimento Húmedo para Gato RICOCAT Adulto Sabor Sardina y Pollo Lata 330g",
+    "status": "ok"
+  },
+  {
+    "id": "2e1d2bd2-ae17-47b1-8a37-9a121993a0da",
+    "titulo": "Alimento para Perro RICOCAN Adulto Todas las Razas Multisabores Bolsa 15Kg",
+    "status": "ok"
+  },
+  {
+    "id": "60428424-d088-455a-b99d-ac2ad2646cdd",
+    "titulo": "Alimento para Perro RICOCRACK Galletas Adulto Multisabores Caja 500g",
+    "status": "ok"
+  },
+  {
+    "id": "44d292d3-626d-4c5e-a571-65b41e4a15b1",
+    "titulo": "Arena para Gato KLINKAT Bolsa 10Kg",
+    "status": "ok"
+  },
+  {
+    "id": "4a0bf7b4-995a-4a7f-b8b8-ef78664fd8ca",
+    "titulo": "Queso Fresco BELL'S Paquete 300g",
+    "status": "ok"
+  },
+  {
+    "id": "361d59d0-4797-4935-8b1d-475fae6b8b19",
+    "titulo": "Queso Edam LAIVE Paquete 440g",
+    "status": "ok"
+  },
+  {
+    "id": "91325ed8-7038-47f1-a1c6-73edea60b8e5",
+    "titulo": "Queso Fresco sin Lactosa LAIVE x kg",
+    "status": "ok"
+  },
+  {
+    "id": "7de9bbba-33e3-4c81-a321-8e1eb327a2b7",
+    "titulo": "Queso Fresco GLORIA x kg",
+    "status": "ok"
+  },
+  {
+    "id": "d0dbb089-fd06-45b7-92c1-a6fe52350fa6",
+    "titulo": "Jamón de Pavita BRAEDT Balance Paquete 200g",
+    "status": "ok"
+  },
+  {
+    "id": "9fb04450-4a59-4a5e-8fd9-65a01e733c59",
+    "titulo": "Queso Mozzarella en Bola GLORIA Paquete 250g",
+    "status": "ok"
+  },
+  {
+    "id": "a39910f3-36e0-45c7-a6ec-e3a7243cee52",
+    "titulo": "Queso Fresco Pasteurizado Light BELL'S Paquete 300g",
+    "status": "ok"
+  },
+  {
+    "id": "eb6d78bb-be65-4f95-a10f-6d987c63b835",
+    "titulo": "Pack Hot Dog Ahumado SALCHICHERÍA SUIZA Paquete 600g",
+    "status": "ok"
+  },
+  {
+    "id": "bf2f2d8e-fbdb-4102-9510-65b2b04c5a80",
+    "titulo": "Queso Parmesano Rallado LAIVE Paquete 35g",
+    "status": "ok"
+  },
+  {
+    "id": "973d74bc-8685-4e15-9e8a-d510f01dca60",
+    "titulo": "Pack Jamón Pizza BRAEDT Queso Edam 370g",
+    "status": "ok"
+  },
+  {
+    "id": "6dec359f-026c-4735-90c3-29182b06cd1f",
+    "titulo": "Pack Mixto Queso Edam + Jamón Americano LAIVE 300g",
+    "status": "ok"
+  },
+  {
+    "id": "1e7bac28-cce9-4273-b6ba-c8cece00efed",
+    "titulo": "Jamón Pizzero BRAEDT Paquete 480g",
+    "status": "ok"
+  },
+  {
+    "id": "39930bcf-b8eb-48bf-88a5-36aa89ed9c76",
+    "titulo": "Queso Edam LAIVE Sin Lactosa Paquete 180g",
+    "status": "ok"
+  },
+  {
+    "id": "49198f87-22b6-40e0-9548-0f33cb729908",
+    "titulo": "Queso Edam BONLÉ Paquete 500g",
+    "status": "ok"
+  },
+  {
+    "id": "cc14adde-3c1f-4838-aadc-64b533aa4e81",
+    "titulo": "Hot Dog Ahumado SALCHICHERÍA AHUMADO Paquete 200g",
+    "status": "ok"
+  },
+  {
+    "id": "44e3bfbf-6f3e-4dea-80f5-9ed7be9dc33d",
+    "titulo": "Huevos Pardos ARTISAN Bandeja 15un",
+    "status": "ok"
+  },
+  {
+    "id": "282456a9-0543-4bc6-8176-d785fba76a7b",
+    "titulo": "Queso Edam BRAEDT Paquete 440g",
+    "status": "ok"
+  },
+  {
+    "id": "699fda1d-70f9-4c50-8196-ce597ea33f47",
+    "titulo": "Queso Edam BRAEDT Paquete 180g",
+    "status": "ok"
+  },
+  {
+    "id": "e89f67c7-2e26-49c4-b93d-4e3b8cf3ca48",
+    "titulo": "Queso Crema PHILADELPHIA Brick Original Paquete 180g",
+    "status": "ok"
+  },
+  {
+    "id": "8723560a-c4a6-4b23-a832-bc17f87200b5",
+    "titulo": "Queso Gouda BRAEDT Paquete 180g",
+    "status": "ok"
+  },
+  {
+    "id": "b837104e-79ad-4967-a523-c3b2a11cd598",
+    "titulo": "Chorizo Parrillero Precocido BRAEDT Paquete 500g",
+    "status": "ok"
+  },
+  {
+    "id": "d9b69e94-2b25-4dab-96a5-db22f5680d75",
+    "titulo": "Salchicha de Huacho CASA EUROPA Paquete 150g",
+    "status": "ok"
+  },
+  {
+    "id": "08e7dc83-ea03-4de6-b436-1e935a82a276",
+    "titulo": "Queso Fresco BONLÉ x kg",
+    "status": "ok"
+  },
+  {
+    "id": "5b73b1d1-89f2-4511-99d7-633d4a49a142",
+    "titulo": "Queso Edam en Tajadas BELL'S FRESCOS Paquete 440g",
+    "status": "ok"
+  },
+  {
+    "id": "b8a636aa-dd5e-4855-84a8-f07d2048abc7",
+    "titulo": "Queso Parmesano Rallado GLORIA Paquete 35g",
+    "status": "ok"
+  },
+  {
+    "id": "93e22797-2880-44f9-8114-4f0f0a0322a6",
+    "titulo": "Queso Fundido Cheddar GLORIA Paquete 136g",
+    "status": "ok"
+  },
+  {
+    "id": "16b2e0fa-ac5a-46e9-98ef-73b28a6afd3e",
+    "titulo": "Queso Fundido Natural GLORIA Paquete 136g",
+    "status": "ok"
+  },
+  {
+    "id": "de4980c5-a362-4722-a760-85289c903aed",
+    "titulo": "Queso Cottage PLUSA Paquete 225g",
+    "status": "ok"
+  },
+  {
+    "id": "6f90bdbb-6228-4df4-a0c6-d643305c20f4",
+    "titulo": "Carne Molida EL BUEN CORTE x kg",
+    "status": "ok"
+  },
+  {
+    "id": "76a520bd-44f2-492d-8334-4a35ef4d873a",
+    "titulo": "RadioShack Vintage AM FM SW Radio 3 Band Bluetooth USB SD Rechargeable White",
+    "status": "ok"
+  },
+  {
+    "id": "38d6cccf-5d63-4d21-bdbe-43a7e65f399c",
+    "titulo": "Filete de Pechuga de Pollo SADIA Bolsa 1kg",
+    "status": "ok"
+  },
+  {
+    "id": "7525d4f9-ab55-4dec-a786-18ff504e60a7",
+    "titulo": "Queso Edam sin Lactosa LAIVE Paquete 440g",
+    "status": "ok"
+  },
+  {
+    "id": "2c494ca1-898e-4463-b0ad-e1c6eee7cf4d",
+    "titulo": "RadioShack Portable AM FM Weather Radio NOAA Band Battery Powered",
+    "status": "ok"
+  },
+  {
+    "id": "9ba32abf-c66d-49a0-9640-155d3c0d24e1",
+    "titulo": "RadioShack HDMI 2.0 Cable 4K with Ethernet 20 ft 1503278 &#x2013; High-Speed HDMI Male to Male",
+    "status": "ok"
+  },
+  {
+    "id": "8054cd5a-442c-42da-987d-3083dca91b47",
+    "titulo": "Filete de Pechuga de Pollo x kg",
+    "status": "ok"
+  },
+  {
+    "id": "27643fee-ef96-4d05-994c-070f66be1eda",
+    "titulo": "Pechuga Especial de Pollo x kg",
+    "status": "ok"
+  },
+  {
+    "id": "418aef3e-ad11-45a8-bc54-36684a2fc41d",
+    "titulo": "Muslos de Pollo x kg",
+    "status": "ok"
+  },
+  {
+    "id": "13f690e3-abe8-4b2c-b056-99e1a0ddb0a5",
+    "titulo": "Bisteck EL BUEN CORTE x kg",
+    "status": "ok"
+  },
+  {
+    "id": "3c597134-e0ce-488a-b289-659a4520aab9",
+    "titulo": "Guiso EL BUEN CORTE x kg",
+    "status": "ok"
+  },
+  {
+    "id": "374aa9cd-b83c-4240-a077-ce91a931e548",
+    "titulo": "Filete de Tilapia BELL'S Bolsa 1Kg",
+    "status": "ok"
+  },
+  {
+    "id": "a024a6a8-6c82-420b-992f-193f7863780f",
+    "titulo": "Carne Molida de Pavita SAN FERNANDO Empaque 500g",
+    "status": "ok"
+  },
+  {
+    "id": "0d3184b9-253e-40f9-8454-ce22dc8494d8",
+    "titulo": "Pechuga Especial de Pollo Light SAN FERNANDO x kg",
+    "status": "ok"
+  },
+  {
+    "id": "264b12a3-3657-4820-8faa-e77db41b34eb",
+    "titulo": "Medallón de Pavita SAN FERNANDO x kg",
+    "status": "ok"
+  },
+  {
+    "id": "27eb7a69-f274-4e37-80db-b854c3bfed85",
+    "titulo": "Carne Molida FRIGON Congelado Empaque 500g",
+    "status": "ok"
+  },
+  {
+    "id": "f551babb-c412-49f5-9b5d-ec458f581a2d",
+    "titulo": "Pierna con Encuentro de Pollo x kg",
+    "status": "ok"
+  },
+  {
+    "id": "c589b519-e26b-4230-ba31-615100b897d1",
+    "titulo": "Hígado de Pollo x kg",
+    "status": "ok"
+  },
+  {
+    "id": "33844bf5-3d29-4dea-af2a-e1e8160cebe8",
+    "titulo": "Sasami de Pollo x kg",
+    "status": "ok"
+  },
+  {
+    "id": "b7657fe2-37e7-4cbf-903a-32292e0b6da9",
+    "titulo": "Pechuga Entera de Pollo x kg",
+    "status": "ok"
+  },
+  {
+    "id": "60d11ca2-200e-49d5-a3c1-3e39d628fa70",
+    "titulo": "Pierna de Pollo SAN FERNANDO x kg",
+    "status": "ok"
+  },
+  {
+    "id": "971ac352-8fcd-441a-a0f4-9fa8560bbb0c",
+    "titulo": "Porciones de Trucha PISCIS Bolsa 500g",
+    "status": "ok"
+  },
+  {
+    "id": "1ac3e387-6a8d-4344-b363-7eb5439b743a",
+    "titulo": "Guiso Especial EL BUEN CORTE x kg",
+    "status": "ok"
+  },
+  {
+    "id": "e464e1a7-fa93-4151-ba39-8b07f6488151",
+    "titulo": "Chuleta de Brazuelo de Cerdo x kg",
+    "status": "ok"
+  },
+  {
+    "id": "509419e6-e413-4c3f-9499-ecce08f152eb",
+    "titulo": "Osobuco de Res EL BUEN CORTE x kg",
+    "status": "ok"
+  },
+  {
+    "id": "52894101-0bd1-4f43-87ba-624eedb82c65",
+    "titulo": "Molleja de Pollo SADIA Bolsa 1kg",
+    "status": "ok"
+  },
+  {
+    "id": "d55505af-b445-42e6-98ed-bed4da4d5f9c",
+    "titulo": "Leche Descremada GLORIA Slim UHT Triple Zero Caja 946ml Paquete 3un",
+    "status": "ok"
+  },
+  {
+    "id": "fc898278-9f44-408c-a049-950caee0c629",
+    "titulo": "Leche sin Lactosa LAIVE Botella 390g Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "f024de20-2444-4ac3-a274-8a6e9b3ce9e9",
+    "titulo": "Hígado EL BUEN CORTE x kg",
+    "status": "ok"
+  },
+  {
+    "id": "f5ab5fe7-dfbc-4c14-bc73-c93235030025",
+    "titulo": "Filete de Trucha BELL'S Congelado con Piel Bolsa 500g",
+    "status": "ok"
+  },
+  {
+    "id": "6f3d7c6e-ed9f-46f4-a573-e0d77422daac",
+    "titulo": "Leche UHT sin Lactosa GLORIA Zero Caja 946ml Paquete 3un",
+    "status": "ok"
+  },
+  {
+    "id": "8ffb979d-325a-4fbc-a197-cb0aa1716d2d",
+    "titulo": "Leche Reconstituida Entera GLORIA Lata 390g Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "172de299-2024-4b82-8521-7da454d8a3e4",
+    "titulo": "Huevos Pardos BELL'S Bandeja 30un",
+    "status": "ok"
+  },
+  {
+    "id": "0e476127-68df-42f6-92fe-3702ee2136cd",
+    "titulo": "Mantequilla GLORIA Pote 390g",
+    "status": "ok"
+  },
+  {
+    "id": "4508220b-47c2-4c3a-b690-27531da8c04c",
+    "titulo": "Leche Light GLORIA Lata 390g Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "1bd19b21-4544-4d1e-965e-455662c03740",
+    "titulo": "Leche GLORIA Zero Lacto Lata 390g Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "8624e42c-63e7-4f35-b65c-9351f6865e85",
+    "titulo": "Yogurt Parcialmente Descremado GLORIA Fresa Galonera 1.6Kg",
+    "status": "ok"
+  },
+  {
+    "id": "d7d40523-34cd-43ca-a167-7c84ed50805a",
+    "titulo": "Mantequilla con Sal GLORIA Paquete 180g",
+    "status": "ok"
+  },
+  {
+    "id": "02d360eb-b83c-48e8-b691-5673a6c59a31",
+    "titulo": "Huevos Pardos LA CALERA Paquete 30un",
+    "status": "ok"
+  },
+  {
+    "id": "b43ddc2d-4f16-422e-9f0c-dadbb9211f8f",
+    "titulo": "Mantequilla con Sal LAIVE Barra 180g",
+    "status": "ok"
+  },
+  {
+    "id": "79642af4-bd66-41a9-a35e-6143183c9e2a",
+    "titulo": "Leche UHT GLORIA Entera Caja 946ml Paquete 3un",
+    "status": "ok"
+  },
+  {
+    "id": "ea17b09d-482f-48a8-8e4a-04485f7d4325",
+    "titulo": "Huevos de Gallina BELL'S Pardos Bandeja 15un",
+    "status": "ok"
+  },
+  {
+    "id": "5a73b0a7-7f43-45de-8694-8689ca4f9aba",
+    "titulo": "Yogurt Griego VAKIMU Original Pote 960g",
+    "status": "ok"
+  },
+  {
+    "id": "bcbf78ed-7820-4b82-a025-c01b189af554",
+    "titulo": "Mezcla Láctea LAIVE Sin Lactosa Caja 480g Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "75a07fcb-5c8a-4dc6-9b32-6112b8e56b97",
+    "titulo": "Yogurt Parcialmente Descremado GLORIA Vainilla Galonera 1.6Kg",
+    "status": "ok"
+  },
+  {
+    "id": "cf8ae7ad-e898-4bd6-87c9-3e8c0e40b92d",
+    "titulo": "Leche UHT GLORIA Entera Bolsa 800ml Paquete 3un",
+    "status": "ok"
+  },
+  {
+    "id": "2d77d595-a682-4819-a885-6f31bd1fe974",
+    "titulo": "RadioShack USB 2.0 Hub 4-Port 2605155 &#x2013; High-Speed USB Splitter",
+    "status": "ok"
+  },
+  {
+    "id": "f190226e-e382-4269-add6-dd601ceece81",
+    "titulo": "RadioShack USB 3.0 to USB-C Cable 6 ft 2605129 &#x2013; Fast Charging & 5Gbps Data Transfer",
+    "status": "ok"
+  },
+  {
+    "id": "f02fd386-a6e6-4dba-8c31-26ff40936c7b",
+    "titulo": "RadioShack HDMI 2.0 Cable 4K 60Hz 6 ft 1503299 High Speed Round Cable",
+    "status": "ok"
+  },
+  {
+    "id": "68ca77f8-b694-4ede-97b6-f40533ccd1c1",
+    "titulo": "RadioShack 6-in-1 USB 2.0 Adapter Kit 2605050 &#x2013; Multi Connector Cable 6 ft",
+    "status": "ok"
+  },
+  {
+    "id": "d67fc28b-ce9b-4185-92be-bb0ec5717052",
+    "titulo": "RadioShack USB-C to USB-C Cable 6 ft 4203251 Fast Charging 5V 480Mbps",
+    "status": "ok"
+  },
+  {
+    "id": "d5b1e994-8419-40f2-b741-84b687752dbf",
+    "titulo": "RadioShack Power Cord NEMA 5-15P to IEC C13 &#x2013; 6 ft Heavy Duty Computer Power Cable",
+    "status": "ok"
+  },
+  {
+    "id": "80c5e3e3-a08e-4556-9a5e-5429fd949652",
+    "titulo": "RadioShack 3RCA to 3RCA M - M Cable 4203213 9 ft",
+    "status": "ok"
+  },
+  {
+    "id": "a2ec11dd-df6e-4ecc-a1d2-baa454bad93e",
+    "titulo": "RadioShack CAT6 Ethernet Cable 25 ft &#x2013; High-Speed 10 Gbps RJ45 Internet Cable",
+    "status": "ok"
+  },
+  {
+    "id": "8f91f274-afb3-48d0-9d59-d117e5de9d00",
+    "titulo": "RadioShack USB 3.0 to USB-C Cable 3 ft 4203267 15W Fast Charging",
+    "status": "ok"
+  },
+  {
+    "id": "01a18139-3446-47c6-bf91-1b4ee07462ae",
+    "titulo": "RadioShack HDMI 2.0 Flat Cable 4K with Ethernet 6 ft &#x2013; Flexible High-Speed HDMI",
+    "status": "ok"
+  },
+  {
+    "id": "471af0b4-5de2-4b8f-861b-b349fd14e96c",
+    "titulo": "RadioShack 3.5mm Audio Cable with Microphone 2605159 &#x2013; Aux Cable with Mic",
+    "status": "ok"
+  },
+  {
+    "id": "38b568d3-435a-4897-91ab-26197e72a86a",
+    "titulo": "RadioShack HDMI 2.0 Cable 4K 60Hz 3 ft 1503298 High Speed",
+    "status": "ok"
+  },
+  {
+    "id": "16f03b40-4ae8-4187-be04-55e0309a1c01",
+    "titulo": "RadioShack 1&#x2F;4&quot; Instrument Cable 12 ft 1202235 &#x2013; Audio Cable for Guitar & Instruments",
+    "status": "ok"
+  },
+  {
+    "id": "35f8c893-4c9a-42b9-8579-70d6e05c9b73",
+    "titulo": "RadioShack Power Cord NEMA 1-15P to IEC C7 &#x2013; 6 ft 125V&#x2F;7A Universal Cable",
+    "status": "ok"
+  },
+  {
+    "id": "a664e57f-4e31-42f2-852b-55e59870808b",
+    "titulo": "RadioShack 3-Prong AC Power Cord &#x2013; NEMA 5-15P to IEC C13 Cable 125V&#x2F;13A 6 ft for PC Monitor Printer",
+    "status": "ok"
+  },
+  {
+    "id": "f2ad0ad3-f370-48bc-a330-ff4eb74282d7",
+    "titulo": "RadioShack Type C to Type C 4203269 Charging Cable 10GBPS PD 100W 3FT",
+    "status": "ok"
+  },
+  {
+    "id": "9e095f6f-0f92-4e87-b39b-2cbcaa7baea6",
+    "titulo": "RadioShack HDMI 2.0 Cable 4K with Ethernet 6 ft 1503267 &#x2013; High-Speed HDMI Male to Male",
+    "status": "ok"
+  },
+  {
+    "id": "2e8c4d6d-5ae1-4aff-86ba-481b23694e4d",
+    "titulo": "Jabón de Lavar BOLÍVAR Cuidado Total Bolsa 380g",
+    "status": "ok"
+  },
+  {
+    "id": "52257d34-1268-4c58-b6a9-2e406de50bca",
+    "titulo": "Yogurt Funcional DANLAC Estilo Kéfir Botella 900g",
+    "status": "ok"
+  },
+  {
+    "id": "db5729b1-e5ab-4f72-b9a9-d64ca13d0a73",
+    "titulo": "Yogurt Griego GLORIA Batido Frutos Rojos Bolsa 800g",
+    "status": "ok"
+  },
+  {
+    "id": "26c9770c-4c53-4414-ae29-a2e385100217",
+    "titulo": "Leche Evaporada Entera GLORIA Lata 390g Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "36981725-6314-4533-a980-4fa13d6d56f0",
+    "titulo": "Leche Reconstituida Entera GLORIA Lata 390g",
+    "status": "ok"
+  },
+  {
+    "id": "8a7fa2ed-05c0-41b9-8890-a1602cfba5cc",
+    "titulo": "Leche GLORIA Light Zero Lacto Lata 390g Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "a5d76f49-d9e1-467d-ad12-18cfc8368bc7",
+    "titulo": "Cerveza HEINEKEN Lata 310ml Paquete 12un",
+    "status": "ok"
+  },
+  {
+    "id": "c1cd5fb8-8401-46f4-bbc3-52c41ea5259f",
+    "titulo": "Cerveza CUSQUEÑA Trigo Botella 310ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "b1ed0e6f-7d93-456f-baaa-cb8861b76c35",
+    "titulo": "Cerveza BUDWEISER Paquete 6un Lata 355ml",
+    "status": "ok"
+  },
+  {
+    "id": "82e097c1-50b8-43e0-abca-093f00d2eb07",
+    "titulo": "Cerveza PILSEN Callao Botella 305ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "7cf95cc4-1ea1-4870-b1ae-d87f4f994845",
+    "titulo": "Hielo BELL'S Bolsa 3Kg",
+    "status": "ok"
+  },
+  {
+    "id": "f4563265-4d47-4772-a5f0-a689723931f0",
+    "titulo": "Pack TABERNERO Vino Tinto Borgoña Botella 750ml + Vino Rosé Semiseco Botella 750ml",
+    "status": "ok"
+  },
+  {
+    "id": "06c3bec0-6f6c-432f-b2f8-773aa96b26c8",
+    "titulo": "Cerveza de Maíz KLAUHOFF Lata 310ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "4fe68cd6-6c92-4ba3-bad7-687e4fa60cc4",
+    "titulo": "Cerveza CORONA Cero sin Alcohol Botella 355ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "bb7fcbd8-33d0-4f3c-ba58-8463785f66e2",
+    "titulo": "Hielo Kold Draft ARTISAN Bolsa 3kg",
+    "status": "ok"
+  },
+  {
+    "id": "b5365fa8-da3c-421d-845c-8dcb69694776",
+    "titulo": "Cerveza CUSQUEÑA Negra Botella 310ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "e755956e-b051-4acc-96f8-a29938451566",
+    "titulo": "Cerveza HEINEKEN Barril 5 L",
+    "status": "ok"
+  },
+  {
+    "id": "59ca95ea-10b2-41df-b7ea-321a7ebae51d",
+    "titulo": "Cerveza PILSEN Lata 473ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "1c07698e-4b7e-47a6-a206-528c51f8219d",
+    "titulo": "Pisco SANTIAGO QUEIROLO Acholado Botella 750ml",
+    "status": "ok"
+  },
+  {
+    "id": "b8af012a-946b-45cd-88c4-822151325bd6",
+    "titulo": "Cerveza CUSQUEÑA Dorada Botella 310ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "a80b0b19-f8a8-4e20-bd25-097b05a8c695",
+    "titulo": "Jarabe de Goma VIÑA SANTA Natural Botella 750ml",
+    "status": "ok"
+  },
+  {
+    "id": "d406283e-fdd0-4844-839e-cab67be2aab9",
+    "titulo": "Cerveza PILSEN 6 Pack Lata 355ml",
+    "status": "ok"
+  },
+  {
+    "id": "d3c4e9e9-11d6-4e4e-8cd5-38092c6db91a",
+    "titulo": "Pisco SANTIAGO QUEIROLO Quebranta Botella 750ml",
+    "status": "ok"
+  },
+  {
+    "id": "b0ea7e46-b980-4145-a2e6-91af305f5daa",
+    "titulo": "Cigarros MARLBORO Gold Original Caja 20un",
+    "status": "ok"
+  },
+  {
+    "id": "1b475e89-1cbd-4e0a-9834-99e455f44723",
+    "titulo": "Cerveza CORONITA 6Pack Botella 210ml",
+    "status": "ok"
+  },
+  {
+    "id": "e3aa5043-2a7e-4cdd-a73a-9d57b2cdc5a4",
+    "titulo": "Vino Tinto LAS MORAS Malbec Botella 750ml",
+    "status": "ok"
+  },
+  {
+    "id": "3b465fec-ca50-4ee7-9c20-67a10201552b",
+    "titulo": "Cerveza FLYING FISH con Sabor Lima Limón Lata 355ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "b13cc783-c4ed-43fe-bbd7-57d9ff135622",
+    "titulo": "Cerveza STELLA ARTOIS Botella 330ml 6 Pack",
+    "status": "ok"
+  },
+  {
+    "id": "bf225928-696c-40c2-99d2-8c2c76ba5cf0",
+    "titulo": "Pack Vino Rosé TABERNERO Gran Rosé Semi Seco Botella 750ml + Tabla Piqueo Tradicional BELL´S",
+    "status": "ok"
+  },
+  {
+    "id": "aeff9f28-bc29-4bab-8be8-a3808312d727",
+    "titulo": "Cerveza sin Alcohol CUSQUEÑA Cero Trigo Lata 355ml Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "22dc64b6-3ed6-475c-ad76-0a93b00cb215",
+    "titulo": "RadioShack Universal Remote Control for TCL TV",
+    "status": "error",
+    "error": "NaN error after 2 retries"
+  },
+  {
+    "id": "186fe16c-2585-4a35-9a08-7290c21bfffa",
+    "titulo": "Cigarros MARLBORO Crafted Blue Caja 20un",
+    "status": "ok"
+  },
+  {
+    "id": "f2e50abc-5f09-40d1-87c6-b627de918249",
+    "titulo": "Ready To Drink (RTD) MIKE'S Hard Passion Fruit Lata 355ml paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "f3f2d201-23bf-47ae-a0be-a50a4b57f401",
+    "titulo": "Gin BEEFEATER London Dry Botella 700ml + Vodka ABSOLUT Botella 375ml",
+    "status": "ok"
+  },
+  {
+    "id": "073778fb-0ab8-487f-90ed-e30e357de4f1",
+    "titulo": "RadioShack 1&#x2F;4&quot; Headphone Adapter 2740876 &#x2013; Stereo Audio Jack Converter",
+    "status": "ok"
+  },
+  {
+    "id": "69f0ef84-8807-443d-8b70-fc5a6ac0e99e",
+    "titulo": "RadioShack Studio Microphone Boom Arm &#x2013; Adjustable Desk Mount",
+    "status": "ok"
+  },
+  {
+    "id": "5159064d-d0e6-4c3c-a647-5fbec435717b",
+    "titulo": "RadioShack LED Desk Lamp 12W 2607101 &#x2013; Energy Efficient Lighting",
+    "status": "ok"
+  },
+  {
+    "id": "1be85c5e-be43-42f9-adc1-c09d1520d37b",
+    "titulo": "RadioShack 1&#x2F;8&quot; Headphone Adapter 2740875 &#x2013; Audio Jack Converter",
+    "status": "ok"
+  },
+  {
+    "id": "9db1118a-987b-4874-aa99-709f9734793c",
+    "titulo": "RadioShack Microphone Stand 1606031 &#x2013; Adjustable Mic Stand",
+    "status": "ok"
+  },
+  {
+    "id": "ae6ad52b-d0cd-4d13-8ad4-50f2b21b29ce",
+    "titulo": "RadioShack Universal AC Remote Control 1503297",
+    "status": "ok"
+  },
+  {
+    "id": "6d2b4511-2822-4afb-bcb5-571556e1cf5b",
+    "titulo": "RadioShack Selfie Stick Tripod 2607110 Adjustable Phone Stand",
+    "status": "ok"
+  },
+  {
+    "id": "084d1c37-7aae-4b7d-ac66-306ca167a694",
+    "titulo": "RadioShack Smartphone Video Rig Kit 2607080 &#x2013; Mobile Filmmaking Setup",
+    "status": "ok"
+  },
+  {
+    "id": "6741da3b-518b-45f2-b491-ce63194c8471",
+    "titulo": "RadioShack Camera Tripod 2607024 &#x2013; Adjustable Tripod with Swivel Head",
+    "status": "ok"
+  },
+  {
+    "id": "8707c053-ec63-450a-aa2e-d7a8f275b80a",
+    "titulo": "RadioShack TV Top Shelf 1606026 &#x2013; Universal Screen Storage Shelf",
+    "status": "ok"
+  },
+  {
+    "id": "43b77b90-8ee0-42fc-a6f7-68202d3390bf",
+    "titulo": "RadioShack Home Projector 1608005 HD Multimedia Projector",
+    "status": "ok"
+  },
+  {
+    "id": "86de2758-87aa-4638-bbef-99eb766a7c62",
+    "titulo": "RadioShack TV Stand 50&#x2013;90&quot; 1606021 &#x2013; Adjustable TV Rack Black",
+    "status": "ok"
+  },
+  {
+    "id": "9461f10f-5dd7-46a1-bb5a-8cdc1f484c4b",
+    "titulo": "RadioShack Universal Remote Control for Sony TV",
+    "status": "ok"
+  },
+  {
+    "id": "857ca93f-c273-4938-b601-f22213ac3fda",
+    "titulo": "RadioShack TV Stand 32&#x2013;55&quot; 1606027 &#x2013; Adjustable TV Rack Black",
+    "status": "ok"
+  },
+  {
+    "id": "5f6a1470-083a-4958-8d8a-c9d33a2fcfd7",
+    "titulo": "RadioShack TV Stand 37&#x2013;80&quot; 1606022 &#x2013; Adjustable TV Rack Black",
+    "status": "ok"
+  },
+  {
+    "id": "c2d89dd0-51ca-4610-a1cc-4f8717c412e0",
+    "titulo": "RadioShack Amplified Indoor TV Antenna 1503307 HD Signal Booster",
+    "status": "ok"
+  },
+  {
+    "id": "f788da15-a0a4-4d1b-af9d-4cde64c4b2c2",
+    "titulo": "RadioShack Universal Remote Control for Samsung TV",
+    "status": "ok"
+  },
+  {
+    "id": "2c94b649-acab-4a5e-a08f-ad13dde257d7",
+    "titulo": "Leche Reconstituida Entera GLORIA Lata 390g Paquete 6un",
+    "status": "ok"
+  },
+  {
+    "id": "09523282-9ace-44d3-a344-f7364592eed9",
+    "titulo": "RadioShack MicroSD Card U1 32GB Class 10 4401118 &#x2013; High-Speed Memory Card with Adapter",
+    "status": "ok"
+  },
+  {
+    "id": "02634707-b74f-42df-b5cd-f3c8d06aa55e",
+    "titulo": "RadioShack MicroSD Card 64GB U3 V30 4401151 &#x2013; High-Speed Memory Card",
+    "status": "ok"
+  },
+  {
+    "id": "31810fee-1da4-4ee9-a580-7ae7cd707857",
+    "titulo": "RadioShack MicroSD Card 128GB U3 V30 4401152 &#x2013; High-Speed Memory Card",
+    "status": "ok"
+  },
+  {
+    "id": "73186817-fb2a-4102-8e4c-7bf281e115f5",
+    "titulo": "RadioShack USB 2.0 Flash Drive 32GB 4401140 &#x2013; High-Speed USB Storage",
+    "status": "ok"
+  },
+  {
+    "id": "f827337a-c7e1-43b5-bb7c-0311e42340c8",
+    "titulo": "RadioShack MicroSD Card 256GB U3 V30 4401175 High Speed Memory Card",
+    "status": "ok"
+  },
+  {
+    "id": "d1638925-2f5b-49e4-bf2c-390ac76c586b",
+    "titulo": "RadioShack USB 2.0 Flash Drive 64GB 4401141 &#x2013; High-Speed USB Storage",
+    "status": "ok"
+  },
+  {
+    "id": "37cb502b-80db-457b-8938-e0f87338090c",
+    "titulo": "RadioShack MicroSD Card U1 128GB Class 10 4401130 &#x2013; High-Speed Memory Card with Adapter",
+    "status": "ok"
+  },
+  {
+    "id": "c717e52b-97b3-4b04-85ff-1b8731a1f78e",
+    "titulo": "WiFi Camera Drone 720p 25 Min Flight Long Range Remote Control Drone",
+    "status": "ok"
+  },
+  {
+    "id": "29207fa1-87c7-4375-9993-42034db826c4",
+    "titulo": "RadioShack USB 3.0 Flash Drive 32GB 4401190 High Speed Storage",
+    "status": "ok"
+  },
+  {
+    "id": "11728943-3a13-4f5c-bd29-77d594062793",
+    "titulo": "RadioShack USB 3.0 Flash Drive 128GB 4401192 High Speed Storage",
+    "status": "ok"
+  },
+  {
+    "id": "02513dbf-72c0-4b94-8412-e3220e791d7d",
+    "titulo": "RadioShack USB 3.0 Flash Drive 64GB 4401191 High Speed Storage",
+    "status": "ok"
+  },
+  {
+    "id": "c8b6261d-8f02-4dde-9522-19ccb5f557e2",
+    "titulo": "RadioShack USB-C Flash Drive 64GB 4401194 High Speed Storage",
+    "status": "ok"
+  },
+  {
+    "id": "fbaa0d3e-900f-400d-92f5-621c9eba98c4",
+    "titulo": "RC Stunt Truck 1&#x3A;18 Off Road LED Lights Shock Absorbers Gray",
+    "status": "ok"
+  },
+  {
+    "id": "a7b82484-8f24-4d2b-b9ac-b77dedc8d43f",
+    "titulo": "RC Robot Dog Interactive Toy 8 Wheel Stunt 360 Spins LED Lights USB Rechargeable",
+    "status": "ok"
+  },
+  {
+    "id": "afe7ba76-cbcd-4c78-9aff-cdbfefcf0d5f",
+    "titulo": "WiFi Camera Drone 720p 16 Min Flight Brushless Motor Remote Control Drone",
+    "status": "ok"
+  },
+  {
+    "id": "8568845f-c28a-40d1-b4ed-1515c54d7c50",
+    "titulo": "Amphibious RC Stunt Car 4WD Waterproof 7.5 mph LED Lights Orange",
+    "status": "ok"
+  },
+  {
+    "id": "1c74c8d0-a5d2-47bc-bde5-589ba1806fe0",
+    "titulo": "RadioShack Kids Night Light Projector 6103045 Music Lamp USB-C Rechargeable",
+    "status": "ok"
+  },
+  {
+    "id": "f15e3d0a-4ac2-4c1e-9abf-2f0ee5b1f256",
+    "titulo": "McLaren 765LT RC Car 1&#x3A;18 Scale Remote Control Car 4.6 mph 40 Min Battery Yellow",
+    "status": "ok"
+  },
+  {
+    "id": "c366ed0e-ff29-4062-9b5e-d21719e0f030",
+    "titulo": "Amphibious RC Stunt Truck Waterproof LED Lights 9 mph Yellow",
+    "status": "ok"
+  },
+  {
+    "id": "0c6b45d8-448c-401c-abae-ff5959363261",
+    "titulo": "RC Armored Stunt Car 6WD LED Lights 11 mph USB Rechargeable Beige",
+    "status": "ok"
+  },
+  {
+    "id": "091d691d-752d-422b-8472-7fd9bd4f190b",
+    "titulo": "RC Stunt Truck 1&#x3A;16 All Terrain 15.5 mph LED Lights Black",
+    "status": "ok"
+  },
+  {
+    "id": "53aea1c5-14df-4dc2-b2cb-5eb708622659",
+    "titulo": "RC Monster Truck Off Road LED Lights 11 mph USB Rechargeable Black Green",
+    "status": "ok"
+  },
+  {
+    "id": "5033bb21-1717-458b-a37b-059cd128107d",
+    "titulo": "Amphibious RC Stunt Car 4WD Waterproof 12 mph LED Lights Red",
+    "status": "ok"
+  },
+  {
+    "id": "98f22bb0-8819-4191-9332-e8c725b99ebd",
+    "titulo": "High Speed RC Trail Racer 1&#x3A;8 Remote Control Car 9 mph 40 Min Playtime LED Lights Blue and White",
+    "status": "ok"
+  },
+  {
+    "id": "785b0074-723e-4dd3-b221-e7ba19a71ba4",
+    "titulo": "RC Monster Truck Stunt Car 9 mph LED Lights USB Rechargeable Yellow",
+    "status": "ok"
+  },
+  {
+    "id": "ff978b67-94aa-4937-82ce-04ac1b25d8c2",
+    "titulo": "RadioShack Wireless Earbuds Bluetooth 5.2 ANC IPX5 6 Hour Battery Black",
+    "status": "ok"
+  },
+  {
+    "id": "8fde8de9-60ed-47aa-a349-c095bf7bb992",
+    "titulo": "RadioShack Bluetooth 5.4 Headphones 30 Hour Battery Foldable Creme",
+    "status": "ok"
+  },
+  {
+    "id": "7ca82089-2729-494c-bf31-7239d16f30a3",
+    "titulo": "RadioShack BUZZER - Bluetooth Headphones 3304276",
+    "status": "ok"
+  },
+  {
+    "id": "761a1e01-e4c7-4124-9875-38556b0c8f58",
+    "titulo": "RadioShack Wireless Earbuds Bluetooth 5.3 8 Hour Battery Compact Case White",
+    "status": "ok"
+  },
+  {
+    "id": "3bf89578-f75e-4e48-b475-f0f73a3e160a",
+    "titulo": "RadioShack Wired Stereo Earphones 3.5mm Jack &#x2013; Mic & Volume Control Deep Bass Red",
+    "status": "ok"
+  },
+  {
+    "id": "60d9ed07-9165-4660-9e6e-c30fc8eb5ab4",
+    "titulo": "RadioShack THUNDER 2 -Bluetooth Headphones 3304275",
+    "status": "ok"
+  },
+  {
+    "id": "263539a9-9374-4bf3-bb50-ff6d2158ac65",
+    "titulo": "RadioShack Bluetooth 5.4 Headphones 30 Hour Battery Foldable Silver",
+    "status": "ok"
+  },
+  {
+    "id": "25a56f66-210b-4fac-8952-01202b040df2",
+    "titulo": "RadioShack Kids Wired Headphones 3304455 Volume Limit 3.5mm Pink",
+    "status": "ok"
+  },
+  {
+    "id": "d4af3e72-5d1f-4c96-ac29-f9e47293a74d",
+    "titulo": "RadioShack Kids Wired Headphones 3304456 Volume Limit 3.5mm Pink White",
+    "status": "ok"
+  },
+  {
+    "id": "5cd1ceca-fb67-49d8-85bb-32f0f0c31de3",
+    "titulo": "RadioShack FLAT STEREO Headphones 3304294",
+    "status": "ok"
+  },
+  {
+    "id": "1169b972-80e9-464d-8853-9464f7f7a70e",
+    "titulo": "RadioShack Thin Stereo - Ultra-Slim Wired Stereo Headphones 3304283",
+    "status": "ok"
+  },
+  {
+    "id": "c673acc8-87be-46b5-ac8f-d2dc4de9b3f4",
+    "titulo": "RadioShack True Wireless Earbuds Bluetooth 5.3 IPX5 6 Hour Battery Built In Mic Black",
+    "status": "ok"
+  },
+  {
+    "id": "8b46a67d-2be4-4aaa-87ad-bc95e16e33b3",
+    "titulo": "RadioShack Stereo Headphones White 3304245 &#x2013; Wired Over-Ear Audio Headset",
+    "status": "ok"
+  },
+  {
+    "id": "39ffa768-28f6-427b-ad13-c3dc4bf63960",
+    "titulo": "RadioShack USB-C In Ear Earphones 2 Pack with Mic Volume Control Black White",
+    "status": "ok"
+  },
+  {
+    "id": "fe3a7f1f-e135-465c-b14a-0481af4ecf37",
+    "titulo": "RadioShack USB-C Wired Earphones with Mic 10mm Drivers 3.5 ft Cable White",
+    "status": "ok"
+  },
+  {
+    "id": "a3a7a194-bde9-459d-9f00-484cedbcb114",
+    "titulo": "RadioShack True Wireless Earbuds Bluetooth 5.3 IPX5 6 Hour Battery Built In Mic Pink",
+    "status": "ok"
+  },
+  {
+    "id": "8e9d9bb4-21c9-487c-9ff3-47f964b5f2ee",
+    "titulo": "RadioShack  Flat Stereo Wired Headphones 3304293 Black",
+    "status": "ok"
+  },
+  {
+    "id": "06783e61-7495-422b-9fbf-15e4af21fe55",
+    "titulo": "RadioShack Mechanical Gaming Keyboard 2607148 67 Keys RGB USB-C Transparent",
+    "status": "error",
+    "error": "NaN error after 2 retries"
+  },
+  {
+    "id": "328fd115-cd1b-4aae-9b2c-70e3809b6d44",
+    "titulo": "RadioShack One-Handed RGB Gaming Keyboard 2607075 &#x2013; 35 Keys, Anti-Ghosting, Macro Support",
+    "status": "error",
+    "error": "NaN error after 2 retries"
+  },
+  {
+    "id": "4c21f5af-e4ba-456c-9dd4-6a8d35f78577",
+    "titulo": "RadioShack AAAA Alkaline Batteries 2309304 &#x2013; Long Lasting Power &#x28;8 Pack&#x29;",
+    "status": "error",
+    "error": "NaN error after 2 retries"
+  },
+  {
+    "id": "e1af958d-f50b-42f9-bd96-736d718c90d1",
+    "titulo": "RadioShack AAA Alkaline Batteries 2309319 &#x2013; Long Lasting Power &#x28;40 Pack&#x29;",
+    "status": "error",
+    "error": "NaN error after 2 retries"
+  },
+  {
+    "id": "67c4c28f-c570-4ee3-a616-7610564d3419",
+    "titulo": "RadioShack VIBEZ Bluetooth Headphones 3304271",
+    "status": "ok"
+  },
+  {
+    "id": "d4776f26-8c31-4541-8a58-5b1c35634494",
+    "titulo": "RadioShack Mouse Pad with Wrist Rest 2605085 Red",
+    "status": "ok"
+  },
+  {
+    "id": "df9cdcb4-aed9-4b8c-9e05-19c57eceb0d4",
+    "titulo": "RadioShack USB-C Wired Earphones with Mic 10mm Drivers 3.5 ft Cable Red",
+    "status": "ok"
+  },
+  {
+    "id": "f965c0e3-2e05-42c5-82af-356a1104e9cb",
+    "titulo": "RadioShack Mouse Pad with Wrist Rest 2605084 Black",
+    "status": "ok"
+  },
+  {
+    "id": "c84b0767-6a7b-421b-aa7c-824dbe01bf2a",
+    "titulo": "RadioShack Gaming Monitor Arm &#x2013; Adjustable Mount for 17&quot;&#x2013;32&quot; Screens",
+    "status": "ok"
+  },
+  {
+    "id": "4b20bd2a-54b7-467b-a7d6-3e4d0c833e16",
+    "titulo": "RadioShack PS5 Controller Charging Dock Single Fast Charge 3 Hour USB-C",
+    "status": "ok"
+  },
+  {
+    "id": "7e94080c-9d82-4d1b-b650-93aa6f01c1d1",
+    "titulo": "RadioShack RGB Light Bar &#x2013; Sound Reactive Gaming LED Light",
+    "status": "ok"
+  },
+  {
+    "id": "63e3d036-a004-4ec8-b69e-3e33c3dfc941",
+    "titulo": "RadioShack Wireless Gamepad Multi Platform Switch PC Android iOS Controller Ergonomic Design",
+    "status": "ok"
+  },
+  {
+    "id": "6163889c-62bf-41e8-a0ea-e5d3e31566bc",
+    "titulo": "RadioShack mouse pad with wrist rest 2607021",
+    "status": "ok"
+  },
+  {
+    "id": "064ddd2f-efe5-471b-b505-eb85bab06e4d",
+    "titulo": "RadioShack Mouse Pad 2607106 Smooth Surface Non Slip Base Black",
+    "status": "ok"
+  },
+  {
+    "id": "6656a527-b3d9-431c-a8bf-880cad813094",
+    "titulo": "RadioShack RGB Gaming Combo 2607062 &#x2013; Keyboard, Mouse & Mouse Pad Set",
+    "status": "ok"
+  },
+  {
+    "id": "ddd0a7fd-b26d-46f7-adb1-4984d0c6acb0",
+    "titulo": "RadioShack Wireless Keyboard and Mouse Combo 2604811 2.4GHz USB 96 Keys Ergonomic",
+    "status": "ok"
+  },
+  {
+    "id": "4b098262-9142-4cb3-9048-22bae2debe17",
+    "titulo": "RadioShack Mouse Pad with Wrist Rest 2605086 Blue",
+    "status": "ok"
+  },
+  {
+    "id": "90c0b0bd-d195-42df-9c28-0de4945facc9",
+    "titulo": "RadioShack D Alkaline Batteries 2302292 Long Lasting Power 8 Pack",
+    "status": "ok"
+  },
+  {
+    "id": "83c5dc45-4cad-4947-a0cb-699cacf5f60d",
+    "titulo": "RadioShack N Alkaline Batteries 2302225 2 Pack",
+    "status": "ok"
+  },
+  {
+    "id": "aa3ea928-33fc-440a-acf1-28a0cc6b78f9",
+    "titulo": "RadioShack Hearing Aid Batteries Size 312 2302529 Zinc Air 24 Pack",
+    "status": "ok"
+  },
+  {
+    "id": "719118e3-6bcd-4fd8-9e27-670bb9fcd134",
+    "titulo": "RadioShack C Alkaline Batteries 2302297 Long Lasting Power 4 Pack",
+    "status": "ok"
+  },
+  {
+    "id": "d81ba395-0a40-4b3a-90e8-b2bd18154b62",
+    "titulo": "RadioShack C Alkaline Batteries 2302298 Long Lasting Power 8 Pack",
+    "status": "ok"
+  },
+  {
+    "id": "2fae065b-f39d-480a-80b7-d05701b9219f",
+    "titulo": "RadioShack Wired Stereo Earphones 3.5mm Jack &#x2013; Mic & Volume Control Deep Bass Blue",
+    "status": "ok"
+  },
+  {
+    "id": "76b3da04-c29e-4f3d-bfe2-c05569510c1a",
+    "titulo": "RadioShack USB-C Wired Earphones with Mic 10mm Drivers 3.5 ft Cable Black",
+    "status": "ok"
+  },
+  {
+    "id": "ddbb38bf-c0d7-4675-8914-f36ace09d95e",
+    "titulo": "RadioShack VIBEZ- Bluetooth Headphones &#x2F; 3304270",
+    "status": "ok"
+  },
+  {
+    "id": "735c7c81-b741-4a35-8164-b84da54a5c98",
+    "titulo": "RadioShack Thin Stereo - Ultra-Slim Wired Stereo Headphones 3304287 Purple",
+    "status": "ok"
+  },
+  {
+    "id": "16ed5423-f850-4609-bfa6-529b3b988d0c",
+    "titulo": "RadioShack Thunder 2 - Bluetooth Headphones &#x2F; 3304274",
+    "status": "ok"
+  },
+  {
+    "id": "d7a2ce4f-9322-4265-a0b0-7a1c58fe4050",
+    "titulo": "RadioShack Bluetooth 5.4 Headphones 30 Hour Battery Foldable Black",
+    "status": "ok"
+  },
+  {
+    "id": "678d944b-6c8f-4e90-81ec-bacade0c5fdd",
+    "titulo": "RadioShack Vibez- Bluetooth Headphones 3304272",
+    "status": "ok"
+  },
+  {
+    "id": "50f95379-98d5-46e9-9a9b-af9c090c37d2",
+    "titulo": "RadioShack THIN STEREO - Ultra-Slim Wired Stereo Headphones 3304286 Pink",
+    "status": "ok"
+  },
+  {
+    "id": "bcef211c-851c-496b-8b74-6d4b6b118af9",
+    "titulo": "RadioShack Kids Wired Headphones 3304457 Volume Limit 3.5mm Blue White",
+    "status": "ok"
+  },
+  {
+    "id": "ad17827b-3098-42ee-82cf-d67c27029a40",
+    "titulo": "RadioShack Kids Wired Headphones 3304454 Volume Limit 3.5mm Black Yellow",
+    "status": "ok"
+  },
+  {
+    "id": "3cad6b31-e4e6-4f7a-8f34-98feb8235db9",
+    "titulo": "RadioShack Wireless Gaming Earbuds Bluetooth 5.3 Low Latency 22 Hour Battery Black",
+    "status": "ok"
+  },
+  {
+    "id": "667778b3-4eb3-4c1b-905f-b4f6f5b65ee8",
+    "titulo": "RadioShack Wireless Gaming Earbuds Bluetooth 5.3 Low Latency 22 Hour Battery White",
+    "status": "ok"
+  },
+  {
+    "id": "d4f09739-1477-4b5b-94de-fc5f44e000fc",
+    "titulo": "RadioShack 7.1 Surround Gaming Headset USB 50mm Drivers RGB Black Red",
+    "status": "ok"
+  },
+  {
+    "id": "ef076fef-2ebf-4b30-b186-9f3142de7ed9",
+    "titulo": "RadioShack Dual Connect Gaming Headset USB and 3.5mm Boom Mic Navy Blue",
+    "status": "ok"
+  },
+  {
+    "id": "2b088a51-e5df-433d-aaf4-f83783208a5b",
+    "titulo": "RadioShack 110W Wireless Amplifier & Speaker with Guitar and Microphone Inputs LED Lights",
+    "status": "ok"
+  },
+  {
+    "id": "23f4e0de-8e5d-4101-83cb-298426a6822b",
+    "titulo": "RadioShack Wireless Gaming Headphones Bluetooth 5.3 2.4GHz 50mm Drivers",
+    "status": "ok"
+  },
+  {
+    "id": "fdf0ae92-1fe3-49fe-9831-9276b5fa3096",
+    "titulo": "RadioShack Stereo Headphones with Microphone 2604800",
+    "status": "ok"
+  },
+  {
+    "id": "d827435e-2d24-4215-b0f1-e2d33f9faf3f",
+    "titulo": "RadioShack Dual Connect Gaming Headset USB and 3.5mm Boom Mic Black",
+    "status": "ok"
+  },
+  {
+    "id": "d56f15ea-6ef9-49a4-a391-a1c1b2e5ed32",
+    "titulo": "RadioShack Wireless Gaming Earbuds Bluetooth 5.3 Low Latency LED Case White",
+    "status": "ok"
+  },
+  {
+    "id": "e4399e28-654d-4432-a88f-80fa63fb195a",
+    "titulo": "RadioShack 3 HDMI ports switch 1503211 Full HD",
+    "status": "ok"
+  },
+  {
+    "id": "97ecb0b6-3827-4362-be94-a0e1cb936592",
+    "titulo": "RadioShack 80W Wireless Amplifier & Speaker with Guitar and Microphone Inputs LED Lights",
+    "status": "ok"
+  },
+  {
+    "id": "90e0aa2e-b5e9-4e4b-b3e5-767ccdaa0dcf",
+    "titulo": "RadioShack Bluetooth Speaker 40W TWS AUX USB IPX5 RGB Black Green",
+    "status": "ok"
+  },
+  {
+    "id": "c9a7ff5b-ac0b-4e32-af30-e32fece01eec",
+    "titulo": "RadioShack Bluetooth Speaker 40W TWS AUX USB IPX5 RGB Gray Green",
+    "status": "ok"
+  },
+  {
+    "id": "188d87a7-6e3c-4f59-8b86-6ac92a4cd0c7",
+    "titulo": "RadioShack Bluetooth Mini Speaker 10W IPX5 FM USB AUX RGB Black Gray",
+    "status": "ok"
+  },
+  {
+    "id": "65f3eca2-9689-43c0-9ce0-e0fb3fe7cd81",
+    "titulo": "RadioShack Bluetooth Soundbar with Wireless Subwoofer 4001949 &#x2013; Home Theater Audio System",
+    "status": "ok"
+  },
+  {
+    "id": "e82f4b46-41b7-4ce6-837c-ec2473410216",
+    "titulo": "RadioShack Retro Bluetooth Speaker 80W USB AUX Microphone Input Rechargeable",
+    "status": "ok"
+  },
+  {
+    "id": "82d03144-ec42-4b19-983b-b3991b7e6783",
+    "titulo": "RadioShack Bluetooth Sound System 320W Soundbar and Speakers ARC USB FM",
+    "status": "ok"
+  },
+  {
+    "id": "dcfb6fe9-9692-4b84-9dda-5f04e8422963",
+    "titulo": "RadioShack Bluetooth Speaker 60W TWS AUX USB RGB Wireless Mic Black",
+    "status": "ok"
+  },
+  {
+    "id": "afd1dde6-8174-4f6f-a118-9a499f8a58cf",
+    "titulo": "RadioShack Bluetooth Speaker 60W TWS AUX USB IPX5 RGB Black Gray",
+    "status": "ok"
+  },
+  {
+    "id": "985c6f9e-6d5d-4e3b-af70-e435078d4298",
+    "titulo": "RadioShack Bluetooth Speaker 20W TWS AUX USB IPX5 RGB Black Orange",
+    "status": "ok"
+  },
+  {
+    "id": "db29844e-f014-497d-834d-8c88e0ea629f",
+    "titulo": "RadioShack Bluetooth Speaker 50W TWS AUX USB IPX5 RGB Gray Orange",
+    "status": "ok"
+  },
+  {
+    "id": "63758042-82c3-4a8c-8ecb-4948d4f0aeb2",
+    "titulo": "RadioShack Bluetooth Karaoke Speaker 120W TWS Dual Mic AUX USB RGB",
+    "status": "ok"
+  },
+  {
+    "id": "11ec4912-e250-4245-95aa-0c6aae4b0842",
+    "titulo": "RadioShack CR1616 3V Lithium Coin Cell Battery 2302274 &#x2013; Button Cell &#x28;1 Pack&#x29;",
+    "status": "ok"
+  },
+  {
+    "id": "799c13c1-e363-49ba-8869-a0cd462ba64f",
+    "titulo": "RadioShack Bluetooth Speaker 30W FM TWS AUX USB IPX5 Blue Gray",
+    "status": "ok"
+  },
+  {
+    "id": "2a4b0d15-c529-49d9-9120-2f8099e0d543",
+    "titulo": "RadioShack Bluetooth Speaker 20W FM TWS AUX USB IPX5 Black Gray",
+    "status": "ok"
+  },
+  {
+    "id": "72191140-8229-49f5-bded-8df23d2d85cf",
+    "titulo": "RadioShack CR2016 3V Lithium Coin Cell Batteries 2302020 6 Pack",
+    "status": "ok"
+  },
+  {
+    "id": "ccdbf623-c152-4dd3-84c8-63aec6de3562",
+    "titulo": "RadioShack CR2032 3V Lithium Coin Cell Batteries 2302517 6 Pack",
+    "status": "ok"
+  },
+  {
+    "id": "9cf91aa8-0ae9-48a8-a977-7edabcef8c89",
+    "titulo": "RadioShack CR1632 3V Lithium Coin Cell Battery 2302276 &#x2013; Button Cell &#x28;1 Pack&#x29;",
+    "status": "ok"
+  },
+  {
+    "id": "bf2ce069-3a32-4b12-8234-111fa2328b2f",
+    "titulo": "RadioShack CR2016 3V Lithium Coin Cell Battery 2302277",
+    "status": "ok"
+  },
+  {
+    "id": "71b4b2e5-3c82-463a-9869-21853ad1d25b",
+    "titulo": "RadioShack AAA Rechargeable Batteries USB-C 2309336 1.5V Lithium 4 Pack",
+    "status": "ok"
+  },
+  {
+    "id": "8cc95f30-a8fe-456e-8e00-d922a76cee97",
+    "titulo": "RadioShack CR2032 3V Lithium Coin Cell Battery 2302281 &#x2013; Button Cell &#x28;1 Pack&#x29;",
+    "status": "ok"
+  },
+  {
+    "id": "226f7527-258e-4bd3-ba52-e4a11045a6f7",
+    "titulo": "RadioShack Smart AA & AAA Battery Charger 2309332 &#x2013; Intelligent Charging System",
+    "status": "ok"
+  },
+  {
+    "id": "a01d22a6-dd5f-4b8f-b53b-0dc03a2aa37b",
+    "titulo": "RadioShack Smart Battery Charger 2309333 &#x2013; Multi-Battery Smart Charger",
+    "status": "ok"
+  },
+  {
+    "id": "5d0b8edb-3d2d-4341-972c-b58cb1bdae00",
+    "titulo": "RadioShack Portable Speaker 18W &#x2013; AUX&#x2F;USB, RGB Lights, Compact Design",
+    "status": "error",
+    "error": "NaN error after 2 retries"
+  },
+  {
+    "id": "67d4daae-d8d9-4233-9e0f-0aba79948e74",
+    "titulo": "RadioShack Bluetooth Speaker 14W &#x2013; IPX6 Waterproof, FM, RGB Lights Blue",
+    "status": "error",
+    "error": "NaN error after 2 retries"
+  },
+  {
+    "id": "38eee6f7-32df-4412-94fd-dd29de1d12c6",
+    "titulo": "RadioShack Bluetooth Speaker 20W FM TWS AUX USB IPX5 Black Orange",
+    "status": "ok"
+  },
+  {
+    "id": "bd73e66b-873b-4b18-93dd-0fb40425589f",
+    "titulo": "RadioShack Bluetooth Speaker 10W FM TWS AUX USB RGB 360 Lighting Black",
+    "status": "ok"
+  },
+  {
+    "id": "4bac98a2-410a-4831-93a2-c5cd403a98e4",
+    "titulo": "RadioShack Bluetooth Mini Speaker 10W IPX5 FM USB AUX RGB Black Green",
+    "status": "ok"
+  },
+  {
+    "id": "3768f004-8ccb-42bf-993d-fb1f938364f0",
+    "titulo": "RadioShack 15&quot; PA Speaker &#x2013; 2000W Bluetooth, USB, FM, Rechargeable with Mic & Tripod",
+    "status": "ok"
+  },
+  {
+    "id": "86ae6d51-2790-4d68-943a-ee071a8ed5d2",
+    "titulo": "RadioShack Dual 8&quot; PA Speaker &#x2013; 2000W Bluetooth, USB&#x2F;SD, FM, Rechargeable with Wheels",
+    "status": "ok"
+  },
+  {
+    "id": "d57a0990-eb31-43ff-9b09-419d4474f44c",
+    "titulo": "RadioShack Retro Bluetooth Speaker 240W FM USB ARC Optical Leather Design 4001974",
+    "status": "ok"
+  },
+  {
+    "id": "5105b41d-5f83-44f2-b99d-163657d77e42",
+    "titulo": "RadioShack 8&quot; PA Speaker &#x2013; 50000W PMPO Bluetooth, USB, FM, DSP Sound, RGB Lights",
+    "status": "ok"
+  },
+  {
+    "id": "0fd9d045-7565-4083-b686-52d33d2efe76",
+    "titulo": "RadioShack Dual 15&quot; PA Speaker &#x2013; 450W RMS Bluetooth, USB&#x2F;SD, FM, RGB Lights with Wheels",
+    "status": "ok"
+  },
+  {
+    "id": "a7ec0838-5126-4959-ae13-52b98d28e73f",
+    "titulo": "RadioShack 2-Way PA Tower Speaker &#x2013; 1000W Peak, 15&quot; Woofer, Bluetooth, USB&#x2F;SD, Wireless Mic, RGB Lights",
+    "status": "ok"
+  },
+  {
+    "id": "0a2dd71b-d919-4bb2-aa21-83c9e7f81801",
+    "titulo": "RadioShack Dual 10&quot; PA Speaker &#x2013; 3000W Bluetooth 5.0, USB&#x2F;SD, FM, Rechargeable with Wheels",
+    "status": "ok"
+  },
+  {
+    "id": "f7083640-8345-485f-87ff-f7b64a90066a",
+    "titulo": "RadioShack Bluetooth Speaker 80W &#x2013; IPX5 Waterproof, RGB Lights",
+    "status": "ok"
+  },
+  {
+    "id": "d2805435-b420-483c-a3ef-d2962ccbbe12",
+    "titulo": "RadioShack Bluetooth Speaker 74W &#x2013; 360&#xB0; Sound, IPX5 Waterproof, RGB Lights",
+    "status": "ok"
+  },
+  {
+    "id": "123d5e8b-73da-4af7-b6cd-4f28a66b10d6",
+    "titulo": "RadioShack Dual 10&quot; Active Bluetooth Speaker 4001958 &#x2013; High Power Audio System",
+    "status": "ok"
+  },
+  {
+    "id": "c0b802fe-917c-448c-9f82-2a9780ec7fae",
+    "titulo": "RadioShack Bluetooth Mini Speaker 16W &#x2013; IPX5 Waterproof, FM, RGB Lights Black",
+    "status": "ok"
+  },
+  {
+    "id": "ce9bb5d8-f5ea-4220-87d1-8a16fefe5381",
+    "titulo": "RadioShack Bluetooth Mini Speaker 16W &#x2013; IPX5 Waterproof, FM, RGB Lights Blue",
+    "status": "ok"
+  },
+  {
+    "id": "bbd61bef-1e7c-43df-9eea-25d7048fe5d5",
+    "titulo": "RadioShack Bluetooth 9W 1 Channel Portable Speaker with FM 4001767",
+    "status": "ok"
+  },
+  {
+    "id": "326d72c0-7c94-45b6-af21-3216a8ef50fe",
+    "titulo": "RadioShack 15&#x201D; 2-Way Active Speaker 20,000 WATTS PMPO 4001925",
+    "status": "ok"
+  },
+  {
+    "id": "42e4f645-eecf-4701-9001-27de4f7fe1ec",
+    "titulo": "RadioShack 2 Channel Bluetooth Portable Speaker with FM 4001764",
+    "status": "ok"
+  },
+  {
+    "id": "facc1cfe-8579-41c4-9d64-636946c4c86b",
+    "titulo": "RadioShack Bluetooth Speaker 9W &#x2013; FM, TWS, USB&#x2F;AUX, RGB Lights with Strap",
+    "status": "error",
+    "error": "NaN error after 2 retries"
+  },
+  {
+    "id": "4c4380af-1fe4-40da-8f22-4f2f83f8831c",
+    "titulo": "RadioShack Professional Dual UHF Wireless Microphone System - 80m Range",
+    "status": "ok"
+  },
+  {
+    "id": "be886099-4453-4395-8209-1f450ebbd546",
+    "titulo": "RadioShack 9W 1-Channel Bluetooth Portable Speaker with FM 4001765",
+    "status": "ok"
+  },
+  {
+    "id": "aea04ebf-c464-425f-a389-7802dea962cb",
+    "titulo": "RadioShack Portable Bluetooth Speaker with FM and lights 4001763",
+    "status": "ok"
+  },
+  {
+    "id": "005a9b87-7502-45e6-bc6c-6aea44d4c37b",
+    "titulo": "RadioShack 2.4GHz Wireless Lapel Microphone with Charging Case and 25H Battery",
+    "status": "ok"
+  },
+  {
+    "id": "5f339b6b-fd24-4d0c-8223-266cfb747c6c",
+    "titulo": "RadioShack Wireless UHF Microphone System",
+    "status": "ok"
+  },
+  {
+    "id": "538daa31-5b0e-4bee-877f-1095a075d13c",
+    "titulo": "Whistler WS1065 Digital Trunking Scanner Desktop Mobile",
+    "status": "ok"
+  },
+  {
+    "id": "69ecf0b7-5a0a-4eab-a95c-425c8f96a63c",
+    "titulo": "Whistler TRX-2 Digital Scanner Desktop Mobile Advanced",
+    "status": "ok"
+  },
+  {
+    "id": "1a202ec7-2c27-426e-bfce-e3806f67fe59",
+    "titulo": "RadioShack AM&#x2F;FM Portable Radio 1202254 &#x2013; Battery & DC Powered Compact Radio",
+    "status": "ok"
+  },
+  {
+    "id": "8025a7f9-9f2e-41d8-a4ba-c494036c5445",
+    "titulo": "RadioShack 2-Speed Belt-Drive Turntable with 2 Detachable Speakers Bluetooth, CD and USB Playback 4001798",
+    "status": "ok"
+  },
+  {
+    "id": "6e7c3fdc-3d64-4222-bb47-15ad7f2a08c0",
+    "titulo": "RadioShack 75W Megaphone 3202716 &#x2013; USB, SD, Siren & Recording Function",
+    "status": "ok"
+  },
+  {
+    "id": "16a76df3-5177-4229-94d1-9a6913be3a65",
+    "titulo": "RadioShack Two-Way Radios 12 km Range 2102000 &#x2013; Walkie Talkies Pair",
+    "status": "ok"
+  },
+  {
+    "id": "5bfb8937-1a5b-4561-ad88-89d183a13d23",
+    "titulo": "RadioShack Two Way Radios 12km Range Rechargeable Display 2 Pack 2102000",
+    "status": "ok"
+  },
+  {
+    "id": "6c69ae5d-e2e5-4613-9e3a-a96f2f3e740f",
+    "titulo": "RadioShack Suitcase Turntable 3 Speed Vinyl Player Bluetooth Built In Speakers",
+    "status": "ok"
+  },
+  {
+    "id": "1fb2708f-1cbe-4963-bebd-d0e200a9cfdc",
+    "titulo": "RadioShack Retro AM FM Radio 4001796 Bluetooth Dual Speakers Vintage Design",
+    "status": "ok"
+  },
+  {
+    "id": "4cc8525a-8ddc-45ed-ab09-1897accbe5a1",
+    "titulo": "RadioShack Wireless Microphone System 3301584 LED Display 3.5mm Input",
+    "status": "ok"
+  },
+  {
+    "id": "f5efcb0f-0489-45da-ac05-eb9f435aae50",
+    "titulo": "RadioShack Portable CD Player Boombox Bluetooth FM USB AUX Remote Control",
+    "status": "ok"
+  },
+  {
+    "id": "a3776c5d-4623-4513-9368-a45e01a14aaa",
+    "titulo": "RadioShack Vintage Turntable 3 Speed Vinyl Player CD Cassette Bluetooth USB SD",
+    "status": "ok"
+  },
+  {
+    "id": "a42896eb-1de7-4eed-ae12-9eaf3700dea6",
+    "titulo": "Zanahoria Malla 2Kg",
+    "status": "ok"
+  },
+  {
+    "id": "5ac7361d-6437-4ca7-a737-65b4261e9e3a",
+    "titulo": "RadioShack Indoor Security Camera 6301910 3MP Night Vision WiFi Smart Camera",
+    "status": "ok"
+  },
+  {
+    "id": "4941d8f1-ac23-449a-b0cd-8a72c4805cbd",
+    "titulo": "RadioShack Outdoor Security Camera 6301911 3MP IP65 Night Vision Smart Camera",
+    "status": "ok"
+  },
+  {
+    "id": "5a27cf0d-2944-4629-9034-bf50ad673aa6",
+    "titulo": "RadioShack Vintage AM FM Radio 2 Band Bluetooth USB SD Rechargeable White",
+    "status": "ok"
+  },
+  {
+    "id": "00e11a44-c11e-4013-b9b0-3a8d4961febb",
+    "titulo": "RadioShack USB Streaming Microphone Cardioid Condenser USB-A USB-C RGB 48kHz",
+    "status": "ok"
+  },
+  {
+    "id": "43a1337c-ae52-44bd-8854-62d040c49e47",
+    "titulo": "RadioShack Vintage AM FM SW Radio 3 Band Bluetooth USB SD Rechargeable Black",
+    "status": "ok"
+  },
+  {
+    "id": "a040b3c8-9733-4d61-a333-fad8c00667cf",
+    "titulo": "RadioShack TSA Approved Luggage Lock 2606031",
+    "status": "ok"
+  },
+  {
+    "id": "d21af74b-daaa-4edf-a98a-0899f6540f30",
+    "titulo": "RadioShack Multi Band Radio with Weather Band 1202271 Portable Receiver",
+    "status": "ok"
+  },
+  {
+    "id": "840374f5-a7ea-479b-ab1e-782396447b8c",
+    "titulo": "RadioShack Passport Case 2606015",
+    "status": "ok"
+  },
+  {
+    "id": "165c273d-2f5b-498c-8376-5483d1d7441c",
+    "titulo": "RadioShack Portable Retro AM FM SW Radio 4001801 Bluetooth USB SD Blue",
+    "status": "ok"
+  },
+  {
+    "id": "53b3a074-f2f7-4e31-bb17-0d9e84649d38",
+    "titulo": "RadioShack 4-in-1 Travel Adapter 2733342 &#x2013; Worldwide Plug Converter",
+    "status": "ok"
+  },
+  {
+    "id": "fc882907-6876-4fa3-a166-7b693e43607a",
+    "titulo": "RadioShack Sport Fanny Pack 2607060",
+    "status": "ok"
+  },
+  {
+    "id": "1bd3f02f-a533-452f-b52f-184f6e2fd19d",
+    "titulo": "RadioShack Belt Bag with RFID Blocking 2606028 Black",
+    "status": "ok"
+  },
+  {
+    "id": "967af398-0dfa-4980-90a9-92b95335bc03",
+    "titulo": "RadioShack TSA Approved Luggage Lock 2606027 &#x2013; Travel Security Lock",
+    "status": "ok"
+  },
+  {
+    "id": "ed6325f1-172c-43b3-bebb-bb0617c36d42",
+    "titulo": "RadioShack Small Storage Case 2606022 &#x2013; Compact Organizer Case",
+    "status": "ok"
+  },
+  {
+    "id": "768c69de-39e0-4885-87e9-839e3eec7445",
+    "titulo": "RadioShack US Travel Adapter 2730947 &#x2013; Plug Converter for USA Outlets",
+    "status": "ok"
+  },
+  {
+    "id": "d543138e-c1f7-4c56-be4c-54db5a6df50e",
+    "titulo": "RadioShack Smart 360&#xB0; Indoor Camera with Motion Tracking",
+    "status": "ok"
+  },
+  {
+    "id": "904b48a0-8f51-4b7f-9ab5-9c6f4e989351",
+    "titulo": "RadioShack Europe Travel Adapter 2730362 Universal Plug Converter",
+    "status": "ok"
+  },
+  {
+    "id": "390c516d-7d02-4d1b-93ee-8f9fef9f0541",
+    "titulo": "RadioShack Adjustable Suitcase Belt 2606026 Green",
+    "status": "ok"
+  },
+  {
+    "id": "ca7ec95b-67ac-4b85-9abd-077da35dd81c",
+    "titulo": "RadioShack Smart Pet Feeder with Camera 6301923 WiFi Auto Feeding",
+    "status": "ok"
+  },
+  {
+    "id": "abf4b269-371e-461b-8bcb-34a8f06e1ad3",
+    "titulo": "RadioShack Aroma Diffuser 6103038 Ultrasonic Essential Oil Diffuser",
+    "status": "ok"
+  },
+  {
+    "id": "87ca2fb9-6d9d-42c8-a260-ebbc48df671e",
+    "titulo": "RadioShack Outdoor Security Camera 6301914 3MP IP65 Night Vision Smart Camera",
+    "status": "ok"
+  },
+  {
+    "id": "b1f2cac5-0944-447b-b1a5-ee07ec9c3f30",
+    "titulo": "RadioShack Outdoor Security Camera 6301917 3MP Color Night Vision PIR Detection",
+    "status": "ok"
+  },
+  {
+    "id": "f55582b7-7ac7-4ea3-b9e0-bc54b402ed08",
+    "titulo": "RadioShack World Band Radio AM FM SW Portable Receiver Battery Powered",
+    "status": "ok"
+  },
+  {
+    "id": "f4056502-6e99-42e9-851e-820a401bb9ac",
+    "titulo": "RadioShack Portable AM FM Radio Pocket Size Telescopic Antenna",
+    "status": "ok"
+  },
+  {
+    "id": "093d0416-c7f4-449c-b565-01ff5522c8fd",
+    "titulo": "RadioShack 3.5mm Omnidirectional Cell Microphone 3304352",
+    "status": "ok"
+  },
+  {
+    "id": "f663381d-cf02-42a9-9e04-dbc5eb19bf1a",
+    "titulo": "Whistler WS1025 Analog Desktop Scanner Base Station",
+    "status": "ok"
+  },
+  {
+    "id": "b63b841a-88c8-4412-92cc-ea2d5750fca3",
+    "titulo": "RadioShack USB-C to HDMI Adapter 1503309 Female Converter 4K Video Output",
+    "status": "ok"
+  },
+  {
+    "id": "b4e94305-614d-4670-b748-0c4401f42ce3",
+    "titulo": "RadioShack USB-C to 2.5G Ethernet Adapter 1503308 High Speed LAN Converter",
+    "status": "ok"
+  },
+  {
+    "id": "5d349303-f6c4-4e75-acc5-f362ff98cb72",
+    "titulo": "RadioShack Optical Toslink Audio Cable 1503232 &#x2013; 12 ft Digital Fiber Optic Cable",
+    "status": "ok"
+  },
+  {
+    "id": "87f78132-3e80-4710-a5ac-b147131e26fa",
+    "titulo": "RadioShack USB 3.0 Hub 4 Port 2607159 High Speed Splitter",
+    "status": "ok"
+  },
+  {
+    "id": "465d3b20-411c-4dbb-8420-311466409129",
+    "titulo": "RadioShack HDMI 2.1 Cable 8K 60Hz 32 ft 1503305 Ultra High Speed",
+    "status": "ok"
+  },
+  {
+    "id": "3a53f962-6011-44b6-98a1-7181750d0844",
+    "titulo": "RadioShack USB-C to HDMI Cable 8K 6 ft HDMI 2.1 HDR Braided Cable",
+    "status": "ok"
+  },
+  {
+    "id": "e32a1efd-bd2d-4e01-bebe-8950515faa77",
+    "titulo": "RadioShack HDMI 2.0 Cable 4K with Ethernet 32 ft 1503269 &#x2013; Long Range High-Speed HDMI",
+    "status": "ok"
+  },
+  {
+    "id": "bdbd9eca-4be4-44f7-b97c-2632d4558b13",
+    "titulo": "RadioShack Splitter HDMI 1 X 2 ports 1503213 3D",
+    "status": "ok"
+  },
+  {
+    "id": "fc0778cb-badc-4d02-86b5-e138cca8728f",
+    "titulo": "RadioShack Digital to Analog Audio Converter 1503291 &#x2013; Optical to RCA Adapter",
+    "status": "ok"
+  },
+  {
+    "id": "027a9259-0d54-45dc-9943-3cf62829cb12",
+    "titulo": "RadioShack HDMI 2.1 Cable 8K 60Hz 20 ft 1503304 Ultra High Speed",
+    "status": "ok"
+  },
+  {
+    "id": "8f5bec6f-b908-4857-8ec0-fbd92733cc22",
+    "titulo": "RadioShack Type C to HDMI F Converter 2605103 0.3 Feet",
+    "status": "ok"
+  },
+  {
+    "id": "73457763-2941-48eb-affa-5266138e6a69",
+    "titulo": "RadioShack Switch HDMI 3 X 1 ports 1503212 3D",
+    "status": "ok"
+  },
+  {
+    "id": "e71067e6-ac95-41f6-90cd-fc270358c903",
+    "titulo": "RadioShack Type-C to Ethernet Adapter 1503295 Black",
+    "status": "ok"
+  },
+  {
+    "id": "812cf790-2c9e-42f0-8ef3-7bec769f9f42",
+    "titulo": "RadioShack USB-C to Lightning Cable 10 ft 4203266 Fast Charging Cable",
+    "status": "ok"
+  },
+  {
+    "id": "ff7b4a3b-20bb-42d5-8c23-ab1a7d7f19f8",
+    "titulo": "RadioShack HDMI to RCA Converter 1503290",
+    "status": "ok"
+  },
+  {
+    "id": "2f1937f1-4622-4e99-9455-c061765ab21e",
+    "titulo": "RadioShack HDMI 2.0 Cable 4K 60Hz 20 ft 1503302 High Speed Round Cable",
+    "status": "ok"
+  },
+  {
+    "id": "2bea4be3-4d24-4875-95e1-d5467183b0e8",
+    "titulo": "RadioShack 2-in-1 Video Adapter 1503218",
+    "status": "ok"
+  },
+  {
+    "id": "b339b47b-4a8d-4235-8103-1e4d3a2ee46b",
+    "titulo": "RadioShack USB-C to 4 USB 3.0 Hub Multi Port Adapter",
+    "status": "ok"
+  },
+  {
+    "id": "27bb280a-3745-4218-a463-0e13cb7a52fc",
+    "titulo": "RadioShack USB-C to HDMI Adapter 3 in 1 with USB-C Input",
+    "status": "ok"
+  },
+  {
+    "id": "a2a1caf3-a8ce-4be8-9acb-c888efc66115",
+    "titulo": "RadioShack USB 2.0 Hub 4 Port 2607162 Compact Splitter",
+    "status": "ok"
+  },
+  {
+    "id": "2f1e1ae3-9302-4f05-a47f-9a6c71a564e1",
+    "titulo": "RadioShack USB Hub Multi Port 2 USB Type C and Audio Adapter",
+    "status": "ok"
+  },
+  {
+    "id": "a9aeccb7-1658-40d9-8258-4f205d798f19",
+    "titulo": "RadioShack HDMI 2.1 Cable 4K 60Hz 15 ft 1503303 Ultra High Speed",
+    "status": "ok"
+  },
+  {
+    "id": "877cd43c-d6f2-4150-ab2b-043a0d9ebf5f",
+    "titulo": "RadioShack 7-Tip Universal Power Adapter 2733321 &#x2013; Multi-Device Charger",
+    "status": "ok"
+  },
+  {
+    "id": "eda66cf0-9e90-42c8-8e81-37623bb44eb7",
+    "titulo": "Agua Mineral SAN MATEO Con Gas Paquete 15 Botellas 600ml c/u",
+    "status": "ok"
+  },
+  {
+    "id": "609a466e-d1c8-4987-a4d3-257fb2fd286f",
+    "titulo": "RadioShack USB to Lightning Cable 10 ft 4203263 Fast Charging Cable",
+    "status": "ok"
+  },
+  {
+    "id": "40768662-5960-4f87-9f2b-d4677b0ac689",
+    "titulo": "RadioShack USB-C to Lightning Cable 6 ft 4203265 Fast Charging Cable",
+    "status": "ok"
+  },
+  {
+    "id": "fa1cc866-3e64-4c0e-b7c3-5d936a3d29dd",
+    "titulo": "RadioShack HDMI to VGA Adapter 1503200 0.25 ft Black",
+    "status": "ok"
+  },
+  {
+    "id": "d4199a6b-8f55-4836-8f90-0b073829aada",
+    "titulo": "RadioShack USB 2.0 to Ethernet Adapter 1503294",
+    "status": "ok"
+  },
+  {
+    "id": "0c8c3d35-8b31-4b23-bc7c-73b33133e6bf",
+    "titulo": "RadioShack HDMI 2.0 Cable 4K 60Hz 15 ft 1503301 High Speed Round Cable",
+    "status": "ok"
+  },
+  {
+    "id": "7d89b559-9b87-4c61-82e0-8cb8f6b784a1",
+    "titulo": "RadioShack CAT6 Ethernet Cable 50 ft &#x2013; High-Speed 10 Gbps RJ45 Network Cable",
+    "status": "ok"
+  },
+  {
+    "id": "b2b9c128-ace0-4782-8fc4-2b80e01423fa",
+    "titulo": "RadioShack HDMI 2.1 Cable 8K 6 ft 1503285 &#x2013; Ultra High-Speed with Ethernet",
+    "status": "ok"
+  },
+  {
+    "id": "4d467e7d-d069-4ece-af54-d4b14ad917a9",
+    "titulo": "RadioShack HDMI Male to Female Adapter 4203248 &#x2013; HDMI Extension Converter",
+    "status": "ok"
+  },
+  {
+    "id": "d80cde29-34fa-491a-83bf-ce0c39bcacc0",
+    "titulo": "RadioShack USB to Lightning Cable 6 ft 4203262 Fast Charging Cable",
+    "status": "ok"
+  },
+  {
+    "id": "73962fbd-5d43-4203-b04d-d86a8e0d20a1",
+    "titulo": "RadioShack USB-C to USB-C Cable 6 ft 4203270 100W PD 10Gbps Fast Charging",
+    "status": "error",
+    "error": "NaN error after 2 retries"
+  },
+  {
+    "id": "5bb557bb-e3a2-4020-b91d-4a14a5124846",
+    "titulo": "RadioShack USB to Type-C Cable 2605154 3 Feet",
+    "status": "ok"
+  },
+  {
+    "id": "071e6dac-151b-4b48-8c35-bd2419d4673a",
+    "titulo": "RadioShack Lightning to 3.5mm Audio Adapter 1202263 MFI Certified White",
+    "status": "ok"
+  },
+  {
+    "id": "9200a616-000d-4631-b342-1d86e684bc3f",
+    "titulo": "RadioShack USB to Lightning Cable 3 ft 2605153 &#x2013; Charging & Data Cable",
+    "status": "ok"
+  },
+  {
+    "id": "6509c956-df4e-46e8-907f-331bbbfbcc54",
+    "titulo": "RadioShack HDMI 2.0 Cable 4K 60Hz 10 ft 1503300 High Speed Round Cable",
+    "status": "ok"
+  },
+  {
+    "id": "564e0367-9fb9-4674-a3c7-ec5ff88794af",
+    "titulo": "RadioShack USB-C to Lightning Cable 3 ft 4203264 Fast Charging Cable",
+    "status": "ok"
+  },
+  {
+    "id": "3f87b9a5-ad6f-42f9-bcdb-93ac974d122b",
+    "titulo": "RadioShack HDMI 2.0 Flat Cable 4K with Ethernet 9 ft 1503272 &#x2013; Flexible High-Speed HDMI",
+    "status": "ok"
+  },
+  {
+    "id": "3342db7b-9439-43e4-abd4-36745897ff87",
+    "titulo": "RadioShack USB to Lightning Braided Cable 3 ft 4203244 &#x2013; Durable Charging Cable",
+    "status": "ok"
+  },
+  {
+    "id": "d813b25a-482a-4df8-aedc-aa963e5bdbc0",
+    "titulo": "RadioShack HDMI 2.0 Cable 4K with Ethernet 9 ft 1503268 &#x2013; High-Speed HDMI Male to Male",
+    "status": "ok"
+  },
+  {
+    "id": "07431be9-4882-4b3d-a6b3-4584b66d7e74",
+    "titulo": "RadioShack USB 3.0 to USB-C Cable 6 ft 4203268 15W Fast Charging",
+    "status": "ok"
+  },
+  {
+    "id": "66797b92-4d77-48eb-adee-177a5e656c80",
+    "titulo": "RadioShack 150W Power Inverter 2200087 &#x2013; Dual AC Outlets & USB Car Converter",
+    "status": "ok"
+  },
+  {
+    "id": "8f2763cd-3edb-4b98-bc50-0f95b153bc31",
+    "titulo": "RadioShack Retro Logo Hoodie Gray",
+    "status": "ok"
+  }
+]

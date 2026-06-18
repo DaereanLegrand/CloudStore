@@ -1,0 +1,2822 @@
+[
+  {
+    "recipe_slug": "wrap-de-pollo-a-la-brasa-tropical",
+    "product_id": null,
+    "ingredient_raw": "6 Tortillas de Trigo",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tortillas de Trigo"
+  },
+  {
+    "recipe_slug": "wrap-de-pollo-a-la-brasa-tropical",
+    "product_id": null,
+    "ingredient_raw": "1/2 Pollo Crudo",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pollo Crudo"
+  },
+  {
+    "recipe_slug": "wrap-de-pollo-a-la-brasa-tropical",
+    "product_id": null,
+    "ingredient_raw": "1 Sobre de MAGGI® BRASA",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "sobre de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: MAGGI® BRASA"
+  },
+  {
+    "recipe_slug": "wrap-de-pollo-a-la-brasa-tropical",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas de Col",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Col"
+  },
+  {
+    "recipe_slug": "wrap-de-pollo-a-la-brasa-tropical",
+    "product_id": null,
+    "ingredient_raw": "1 Zanahoria",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Zanahoria"
+  },
+  {
+    "recipe_slug": "wrap-de-pollo-a-la-brasa-tropical",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla Blanca",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla Blanca"
+  },
+  {
+    "recipe_slug": "wrap-de-pollo-a-la-brasa-tropical",
+    "product_id": null,
+    "ingredient_raw": "2 Rebanadas de Piña Golden",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "rebanadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Piña Golden"
+  },
+  {
+    "recipe_slug": "wrap-de-pollo-a-la-brasa-tropical",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Mayonesa Light",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mayonesa Light"
+  },
+  {
+    "recipe_slug": "wrap-de-pollo-a-la-brasa-tropical",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Vinagre Blanco",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Vinagre Blanco"
+  },
+  {
+    "recipe_slug": "wrap-de-pollo-a-la-brasa-tropical",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Azúcar",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar"
+  },
+  {
+    "recipe_slug": "waffle-chocolate-helado-vainilla-berrie",
+    "product_id": null,
+    "ingredient_raw": "1Taza de Harina",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina"
+  },
+  {
+    "recipe_slug": "waffle-chocolate-helado-vainilla-berrie",
+    "product_id": null,
+    "ingredient_raw": "1/2Taza de Cocoa D'ONOFRIO®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cocoa D'ONOFRIO®"
+  },
+  {
+    "recipe_slug": "waffle-chocolate-helado-vainilla-berrie",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharaditas de Polvo de Hornear",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharaditas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Polvo de Hornear"
+  },
+  {
+    "recipe_slug": "waffle-chocolate-helado-vainilla-berrie",
+    "product_id": null,
+    "ingredient_raw": "1/2 Cucharadita de Sal",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "waffle-chocolate-helado-vainilla-berrie",
+    "product_id": null,
+    "ingredient_raw": "4 Cucharadas de Azúcar",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar"
+  },
+  {
+    "recipe_slug": "waffle-chocolate-helado-vainilla-berrie",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de IDEAL® CREMOSITA",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "waffle-chocolate-helado-vainilla-berrie",
+    "product_id": null,
+    "ingredient_raw": "1 Huevo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevo"
+  },
+  {
+    "recipe_slug": "waffle-chocolate-helado-vainilla-berrie",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharaditas de Aceite Vegetal",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharaditas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "waffle-chocolate-helado-vainilla-berrie",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Esencia deVainilla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Esencia deVainilla"
+  },
+  {
+    "recipe_slug": "waffle-chocolate-helado-vainilla-berrie",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Mantequilla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla"
+  },
+  {
+    "recipe_slug": "waffle-chocolate-helado-vainilla-berrie",
+    "product_id": null,
+    "ingredient_raw": "4 Bolas de Helado PEZIDURI®Vainilla",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Bolas de Helado PEZIDURI®Vainilla"
+  },
+  {
+    "recipe_slug": "waffle-chocolate-helado-vainilla-berrie",
+    "product_id": null,
+    "ingredient_raw": "12 Arándanos",
+    "cantidad_recipe": 12,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Arándanos"
+  },
+  {
+    "recipe_slug": "waffle-chocolate-helado-vainilla-berrie",
+    "product_id": null,
+    "ingredient_raw": "8 Fresas",
+    "cantidad_recipe": 8,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Fresas"
+  },
+  {
+    "recipe_slug": "waffle-chocolate-helado-vainilla-berrie",
+    "product_id": null,
+    "ingredient_raw": "12Frambuesas",
+    "cantidad_recipe": 12,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Frambuesas"
+  },
+  {
+    "recipe_slug": "waffle-chocolate-helado-vainilla-berrie",
+    "product_id": null,
+    "ingredient_raw": "1/4 de tableta Gramos de Cobertura Nestlé® Bitter",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de tableta Gramos de Cobertura Nestlé® Bitter"
+  },
+  {
+    "recipe_slug": "alitas-brasa",
+    "product_id": null,
+    "ingredient_raw": "8 Alas de Pollo",
+    "cantidad_recipe": 8,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Alas de Pollo"
+  },
+  {
+    "recipe_slug": "alitas-brasa",
+    "product_id": null,
+    "ingredient_raw": "1 Sobre de MAGGI® BRASA",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "sobre de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: MAGGI® BRASA"
+  },
+  {
+    "recipe_slug": "alitas-brasa",
+    "product_id": null,
+    "ingredient_raw": "5Tallos de Apio Crudo",
+    "cantidad_recipe": 5,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tallos de Apio Crudo"
+  },
+  {
+    "recipe_slug": "alitas-brasa",
+    "product_id": null,
+    "ingredient_raw": "2 Zanahorias",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Zanahorias"
+  },
+  {
+    "recipe_slug": "alitas-brasa",
+    "product_id": null,
+    "ingredient_raw": "1 Pimiento Rojo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimiento Rojo"
+  },
+  {
+    "recipe_slug": "alitas-brasa",
+    "product_id": null,
+    "ingredient_raw": "1/4 de Taza de Yogurt Natural",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Taza de Yogurt Natural"
+  },
+  {
+    "recipe_slug": "alitas-brasa",
+    "product_id": null,
+    "ingredient_raw": "2 Ramitas de Perejil",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ramitas de Perejil"
+  },
+  {
+    "recipe_slug": "alitas-brasa",
+    "product_id": null,
+    "ingredient_raw": "1/2 Cucharadita de Ajo Molido",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ajo Molido"
+  },
+  {
+    "recipe_slug": "alitas-brasa",
+    "product_id": null,
+    "ingredient_raw": "1 Limón",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Limón"
+  },
+  {
+    "recipe_slug": "ensalada-de-papa-con-pechuga-a-la-brasa",
+    "product_id": null,
+    "ingredient_raw": "1 Pechuga de Pollo Entera",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pechuga de Pollo Entera"
+  },
+  {
+    "recipe_slug": "ensalada-de-papa-con-pechuga-a-la-brasa",
+    "product_id": null,
+    "ingredient_raw": "1/2 Sobre de MAGGI® BRASA",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "sobre de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: MAGGI® BRASA"
+  },
+  {
+    "recipe_slug": "ensalada-de-papa-con-pechuga-a-la-brasa",
+    "product_id": null,
+    "ingredient_raw": "4 Papas Blancas",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Papas Blancas"
+  },
+  {
+    "recipe_slug": "ensalada-de-papa-con-pechuga-a-la-brasa",
+    "product_id": null,
+    "ingredient_raw": "4 Ramitasde Apio Crudo",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ramitasde Apio Crudo"
+  },
+  {
+    "recipe_slug": "ensalada-de-papa-con-pechuga-a-la-brasa",
+    "product_id": null,
+    "ingredient_raw": "1 Pimiento Rojo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimiento Rojo"
+  },
+  {
+    "recipe_slug": "ensalada-de-papa-con-pechuga-a-la-brasa",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla Roja",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla Roja"
+  },
+  {
+    "recipe_slug": "ensalada-de-papa-con-pechuga-a-la-brasa",
+    "product_id": null,
+    "ingredient_raw": "2 Duraznos en Almíbar",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Duraznos en Almíbar"
+  },
+  {
+    "recipe_slug": "ensalada-de-papa-con-pechuga-a-la-brasa",
+    "product_id": null,
+    "ingredient_raw": "2 Ramitas de Perejil",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ramitas de Perejil"
+  },
+  {
+    "recipe_slug": "ensalada-de-papa-con-pechuga-a-la-brasa",
+    "product_id": null,
+    "ingredient_raw": "4 Cucharadas de Mayonesa",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mayonesa"
+  },
+  {
+    "recipe_slug": "sopa-criolla",
+    "product_id": null,
+    "ingredient_raw": "350 Gramos de Carne de Res",
+    "cantidad_recipe": 350,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Carne de Res"
+  },
+  {
+    "recipe_slug": "sopa-criolla",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla Roja",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla Roja"
+  },
+  {
+    "recipe_slug": "sopa-criolla",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad de MAGGI® Cubo Carne",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de MAGGI® Cubo Carne"
+  },
+  {
+    "recipe_slug": "sopa-criolla",
+    "product_id": null,
+    "ingredient_raw": "1 sobre de Pasta de Tomate",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "sobre de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pasta de Tomate"
+  },
+  {
+    "recipe_slug": "sopa-criolla",
+    "product_id": null,
+    "ingredient_raw": "1 Lata de IDEAL® CREMOSITA",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "sopa-criolla",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Fideo Cabello de Ángel",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Fideo Cabello de Ángel"
+  },
+  {
+    "recipe_slug": "sopa-criolla",
+    "product_id": null,
+    "ingredient_raw": "2 Unidades de Papa Amarilla",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Papa Amarilla"
+  },
+  {
+    "recipe_slug": "sopa-criolla",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Orégano Seco",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Orégano Seco"
+  },
+  {
+    "recipe_slug": "sopa-criolla",
+    "product_id": null,
+    "ingredient_raw": "4 Huevos",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevos"
+  },
+  {
+    "recipe_slug": "sopa-criolla",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Aceite Vegetal",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "tallarines-verdes-con-maggi-brasa",
+    "product_id": null,
+    "ingredient_raw": "250 Gramos de Spaghetti",
+    "cantidad_recipe": 250,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Spaghetti"
+  },
+  {
+    "recipe_slug": "tallarines-verdes-con-maggi-brasa",
+    "product_id": null,
+    "ingredient_raw": "1/2 Pollo Crudo",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pollo Crudo"
+  },
+  {
+    "recipe_slug": "tallarines-verdes-con-maggi-brasa",
+    "product_id": null,
+    "ingredient_raw": "1/2 Sobre de MAGGI® BRASA",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "sobre de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: MAGGI® BRASA"
+  },
+  {
+    "recipe_slug": "tallarines-verdes-con-maggi-brasa",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas de Albahaca Fresca",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Albahaca Fresca"
+  },
+  {
+    "recipe_slug": "tallarines-verdes-con-maggi-brasa",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Espinaca",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Espinaca"
+  },
+  {
+    "recipe_slug": "tallarines-verdes-con-maggi-brasa",
+    "product_id": null,
+    "ingredient_raw": "1/2 Cebolla Roja",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla Roja"
+  },
+  {
+    "recipe_slug": "tallarines-verdes-con-maggi-brasa",
+    "product_id": null,
+    "ingredient_raw": "1/2 Paquete de Galleta de Soda",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "paquete de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Galleta de Soda"
+  },
+  {
+    "recipe_slug": "tallarines-verdes-con-maggi-brasa",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de IDEAL® LIGHT",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® LIGHT"
+  },
+  {
+    "recipe_slug": "tallarines-verdes-con-maggi-brasa",
+    "product_id": null,
+    "ingredient_raw": "1 Diente de Ajo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "diente de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ajo"
+  },
+  {
+    "recipe_slug": "tallarines-verdes-con-maggi-brasa",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Aceite Vegetal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "tallarines-salsa-blanca-champinones",
+    "product_id": null,
+    "ingredient_raw": "400 Gramos de Tallarín",
+    "cantidad_recipe": 400,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tallarín"
+  },
+  {
+    "recipe_slug": "tallarines-salsa-blanca-champinones",
+    "product_id": null,
+    "ingredient_raw": "4 Tazas de Champiñones",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Champiñones"
+  },
+  {
+    "recipe_slug": "tallarines-salsa-blanca-champinones",
+    "product_id": null,
+    "ingredient_raw": "4 Cucharadas de Mantequilla Light",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla Light"
+  },
+  {
+    "recipe_slug": "tallarines-salsa-blanca-champinones",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Harina de Trigo",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina de Trigo"
+  },
+  {
+    "recipe_slug": "tallarines-salsa-blanca-champinones",
+    "product_id": null,
+    "ingredient_raw": "1 Lata de IDEAL® CREMOSITA",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "tallarines-salsa-blanca-champinones",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Agua",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "tallarines-salsa-blanca-champinones",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla Blanca",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla Blanca"
+  },
+  {
+    "recipe_slug": "tallarines-salsa-blanca-champinones",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "tallarines-salsa-blanca-champinones",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Nuez Moscada",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Nuez Moscada"
+  },
+  {
+    "recipe_slug": "tallarines-salsa-blanca-champinones",
+    "product_id": null,
+    "ingredient_raw": "2 Ramitas de Perejil",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ramitas de Perejil"
+  },
+  {
+    "recipe_slug": "batido-de-fresa",
+    "product_id": null,
+    "ingredient_raw": "1/2Kilo de Fresas",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "kilo de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Fresas"
+  },
+  {
+    "recipe_slug": "batido-de-fresa",
+    "product_id": null,
+    "ingredient_raw": "1 Lata de IDEAL® LIGHT",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® LIGHT"
+  },
+  {
+    "recipe_slug": "batido-de-fresa",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Agua",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "batido-de-fresa",
+    "product_id": null,
+    "ingredient_raw": "4 Cucharaditasde Azúcar Blanca",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cucharaditasde Azúcar Blanca"
+  },
+  {
+    "recipe_slug": "pastel-de-papa-con-queso",
+    "product_id": null,
+    "ingredient_raw": "4 Papas Blancas",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Papas Blancas"
+  },
+  {
+    "recipe_slug": "pastel-de-papa-con-queso",
+    "product_id": null,
+    "ingredient_raw": "200 Gramos de Queso Fresco",
+    "cantidad_recipe": 200,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Queso Fresco"
+  },
+  {
+    "recipe_slug": "pastel-de-papa-con-queso",
+    "product_id": null,
+    "ingredient_raw": "2 Huevos",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevos"
+  },
+  {
+    "recipe_slug": "pastel-de-papa-con-queso",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de IDEAL® CREMOSITA",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "pastel-de-papa-con-queso",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Pimienta",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimienta"
+  },
+  {
+    "recipe_slug": "pastel-de-papa-con-queso",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Orégano Seco",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Orégano Seco"
+  },
+  {
+    "recipe_slug": "quinua-arabe",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas de Quinua Blanca o Tricolor",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Quinua Blanca o Tricolor"
+  },
+  {
+    "recipe_slug": "quinua-arabe",
+    "product_id": null,
+    "ingredient_raw": "2 Cubitos MAGGI Sabor Gallina",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cubitos MAGGI Sabor Gallina"
+  },
+  {
+    "recipe_slug": "quinua-arabe",
+    "product_id": null,
+    "ingredient_raw": "10 Tajadas de Tocino",
+    "cantidad_recipe": 10,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tajadas de Tocino"
+  },
+  {
+    "recipe_slug": "quinua-arabe",
+    "product_id": null,
+    "ingredient_raw": "1/4 de Taza de Fideos Cabello De Ángel",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Taza de Fideos Cabello De Ángel"
+  },
+  {
+    "recipe_slug": "quinua-arabe",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Pasas Rubias",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pasas Rubias"
+  },
+  {
+    "recipe_slug": "quinua-arabe",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Castañas",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Castañas"
+  },
+  {
+    "recipe_slug": "quinua-arabe",
+    "product_id": null,
+    "ingredient_raw": "4 Hojas de Espinaca",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "hojas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Espinaca"
+  },
+  {
+    "recipe_slug": "keke-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Margarina",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Margarina"
+  },
+  {
+    "recipe_slug": "keke-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Azúcar Rubia",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar Rubia"
+  },
+  {
+    "recipe_slug": "keke-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "6 Huevos",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevos"
+  },
+  {
+    "recipe_slug": "keke-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "3 Tazas de Harina de Trigo Preparada",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina de Trigo Preparada"
+  },
+  {
+    "recipe_slug": "keke-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "1/2 Lata de IDEAL® CREMOSITA",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "keke-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Nueces",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Nueces"
+  },
+  {
+    "recipe_slug": "keke-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "1/4 de Taza de Pecanas",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Taza de Pecanas"
+  },
+  {
+    "recipe_slug": "keke-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "1/4 de Taza de Pasas Rubias",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Taza de Pasas Rubias"
+  },
+  {
+    "recipe_slug": "keke-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Canela en Polvo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Canela en Polvo"
+  },
+  {
+    "recipe_slug": "keke-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "1/4 de Cucharadita de Kión en Polvo",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Cucharadita de Kión en Polvo"
+  },
+  {
+    "recipe_slug": "keke-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "1/4 de Cucharadita de Nuez Moscada en Polvo",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Cucharadita de Nuez Moscada en Polvo"
+  },
+  {
+    "recipe_slug": "keke-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "1/4 de Cucharadita de Clavo de Olor en Polvo",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Cucharadita de Clavo de Olor en Polvo"
+  },
+  {
+    "recipe_slug": "keke-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "1/4 de Taza de Azúcar en Polvo",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Taza de Azúcar en Polvo"
+  },
+  {
+    "recipe_slug": "keke-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "1 Limón",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Limón"
+  },
+  {
+    "recipe_slug": "keke-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "1/4 Taza de Cranberries",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cranberries"
+  },
+  {
+    "recipe_slug": "keke-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "1/4 Cucharadita de Canela en Polvo",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Canela en Polvo"
+  },
+  {
+    "recipe_slug": "galletas-especiadas-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Mantequilla Light",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla Light"
+  },
+  {
+    "recipe_slug": "galletas-especiadas-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "2/3 Taza de Azúcar Rubia",
+    "cantidad_recipe": 0.6666666666666666,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar Rubia"
+  },
+  {
+    "recipe_slug": "galletas-especiadas-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "2 Huevos",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevos"
+  },
+  {
+    "recipe_slug": "galletas-especiadas-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Miel",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Miel"
+  },
+  {
+    "recipe_slug": "galletas-especiadas-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "3 Tazas de Harina de Trigo Preparada",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina de Trigo Preparada"
+  },
+  {
+    "recipe_slug": "galletas-especiadas-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de COCOA D'ONOFRIO®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: COCOA D'ONOFRIO®"
+  },
+  {
+    "recipe_slug": "galletas-especiadas-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Canela en Polvo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Canela en Polvo"
+  },
+  {
+    "recipe_slug": "galletas-especiadas-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "1/4 de Cucharadita de Kión en Polvo",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Cucharadita de Kión en Polvo"
+  },
+  {
+    "recipe_slug": "galletas-especiadas-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "1/4 de Cucharadita de Clavo de Olor en Polvo",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Cucharadita de Clavo de Olor en Polvo"
+  },
+  {
+    "recipe_slug": "galletas-especiadas-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "1/4 de Cucharadita de Nuez Moscada en Polvo",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Cucharadita de Nuez Moscada en Polvo"
+  },
+  {
+    "recipe_slug": "galletas-especiadas-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Esencia De Vainilla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Esencia De Vainilla"
+  },
+  {
+    "recipe_slug": "galletas-especiadas-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Ralladura de Naranja",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ralladura de Naranja"
+  },
+  {
+    "recipe_slug": "galletas-especiadas-de-navidad",
+    "product_id": null,
+    "ingredient_raw": "1/4 de Taza de Azúcar en Polvo",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Taza de Azúcar en Polvo"
+  },
+  {
+    "recipe_slug": "pure-de-camote-gratinado",
+    "product_id": null,
+    "ingredient_raw": "3 Camotes Morado",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Camotes Morado"
+  },
+  {
+    "recipe_slug": "pure-de-camote-gratinado",
+    "product_id": null,
+    "ingredient_raw": "1 Lata (100 g) de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (100 g) de LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "pure-de-camote-gratinado",
+    "product_id": null,
+    "ingredient_raw": "1 Litro de Jugo de Naranja",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "litro de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Jugo de Naranja"
+  },
+  {
+    "recipe_slug": "pure-de-camote-gratinado",
+    "product_id": null,
+    "ingredient_raw": "1/4 de Taza de Marshmallows",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Taza de Marshmallows"
+  },
+  {
+    "recipe_slug": "pure-de-camote-gratinado",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Canela en Polvo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Canela en Polvo"
+  },
+  {
+    "recipe_slug": "pure-de-camote-gratinado",
+    "product_id": null,
+    "ingredient_raw": "3 Cucharadas de Mantequilla Light",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla Light"
+  },
+  {
+    "recipe_slug": "pavo-relleno",
+    "product_id": null,
+    "ingredient_raw": "1 Pavo Entero (8 kg)",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pavo Entero (8 kg)"
+  },
+  {
+    "recipe_slug": "pavo-relleno",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad de MAGGI® Cubo Gallina",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de MAGGI® Cubo Gallina"
+  },
+  {
+    "recipe_slug": "pavo-relleno",
+    "product_id": null,
+    "ingredient_raw": "500 Gramos de Carnede Res Molida",
+    "cantidad_recipe": 500,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Carnede Res Molida"
+  },
+  {
+    "recipe_slug": "pavo-relleno",
+    "product_id": null,
+    "ingredient_raw": "10 Tajadas de Tocino",
+    "cantidad_recipe": 10,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tajadas de Tocino"
+  },
+  {
+    "recipe_slug": "pavo-relleno",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla Roja",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla Roja"
+  },
+  {
+    "recipe_slug": "pavo-relleno",
+    "product_id": null,
+    "ingredient_raw": "1 Manzana Verde",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Manzana Verde"
+  },
+  {
+    "recipe_slug": "pavo-relleno",
+    "product_id": null,
+    "ingredient_raw": "1/4 de Taza de Pan Rallado",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Taza de Pan Rallado"
+  },
+  {
+    "recipe_slug": "pavo-relleno",
+    "product_id": null,
+    "ingredient_raw": "1 Huevo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Huevo"
+  },
+  {
+    "recipe_slug": "pavo-relleno",
+    "product_id": null,
+    "ingredient_raw": "4 Cucharadas de Sillao",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sillao"
+  },
+  {
+    "recipe_slug": "pavo-relleno",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Ají Panca Molido",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ají Panca Molido"
+  },
+  {
+    "recipe_slug": "pavo-relleno",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Ajo Molido",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ajo Molido"
+  },
+  {
+    "recipe_slug": "pavo-relleno",
+    "product_id": null,
+    "ingredient_raw": "3 Cucharadas de Mantequilla Light",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla Light"
+  },
+  {
+    "recipe_slug": "pavo-relleno",
+    "product_id": null,
+    "ingredient_raw": "2 Ramas de Perejil",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "ramas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Perejil"
+  },
+  {
+    "recipe_slug": "mugcake-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de SUBLIME® Pops",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: SUBLIME® Pops"
+  },
+  {
+    "recipe_slug": "mugcake-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad de Huevo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Huevo"
+  },
+  {
+    "recipe_slug": "mugcake-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharaditas de Azúcar Rubia",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharaditas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar Rubia"
+  },
+  {
+    "recipe_slug": "mugcake-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 1/2Cucharada de COCOA D'ONOFRIO®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: COCOA D'ONOFRIO®"
+  },
+  {
+    "recipe_slug": "mugcake-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "3 Cucharadas de Harina de Trigo",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina de Trigo"
+  },
+  {
+    "recipe_slug": "mugcake-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Aceite",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite"
+  },
+  {
+    "recipe_slug": "mugcake-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Polvo de Hornear",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Polvo de Hornear"
+  },
+  {
+    "recipe_slug": "mugcake-de-chocolate",
+    "product_id": null,
+    "ingredient_raw": "1/2Cucharada de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "cheesecake-con-higos",
+    "product_id": null,
+    "ingredient_raw": "6 Paquetes (30 g) de Galleta MOROCHAS®",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Paquetes (30 g) de Galleta MOROCHAS®"
+  },
+  {
+    "recipe_slug": "cheesecake-con-higos",
+    "product_id": null,
+    "ingredient_raw": "80 Gramos de Margarina",
+    "cantidad_recipe": 80,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Margarina"
+  },
+  {
+    "recipe_slug": "cheesecake-con-higos",
+    "product_id": null,
+    "ingredient_raw": "200 Gramos de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 200,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "cheesecake-con-higos",
+    "product_id": null,
+    "ingredient_raw": "100 Gramos de EL MANJAR NESTLE® (4.5 kg)",
+    "cantidad_recipe": 100,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: EL MANJAR NESTLE® (4.5 kg)"
+  },
+  {
+    "recipe_slug": "cheesecake-con-higos",
+    "product_id": null,
+    "ingredient_raw": "200 Gramos de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 200,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "cheesecake-con-higos",
+    "product_id": null,
+    "ingredient_raw": "200 Gramos de Queso Crema",
+    "cantidad_recipe": 200,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Queso Crema"
+  },
+  {
+    "recipe_slug": "cheesecake-con-higos",
+    "product_id": null,
+    "ingredient_raw": "12 Gramos de Colapez en Polvo",
+    "cantidad_recipe": 12,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Colapez en Polvo"
+  },
+  {
+    "recipe_slug": "cheesecake-con-higos",
+    "product_id": null,
+    "ingredient_raw": "200 Gramos de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 200,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "cheesecake-con-higos",
+    "product_id": null,
+    "ingredient_raw": "200 Gramos de Higo",
+    "cantidad_recipe": 200,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Higo"
+  },
+  {
+    "recipe_slug": "cheesecake-con-higos",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Canela en Polvo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Canela en Polvo"
+  },
+  {
+    "recipe_slug": "chocolate-navideno-frio",
+    "product_id": null,
+    "ingredient_raw": "1 Lata de IDEAL® CREMOSITA",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "chocolate-navideno-frio",
+    "product_id": null,
+    "ingredient_raw": "4 Cucharadas de Cocoa D'ONOFRIO®",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cocoa D'ONOFRIO®"
+  },
+  {
+    "recipe_slug": "chocolate-navideno-frio",
+    "product_id": null,
+    "ingredient_raw": "1 1/2 Tazas de Agua",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "chocolate-navideno-frio",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Azúcar Blanca",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar Blanca"
+  },
+  {
+    "recipe_slug": "chocolate-navideno-frio",
+    "product_id": null,
+    "ingredient_raw": "1/2 Cucharadita de Esencia De Vainilla",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Esencia De Vainilla"
+  },
+  {
+    "recipe_slug": "chocolate-navideno-frio",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Canela (polvo)",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Canela (polvo)"
+  },
+  {
+    "recipe_slug": "chocolate-caliente",
+    "product_id": null,
+    "ingredient_raw": "2 Latas de IDEAL® CREMOSITA",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "latas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "chocolate-caliente",
+    "product_id": null,
+    "ingredient_raw": "3 Cucharadas de COCOA D'ONOFRIO®",
+    "cantidad_recipe": 3,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: COCOA D'ONOFRIO®"
+  },
+  {
+    "recipe_slug": "chocolate-caliente",
+    "product_id": null,
+    "ingredient_raw": "1 Tableta de D'Onofrio Reserva al 70% de Cacao",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tableta de D'Onofrio Reserva al 70% de Cacao"
+  },
+  {
+    "recipe_slug": "chocolate-caliente",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas de Agua",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "chocolate-caliente",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Azúcar",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar"
+  },
+  {
+    "recipe_slug": "chocolate-caliente",
+    "product_id": null,
+    "ingredient_raw": "1 Bastón de Canela",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Bastón de Canela"
+  },
+  {
+    "recipe_slug": "chocolate-caliente",
+    "product_id": null,
+    "ingredient_raw": "1 Clavo De Olor",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Clavo De Olor"
+  },
+  {
+    "recipe_slug": "chocolate-caliente",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Pimienta Negra Entera",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimienta Negra Entera"
+  },
+  {
+    "recipe_slug": "tallarines-rojos-con-atun",
+    "product_id": null,
+    "ingredient_raw": "400 Gramos de Spaghetti",
+    "cantidad_recipe": 400,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Spaghetti"
+  },
+  {
+    "recipe_slug": "tallarines-rojos-con-atun",
+    "product_id": null,
+    "ingredient_raw": "2 Latas de Atún en Conserva",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "latas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Atún en Conserva"
+  },
+  {
+    "recipe_slug": "tallarines-rojos-con-atun",
+    "product_id": null,
+    "ingredient_raw": "1 Sobre de MAGGI® La Rojita",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "sobre de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: MAGGI® La Rojita"
+  },
+  {
+    "recipe_slug": "tallarines-rojos-con-atun",
+    "product_id": null,
+    "ingredient_raw": "6Tomates",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tomates"
+  },
+  {
+    "recipe_slug": "tallarines-rojos-con-atun",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla Roja",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla Roja"
+  },
+  {
+    "recipe_slug": "tallarines-rojos-con-atun",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Ajo Molido",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ajo Molido"
+  },
+  {
+    "recipe_slug": "tallarines-rojos-con-atun",
+    "product_id": null,
+    "ingredient_raw": "1/2 Cucharadita de Sal",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "tallarines-rojos-con-atun",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Agua",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "tallarines-rojos-con-atun",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Aceite Vegetal",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "cheesecake-marmoleado",
+    "product_id": null,
+    "ingredient_raw": "200 g de Queso Crema Light",
+    "cantidad_recipe": 200,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: g de Queso Crema Light"
+  },
+  {
+    "recipe_slug": "cheesecake-marmoleado",
+    "product_id": null,
+    "ingredient_raw": "1/3 Lata (393 g) de LECHE CONDENSADA NESTLÉ®",
+    "cantidad_recipe": 0.3333333333333333,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (393 g) de LECHE CONDENSADA NESTLÉ®"
+  },
+  {
+    "recipe_slug": "cheesecake-marmoleado",
+    "product_id": null,
+    "ingredient_raw": "1/3 Lata (300 g) de CREMA DE LECHE NESTLÉ®",
+    "cantidad_recipe": 0.3333333333333333,
+    "unidad_recipe": "lata",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: (300 g) de CREMA DE LECHE NESTLÉ®"
+  },
+  {
+    "recipe_slug": "cheesecake-marmoleado",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de COCOA D'ONOFRIO®",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: COCOA D'ONOFRIO®"
+  },
+  {
+    "recipe_slug": "cheesecake-marmoleado",
+    "product_id": null,
+    "ingredient_raw": "3/4 Cucharada de Colapez",
+    "cantidad_recipe": 0.75,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Colapez"
+  },
+  {
+    "recipe_slug": "cheesecake-marmoleado",
+    "product_id": null,
+    "ingredient_raw": "1 Paquete de Galleta Vainilla o 6 unidades de Galleta Vainilla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "paquete de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Galleta Vainilla o 6 unidades de Galleta Vainilla"
+  },
+  {
+    "recipe_slug": "cheesecake-marmoleado",
+    "product_id": null,
+    "ingredient_raw": "1 Paquete de Galleta de Chocolate u 8 unidades de Galleta de Chocolate",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "paquete de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Galleta de Chocolate u 8 unidades de Galleta de Chocolate"
+  },
+  {
+    "recipe_slug": "cheesecake-marmoleado",
+    "product_id": null,
+    "ingredient_raw": "4 Cucharadas de Mantequilla Light",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla Light"
+  },
+  {
+    "recipe_slug": "quinotto-aji-amarillo-ragu-carne",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas de Quinua Blanca",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Quinua Blanca"
+  },
+  {
+    "recipe_slug": "quinotto-aji-amarillo-ragu-carne",
+    "product_id": null,
+    "ingredient_raw": "1/2 Kilo de Carne de Res Molida",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "kilo de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Carne de Res Molida"
+  },
+  {
+    "recipe_slug": "quinotto-aji-amarillo-ragu-carne",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de MAGGI La Rojita®",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: MAGGI La Rojita®"
+  },
+  {
+    "recipe_slug": "quinotto-aji-amarillo-ragu-carne",
+    "product_id": null,
+    "ingredient_raw": "2 Unidades de MAGGI® Cubo Carne",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: MAGGI® Cubo Carne"
+  },
+  {
+    "recipe_slug": "quinotto-aji-amarillo-ragu-carne",
+    "product_id": null,
+    "ingredient_raw": "1/2 Lata de IDEAL® CREMOSITA",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "quinotto-aji-amarillo-ragu-carne",
+    "product_id": null,
+    "ingredient_raw": "6 Cucharadas de Pasta de Ají Amarillo",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pasta de Ají Amarillo"
+  },
+  {
+    "recipe_slug": "quinotto-aji-amarillo-ragu-carne",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Ají Panca Molido",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ají Panca Molido"
+  },
+  {
+    "recipe_slug": "quinotto-aji-amarillo-ragu-carne",
+    "product_id": null,
+    "ingredient_raw": "1 Taza Agua",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "quinotto-aji-amarillo-ragu-carne",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla Roja",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla Roja"
+  },
+  {
+    "recipe_slug": "quinotto-aji-amarillo-ragu-carne",
+    "product_id": null,
+    "ingredient_raw": "1 Pimiento Rojo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimiento Rojo"
+  },
+  {
+    "recipe_slug": "quinotto-aji-amarillo-ragu-carne",
+    "product_id": null,
+    "ingredient_raw": "8 Cucharadas de Queso Parmesano Rallado",
+    "cantidad_recipe": 8,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Queso Parmesano Rallado"
+  },
+  {
+    "recipe_slug": "quinotto-aji-amarillo-ragu-carne",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Aceite De Girasol",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite De Girasol"
+  },
+  {
+    "recipe_slug": "quinotto-aji-amarillo-ragu-carne",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "pizzas-caseras",
+    "product_id": null,
+    "ingredient_raw": "1/2 Kilo de Harina De Trigo",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "kilo de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina De Trigo"
+  },
+  {
+    "recipe_slug": "pizzas-caseras",
+    "product_id": null,
+    "ingredient_raw": "1 1/4 Taza de Agua",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "pizzas-caseras",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Aceite de Oliva",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite de Oliva"
+  },
+  {
+    "recipe_slug": "pizzas-caseras",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Levadura",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Levadura"
+  },
+  {
+    "recipe_slug": "pizzas-caseras",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Azúcar Rubia",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Azúcar Rubia"
+  },
+  {
+    "recipe_slug": "pizzas-caseras",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "pizzas-caseras",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de MAGGI® La Rojita",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: MAGGI® La Rojita"
+  },
+  {
+    "recipe_slug": "pizzas-caseras",
+    "product_id": null,
+    "ingredient_raw": "6 Tomates",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tomates"
+  },
+  {
+    "recipe_slug": "pizzas-caseras",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla"
+  },
+  {
+    "recipe_slug": "pizzas-caseras",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad de Cebolla Blanca",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Cebolla Blanca"
+  },
+  {
+    "recipe_slug": "pizzas-caseras",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Champiñones",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Champiñones"
+  },
+  {
+    "recipe_slug": "pizzas-caseras",
+    "product_id": null,
+    "ingredient_raw": "2 Tajadas de Jamón de Pavo",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tajadas de Jamón de Pavo"
+  },
+  {
+    "recipe_slug": "pizzas-caseras",
+    "product_id": null,
+    "ingredient_raw": "4 Unidades de Aceituna Negra",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "unidades de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceituna Negra"
+  },
+  {
+    "recipe_slug": "pizzas-caseras",
+    "product_id": null,
+    "ingredient_raw": "1 Pimiento Rojo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimiento Rojo"
+  },
+  {
+    "recipe_slug": "pizzas-caseras",
+    "product_id": null,
+    "ingredient_raw": "150 Gramosde Queso Mozzarella",
+    "cantidad_recipe": 150,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Gramosde Queso Mozzarella"
+  },
+  {
+    "recipe_slug": "pizzas-caseras",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Harina",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina"
+  },
+  {
+    "recipe_slug": "picante-de-carne",
+    "product_id": null,
+    "ingredient_raw": "400 Gramos de Carne de Res",
+    "cantidad_recipe": 400,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Carne de Res"
+  },
+  {
+    "recipe_slug": "picante-de-carne",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad de MAGGI® Cubo Carne",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de MAGGI® Cubo Carne"
+  },
+  {
+    "recipe_slug": "picante-de-carne",
+    "product_id": null,
+    "ingredient_raw": "4 Papas Blancas",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Papas Blancas"
+  },
+  {
+    "recipe_slug": "picante-de-carne",
+    "product_id": null,
+    "ingredient_raw": "2 Zanahorias",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Zanahorias"
+  },
+  {
+    "recipe_slug": "picante-de-carne",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Alverjas",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Alverjas"
+  },
+  {
+    "recipe_slug": "picante-de-carne",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla Roja",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla Roja"
+  },
+  {
+    "recipe_slug": "picante-de-carne",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Ajo Molido",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ajo Molido"
+  },
+  {
+    "recipe_slug": "picante-de-carne",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Ají Panca Molido",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ají Panca Molido"
+  },
+  {
+    "recipe_slug": "picante-de-carne",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Aceite Vegetal",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "picante-de-carne",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas de Arroz Cocido",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Arroz Cocido"
+  },
+  {
+    "recipe_slug": "pasta-puttanesca",
+    "product_id": null,
+    "ingredient_raw": "400 Gramos de Spaghetti",
+    "cantidad_recipe": 400,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Spaghetti"
+  },
+  {
+    "recipe_slug": "pasta-puttanesca",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla Roja",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla Roja"
+  },
+  {
+    "recipe_slug": "pasta-puttanesca",
+    "product_id": null,
+    "ingredient_raw": "6 Tomates",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tomates"
+  },
+  {
+    "recipe_slug": "pasta-puttanesca",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de MAGGI La Rojita®",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: MAGGI La Rojita®"
+  },
+  {
+    "recipe_slug": "pasta-puttanesca",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla Blanca",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla Blanca"
+  },
+  {
+    "recipe_slug": "pasta-puttanesca",
+    "product_id": null,
+    "ingredient_raw": "100 Gramosde Aceitunas Negras",
+    "cantidad_recipe": 100,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Gramosde Aceitunas Negras"
+  },
+  {
+    "recipe_slug": "pasta-puttanesca",
+    "product_id": null,
+    "ingredient_raw": "1 Ramita de Perejil",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ramita de Perejil"
+  },
+  {
+    "recipe_slug": "pasta-puttanesca",
+    "product_id": null,
+    "ingredient_raw": "4 Cucharadas de Queso Parmesano Rallado",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Queso Parmesano Rallado"
+  },
+  {
+    "recipe_slug": "pasta-puttanesca",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Aceite Vegetal",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "milanesa-napolitana",
+    "product_id": null,
+    "ingredient_raw": "1 Pechuga de Pollo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pechuga de Pollo"
+  },
+  {
+    "recipe_slug": "milanesa-napolitana",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de MAGGI® La Rojita",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: MAGGI® La Rojita"
+  },
+  {
+    "recipe_slug": "milanesa-napolitana",
+    "product_id": null,
+    "ingredient_raw": "4 Tomates",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tomates"
+  },
+  {
+    "recipe_slug": "milanesa-napolitana",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla Roja",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla Roja"
+  },
+  {
+    "recipe_slug": "milanesa-napolitana",
+    "product_id": null,
+    "ingredient_raw": "200 Gramos de Queso Mozzarella",
+    "cantidad_recipe": 200,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Queso Mozzarella"
+  },
+  {
+    "recipe_slug": "milanesa-napolitana",
+    "product_id": null,
+    "ingredient_raw": "1/4de Taza de Aceite Vegetal",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Taza de Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "milanesa-napolitana",
+    "product_id": null,
+    "ingredient_raw": "4 Papas Amarillas",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Papas Amarillas"
+  },
+  {
+    "recipe_slug": "milanesa-napolitana",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Orégano Seco",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Orégano Seco"
+  },
+  {
+    "recipe_slug": "milanesa-napolitana",
+    "product_id": null,
+    "ingredient_raw": "1 Sobre de MAGGI® Mezcla Lista para Apanar",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "sobre de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: MAGGI® Mezcla Lista para Apanar"
+  },
+  {
+    "recipe_slug": "lasana-roja-y-blanca",
+    "product_id": null,
+    "ingredient_raw": "1/2 Kilo de Carne de Res Molida",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "kilo de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Carne de Res Molida"
+  },
+  {
+    "recipe_slug": "lasana-roja-y-blanca",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad de MAGGI® Cubo Gallina",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de MAGGI® Cubo Gallina"
+  },
+  {
+    "recipe_slug": "lasana-roja-y-blanca",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas MAGGI® La Rojita",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cucharadas MAGGI® La Rojita"
+  },
+  {
+    "recipe_slug": "lasana-roja-y-blanca",
+    "product_id": null,
+    "ingredient_raw": "1/2 Lata de IDEAL® CREMOSITA",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "lata de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "lasana-roja-y-blanca",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla Roja",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla Roja"
+  },
+  {
+    "recipe_slug": "lasana-roja-y-blanca",
+    "product_id": null,
+    "ingredient_raw": "6 Tomates",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tomates"
+  },
+  {
+    "recipe_slug": "lasana-roja-y-blanca",
+    "product_id": null,
+    "ingredient_raw": "2 Zanahorias",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Zanahorias"
+  },
+  {
+    "recipe_slug": "lasana-roja-y-blanca",
+    "product_id": null,
+    "ingredient_raw": "1/2 Kilo de Pasta para Lasaña",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "kilo de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pasta para Lasaña"
+  },
+  {
+    "recipe_slug": "lasana-roja-y-blanca",
+    "product_id": null,
+    "ingredient_raw": "200 Gramos de Queso Mozzarella",
+    "cantidad_recipe": 200,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Queso Mozzarella"
+  },
+  {
+    "recipe_slug": "lasana-roja-y-blanca",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Mantequilla Ligth",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla Ligth"
+  },
+  {
+    "recipe_slug": "lasana-roja-y-blanca",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de Harina de Trigo",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Harina de Trigo"
+  },
+  {
+    "recipe_slug": "lasana-roja-y-blanca",
+    "product_id": null,
+    "ingredient_raw": "1 Taza de Agua",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "canelones-de-pollo-en-salsa-roja",
+    "product_id": null,
+    "ingredient_raw": "1 Pechuga de Pollo",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pechuga de Pollo"
+  },
+  {
+    "recipe_slug": "canelones-de-pollo-en-salsa-roja",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de MAGGI® La Rojita",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: MAGGI® La Rojita"
+  },
+  {
+    "recipe_slug": "canelones-de-pollo-en-salsa-roja",
+    "product_id": null,
+    "ingredient_raw": "2 Cubitos MAGGI Sabor Gallina",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cubitos MAGGI Sabor Gallina"
+  },
+  {
+    "recipe_slug": "canelones-de-pollo-en-salsa-roja",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla Roja",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla Roja"
+  },
+  {
+    "recipe_slug": "canelones-de-pollo-en-salsa-roja",
+    "product_id": null,
+    "ingredient_raw": "6 Tomates",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tomates"
+  },
+  {
+    "recipe_slug": "canelones-de-pollo-en-salsa-roja",
+    "product_id": null,
+    "ingredient_raw": "1 Zanahoria",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Zanahoria"
+  },
+  {
+    "recipe_slug": "canelones-de-pollo-en-salsa-roja",
+    "product_id": null,
+    "ingredient_raw": "1/4 de Taza de Salsa Blanca",
+    "cantidad_recipe": 0.25,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de Taza de Salsa Blanca"
+  },
+  {
+    "recipe_slug": "canelones-de-pollo-en-salsa-roja",
+    "product_id": null,
+    "ingredient_raw": "1/2 Kilo de Pasta para Lasaña",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "kilo de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pasta para Lasaña"
+  },
+  {
+    "recipe_slug": "canelones-de-pollo-en-salsa-roja",
+    "product_id": null,
+    "ingredient_raw": "200 Gramos de Queso Mozzarella",
+    "cantidad_recipe": 200,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Queso Mozzarella"
+  },
+  {
+    "recipe_slug": "canelones-de-pollo-en-salsa-roja",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Aceite Vegetal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite Vegetal"
+  },
+  {
+    "recipe_slug": "pure-de-papa-con-asado-de-res",
+    "product_id": null,
+    "ingredient_raw": "500 Gramos de Asado de Pejerrey",
+    "cantidad_recipe": 500,
+    "unidad_recipe": "gramos de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Asado de Pejerrey"
+  },
+  {
+    "recipe_slug": "pure-de-papa-con-asado-de-res",
+    "product_id": null,
+    "ingredient_raw": "2 Cucharadas de MAGGI® La Rojita",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "cucharadas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: MAGGI® La Rojita"
+  },
+  {
+    "recipe_slug": "pure-de-papa-con-asado-de-res",
+    "product_id": null,
+    "ingredient_raw": "1 Unidad de MAGGI® Cubo Gallina",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "unidad",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: de MAGGI® Cubo Gallina"
+  },
+  {
+    "recipe_slug": "pure-de-papa-con-asado-de-res",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de IDEAL® CREMOSITA",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: IDEAL® CREMOSITA"
+  },
+  {
+    "recipe_slug": "pure-de-papa-con-asado-de-res",
+    "product_id": null,
+    "ingredient_raw": "1/2 Taza de Agua",
+    "cantidad_recipe": 0.5,
+    "unidad_recipe": "taza de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Agua"
+  },
+  {
+    "recipe_slug": "pure-de-papa-con-asado-de-res",
+    "product_id": null,
+    "ingredient_raw": "4 Papas Amarilla",
+    "cantidad_recipe": 4,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Papas Amarilla"
+  },
+  {
+    "recipe_slug": "pure-de-papa-con-asado-de-res",
+    "product_id": null,
+    "ingredient_raw": "1 Cebolla Roja",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Cebolla Roja"
+  },
+  {
+    "recipe_slug": "pure-de-papa-con-asado-de-res",
+    "product_id": null,
+    "ingredient_raw": "1 Zanahoria",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Zanahoria"
+  },
+  {
+    "recipe_slug": "pure-de-papa-con-asado-de-res",
+    "product_id": null,
+    "ingredient_raw": "6 Tomates",
+    "cantidad_recipe": 6,
+    "unidad_recipe": "",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Tomates"
+  },
+  {
+    "recipe_slug": "pure-de-papa-con-asado-de-res",
+    "product_id": null,
+    "ingredient_raw": "1 Hoja De Laurel",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "hoja de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Laurel"
+  },
+  {
+    "recipe_slug": "pure-de-papa-con-asado-de-res",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Aceite De Girasol",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Aceite De Girasol"
+  },
+  {
+    "recipe_slug": "pure-de-papa-con-asado-de-res",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharada de Mantequilla Light",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharada de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Mantequilla Light"
+  },
+  {
+    "recipe_slug": "pure-de-papa-con-asado-de-res",
+    "product_id": null,
+    "ingredient_raw": "1 Cucharadita de Ajo Molido Sin Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "cucharadita de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Ajo Molido Sin Sal"
+  },
+  {
+    "recipe_slug": "pure-de-papa-con-asado-de-res",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Sal",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Sal"
+  },
+  {
+    "recipe_slug": "pure-de-papa-con-asado-de-res",
+    "product_id": null,
+    "ingredient_raw": "1 Pizca de Pimienta",
+    "cantidad_recipe": 1,
+    "unidad_recipe": "pizca de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Pimienta"
+  },
+  {
+    "recipe_slug": "pure-de-papa-con-asado-de-res",
+    "product_id": null,
+    "ingredient_raw": "2 Tazas de Arroz Cocido",
+    "cantidad_recipe": 2,
+    "unidad_recipe": "tazas de",
+    "cantidad_producto": 0,
+    "mapeado": false,
+    "notas": "No encontrado: Arroz Cocido"
+  }
+]
