@@ -154,13 +154,15 @@ async function findBestProduct(ingredientRaw) {
     } catch {}
   }
 
-  // Fallback: direct ILIKE, then re-rank
+  // Fallback: direct ILIKE with normalized terms, then re-rank
   for (let len = Math.min(preferredWords.length, 3); len >= 1; len--) {
-    const searchTerms = preferredWords.slice(0, len)
+    const normalized = preferredWords.slice(0, len).map(normalizeWord)
+    const searchTerm = normalized.join(" ")
     try {
       const resp = await fetch(
-        REST_URL + "/products?select=id,titulo,precio,categoria&titulo=ilike.*" +
-        encodeURIComponent(searchTerms.join(" ")) + "*&limit=10&order=precio.asc",
+        REST_URL + "/products?select=id,titulo,precio,categoria&or=(titulo.ilike.*" +
+        encodeURIComponent(searchTerm) + "*,categoria.ilike.*" +
+        encodeURIComponent(searchTerm) + "*)&limit=10&order=precio.asc",
         { headers: HEADERS }
       )
       if (resp.ok) {
