@@ -1,29 +1,30 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { supabase } from '../supabase'
+import { useCart } from '../CartContext'
 
 export default function Navbar() {
   const [user, setUser] = useState(null)
   const [profile, setProfile] = useState(null)
-  const [cartCount, setCartCount] = useState(0)
+  const { cartCount, fetchCartCount } = useCart()
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
       setUser(session?.user || null)
       if (session?.user) loadProfile(session.user.id)
     })
-    supabase.auth.onAuthStateChange((_event, session) => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       setUser(session?.user || null)
       if (session?.user) loadProfile(session.user.id)
-      else { setProfile(null); setCartCount(0) }
+      else { setProfile(null); fetchCartCount() }
     })
+    return () => subscription?.unsubscribe()
   }, [])
 
   async function loadProfile(userId) {
     const { data } = await supabase.from('profiles').select('*').eq('id', userId).single()
     setProfile(data)
-    const { count } = await supabase.from('cart_items').select('*', { count: 'exact', head: true }).eq('comprador_id', userId)
-    setCartCount(count || 0)
+    fetchCartCount()
   }
 
   async function handleLogout() {
@@ -34,21 +35,24 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="container">
-        <Link to="/" className="logo">☁️ CloudStore</Link>
+        <Link to="/" className="logo">CloudStore</Link>
         <div className="nav-links">
           <Link to="/products">Productos</Link>
-          <Link to="/cart">Carrito ({cartCount})</Link>
+          <Link to="/cart" className="cart-link">
+            Carrito
+            {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
+          </Link>
           <Link to="/orders">Mis Órdenes</Link>
           {user ? (
-            <span>
-              {profile?.nombre}
-              {profile?.rol === 'vendedor' && <Link to="/new-product" style={{ marginLeft: '0.8rem' }}>Vender</Link>}
-              <button id="logout-btn" onClick={handleLogout} style={{ marginLeft: '0.8rem' }}>Cerrar Sesión</button>
+            <span className="nav-user">
+              <span className="nav-user-name">{profile?.nombre}</span>
+              {profile?.rol === 'vendedor' && <Link to="/new-product">Vender</Link>}
+              <button className="btn-logout" onClick={handleLogout}>Cerrar Sesión</button>
             </span>
           ) : (
-            <span>
+            <span className="nav-auth">
               <Link to="/login">Iniciar Sesión</Link>
-              <Link to="/register" style={{ marginLeft: '0.8rem' }}>Registrarse</Link>
+              <Link to="/register" className="btn btn-sm">Registrarse</Link>
             </span>
           )}
         </div>

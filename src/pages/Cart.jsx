@@ -1,72 +1,94 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { supabase } from '../supabase'
+import { useCart } from '../CartContext'
 
 export default function Cart() {
   const [items, setItems] = useState([])
+  const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
   const [success, setSuccess] = useState('')
   const navigate = useNavigate()
+  const { fetchCartCount } = useCart()
 
   useEffect(() => { loadCart() }, [])
 
   async function loadCart() {
     const { data: { session } } = await supabase.auth.getSession()
-    if (!session) { setItems([]); return }
+    if (!session) { setItems([]); setLoading(false); return }
     const { data } = await supabase.from('cart_items').select('*, products(*)').eq('comprador_id', session.user.id)
     setItems(data || [])
+    setLoading(false)
   }
 
   async function updateQty(id, newQty) {
     if (newQty <= 0) { await removeItem(id); return }
     await supabase.from('cart_items').update({ cantidad: newQty }).eq('id', id)
-    loadCart()
+    loadCart(); fetchCartCount()
   }
 
   async function removeItem(id) {
     await supabase.from('cart_items').delete().eq('id', id)
-    loadCart()
+    loadCart(); fetchCartCount()
   }
 
   async function checkout() {
     setError(''); setSuccess('')
     const payload = items.map(i => ({ product_id: i.product_id, cantidad: i.cantidad }))
     const { data, error } = await supabase.functions.invoke('checkout', { body: { items: payload } })
-    if (error) { setError(error.message); return }
-    if (data.error) { setError(data.error); return }
+    if (error) { setError(data?.error || error.message); return }
     setSuccess(`¡Orden #${data.order_id.slice(0, 8)} creada! Total pagado: $${data.total}`)
     setItems([])
+    fetchCartCount()
   }
 
   const total = items.reduce((sum, i) => sum + Number(i.products.precio) * i.cantidad, 0)
 
-  return (
-    <div>
+  if (loading) return (
+    <div className="page">
       <h2>Tu Carrito</h2>
+      <div className="skeleton-cart">
+        {Array.from({ length: 3 }).map((_, i) => <div key={i} className="skeleton-cart-item" />)}
+      </div>
+    </div>
+  )
+
+  return (
+    <div className="page">
+      <h2>Tu Carrito</h2>
+      {items.length === 0 && !success && (
+        <div className="empty-state">
+          <span className="empty-icon">🛒</span>
+          <p>Tu carrito está vacío.</p>
+        </div>
+      )}
       {items.map(i => (
         <div key={i.id} className="cart-item">
-          <img src={i.products.imagen_url} alt={i.products.titulo} width={80} />
+          <img src={i.products.imagen_url} alt={i.products.titulo} />
           <div className="cart-item-info">
             <h4>{i.products.titulo}</h4>
-            <p>${i.products.precio} x {i.cantidad} = ${(Number(i.products.precio) * i.cantidad).toFixed(2)}</p>
+            <p className="cart-item-price">${i.products.precio} c/u</p>
           </div>
           <div className="cart-item-actions">
-            <button onClick={() => updateQty(i.id, i.cantidad - 1)} disabled={i.cantidad <= 1}>-</button>
-            <span>{i.cantidad}</span>
+            <button onClick={() => updateQty(i.id, i.cantidad - 1)} disabled={i.cantidad <= 1}>−</button>
+            <span className="cart-qty">{i.cantidad}</span>
             <button onClick={() => updateQty(i.id, i.cantidad + 1)}>+</button>
-            <button onClick={() => removeItem(i.id)} className="btn-danger">Eliminar</button>
+            <span className="cart-subtotal">${(Number(i.products.precio) * i.cantidad).toFixed(2)}</span>
+            <button onClick={() => removeItem(i.id)} className="btn-remove">Eliminar</button>
           </div>
         </div>
       ))}
-      {items.length === 0 && !success && <p>Tu carrito está vacío.</p>}
       {items.length > 0 && (
-        <div id="cart-summary">
-          <h3>Total: ${total.toFixed(2)}</h3>
-          <button className="btn" onClick={checkout}>Pagar (Simulado)</button>
+        <div className="cart-summary">
+          <div className="cart-total">
+            <span>Total</span>
+            <span className="cart-total-amount">${total.toFixed(2)}</span>
+          </div>
+          <button className="btn btn-lg btn-block" onClick={checkout}>Pagar</button>
         </div>
       )}
-      {error && <p className="error">{error}</p>}
-      {success && <p className="success">{success}</p>}
+      {error && <div className="alert alert-error">{error}</div>}
+      {success && <div className="alert alert-success">{success}</div>}
     </div>
   )
 }
