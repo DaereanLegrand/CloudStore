@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { supabase } from '../supabase'
 import { useCart } from '../CartContext'
 import { CATEGORIES_DICT } from '../categories'
+import ProductCard from '../components/ProductCard'
 
 const PAGE_SIZE = 25
 
@@ -47,7 +48,7 @@ export default function Products() {
   async function addToCart(productId, titulo) {
     const { data: { session } } = await supabase.auth.getSession()
     if (!session) { window.location.href = '/login'; return }
-    const { data: existing } = await supabase.from('cart_items').select('*').eq('comprador_id', session.user.id).eq('product_id', productId).single()
+    const { data: existing } = await supabase.from('cart_items').select('*').eq('comprador_id', session.user.id).eq('product_id', productId)    .maybeSingle()
     if (existing) {
       await supabase.from('cart_items').update({ cantidad: existing.cantidad + 1 }).eq('id', existing.id)
     } else {
@@ -110,31 +111,7 @@ export default function Products() {
         <>
           <Pagination />
           <div className="products-grid">
-            {products.map(p => (
-              <div key={p.id} className="product-card">
-                <Link to={`/product/${p.id}`}>
-                  <div className="product-card-img">
-                    <img src={p.imagen_url} alt={p.titulo} loading="lazy" />
-                  </div>
-                </Link>
-                <div className="product-info">
-                  <span className="category-badge">{p.categoria}</span>
-                  {p.precio_promocion != null && <span className="sale-badge">-20%</span>}
-                  <h3><Link to={`/product/${p.id}`}>{p.titulo}</Link></h3>
-                  <p className="price">
-                    {p.precio_promocion != null ? (
-                      <><span className="price-original">${p.precio}</span> ${p.precio_promocion}</>
-                    ) : (
-                      <>${p.precio}</>
-                    )}
-                  </p>
-                  <p className="stock">{p.stock > 0 ? `${p.stock} en stock` : 'Agotado'}</p>
-                  <button className="btn" onClick={() => addToCart(p.id, p.titulo)} disabled={p.stock < 1}>
-                    {p.stock < 1 ? 'Agotado' : 'Agregar al carrito'}
-                  </button>
-                </div>
-              </div>
-            ))}
+            {products.map(p => <ProductCard key={p.id} product={p} onAddToCart={addToCart} />)}
           </div>
           <Pagination />
         </>
