@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { supabase } from '../supabase'
 import { useCart } from '../CartContext'
+import VisionChat from '../components/VisionChat'
 
 export default function Home() {
   const [products, setProducts] = useState([])
@@ -75,6 +76,7 @@ export default function Home() {
 
   return (
     <div className="page">
+      <VisionChat />
       {toast && <div className="toast">✓ {toast} agregado al carrito</div>}
       <div className="hero">
         <h1>CloudStore</h1>

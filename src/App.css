@@ -681,6 +681,177 @@ h4 { font-weight: 600; }
 }
 
 /* Responsive */
+/* Vision Chat */
+.vision-chat {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+.vision-chat-header {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.vision-chat-header h2 {
+  margin: 0;
+  font-size: 1.125rem;
+}
+.vision-chat-subtitle {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  margin-top: 0.125rem;
+}
+.vision-chat-messages {
+  padding: 1rem 1.5rem;
+  max-height: 420px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.vision-chat-empty {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--text-secondary);
+}
+.vision-chat-empty-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.vision-chat-empty p {
+  font-size: 0.9375rem;
+  margin-bottom: 1rem;
+}
+.vision-chat-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.vision-chat-msg {
+  display: flex;
+}
+.vision-chat-msg.user {
+  justify-content: flex-end;
+}
+.vision-chat-msg.assistant {
+  justify-content: flex-start;
+}
+.vision-chat-bubble {
+  max-width: 80%;
+  padding: 0.65rem 1rem;
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.vision-chat-msg.user .vision-chat-bubble {
+  background: var(--primary);
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+.vision-chat-msg.assistant .vision-chat-bubble {
+  background: var(--primary-lighter);
+  color: var(--text);
+  border-bottom-left-radius: 4px;
+}
+.vision-chat-thinking {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+}
+.vision-chat-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--primary);
+  border-radius: 50%;
+  animation: chat-bounce 1.4s infinite ease-in-out;
+}
+.vision-chat-dot:nth-child(2) { animation-delay: 0.2s; }
+.vision-chat-dot:nth-child(3) { animation-delay: 0.4s; }
+@keyframes chat-bounce {
+  0%, 80%, 100% { opacity: 0.3; transform: scale(0.8); }
+  40% { opacity: 1; transform: scale(1); }
+}
+.vision-chat-preview {
+  position: relative;
+  padding: 0 1.5rem 0.75rem;
+}
+.vision-chat-preview img {
+  height: 100px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+.vision-chat-remove-img {
+  position: absolute;
+  top: -6px;
+  left: calc(1.5rem + 90px);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: none;
+  background: var(--danger);
+  color: #fff;
+  font-size: 0.875rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.vision-chat-input {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-top: 1px solid var(--border);
+  background: var(--primary-lighter);
+}
+.vision-chat-attach {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.35rem;
+  border-radius: var(--radius-sm);
+  transition: background 0.15s;
+  line-height: 1;
+}
+.vision-chat-attach:hover {
+  background: var(--border);
+}
+.vision-chat-input textarea {
+  flex: 1;
+  padding: 0.55rem 0.85rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  font-family: inherit;
+  resize: none;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  background: var(--card-bg);
+  max-height: 120px;
+}
+.vision-chat-input textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(26, 79, 173, 0.1);
+}
+.vision-chat-send {
+  padding: 0.45rem 1rem;
+  font-size: 1rem;
+  min-width: 44px;
+}
+
 @media (max-width: 768px) {
   .container { padding: 0 1.25rem; }
   .navbar .container { height: 52px; }
@@ -699,4 +870,8 @@ h4 { font-weight: 600; }
   .order-header > div { flex-wrap: wrap; }
   .skeleton-detail { flex-direction: column; }
   .skeleton-detail-img { flex: none; height: 250px; }
+  .vision-chat-messages { max-height: 300px; padding: 0.75rem 1rem; }
+  .vision-chat-input { padding: 0.5rem 1rem; }
+  .vision-chat-header { padding: 1rem 1.25rem; }
+  .vision-chat-bubble { max-width: 90%; }
 }
