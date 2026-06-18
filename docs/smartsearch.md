@@ -1,60 +1,113 @@
 # SmartSearch — Búsqueda Semántica con IA
 
+SmartSearch permite buscar productos de dos formas: mediante **texto en lenguaje natural** (búsqueda semántica) o mediante **imagen** (búsqueda visual descriptiva). Ambos flujos convergen en el mismo pipeline de embeddings + pgvector para encontrar los productos más similares.
+
+---
+
 ## Arquitectura general
 
 ```
 Usuario (Home page)
   │
-  ├─ Escribe consulta en lenguaje natural
+  ├─ Modo TEXTO: escribe consulta en lenguaje natural
+  │
+  ├─ Modo IMAGEN: sube foto de producto
   │
   ▼
-SmartSearch.jsx (componente React)
+SmartSearch.jsx (componente React con tabs Texto | Imagen)
   │
-  ├─ supabase.functions.invoke('semantic-search', { query })
-  │    │
-  │    ├─ Kong (http://localhost:3333/functions/v1/semantic-search)
-  │    │    │
-  │    │    ▼
-  │    │  Edge Runtime (supabase-edge-functions)
-  │    │    │
-  │    │    ├─ main/index.ts (router, verifica JWT si VERIFY_JWT=true)
-  │    │    │    │
-  │    │    │    └─ Crea worker aislado para semantic-search/index.ts
-  │    │    │         │
-  │    │    │         ├─ POST http://host.docker.internal:11434/api/embeddings
-  │    │    │         │    │
-  │    │    │         │    └─ Ollama (local, host) → bge-m3 → vector(1024)
-  │    │    │         │
-  │    │    │         └─ supabase.rpc('match_products', { query_embedding })
-  │    │    │              │
-  │    │    │              └─ PostgreSQL + pgvector → HNSW index → top 20 productos
-  │    │    │
-  │    │    └─ Retorna { products: [...] }
-  │    │
-  │    └─ Recibe productos con campo similarity
+  ├─ [modo texto]
+  │   └─ supabase.functions.invoke('semantic-search', { query })
   │
-  └─ Renderiza grid de <ProductCard> con onAddToCart
+  ├─ [modo imagen]
+  │   └─ supabase.functions.invoke('visual-search', { image: base64 })
+  │
+  ▼
+Kong (http://localhost:3333/functions/v1/<function-name>)
+  │
+  ▼
+Edge Runtime (supabase-edge-functions)
+  │
+  ├─ main/index.ts (router, verifica JWT si VERIFY_JWT=true)
+  │   │
+  │   └─ Crea worker aislado para semantic-search/index.ts (modo texto)
+  │   │    │
+  │   │    ├─ POST http://host.docker.internal:11434/api/embeddings
+  │   │    │   └─ Ollama → bge-m3 → vector(1024)
+  │   │    │
+  │   │    └─ supabase.rpc('match_products', { query_embedding })
+  │   │        └─ PostgreSQL + pgvector → HNSW index → top 20
+  │   │
+  │   └─ Crea worker aislado para visual-search/index.ts (modo imagen)
+  │        │
+  │        ├─ POST http://192.168.0.121:8001/model/chat/completions
+  │        │   └─ Gemma 4 (E2B CoreML) → descripción textual
+  │        │
+  │        ├─ POST http://host.docker.internal:11434/api/embeddings
+  │        │   └─ Ollama → bge-m3 → vector(1024)
+  │        │
+  │        └─ supabase.rpc('match_products', { query_embedding })
+  │            └─ PostgreSQL + pgvector → HNSW index → top 20
+  │
+  └─ Retorna { products: [...], description? }
+      │
+      └─ SmartSearch.jsx renderiza grid de <ProductCard> con onAddToCart
 ```
+
+---
 
 ## Flujo de datos detallado
 
 ### 1. Frontend: `src/components/SmartSearch.jsx`
 
-**Input:** Campo de texto libre + botón "Buscar"
+SmartSearch es un componente que integra **dos modos de búsqueda** mediante tabs:
 
-**Proceso:**
-1. Usuario escribe `"Quiero organizar una BBQ"` y presiona Enter
-2. `handleSearch()` envía POST a Edge Function `semantic-search`
-3. Mientras carga, muestra skeleton grid (4 cards animadas)
-4. Al recibir respuesta, renderiza `<ProductCard>` para cada resultado
-5. Cada card tiene botón "Agregar al carrito" que usa `addToCart()` (misma lógica que Home/Products)
+#### Modo Texto
+- **Input:** Campo de texto libre + botón "Buscar"
+- **Proceso:**
+  1. Usuario escribe texto (ej: `"Quiero organizar una BBQ"`) y presiona Enter
+  2. `handleSearch()` envía POST a Edge Function `semantic-search` con `{ query }`
+  3. Mientras carga, muestra skeleton grid (4 cards animadas)
+  4. Al recibir respuesta, renderiza `<ProductCard>` para cada resultado
+  5. Cada card tiene botón "Agregar al carrito" que usa `addToCart()`
 
-**Manejo de errores:**
-- Error de red/edge function → `alert-error` con mensaje
+#### Modo Imagen
+- **Input:** Archivo de imagen (JPG/PNG) seleccionado por el usuario
+- **Proceso:**
+  1. Usuario hace clic en el área de upload o arrastra una imagen
+  2. `handleImageSelect()` lee el archivo con `FileReader` y lo convierte a base64
+  3. Se muestra preview de la imagen con botón × para eliminar
+  4. Usuario hace clic en "Buscar con imagen"
+  5. `handleVisualSearch()` envía POST a Edge Function `visual-search` con `{ image: base64 }`
+  6. Mientras carga, muestra skeleton grid (4 cards animadas)
+  7. Al recibir respuesta, renderiza `<ProductCard>` para cada resultado
+
+#### Manejo de errores (compartido por ambos modos)
+- Error de red/edge function → `alert-error` con mensaje descriptivo
 - Sin resultados → empty state con icono de lupa y mensaje sugerente
 - Toast de confirmación al agregar al carrito (desaparece a los 2s)
 
+#### addToCart (compartido)
+1. Obtiene sesión actual vía `supabase.auth.getSession()`
+2. Si no hay sesión, redirige a `/login`
+3. Busca si el producto ya existe en `cart_items` para el usuario
+4. Si existe, incrementa `cantidad` en 1
+5. Si no existe, inserta nuevo registro con `cantidad: 1`
+6. Actualiza contador del carrito y muestra toast por 2 segundos
+
+#### Logging
+Ambos modos registran la operación via `logLLM()` con:
+- `query`: texto de búsqueda o `"[imagen]"` para búsqueda visual
+- `response`: cantidad de productos encontrados
+- `timing`: tiempo total en segundos
+- `error`: mensaje de error si ocurre
+- `image: true` si fue búsqueda por imagen (incluye `description` generada por Gemma 4)
+
+---
+
 ### 2. Edge Function: `volumes/functions/semantic-search/index.ts`
+
+Orquesta la búsqueda por texto.
 
 ```typescript
 // 1. Recibe { query: string }
@@ -71,13 +124,92 @@ SmartSearch.jsx (componente React)
 **Variables de entorno requeridas (inyectadas por docker-compose):**
 - `SUPABASE_URL` → `http://kong:8000`
 - `SUPABASE_SERVICE_ROLE_KEY` → clave con permisos de admin
-- `JWT_SECRET` → para verificación JWT por el router principal
 
 **Modelo de embeddings:** `bge-m3` (multilingüe, 1024 dimensiones, ~567MB)
 
 **Timeout:** 180s (configurado via `EDGE_RUNTIME_USER_WORKER_WALL_CLOCK_LIMIT_MS`)
 
-### 3. Base de datos: pgvector
+---
+
+### 3. Edge Function: `volumes/functions/visual-search/index.ts` (NUEVO)
+
+Orquesta la búsqueda por imagen en tres etapas con reintentos ante fallos de embedding.
+
+```typescript
+// 1. Recibe { image: string (base64) }
+// 2. Valida body
+// 3. Llama a Gemma 4 (visión):
+//    POST http://192.168.0.121:8001/model/chat/completions
+//    { messages: [{ role: "user", content: prompt, image: base64 }],
+//      max_tokens: 100, stream: false }
+//    → Extrae descripción textual del producto
+// 4. Sanitiza la descripción (elimina markdown, etiquetas HTML, normaliza espacios)
+// 5. Llama a Ollama con reintento progresivo:
+//    - Intenta con texto completo (máx 512 chars)
+//    - Si falla (NaN), reintenta con primeros 120 caracteres
+//    - Si falla, reintenta con primeros 80 caracteres
+//    - Si falla, reintenta con primeros 40 caracteres
+// 6. Llama a PostgreSQL via RPC:
+//    supabase.rpc('match_products', { query_embedding, match_count: 20 })
+// 7. Retorna { products: [...], description: "..." }
+```
+
+#### Sanitización de texto
+
+La función `sanitize()` prepara la descripción para el modelo de embeddings:
+
+```typescript
+function sanitize(text: string): string {
+  return text
+    .replace(/[*_`~#]/g, "")       // elimina markdown
+    .replace(/<[^>]*>/g, "")        // elimina etiquetas HTML
+    .replace(/&[a-z]+;/g, " ")      // reemplaza HTML entities
+    .replace(/\s+/g, " ")           // normaliza espacios
+    .trim()
+    .slice(0, 512)                  // límite de 512 caracteres
+}
+```
+
+#### Reintento de embedding (NaN handling)
+
+El modelo bge-m3 puede fallar generando valores NaN para ciertos patrones de texto (acentos, paréntesis, etc.). La función `getEmbedding()` implementa reintento con truncamiento progresivo:
+
+```typescript
+async function getEmbedding(text: string): Promise<number[] | null> {
+  for (const prompt of [text, text.slice(0, 120), text.slice(0, 80), text.slice(0, 40)]) {
+    try {
+      const res = await fetch(OLLAMA_URL, {
+        method: "POST",
+        headers: JSON_HEADERS,
+        body: JSON.stringify({ model: EMBED_MODEL, prompt }),
+      })
+      if (res.ok) {
+        const data = await res.json()
+        if (data.embedding) return data.embedding
+      }
+    } catch { /* siguiente intento */ }
+  }
+  return null
+}
+```
+
+**Prompt de visión utilizado:**
+```
+Describe este producto en una oración concisa para búsqueda en un catálogo.
+Menciona tipo, categoría y características clave.
+```
+
+**Variables de entorno requeridas (inyectadas por docker-compose):**
+- `SUPABASE_URL` → `http://kong:8000`
+- `SUPABASE_SERVICE_ROLE_KEY` → clave con permisos de admin
+
+**Timeout:** 180s (Gemma 4 puede tomar 10-60s para procesar la imagen)
+
+---
+
+### 4. Base de datos: pgvector
+
+Compartido por ambos modos de búsqueda.
 
 **Migración:** `volumes/db/vector.sql`
 
@@ -110,9 +242,11 @@ CREATE OR REPLACE FUNCTION match_products(
 - Significativamente más rápido que IVFFlat para datasets medianos/grandes
 - Trade-off: mayor uso de memoria, construcción más lenta
 
-### 4. Pre-cómputo de embeddings: `scripts/generate-embeddings.mjs`
+---
 
-**Propósito:** Generar embeddings para todos los productos existentes y almacenarlos en la BD.
+### 5. Pre-cómputo de embeddings: `scripts/generate-embeddings.mjs`
+
+**Propósito:** Generar embeddings para todos los productos existentes y almacenarlos en la BD. Este paso es necesario tanto para búsqueda por texto como por imagen.
 
 **Uso:**
 ```bash
@@ -127,7 +261,7 @@ node scripts/generate-embeddings.mjs
 
 **Parámetros internos:**
 - `BATCH_SIZE = 5` — Procesa 5 productos en paralelo
-- Modelo: `bge-m3` (debe coincidir con el usado en semantic-search)
+- Modelo: `bge-m3` (debe coincidir con el usado en semantic-search y visual-search)
 - Texto de embedding: `titulo + " " + descripcion` (máximo 512 caracteres)
 
 **Flujo:**
@@ -138,22 +272,76 @@ node scripts/generate-embeddings.mjs
 
 **Productos que fallaron (NaN):** Productos con descripciones que generan errores de encoding en bge-m3. No crítico — el producto simplemente no será encontrado por búsqueda semántica (seguirá apareciendo en /products y categorías).
 
-### 5. Ollama local
+---
+
+### 6. Gemma 4 — Modelo de Visión
+
+La búsqueda por imagen utiliza **Gemma 4 E2B CoreML** (`mlboydaisuke/gemma-4-E2B-coreml`) ejecutándose en un servidor independiente en `192.168.0.121:8001`.
+
+#### API
+
+```bash
+curl -X POST http://192.168.0.121:8001/model/chat/completions \
+  -H "Content-Type: application/json" \
+  -d '{
+    "messages": [{
+      "role": "user",
+      "content": "Describe este producto...",
+      "image": "<base64 de la imagen>"
+    }],
+    "max_tokens": 100,
+    "stream": false
+  }'
+```
+
+**Respuesta:**
+```json
+{
+  "id": "chatcmpl-...",
+  "object": "chat.completion",
+  "created": 1781767519,
+  "model": "mlboydaisuke/gemma-4-E2B-coreml",
+  "choices": [{
+    "index": 0,
+    "message": {
+      "role": "assistant",
+      "content": "Descripción textual del producto en la imagen"
+    },
+    "finish_reason": "stop"
+  }]
+}
+```
+
+**Características:**
+- Modelo multimodal que acepta texto e imágenes
+- El campo `image` recibe base64 **sin prefijo** `data:image/...` (solo el raw base64)
+- Responde en el idioma del prompt (español en nuestro caso)
+- Tiempo de respuesta típico: 10-60s dependiendo del tamaño de imagen
+
+**Conexión desde edge functions:**
+- El servidor corre en el host en `192.168.0.121:8001`
+- El contenedor `supabase-edge-functions` se conecta directamente (no via `host.docker.internal`)
+- Puerto 8001 (no confundir con el modelo anterior en puerto 8000 usado por `vision-chat`)
+
+---
+
+### 7. Ollama local
 
 ```bash
 # Estado
 curl http://localhost:11434/api/tags
 
 # Modelos instalados
-# - bge-m3: embeddings multilingüe 1024d
+# - bge-m3: embeddings multilingüe 1024d (usado por semantic-search y visual-search)
 # - nomic-embed-text: (anterior, ya no se usa)
-# - hf.co/unsloth/Qwen2.5-VL-3B-Instruct-GGUF: (reservado para visión)
 
 # Servir en todas las interfaces (requerido para Docker)
 OLLAMA_HOST=0.0.0.0 ollama serve
 ```
 
 Ollama escucha en `*:11434`. El contenedor `supabase-edge-functions` se conecta via `host.docker.internal:11434` (configurado con `extra_hosts` en docker-compose.yml).
+
+---
 
 ## Modelos de embeddings evaluados
 
@@ -162,16 +350,77 @@ Ollama escucha en `*:11434`. El contenedor `supabase-edge-functions` se conecta 
 | `nomic-embed-text` | 768 | Solo inglés | ❌ "algo para beber" → comida de perro |
 | `bge-m3` | 1024 | 100+ idiomas (español incluido) | ✅ "algo para beber" → cerveza, gaseosas, agua |
 
+---
+
 ## Rendimiento
+
+### Búsqueda por texto
 
 | Etapa | Tiempo |
 |---|---|
 | Embedding de query (bge-m3, GPU) | ~150-300ms |
-| Búsqueda pgvector (HNSW, 387 productos) | ~10-30ms |
+| Búsqueda pgvector (HNSW, ~400 productos) | ~10-30ms |
 | Round-trip total (edge function) | ~400-900ms |
 | Pre-cómputo de 387 embeddings | ~41s (~106ms/producto) |
 
+### Búsqueda por imagen
+
+| Etapa | Tiempo |
+|---|---|
+| Gemma 4 (visión, GPU) + descarga de imagen | ~10-60s |
+| Embedding de descripción (bge-m3, GPU) | ~150-300ms |
+| Búsqueda pgvector (HNSW, ~400 productos) | ~10-30ms |
+| Round-trip total (edge function) | ~15-70s |
+
+---
+
 ## Comandos de mantenimiento
+
+### Búsqueda por texto
+
+```bash
+# Verificar quality con embedding más cercano a una query
+curl -X POST http://localhost:3333/functions/v1/semantic-search \
+  -H "Content-Type: application/json" \
+  -d '{"query":"ejemplo de busqueda"}'
+```
+
+### Búsqueda por imagen
+
+```bash
+# Probar visual-search con una imagen local
+python3 << 'PYEOF'
+import base64, json, urllib.request
+
+with open("/ruta/a/imagen.jpg", "rb") as f:
+    b64 = base64.b64encode(f.read()).decode()
+
+ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlzcyI6InN1cGFiYXNlIiwiaWF0IjoxNzgxNzU4MTE4LCJleHAiOjIwOTcxMTgxMTh9._h-ey3emNeKEpHDVUvEKAdnuO385vQV6SBHNAOyEuD0"
+
+req = urllib.request.Request(
+    "http://localhost:3333/functions/v1/visual-search",
+    data=json.dumps({"image": b64}).encode(),
+    headers={
+        "Content-Type": "application/json",
+        "apikey": ANON_KEY,
+        "Authorization": f"Bearer {ANON_KEY}",
+    }
+)
+resp = urllib.request.urlopen(req, timeout=180)
+result = json.loads(resp.read())
+print(f"Descripción: {result.get('description', '')}")
+print(f"Productos: {len(result.get('products', []))}")
+for p in result.get("products", [])[:5]:
+    print(f"  • {p['titulo']} — similitud: {p['similarity']:.3f}")
+PYEOF
+
+# Probar Gemma 4 directamente
+curl -X POST http://192.168.0.121:8001/model/chat/completions \
+  -H "Content-Type: application/json" \
+  -d '{"messages":[{"role":"user","content":"Describe esta imagen","image":"<base64>"}],"max_tokens":100,"stream":false}'
+```
+
+### Generales
 
 ```bash
 # 1. Generar/regenerar embeddings para todos los productos
@@ -186,27 +435,25 @@ docker compose exec db psql -U postgres -d postgres -c "
          COUNT(*) - COUNT(embedding) sin_embedding
   FROM products;"
 
-# 3. Ver quality de productos con embedding más cercano a una query
-curl -X POST http://localhost:3333/functions/v1/semantic-search \
-  -H "Content-Type: application/json" \
-  -d '{"query":"ejemplo de busqueda"}'
-
-# 4. Verificar que bge-m3 responde
+# 3. Verificar que bge-m3 responde
 curl http://localhost:11434/api/embeddings \
   -H "Content-Type: application/json" \
   -d '{"model":"bge-m3","prompt":"test"}'
 
-# 5. Logs de edge function
-docker compose logs functions | grep -E "\[semantic-search\]|Error"
+# 4. Logs de edge functions
+docker compose logs functions | grep -E "\[semantic-search\]|\[visual-search\]|Error"
 
-# 6. Restaurar si algo falla
+# 5. Restaurar edge functions si algo falla
 docker compose up -d --force-recreate --no-deps functions
 ```
+
+---
 
 ## Troubleshooting
 
 ### "Connection refused: host.docker.internal:11434"
-**Causa:** Ollama no está escuchando en todas las interfaces, o el `extra_hosts` no está configurado.
+
+**Causa:** Ollama no está escuchando en todas las interfaces, o el `extra_hosts` no está configurado en docker-compose.yml.
 
 **Solución:**
 ```bash
@@ -222,26 +469,62 @@ docker compose exec functions sh -c "getent hosts host.docker.internal"
 # Debe resolver a 172.x.0.1 (gateway de la red Docker)
 ```
 
-### Embedding falla con error NaN
-**Causa:** Ciertos caracteres especiales o textos vacíos generan errores en el modelo bge-m3.
+### "Connection refused: 192.168.0.121:8001"
 
-**Solución:** Los productos con error simplemente no serán encontrados por búsqueda semántica. Opcionalmente, limpiar el texto antes de enviar a Ollama:
+**Causa:** El servidor de Gemma 4 no está corriendo o no es accesible desde el contenedor de edge functions.
+
+**Solución:**
+```bash
+# Verificar que Gemma 4 está corriendo en el host
+curl -s http://192.168.0.121:8001/health
+# Debe responder: {"status":"ok","backend_ready":true}
+
+# Verificar conectividad desde el contenedor
+docker compose exec functions sh -c "wget -q -O- http://192.168.0.121:8001/health || echo 'No reachable'"
+
+# Si no es reachable, verificar que la IP y puerto son correctos
+# y que no hay firewall bloqueando
+```
+
+### Embedding falla con error NaN
+
+**Causa:** Ciertos caracteres especiales, texto muy largo o patrones específicos generan errores de encoding en el modelo bge-m3.
+
+**Solución (automática en visual-search):** La edge function implementa reintento con truncamiento progresivo (texto completo → 120 → 80 → 40 caracteres). Para semantic-search (texto), el usuario puede reformular la consulta.
+
+**Solución manual si persiste:**
 ```js
-const text = [p.titulo, p.descripcion]
-  .filter(Boolean)
-  .join(' ')
-  .replace(/[<>&]/g, '')  // limpiar HTML entities
-  .slice(0, 512)
+const text = descripcion
+  .replace(/[*_`~#]/g, '')
+  .replace(/<[^>]*>/g, '')
+  .replace(/&[a-z]+;/g, ' ')
+  .replace(/\s+/g, ' ')
+  .trim()
+  .slice(0, 120)
 ```
 
 ### Resultados irrelevantes
-**Causa:** El modelo de embeddings no captura el significado semántico correctamente para el idioma o dominio.
+
+**Causa:** El modelo de embeddings no captura el significado semántico correctamente para el idioma o dominio. En búsqueda por imagen, puede deberse a que Gemma 4 no describió adecuadamente el producto.
 
 **Soluciones:**
-1. Cambiar a otro modelo multilingüe (`intfloat/multilingual-e5-large`, `jina-embeddings-v3`)
-2. Aumentar `match_count` en `match_products()` (actual: 20)
-3. Disminuir umbral de similitud (actual: sin umbral fijo)
-4. Re-entrenar/ajustar embeddings con datos del dominio (avanzado)
+1. Cambiar el prompt de visión para obtener descripciones más precisas
+2. Cambiar a otro modelo de embeddings multilingüe (`intfloat/multilingual-e5-large`, `jina-embeddings-v3`)
+3. Aumentar `match_count` en `match_products()` (actual: 20)
+4. Disminuir umbral de similitud (actual: sin umbral fijo)
+5. Re-entrenar/ajustar embeddings con datos del dominio (avanzado)
+
+### La imagen no se procesa (error del modelo de visión)
+
+**Causa:** Imagen muy grande (>5MB), formato no soportado, o base64 corrupto.
+
+**Solución:**
+- Redimensionar la imagen a máx 1024×1024 píxeles antes de enviar
+- Comprimir JPEG a calidad 80% (balance entre calidad y velocidad)
+- Verificar formato: JPG o PNG
+- El frontend ya limita a archivos de imagen con `accept="image/*"`
+
+---
 
 ## Dependencias
 
@@ -250,19 +533,46 @@ const text = [p.titulo, p.descripcion]
 | **pgvector** | Extensión PostgreSQL incluida en `supabase/postgres:17.6.1.136` |
 | **Ollama** | v0.24.0+ (local, host) |
 | **bge-m3** | Modelo de embeddings Ollama (~567MB) |
+| **Gemma 4 E2B CoreML** | `mlboydaisuke/gemma-4-E2B-coreml` en `192.168.0.121:8001` |
 | **Edge Runtime** | `supabase/edge-runtime:v1.74.0` |
 | **@supabase/supabase-js** | v2.39.0 (importado vía esm.sh en Deno) |
 
+---
+
 ## Archivos involucrados
+
+### Frontend
 
 | Archivo | Propósito |
 |---|---|
-| `volumes/functions/semantic-search/index.ts` | Edge Function que orquesta embedding + búsqueda pgvector |
-| `volumes/db/vector.sql` | Migración: pgvector, columna embedding, índice HNSW, función RPC |
-| `scripts/generate-embeddings.mjs` | Script Node.js para pre-computar embeddings de productos |
-| `src/components/SmartSearch.jsx` | Componente React: input de búsqueda + resultados + add-to-cart |
+| `src/components/SmartSearch.jsx` | Componente React con tabs Texto/Imagen, upload, preview y resultados |
 | `src/utils/llm-logger.js` | Logger para requests LLM (console + sessionStorage) |
 | `src/components/ProductCard.jsx` | Card de producto compartida (usada también por Home y Products) |
-| `vite.config.js` | Proxy `/model/` → MLX (para futuro, actualmente no usado por SmartSearch) |
-| `docker-compose.yml` | `extra_hosts` para functions, `EDGE_RUNTIME_USER_WORKER_WALL_CLOCK_LIMIT_MS` |
-| `volumes/nginx/default.conf` | Proxy `/model/` con log_format `llm` (producción) |
+
+### Edge Functions
+
+| Archivo | Propósito |
+|---|---|
+| `volumes/functions/semantic-search/index.ts` | Edge Function: texto → embedding → búsqueda pgvector |
+| `volumes/functions/visual-search/index.ts` | Edge Function: imagen → Gemma 4 → descripción → embedding → búsqueda pgvector |
+| `volumes/functions/main/index.ts` | Router principal que enruta a las funciones por nombre |
+
+### Base de datos
+
+| Archivo | Propósito |
+|---|---|
+| `volumes/db/vector.sql` | Migración: pgvector, columna embedding, índice HNSW, función RPC `match_products` |
+
+### Scripts
+
+| Archivo | Propósito |
+|---|---|
+| `scripts/generate-embeddings.mjs` | Script Node.js para pre-computar embeddings de productos |
+
+### Infraestructura
+
+| Archivo | Propósito |
+|---|---|
+| `vite.config.js` | Proxy `/functions/` → Kong, `/model/` → MLX (dev) |
+| `docker-compose.yml` | `extra_hosts` para functions, variables de entorno, timeout |
+| `volumes/nginx/default.conf` | Proxy `/functions/` → Kong, `/model/` → MLX con log_format `llm` (producción) |

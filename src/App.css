@@ -863,6 +863,102 @@ h4 { font-weight: 600; }
   color: var(--text-secondary);
 }
 
+/* SmartSearch Tabs */
+.smart-search-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.75rem;
+}
+.smart-search-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1rem;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: background 0.15s, color 0.15s;
+}
+.smart-search-tab:hover { background: var(--bg); color: var(--text); }
+.smart-search-tab.active {
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+/* SmartSearch Image Upload */
+.smart-search-image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.smart-search-image-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  min-height: 200px;
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  padding: 2rem;
+}
+.smart-search-image-upload:hover {
+  border-color: var(--primary);
+  background: var(--primary-lighter);
+}
+.smart-search-image-upload svg { color: var(--text-muted); }
+.smart-search-image-upload:hover svg { color: var(--primary); }
+.smart-search-image-upload p {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+.smart-search-image-hint {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+.smart-search-image-preview {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.smart-search-image-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.smart-search-image-remove {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  font-size: 1.125rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+.smart-search-image-remove:hover { background: rgba(0,0,0,0.85); }
+
 @media (max-width: 768px) {
   .container { padding: 0 1.25rem; }
   .navbar .container { height: 52px; }
@@ -883,4 +979,5 @@ h4 { font-weight: 600; }
   .skeleton-detail { flex-direction: column; }
   .skeleton-detail-img { flex: none; height: 250px; }
   .smart-search-form { flex-direction: column; }
+  .smart-search-image-upload { min-height: 140px; padding: 1.5rem; }
 }
