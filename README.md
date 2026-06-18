@@ -70,16 +70,17 @@ CloudStore/
 └── README.md
 ```
 
-## Endpoints (acceso vía Kong en puerto 3333)
+## Endpoints
 
-| Servicio | Ruta |
+| Servicio | URL |
 |---|---|
+| CloudStore App (Frontend) | `http://localhost:8080` |
 | Studio (Dashboard) | `http://localhost:3333` |
-| REST API | `http://localhost:3333/rest/v1/` |
-| Auth | `http://localhost:3333/auth/v1/` |
-| Storage | `http://localhost:3333/storage/v1/` |
-| Edge Functions | `http://localhost:3333/functions/v1/` |
-| Realtime | `ws://localhost:3333/realtime/v1/` |
+| REST API | `http://localhost:8080/rest/v1/` |
+| Auth | `http://localhost:8080/auth/v1/` |
+| Storage | `http://localhost:8080/storage/v1/` |
+| Edge Functions | `http://localhost:8080/functions/v1/` |
+| Realtime | `ws://localhost:8080/realtime/v1/` |
 | PostgreSQL (directo) | `localhost:5432` |
 
 ## Comandos útiles
