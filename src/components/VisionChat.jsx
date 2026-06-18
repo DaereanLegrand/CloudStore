@@ -68,19 +68,40 @@ export default function VisionChat() {
     }
 
     try {
-      const { data, error: fnError } = await supabase.functions.invoke('vision-chat', {
-        body: { messages: newMessages, image: base64Image },
-      })
+      const openaiMessages = newMessages.map(m => ({ ...m }))
 
-      if (fnError) {
-        let msg = fnError.message
-        try { const c = JSON.parse(fnError.context || '{}'); if (c.error) msg = c.error } catch {}
-        throw new Error(msg)
+      if (base64Image) {
+        for (let i = openaiMessages.length - 1; i >= 0; i--) {
+          if (openaiMessages[i].role === 'user') {
+            openaiMessages[i] = {
+              role: 'user',
+              content: [
+                { type: 'text', text: openaiMessages[i].content },
+                { type: 'image_url', image_url: { url: `data:image/jpeg;base64,${base64Image}` } },
+              ],
+            }
+            break
+          }
+        }
       }
 
-      if (data?.error) throw new Error(data.error)
+      const res = await fetch('/model/chat/completions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          model: 'mlx-community/gemma-4-12B-it-8bit',
+          messages: openaiMessages,
+          stream: false,
+        }),
+      })
 
-      setMessages(prev => [...prev, { role: 'assistant', content: data.response }])
+      if (!res.ok) {
+        const text = await res.text()
+        throw new Error(text.slice(0, 200))
+      }
+
+      const data = await res.json()
+      setMessages(prev => [...prev, { role: 'assistant', content: data.choices[0].message.content }])
     } catch (err) {
       setError(err.message)
     } finally {

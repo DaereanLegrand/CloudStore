@@ -1,5 +1,3 @@
-import * as jose from "https://deno.land/x/jose@v4.14.4/index.ts"
-
 const MODEL_API = "http://192.168.0.121:8000/v1/chat/completions"
 const MODEL_NAME = "mlx-community/gemma-4-12B-it-8bit"
 const JSON_HEADERS = { "Content-Type": "application/json" }
@@ -7,30 +5,11 @@ const FETCH_TIMEOUT = 120000
 
 Deno.serve(async (req) => {
   try {
-    const authHeader = req.headers.get("Authorization")
-    if (!authHeader) {
-      return new Response(JSON.stringify({ error: "No autorizado" }), { status: 401, headers: JSON_HEADERS })
-    }
-
-    const jwt = authHeader.replace("Bearer ", "")
-    const encoder = new TextEncoder()
-    const jwtSecret = Deno.env.get("JWT_SECRET")
-    if (!jwtSecret) {
-      return new Response(JSON.stringify({ error: "JWT_SECRET no configurado" }), { status: 500, headers: JSON_HEADERS })
-    }
-    const secret = encoder.encode(jwtSecret)
-
-    try {
-      await jose.jwtVerify(jwt, secret)
-    } catch {
-      return new Response(JSON.stringify({ error: "JWT inválido" }), { status: 401, headers: JSON_HEADERS })
-    }
-
     let body
     try {
       body = await req.json()
     } catch {
-      return new Response(JSON.stringify({ error: "Error al leer el cuerpo de la solicitud" }), { status: 400, headers: JSON_HEADERS })
+      return new Response(JSON.stringify({ error: "Error al leer el cuerpo" }), { status: 400, headers: JSON_HEADERS })
     }
 
     const { messages, image } = body
@@ -38,7 +17,7 @@ Deno.serve(async (req) => {
       return new Response(JSON.stringify({ error: "Mensaje requerido" }), { status: 400, headers: JSON_HEADERS })
     }
 
-    const openaiMessages = JSON.parse(JSON.stringify(messages))
+    const openaiMessages = messages.map(m => ({ ...m }))
 
     if (image) {
       for (let i = openaiMessages.length - 1; i >= 0; i--) {
@@ -62,11 +41,7 @@ Deno.serve(async (req) => {
       const modelResp = await fetch(MODEL_API, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          model: MODEL_NAME,
-          messages: openaiMessages,
-          stream: false,
-        }),
+        body: JSON.stringify({ model: MODEL_NAME, messages: openaiMessages, stream: false }),
         signal: controller.signal,
       })
 
@@ -76,9 +51,7 @@ Deno.serve(async (req) => {
       }
 
       const data = await modelResp.json()
-      const responseText = data.choices?.[0]?.message?.content || ""
-
-      return new Response(JSON.stringify({ response: responseText }), { headers: JSON_HEADERS })
+      return new Response(JSON.stringify({ response: data.choices?.[0]?.message?.content || "" }), { headers: JSON_HEADERS })
     } finally {
       clearTimeout(timeoutId)
     }
