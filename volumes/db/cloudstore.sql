@@ -142,3 +142,57 @@ ALTER TABLE products ADD COLUMN IF NOT EXISTS precio_promocion NUMERIC(10,2) DEF
 
 INSERT INTO storage.buckets (id, name, public) VALUES ('productos', 'productos', true)
 ON CONFLICT (id) DO NOTHING;
+
+CREATE TABLE recipes (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  slug TEXT UNIQUE NOT NULL,
+  titulo TEXT NOT NULL,
+  descripcion TEXT DEFAULT '',
+  instrucciones JSONB NOT NULL DEFAULT '[]',
+  categoria TEXT DEFAULT '',
+  dificultad TEXT DEFAULT 'facil',
+  tiempo_preparacion INTEGER DEFAULT 0,
+  porciones INTEGER DEFAULT 1,
+  calorias INTEGER DEFAULT 0,
+  imagen_url TEXT DEFAULT '',
+  url_origen TEXT DEFAULT '',
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+ALTER TABLE recipes ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Anyone can read recipes"
+  ON recipes FOR SELECT
+  TO anon, authenticated
+  USING (true);
+
+CREATE POLICY "Only service role can insert recipes"
+  ON recipes FOR INSERT
+  TO authenticated
+  WITH CHECK (auth.role() = 'service_role');
+
+CREATE TABLE recipe_ingredients (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  recipe_id UUID NOT NULL REFERENCES recipes(id) ON DELETE CASCADE,
+  product_id UUID REFERENCES products(id) ON DELETE SET NULL,
+  ingredient_raw TEXT NOT NULL,
+  cantidad_recipe NUMERIC(10,2) DEFAULT 1,
+  unidad_recipe TEXT DEFAULT '',
+  cantidad_producto NUMERIC(10,2) DEFAULT 1,
+  es_opcional BOOLEAN DEFAULT FALSE,
+  mapeado BOOLEAN DEFAULT FALSE,
+  notas TEXT DEFAULT '',
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+ALTER TABLE recipe_ingredients ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Anyone can read recipe ingredients"
+  ON recipe_ingredients FOR SELECT
+  TO anon, authenticated
+  USING (true);
+
+CREATE POLICY "Only service role can insert recipe ingredients"
+  ON recipe_ingredients FOR INSERT
+  TO authenticated
+  WITH CHECK (auth.role() = 'service_role');
