@@ -218,7 +218,7 @@ Deno.serve(async (req) => {
 
     let matchedRecipe: any[] | null = null
     try {
-      const STOP_WORDS = new Set(["quiero","hacer","una","para","el","la","los","las","un","unas","del","con","en","por","y","o","pero","mas","muy","al","lo","tu","su","mis","sus","este","esta","esto","ese","esa","eso","todo","cada","mismo","propio","otros","otra","otro","como","que","de","se","no","a","e","es","ser","tener","haber","estar","poder"])
+      const STOP_WORDS = new Set(["quiero","hacer","una","para","el","la","los","las","un","unas","del","con","en","por","y","o","pero","mas","muy","al","lo","tu","su","mis","sus","este","esta","esto","ese","esa","eso","todo","cada","mismo","propio","otros","otra","otro","como","que","de","se","no","a","e","es","ser","tener","haber","estar","poder","preparar","aprende","aprender","decir","ir","ver","saber","dar","querer","llegar","pasar","deber","creer","llevar","comprar","buscar","necesitar","tengo","tiene","puedo","puede","hago","hace","soy","eres","somos"])
       const words = [...new Set(query.toLowerCase().split(/\s+/).filter((w: string) => w.length > 2 && !STOP_WORDS.has(w)))]
       const seenSlugs = new Set<string>()
 

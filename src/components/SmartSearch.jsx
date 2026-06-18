@@ -53,7 +53,7 @@ export default function SmartSearch({ standalone }) {
     setTimeout(() => setToast(null), 2000)
   }
 
-  const STOP_WORDS = new Set('quiero hacer una para el la los las un unos unas del con en por y o pero más muy al lo tu su mis tus sus este esta estos estas ese esa eso aquel aquella todo toda todos todas cada mismo propia propio otros otras otra otro'.split(' '))
+  const STOP_WORDS = new Set('quiero hacer una para el la los las un unos unas del con en por y o pero mas muy al lo tu su mis tus sus este esta estos estas ese esa eso aquel aquella todo toda todos todas cada misma propia propio otros otras otra otro preparar aprende como que de se no a e es ser tener haber estar poder hacer decir ir ver saber dar querer llegar pasar deber creer llevar comprar buscar necesitar tengo tiene puedo puede hago hace soy eres somos'.split(' '))
 
   function extractKeywords(text) {
     return [...new Set(text.toLowerCase().split(/\s+/).filter(w => w.length > 2 && !STOP_WORDS.has(w)))]
