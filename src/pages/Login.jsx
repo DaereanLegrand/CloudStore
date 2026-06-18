@@ -17,21 +17,23 @@ export default function Login() {
   }
 
   return (
-    <div className="auth-form">
-      <h2>Iniciar Sesión</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label>Correo electrónico</label>
-          <input type="email" value={email} onChange={e => setEmail(e.target.value)} required />
-        </div>
-        <div className="form-group">
-          <label>Contraseña</label>
-          <input type="password" value={password} onChange={e => setPassword(e.target.value)} required />
-        </div>
-        <button type="submit" className="btn">Entrar</button>
-        {error && <p className="error">{error}</p>}
-        <p>¿No tienes cuenta? <Link to="/register">Regístrate</Link></p>
-      </form>
+    <div className="page">
+      <div className="auth-form">
+        <h2>Iniciar Sesión</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label>Correo electrónico</label>
+            <input type="email" value={email} onChange={e => setEmail(e.target.value)} required />
+          </div>
+          <div className="form-group">
+            <label>Contraseña</label>
+            <input type="password" value={password} onChange={e => setPassword(e.target.value)} required />
+          </div>
+          <button type="submit" className="btn btn-block">Entrar</button>
+          {error && <p className="error">{error}</p>}
+          <p>¿No tienes cuenta? <Link to="/register">Regístrate</Link></p>
+        </form>
+      </div>
     </div>
   )
 }

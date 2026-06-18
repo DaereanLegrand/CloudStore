@@ -24,32 +24,35 @@ export default function Register() {
   }
 
   return (
-    <div className="auth-form">
-      <h2>Crear Cuenta</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label>Nombre completo</label>
-          <input name="nombre" value={form.nombre} onChange={handleChange} required />
-        </div>
-        <div className="form-group">
-          <label>Correo electrónico</label>
-          <input name="email" type="email" value={form.email} onChange={handleChange} required />
-        </div>
-        <div className="form-group">
-          <label>Contraseña (mín. 6 caracteres)</label>
-          <input name="password" type="password" value={form.password} onChange={handleChange} required minLength={6} />
-        </div>
-        <div className="form-group">
-          <label>Tipo de cuenta</label>
-          <select name="rol" value={form.rol} onChange={handleChange}>
-            <option value="comprador">Comprador</option>
-            <option value="vendedor">Vendedor</option>
-          </select>
-        </div>
-        <button type="submit" className="btn">Registrarse</button>
-        {error && <p className="error">{error}</p>}
-        <p>¿Ya tienes cuenta? <Link to="/login">Inicia sesión</Link></p>
-      </form>
+    <div className="page">
+      <div className="auth-form">
+        <span className="hero-eyebrow" aria-hidden="true">CloudStore</span>
+        <h2>Crear cuenta</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label>Nombre completo</label>
+            <input name="nombre" value={form.nombre} onChange={handleChange} required />
+          </div>
+          <div className="form-group">
+            <label>Correo electrónico</label>
+            <input name="email" type="email" value={form.email} onChange={handleChange} required />
+          </div>
+          <div className="form-group">
+            <label>Contraseña (mín. 6 caracteres)</label>
+            <input name="password" type="password" value={form.password} onChange={handleChange} required minLength={6} />
+          </div>
+          <div className="form-group">
+            <label>Tipo de cuenta</label>
+            <select name="rol" value={form.rol} onChange={handleChange}>
+              <option value="comprador">Comprador</option>
+              <option value="vendedor">Vendedor</option>
+            </select>
+          </div>
+          <button type="submit" className="btn btn-block">Registrarse</button>
+          {error && <p className="error">{error}</p>}
+          <p>¿Ya tienes cuenta? <Link to="/login">Inicia sesión</Link></p>
+        </form>
+      </div>
     </div>
   )
 }
