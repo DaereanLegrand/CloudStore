@@ -85,7 +85,7 @@ export default function Promotions() {
                     <Link to={`/product/${p.id}`} className="text-white/75 hover:text-white transition-colors duration-300">{p.titulo}</Link>
                   </h3>
                   <p className="text-sm font-medium text-white/85">
-                    <span className="text-[0.6rem] text-white/30 line-through mr-1">S/{p.precio}</span> S/{p.precio_promocion}
+                    <span className="text-[0.6rem] text-white/30 line-through mr-1">S/.{p.precio}</span> S/.{p.precio_promocion}
                   </p>
                   <button className="btn-primary w-full text-[0.55rem] py-1.5" onClick={() => addToCart(p.id, p.titulo)} disabled={p.stock < 1}>
                     {p.stock < 1 ? 'Agotado' : 'Agregar'}

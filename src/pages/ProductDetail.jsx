@@ -67,9 +67,9 @@ export default function ProductDetail() {
             <h1 className="text-2xl font-medium text-white/85 leading-tight">{product.titulo}</h1>
             <p className="text-3xl font-light text-white/90">
               {product.precio_promocion != null ? (
-                <><span className="text-lg text-white/30 line-through mr-2">S/{product.precio}</span> S/{product.precio_promocion}</>
+                <><span className="text-lg text-white/30 line-through mr-2">S/.{product.precio}</span> S/.{product.precio_promocion}</>
               ) : (
-                <>S/{product.precio}</>
+                <>S/.{product.precio}</>
               )}
             </p>
             <p className="text-sm text-white/40">{product.stock > 0 ? `${product.stock} en stock` : 'Agotado'}</p>

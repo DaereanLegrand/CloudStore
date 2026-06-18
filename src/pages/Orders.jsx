@@ -51,13 +51,13 @@ export default function Orders() {
             {order.order_items.map(item => (
               <div key={item.id} className="flex justify-between text-xs text-white/40">
                 <span>{item.titulo} × {item.cantidad}</span>
-                <span>S/{(item.precio * item.cantidad).toFixed(2)}</span>
+                <span>S/.{(item.precio * item.cantidad).toFixed(2)}</span>
               </div>
             ))}
           </div>
           <div className="flex justify-between pt-3 border-t border-white/[0.04] text-sm">
             <span className="text-white/35">Total</span>
-            <span className="font-medium text-white/75">S/{order.total}</span>
+            <span className="font-medium text-white/75">S/.{order.total}</span>
           </div>
         </motion.div>
       ))}
