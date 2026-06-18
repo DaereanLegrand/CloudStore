@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { supabase } from '../supabase'
+import { CATEGORIES } from '../categories'
 
 export default function NewProduct() {
   const [form, setForm] = useState({ titulo: '', descripcion: '', precio: '', stock: '', categoria: 'electronica' })
@@ -72,12 +73,7 @@ export default function NewProduct() {
           <div className="form-group">
             <label htmlFor="categoria">Categoría</label>
             <select id="categoria" name="categoria" value={form.categoria} onChange={handleChange}>
-              <option value="electronica">Electrónica</option>
-              <option value="ropa">Ropa</option>
-              <option value="hogar">Hogar</option>
-              <option value="deportes">Deportes</option>
-              <option value="libros">Libros</option>
-              <option value="otros">Otros</option>
+              {CATEGORIES.map(c => <option key={c.value} value={c.value}>{c.label}</option>)}
             </select>
           </div>
           <div className="form-group">

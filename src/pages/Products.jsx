@@ -2,24 +2,45 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { supabase } from '../supabase'
 import { useCart } from '../CartContext'
+import { CATEGORIES_DICT } from '../categories'
+
+const PAGE_SIZE = 25
 
 export default function Products() {
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
   const [categoria, setCategoria] = useState('')
   const [search, setSearch] = useState('')
+  const [page, setPage] = useState(1)
+  const [totalPages, setTotalPages] = useState(1)
+  const [categories, setCategories] = useState([])
   const [toast, setToast] = useState(null)
   const { fetchCartCount } = useCart()
 
-  useEffect(() => { loadProducts() }, [categoria, search])
+  useEffect(() => { loadProducts() }, [categoria, search, page])
+
+  useEffect(() => { setPage(1) }, [categoria, search])
+
+  useEffect(() => {
+    supabase.from('products').select('categoria').then(({ data }) => {
+      if (data) {
+        const seen = new Set()
+        data.forEach(d => { if (d.categoria) seen.add(d.categoria) })
+        setCategories([...seen].sort())
+      }
+    })
+  }, [])
 
   async function loadProducts() {
     setLoading(true)
-    let query = supabase.from('products').select('*').order('created_at', { ascending: false })
+    const from = (page - 1) * PAGE_SIZE
+    const to = from + PAGE_SIZE - 1
+    let query = supabase.from('products').select('*', { count: 'exact' }).order('created_at', { ascending: false })
     if (categoria) query = query.eq('categoria', categoria)
     if (search) query = query.ilike('titulo', `%${search}%`)
-    const { data } = await query
+    const { data, count } = await query.range(from, to)
     setProducts(data || [])
+    setTotalPages(Math.max(1, Math.ceil((count || 0) / PAGE_SIZE)))
     setLoading(false)
   }
 
@@ -37,6 +58,34 @@ export default function Products() {
     setTimeout(() => setToast(null), 2000)
   }
 
+  function Pagination() {
+    if (totalPages <= 1) return null
+    const pages = []
+    const start = Math.max(1, page - 2)
+    const end = Math.min(totalPages, page + 2)
+    for (let i = start; i <= end; i++) pages.push(i)
+
+    return (
+      <div className="pagination">
+        <button className="btn btn-sm" disabled={page <= 1} onClick={() => setPage(p => p - 1)}>
+          ⬅ Anterior
+        </button>
+        <div className="pagination-pages">
+          {start > 1 && <span className="pagination-ellipsis">...</span>}
+          {pages.map(p => (
+            <button key={p} className={`btn btn-sm ${p === page ? 'btn-active' : ''}`} onClick={() => setPage(p)}>
+              {p}
+            </button>
+          ))}
+          {end < totalPages && <span className="pagination-ellipsis">...</span>}
+        </div>
+        <button className="btn btn-sm" disabled={page >= totalPages} onClick={() => setPage(p => p + 1)}>
+          Siguiente ➡
+        </button>
+      </div>
+    )
+  }
+
   return (
     <div className="page">
       {toast && <div className="toast">✓ {toast} agregado al carrito</div>}
@@ -45,12 +94,7 @@ export default function Products() {
         <input placeholder="Buscar productos..." value={search} onChange={e => setSearch(e.target.value)} />
         <select value={categoria} onChange={e => setCategoria(e.target.value)}>
           <option value="">Todas las categorías</option>
-          <option value="electronica">Electrónica</option>
-          <option value="ropa">Ropa</option>
-          <option value="hogar">Hogar</option>
-          <option value="deportes">Deportes</option>
-          <option value="libros">Libros</option>
-          <option value="otros">Otros</option>
+          {categories.map(c => <option key={c} value={c}>{CATEGORIES_DICT[c] || c}</option>)}
         </select>
       </div>
       {loading ? (
@@ -63,26 +107,30 @@ export default function Products() {
           <p>No hay productos disponibles.</p>
         </div>
       ) : (
-        <div className="products-grid">
-          {products.map(p => (
-            <div key={p.id} className="product-card">
-              <Link to={`/product/${p.id}`}>
-                <div className="product-card-img">
-                  <img src={p.imagen_url} alt={p.titulo} loading="lazy" />
+        <>
+          <Pagination />
+          <div className="products-grid">
+            {products.map(p => (
+              <div key={p.id} className="product-card">
+                <Link to={`/product/${p.id}`}>
+                  <div className="product-card-img">
+                    <img src={p.imagen_url} alt={p.titulo} loading="lazy" />
+                  </div>
+                </Link>
+                <div className="product-info">
+                  <span className="category-badge">{p.categoria}</span>
+                  <h3><Link to={`/product/${p.id}`}>{p.titulo}</Link></h3>
+                  <p className="price">${p.precio}</p>
+                  <p className="stock">{p.stock > 0 ? `${p.stock} en stock` : 'Agotado'}</p>
+                  <button className="btn" onClick={() => addToCart(p.id, p.titulo)} disabled={p.stock < 1}>
+                    {p.stock < 1 ? 'Agotado' : 'Agregar al carrito'}
+                  </button>
                 </div>
-              </Link>
-              <div className="product-info">
-                <span className="category-badge">{p.categoria}</span>
-                <h3><Link to={`/product/${p.id}`}>{p.titulo}</Link></h3>
-                <p className="price">${p.precio}</p>
-                <p className="stock">{p.stock > 0 ? `${p.stock} en stock` : 'Agotado'}</p>
-                <button className="btn" onClick={() => addToCart(p.id, p.titulo)} disabled={p.stock < 1}>
-                  {p.stock < 1 ? 'Agotado' : 'Agregar al carrito'}
-                </button>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+          <Pagination />
+        </>
       )}
     </div>
   )
