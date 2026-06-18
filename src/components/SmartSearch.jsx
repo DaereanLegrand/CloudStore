@@ -4,9 +4,6 @@ import { useCart } from '../CartContext'
 import ProductCard from './ProductCard'
 import { logLLM } from '../utils/llm-logger'
 
-const SYSTEM_PROMPT =
-  'Eres un asistente de búsqueda de productos en español. Del mensaje del usuario, extrae términos de búsqueda y una categoría. Categorías: abarrotes, bebes, bebidas, carnes, congelados, cuidado-personal, deportes, electronica, fiambres, frutas-verduras, hogar, lacteos, libros, licores, mascotas, otros, panaderia, ropa, snacks. Responde ÚNICAMENTE con JSON, sin explicaciones: {"search": "palabras clave separadas por espacio", "category": "categoria o vacío"}'
-
 export default function SmartSearch() {
   const [query, setQuery] = useState('')
   const [products, setProducts] = useState(null)
@@ -41,57 +38,27 @@ export default function SmartSearch() {
     const startTime = performance.now()
 
     try {
-      const res = await fetch('/model/chat/completions', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          model: 'mlx-community/gemma-4-12B-it-8bit',
-          messages: [
-            { role: 'system', content: SYSTEM_PROMPT },
-            { role: 'user', content: text },
-          ],
-          stream: false,
-        }),
+      const { data, error: fnError } = await supabase.functions.invoke('semantic-search', {
+        body: { query: text },
       })
 
-      const modelTiming = (performance.now() - startTime) / 1000
+      const timing = (performance.now() - startTime) / 1000
 
-      if (!res.ok) {
-        const errText = await res.text().catch(() => '')
-        logLLM({ query: text, error: `HTTP ${res.status}: ${errText}`, timing: modelTiming })
-        throw new Error(`Error del modelo (${res.status})`)
+      if (fnError) {
+        let msg = fnError.message
+        try { const c = JSON.parse(fnError.context || '{}'); if (c.error) msg = c.error } catch {}
+        logLLM({ query: text, error: msg, timing })
+        throw new Error(msg)
       }
 
-      const data = await res.json()
-      const content = data.choices?.[0]?.message?.content || ''
-
-      logLLM({ query: text, response: content, timing: modelTiming })
-
-      let searchTerm = ''
-      let category = ''
-      try {
-        const cleaned = content.replace(/^```(?:json)?\s*/, '').replace(/\s*```$/, '').trim()
-        const parsed = JSON.parse(cleaned)
-        searchTerm = parsed.search || ''
-        category = parsed.category || ''
-      } catch {
-        searchTerm = text
+      if (data?.error) {
+        logLLM({ query: text, error: data.error, timing })
+        throw new Error(data.error)
       }
 
-      let query = supabase.from('products').select('*').limit(20)
-      if (searchTerm) {
-        const terms = searchTerm.split(/\s+/).filter(Boolean)
-        if (terms.length === 1) {
-          query = query.or(`titulo.ilike.%${terms[0]}%,descripcion.ilike.%${terms[0]}%`)
-        } else {
-          const ors = terms.map(t => `titulo.ilike.%${t}%,descripcion.ilike.%${t}%`).join(',')
-          query = query.or(ors)
-        }
-      }
-      if (category) query = query.eq('categoria', category)
-
-      const { data: results } = await query.order('created_at', { ascending: false })
-      setProducts(results || [])
+      const results = data?.products || []
+      logLLM({ query: text, response: `${results.length} productos encontrados`, timing })
+      setProducts(results)
     } catch (err) {
       setError(err.message)
     } finally {
