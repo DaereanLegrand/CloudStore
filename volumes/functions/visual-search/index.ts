@@ -110,7 +110,28 @@ Deno.serve(async (req) => {
       results = [...catBoosted, ...catRest]
     }
 
-    return new Response(JSON.stringify({ products: results, description, productName, detectedCategory }), { headers: JSON_HEADERS })
+    let matchedRecipe: any[] | null = null
+    try {
+      const STOP_WORDS = new Set(["quiero","hacer","una","para","el","la","los","las","un","unas","del","con","en","por","y","o","pero","mas","muy","al","lo","tu","su","mis","sus","este","esta","esto","ese","esa","eso","todo","cada","mismo","propio","otros","otra","otro","como","que","de","se","no","a","e","es","ser","tener","haber","estar","poder"])
+      const words = [...new Set(productName.toLowerCase().split(/\s+/).filter((w: string) => w.length > 2 && !STOP_WORDS.has(w)))]
+      for (const kw of words) {
+        if (matchedRecipe && matchedRecipe.length >= 3) break
+        const { data } = await supabase
+          .from("recipes")
+          .select("slug, titulo, descripcion, dificultad, tiempo_preparacion, porciones, calorias, imagen_url, categoria")
+          .or(`titulo.ilike.%${kw}%,descripcion.ilike.%${kw}%,categoria.ilike.%${kw}%`)
+          .limit(3)
+        if (data && data.length > 0) {
+          const seen = new Set((matchedRecipe || []).map((r: any) => r.slug))
+          const fresh = data.filter((r: any) => !seen.has(r.slug))
+          if (fresh.length > 0) {
+            matchedRecipe = [...(matchedRecipe || []), ...fresh].slice(0, 3)
+          }
+        }
+      }
+    } catch {}
+
+    return new Response(JSON.stringify({ products: results, recipes: matchedRecipe, description, productName, detectedCategory }), { headers: JSON_HEADERS })
   } catch (err) {
     return new Response(JSON.stringify({ error: err.message }), { status: 500, headers: JSON_HEADERS })
   }

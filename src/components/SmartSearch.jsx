@@ -53,6 +53,55 @@ export default function SmartSearch({ standalone }) {
     setTimeout(() => setToast(null), 2000)
   }
 
+  const STOP_WORDS = new Set('quiero hacer una para el la los las un unos unas del con en por y o pero más muy al lo tu su mis tus sus este esta estos estas ese esa eso aquel aquella todo toda todos todas cada mismo propia propio otros otras otra otro'.split(' '))
+
+  function extractKeywords(text) {
+    return [...new Set(text.toLowerCase().split(/\s+/).filter(w => w.length > 2 && !STOP_WORDS.has(w)))]
+  }
+
+  async function searchRecipes(text) {
+    const keywords = extractKeywords(text)
+    if (keywords.length === 0) return []
+
+    const seen = new Set()
+    const results = []
+    const textLower = text.toLowerCase()
+
+    const { data: exact } = await supabase
+      .from('recipes')
+      .select('slug, titulo, descripcion, dificultad, tiempo_preparacion, porciones, calorias, imagen_url, categoria')
+      .or(`titulo.ilike.%${text}%,descripcion.ilike.%${text}%`)
+      .limit(4)
+    if (exact) {
+      exact.sort((a, b) => {
+        const aT = a.titulo.toLowerCase(), bT = b.titulo.toLowerCase()
+        const aExact = aT === textLower ? 0 : aT.startsWith(textLower) ? 1 : 2
+        const bExact = bT === textLower ? 0 : bT.startsWith(textLower) ? 1 : 2
+        return aExact - bExact
+      })
+      exact.forEach(r => { if (!seen.has(r.slug)) { seen.add(r.slug); results.push(r) } })
+    }
+    if (results.length >= 4) return results
+
+    for (const kw of keywords) {
+      const { data } = await supabase
+        .from('recipes')
+        .select('slug, titulo, descripcion, dificultad, tiempo_preparacion, porciones, calorias, imagen_url, categoria')
+        .or(`titulo.ilike.%${kw}%,descripcion.ilike.%${kw}%,categoria.ilike.%${kw}%`)
+        .limit(10)
+      if (data) {
+        data.sort((a, b) => {
+          const aT = a.titulo.toLowerCase(), bT = b.titulo.toLowerCase()
+          const aKw = aT.includes(kw) ? 0 : 1
+          const bKw = bT.includes(kw) ? 0 : 1
+          return aKw - bKw
+        })
+        data.forEach(r => { if (!seen.has(r.slug)) { seen.add(r.slug); results.push(r) } })
+      }
+    }
+    return results.slice(0, 4)
+  }
+
   async function handleSearch(e) {
     e?.preventDefault()
     const text = query.trim()
@@ -65,6 +114,7 @@ export default function SmartSearch({ standalone }) {
     setRecipeResults(null)
     const startTime = performance.now()
 
+    let recipes = []
     try {
       const { data, error: fnError } = await supabase.functions.invoke('semantic-search', { body: { query: text } })
       const timing = (performance.now() - startTime) / 1000
@@ -82,12 +132,21 @@ export default function SmartSearch({ standalone }) {
 
       logLLM({ query: text, response: `${(data?.products || []).length} productos`, timing })
       setProducts(data?.products || [])
-      setRecipeResults(data?.recipes || null)
+
+      recipes = data?.recipes || []
+      if (recipes.length === 0) {
+        recipes = await searchRecipes(text)
+      }
     } catch (err) {
-      setError(err.message)
-    } finally {
-      setLoading(false)
+      recipes = await searchRecipes(text)
+      if (!recipes.length) {
+        setError(err.message)
+        setLoading(false)
+        return
+      }
     }
+    setRecipeResults(recipes)
+    setLoading(false)
   }
 
   function handleImageSelect(e) {
@@ -236,25 +295,31 @@ export default function SmartSearch({ standalone }) {
               exit={{ opacity: 0 }}
               className="space-y-8"
             >
-              {recipeResults !== null && recipeResults.length > 0 && (
+              {recipeResults !== null && (
                 <div>
-                  <p className="text-xs font-semibold text-white/25 uppercase tracking-wider mb-3">Receta sugerida</p>
-                  <div className="space-y-2">
-                    {recipeResults.map(r => (
-                      <a key={r.slug} href={`/recipe/${r.slug}`} className="rounded-2xl bg-white/[0.03] flex items-center justify-between gap-4 p-4 no-underline group">
-                        <div className="flex-1 min-w-0">
-                          <h4 className="text-sm font-medium text-white/75 group-hover:text-white transition-colors">{r.titulo}</h4>
-                          {r.descripcion && <p className="text-xs text-white/30 truncate mt-0.5">{r.descripcion.substring(0, 120)}</p>}
-                          <div className="flex gap-3 mt-1.5 text-[0.55rem] text-white/25">
-                            {r.tiempo_preparacion > 0 && <span>{r.tiempo_preparacion} min</span>}
-                            {r.porciones > 0 && <span>{r.porciones} porciones</span>}
-                            {r.dificultad && <span className="text-emerald/50">{r.dificultad}</span>}
+                  <p className="text-xs font-semibold text-white/25 uppercase tracking-wider mb-3">
+                    {recipeResults.length > 0 ? `Recetas (${recipeResults.length})` : 'Recetas'}
+                  </p>
+                  {recipeResults.length === 0 ? (
+                    <p className="text-sm text-white/15 text-center py-6">No encontramos recetas relacionadas.</p>
+                  ) : (
+                    <div className="space-y-2">
+                      {recipeResults.map(r => (
+                        <a key={r.slug} href={`/recipe/${r.slug}`} className="rounded-2xl bg-white/[0.03] flex items-center justify-between gap-4 p-4 no-underline group">
+                          <div className="flex-1 min-w-0">
+                            <h4 className="text-sm font-medium text-white/75 group-hover:text-white transition-colors">{r.titulo}</h4>
+                            {r.descripcion && <p className="text-xs text-white/30 truncate mt-0.5">{r.descripcion.substring(0, 120)}</p>}
+                            <div className="flex gap-3 mt-1.5 text-[0.55rem] text-white/25">
+                              {r.tiempo_preparacion > 0 && <span>{r.tiempo_preparacion} min</span>}
+                              {r.porciones > 0 && <span>{r.porciones} porciones</span>}
+                              {r.dificultad && <span className="text-emerald/50">{r.dificultad}</span>}
+                            </div>
                           </div>
-                        </div>
-                        <span className="btn-primary text-[0.55rem] px-3 py-1.5">Ver receta</span>
-                      </a>
-                    ))}
-                  </div>
+                          <span className="btn-primary text-[0.55rem] px-3 py-1.5">Ver receta</span>
+                        </a>
+                      ))}
+                    </div>
+                  )}
                 </div>
               )}
 

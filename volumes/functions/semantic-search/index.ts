@@ -216,16 +216,54 @@ Deno.serve(async (req) => {
       return new Response(JSON.stringify({ error: dbError.message }), { status: 500, headers: JSON_HEADERS })
     }
 
-    let matchedRecipe = null
+    let matchedRecipe: any[] | null = null
     try {
-      const { data: recipeResults } = await supabase
+      const STOP_WORDS = new Set(["quiero","hacer","una","para","el","la","los","las","un","unas","del","con","en","por","y","o","pero","mas","muy","al","lo","tu","su","mis","sus","este","esta","esto","ese","esa","eso","todo","cada","mismo","propio","otros","otra","otro","como","que","de","se","no","a","e","es","ser","tener","haber","estar","poder"])
+      const words = [...new Set(query.toLowerCase().split(/\s+/).filter((w: string) => w.length > 2 && !STOP_WORDS.has(w)))]
+      const seenSlugs = new Set<string>()
+
+      const addResults = (rows: any[], max: number) => {
+        for (const r of rows) {
+          if (!seenSlugs.has(r.slug) && matchedRecipe && matchedRecipe.length < max) {
+            seenSlugs.add(r.slug)
+            matchedRecipe.push(r)
+          }
+        }
+      }
+
+      matchedRecipe = []
+
+      const { data: phraseResults } = await supabase
         .from("recipes")
         .select("slug, titulo, descripcion, dificultad, tiempo_preparacion, porciones, calorias, imagen_url, categoria")
-        .ilike("titulo", `%${query}%`)
+        .or(`titulo.ilike.%${query}%,descripcion.ilike.%${query}%`)
         .limit(3)
-      if (recipeResults && recipeResults.length > 0) {
-        matchedRecipe = recipeResults
+      if (phraseResults) {
+        phraseResults.sort((a: any, b: any) => {
+          const aT = a.titulo.toLowerCase(), bT = b.titulo.toLowerCase()
+          const aExact = aT === query.toLowerCase() ? 0 : aT.startsWith(query.toLowerCase()) ? 1 : 2
+          const bExact = bT === query.toLowerCase() ? 0 : bT.startsWith(query.toLowerCase()) ? 1 : 2
+          return aExact - bExact
+        })
+        addResults(phraseResults, 3)
       }
+
+      for (const kw of words) {
+        if (matchedRecipe.length >= 3) break
+        const { data } = await supabase
+          .from("recipes")
+          .select("slug, titulo, descripcion, dificultad, tiempo_preparacion, porciones, calorias, imagen_url, categoria")
+          .or(`titulo.ilike.%${kw}%,descripcion.ilike.%${kw}%,categoria.ilike.%${kw}%`)
+          .limit(10)
+        if (data && data.length > 0) {
+          data.sort((a: any, b: any) => {
+            const aT = a.titulo.toLowerCase(), bT = b.titulo.toLowerCase()
+            return (aT.includes(kw) ? 0 : 1) - (bT.includes(kw) ? 0 : 1)
+          })
+          addResults(data, 3)
+        }
+      }
+      if (matchedRecipe.length === 0) matchedRecipe = null
     } catch {
       // Silently ignore recipe search errors
     }

@@ -52,22 +52,57 @@ function getSearchWords(cleaned) {
   return cleaned.toLowerCase().split(/\s+/).filter(w => w.length > 2 && !UNIT_WORDS.has(w))
 }
 
+function normalizeWord(w) {
+  let s = w.toLowerCase()
+  if (s.endsWith("s") && s.length > 3) s = s.slice(0, -1)
+  if (s.endsWith("es") && s.length > 4) s = s.slice(0, -2)
+  return s
+}
+
+const NON_FOOD = new Set([
+  "cuidado-personal", "hogar", "mascotas", "bebes", "deportes",
+  "electronica", "ropa", "libros", "licores", "otros"
+])
+
+// Color/taste words that shouldn't be the sole match
+const WEAK_WORDS = new Set(["verde", "verdes", "rojo", "roja", "rojas", "rojos", "dulce", "dulces", "fresco", "fresca", "frescos", "frescas", "natural", "naturales", "original"])
+
 function scoreProduct(preferredWords, productTitle, productCategory) {
   const lower = productTitle.toLowerCase()
   let score = 0
+  let matchCount = 0
+  let strongMatch = false
+  let hasStrongNonWeak = false
+
   for (const w of preferredWords) {
-    if (lower.startsWith(w)) score += 2
-    else if (lower.includes(" " + w)) score += 1.5
-    else if (lower.includes(w)) score += 0.5
-  }
-  // Category bonus: if the ingredient has a preferred category and product matches it, +1
-  for (const w of preferredWords) {
-    const prefCat = PREFERRED_CATEGORIES[w]
-    if (prefCat && productCategory === prefCat) {
-      score += 1
-      break
+    const nw = normalizeWord(w)
+    const inTitle = lower.includes(" " + nw) || lower.startsWith(nw)
+    if (!inTitle && lower.includes(nw)) {
+      // substring match only - check if it's within another word
+      const idx = lower.indexOf(nw)
+      const before = idx > 0 ? lower[idx - 1] : " "
+      const after = idx + nw.length < lower.length ? lower[idx + nw.length] : " "
+      if (before !== " " || (after !== " " && after !== "s")) continue
     }
+
+    if (lower.startsWith(nw)) { score += 2; matchCount++; strongMatch = true; if (!WEAK_WORDS.has(w)) hasStrongNonWeak = true }
+    else if (lower.includes(" " + nw)) { score += 1.5; matchCount++; strongMatch = true; if (!WEAK_WORDS.has(w)) hasStrongNonWeak = true }
+    else if (lower.includes(nw)) { score += 0.5; matchCount++ }
   }
+
+  const ratio = matchCount / preferredWords.length
+  if (ratio < 0.5) return -1
+  // For multi-word ingredients, need a non-weak strong match
+  if (preferredWords.length > 1 && !hasStrongNonWeak) return -1
+
+  for (const w of preferredWords) {
+    const prefCat = PREFERRED_CATEGORIES[normalizeWord(w)]
+    if (prefCat && productCategory === prefCat) { score += 1; break }
+  }
+
+  const isFood = preferredWords.some(w => PREFERRED_CATEGORIES[normalizeWord(w)])
+  if (isFood && NON_FOOD.has(productCategory)) score -= 3
+
   return score
 }
 
