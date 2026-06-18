@@ -73,7 +73,7 @@ export default function Cart() {
       <h2>Tu Carrito</h2>
       {items.length === 0 && !success && (
         <div className="empty-state">
-          <span className="empty-icon">🛒</span>
+          <span className="empty-icon"><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M6.6 8h10.8l.8 10.4a2 2 0 0 1-2 2.1H7.8a2 2 0 0 1-2-2.1L6.6 8Z" fill="currentColor" fillOpacity="0.12" /><path d="M6.6 8h10.8l.8 10.4a2 2 0 0 1-2 2.1H7.8a2 2 0 0 1-2-2.1L6.6 8Z" /><path d="M9 8a3 3 0 0 1 6 0" /></svg></span>
           <p>Tu carrito está vacío.</p>
         </div>
       )}

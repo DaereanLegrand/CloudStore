@@ -28,7 +28,7 @@ export default function Orders() {
     <div className="page">
       <h2>Mis Órdenes</h2>
       <div className="empty-state">
-        <span className="empty-icon">📋</span>
+        <span className="empty-icon"><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M6 3h12v17l-2-1.3-2 1.3-2-1.3-2 1.3-2-1.3L6 20V3Z" fill="currentColor" fillOpacity="0.12" /><path d="M6 3h12v17l-2-1.3-2 1.3-2-1.3-2 1.3-2-1.3L6 20V3Z" /><path d="m9.4 11 1.9 1.9L15 9.2" /></svg></span>
         <p>No tienes órdenes aún.</p>
       </div>
     </div>

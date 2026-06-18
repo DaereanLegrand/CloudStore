@@ -35,7 +35,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="container">
-        <Link to="/" className="logo">CloudStore</Link>
+        <Link to="/" className="logo"><svg className="logo-mark" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" fill="currentColor" /><g fill="#fff"><circle cx="9.9" cy="14.3" r="1.5" /><circle cx="12" cy="12.9" r="2" /><circle cx="14.1" cy="14.4" r="1.4" /><rect x="9.8" y="13.5" width="4.4" height="1.9" rx="0.95" /></g></svg>CloudStore</Link>
         <div className="nav-links">
           <Link to="/products">Productos</Link>
           <Link to="/cart" className="cart-link">
@@ -43,7 +43,7 @@ export default function Navbar() {
             {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
           </Link>
           <Link to="/orders">Mis Órdenes</Link>
-          {user && <Link to="/promotions">🔥 Promociones</Link>}
+          {user && <Link to="/promotions">Promociones</Link>}
           {user ? (
             <span className="nav-user">
               <span className="nav-user-name">{profile?.nombre}</span>
