@@ -36,7 +36,19 @@ export default function Cart() {
     setError(''); setSuccess('')
     const payload = items.map(i => ({ product_id: i.product_id, cantidad: i.cantidad }))
     const { data, error } = await supabase.functions.invoke('checkout', { body: { items: payload } })
-    if (error) { setError(data?.error || error.message); return }
+    if (error) {
+      let errorMsg = error.message
+      try {
+        const context = JSON.parse(error.context || '{}')
+        if (context.error) errorMsg = context.error
+      } catch {
+        try {
+          if (typeof error.context === 'string') errorMsg = error.context
+        } catch {}
+      }
+      setError(errorMsg)
+      return
+    }
     setSuccess(`¡Orden #${data.order_id.slice(0, 8)} creada! Total pagado: $${data.total}`)
     setItems([])
     fetchCartCount()
