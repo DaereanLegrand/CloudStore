@@ -46,7 +46,7 @@ export default function Navbar() {
           {user ? (
             <span className="nav-user">
               <span className="nav-user-name">{profile?.nombre}</span>
-              {profile?.rol === 'vendedor' && <Link to="/new-product">Vender</Link>}
+              {profile?.rol === 'vendedor' && <Link to="/new-product" className="btn btn-sm">Vender</Link>}
               <button className="btn-logout" onClick={handleLogout}>Cerrar Sesión</button>
             </span>
           ) : (

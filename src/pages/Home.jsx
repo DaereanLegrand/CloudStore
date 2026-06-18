@@ -35,8 +35,8 @@ export default function Home() {
     <div className="page">
       {toast && <div className="toast">✓ {toast} agregado al carrito</div>}
       <div className="hero">
-        <h1>Bienvenido a CloudStore</h1>
-        <p>El marketplace más simple de la nube.</p>
+        <h1>CloudStore</h1>
+        <p>El marketplace más simple de la nube. Descubre productos únicos de vendedores verificados.</p>
       </div>
       {loading ? (
         <div className="skeleton-grid">
