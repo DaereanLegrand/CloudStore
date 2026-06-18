@@ -1,0 +1,180 @@
+
+> cloudstore@1.0.0 dev
+> vite --port 8080
+
+
+  VITE v5.4.21  ready in 129 ms
+
+  ➜  Local:   http://localhost:8080/
+  ➜  Network: http://192.168.0.100:8080/
+  ➜  Network: http://172.17.0.1:8080/
+  ➜  Network: http://172.18.0.1:8080/
+  ➜  Network: http://10.129.83.32:8080/
+  ➜  Network: http://172.19.0.1:8080/
+1:19:30 AM [vite] hmr update /src/pages/Products.jsx
+1:19:36 AM [vite] hmr update /src/pages/Products.jsx
+1:19:53 AM [vite] hmr update /src/pages/Home.jsx
+1:19:53 AM [vite] Internal server error: Failed to resolve import "../components/SmartSearch" from "src/pages/Home.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/daerean/Documents/uni/cloud/final/CloudStore/src/pages/Home.jsx:5:24
+  20 |  import { supabase } from "../supabase";
+  21 |  import { useCart } from "../CartContext";
+  22 |  import SmartSearch from "../components/SmartSearch";
+     |                           ^
+  23 |  import ProductCard from "../components/ProductCard";
+  24 |  export default function Home() {
+      at TransformPluginContext._formatError (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 7)
+      at async TransformPluginContext.transform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+1:19:53 AM [vite] Internal server error: Failed to resolve import "../components/SmartSearch" from "src/pages/Home.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/daerean/Documents/uni/cloud/final/CloudStore/src/pages/Home.jsx:5:24
+  20 |  import { supabase } from "../supabase";
+  21 |  import { useCart } from "../CartContext";
+  22 |  import SmartSearch from "../components/SmartSearch";
+     |                           ^
+  23 |  import ProductCard from "../components/ProductCard";
+  24 |  export default function Home() {
+      at TransformPluginContext._formatError (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 7)
+      at async TransformPluginContext.transform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+1:19:58 AM [vite] hmr update /src/App.jsx
+1:19:59 AM [vite] Pre-transform error: Failed to resolve import "../components/SmartSearch" from "src/pages/Home.jsx". Does the file exist?
+1:19:59 AM [vite] Internal server error: Failed to resolve import "../components/SmartSearch" from "src/pages/Home.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/daerean/Documents/uni/cloud/final/CloudStore/src/pages/Home.jsx:5:24
+  20 |  import { supabase } from "../supabase";
+  21 |  import { useCart } from "../CartContext";
+  22 |  import SmartSearch from "../components/SmartSearch";
+     |                           ^
+  23 |  import ProductCard from "../components/ProductCard";
+  24 |  export default function Home() {
+      at TransformPluginContext._formatError (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 7)
+      at async TransformPluginContext.transform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+1:19:59 AM [vite] Internal server error: Failed to resolve import "../components/SmartSearch" from "src/pages/Home.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/daerean/Documents/uni/cloud/final/CloudStore/src/pages/Home.jsx:5:24
+  20 |  import { supabase } from "../supabase";
+  21 |  import { useCart } from "../CartContext";
+  22 |  import SmartSearch from "../components/SmartSearch";
+     |                           ^
+  23 |  import ProductCard from "../components/ProductCard";
+  24 |  export default function Home() {
+      at TransformPluginContext._formatError (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 7)
+      at async TransformPluginContext.transform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+1:20:02 AM [vite] hmr update /src/App.jsx
+1:20:02 AM [vite] Pre-transform error: Failed to resolve import "../components/SmartSearch" from "src/pages/Home.jsx". Does the file exist?
+1:20:03 AM [vite] Internal server error: Failed to resolve import "../components/SmartSearch" from "src/pages/Home.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/daerean/Documents/uni/cloud/final/CloudStore/src/pages/Home.jsx:5:24
+  20 |  import { supabase } from "../supabase";
+  21 |  import { useCart } from "../CartContext";
+  22 |  import SmartSearch from "../components/SmartSearch";
+     |                           ^
+  23 |  import ProductCard from "../components/ProductCard";
+  24 |  export default function Home() {
+      at TransformPluginContext._formatError (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 7)
+      at async TransformPluginContext.transform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+1:20:03 AM [vite] Internal server error: Failed to resolve import "../components/SmartSearch" from "src/pages/Home.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/daerean/Documents/uni/cloud/final/CloudStore/src/pages/Home.jsx:5:24
+  20 |  import { supabase } from "../supabase";
+  21 |  import { useCart } from "../CartContext";
+  22 |  import SmartSearch from "../components/SmartSearch";
+     |                           ^
+  23 |  import ProductCard from "../components/ProductCard";
+  24 |  export default function Home() {
+      at TransformPluginContext._formatError (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 7)
+      at async TransformPluginContext.transform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+1:20:06 AM [vite] hmr update /src/App.jsx
+1:20:06 AM [vite] Pre-transform error: Failed to resolve import "../components/SmartSearch" from "src/pages/Home.jsx". Does the file exist?
+1:20:06 AM [vite] Internal server error: Failed to resolve import "../components/SmartSearch" from "src/pages/Home.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/daerean/Documents/uni/cloud/final/CloudStore/src/pages/Home.jsx:5:24
+  20 |  import { supabase } from "../supabase";
+  21 |  import { useCart } from "../CartContext";
+  22 |  import SmartSearch from "../components/SmartSearch";
+     |                           ^
+  23 |  import ProductCard from "../components/ProductCard";
+  24 |  export default function Home() {
+      at TransformPluginContext._formatError (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 7)
+      at async TransformPluginContext.transform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+1:20:06 AM [vite] Internal server error: Failed to resolve import "../components/SmartSearch" from "src/pages/Home.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/daerean/Documents/uni/cloud/final/CloudStore/src/pages/Home.jsx:5:24
+  20 |  import { supabase } from "../supabase";
+  21 |  import { useCart } from "../CartContext";
+  22 |  import SmartSearch from "../components/SmartSearch";
+     |                           ^
+  23 |  import ProductCard from "../components/ProductCard";
+  24 |  export default function Home() {
+      at TransformPluginContext._formatError (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49258:41)
+      at TransformPluginContext.error (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49253:16)
+      at normalizeUrl (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64307:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64439:39
+      at async Promise.all (index 7)
+      at async TransformPluginContext.transform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:64366:7)
+      at async PluginContainer.transform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:49099:18)
+      at async loadAndTransform (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:51978:27)
+      at async viteTransformMiddleware (file:///home/daerean/Documents/uni/cloud/final/CloudStore/node_modules/vite/dist/node/chunks/dep-BK3b2jBa.js:62106:24)
+1:20:25 AM [vite] hmr update /src/App.jsx
+1:20:55 AM [vite] hmr update /src/App.css
+1:20:59 AM [vite] hmr update /src/App.css
+1:23:04 AM [vite] hmr update /src/components/SmartSearch.jsx
+1:29:22 AM [vite] hmr update /src/components/SmartSearch.jsx
+1:29:27 AM [vite] hmr update /src/pages/Home.jsx
+1:29:31 AM [vite] hmr update /src/pages/Products.jsx
+1:29:39 AM [vite] hmr update /src/pages/Promotions.jsx
