@@ -25,10 +25,6 @@ export default function VisionChat() {
     })
   }, [])
 
-  useEffect(() => {
-    chatEnd.current?.scrollIntoView({ behavior: 'smooth' })
-  }, [messages])
-
   function handleKeyDown(e) {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault()
