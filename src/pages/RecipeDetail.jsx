@@ -180,6 +180,19 @@ export default function RecipeDetail() {
               </button>
             )}
           </div>
+          {(() => {
+            const total = ingredients.reduce((sum, ing) => {
+              if (!ing.mapeado || !ing.products || ing.notas === 'Ya tienes') return sum
+              return sum + (ing.cantidad_producto || 1) * Number(ing.products.precio)
+            }, 0)
+            const skipped = ingredients.filter(i => i.notas === 'Ya tienes').length
+            return total > 0 && (
+              <div className="flex-shrink-0 px-1 py-2 mb-2 flex items-center justify-between border-t border-white/[0.04]">
+                <span className="text-xs text-white/40">{ingredients.filter(i => i.mapeado && i.notas !== 'Ya tienes').length} productos{skipped > 0 ? ` (${skipped} ya tienes)` : ''}</span>
+                <span className="text-sm font-semibold text-white/80">Total: <span className="text-emerald">S/.{total.toFixed(2)}</span></span>
+              </div>
+            )
+          })()}
           <div className="space-y-1 overflow-y-auto scrollbar-thin flex-1 pr-1">
             {ingredients.map(ing => (
               <div key={ing.id} className={`${!ing.mapeado ? 'opacity-40' : ''}`}>
