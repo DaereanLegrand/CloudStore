@@ -1,10 +1,12 @@
 import { useState, useRef, useEffect } from 'react'
 import { supabase } from '../supabase'
+import { motion } from 'framer-motion'
+import NeuralGlassCard from './NeuralGlassCard'
 
 const SUGGESTIONS = [
   "Describe esta imagen",
   "¿Qué ves en esta foto?",
-  "Haz un análisis detallado de la imagen",
+  "Haz un análisis detallado",
   "¿Qué colores predominan?",
 ]
 
@@ -24,6 +26,10 @@ export default function VisionChat() {
       setUser(session?.user || null)
     })
   }, [])
+
+  useEffect(() => {
+    chatEnd.current?.scrollIntoView({ behavior: 'smooth' })
+  }, [messages, loading])
 
   function handleKeyDown(e) {
     if (e.key === 'Enter' && !e.shiftKey) {
@@ -110,61 +116,66 @@ export default function VisionChat() {
   }
 
   return (
-    <div className="vision-chat">
-      <div className="vision-chat-header">
-        <div>
-          <h2>Asistente Vision</h2>
-          <p className="vision-chat-subtitle">Sube una imagen o escribe una pregunta para Gemma 4</p>
-        </div>
+    <NeuralGlassCard className="flex flex-col h-[600px]">
+      <div className="mb-4">
+        <h2 className="text-sm font-medium text-white/70">Asistente Vision</h2>
+        <p className="text-[0.6rem] text-white/30 mt-0.5">Sube una imagen o escribe una pregunta para Gemma 4</p>
       </div>
 
-      <div className="vision-chat-messages">
+      <div className="flex-1 overflow-y-auto space-y-3 pr-2 mb-4 scrollbar-thin">
         {messages.length === 0 && !image && (
-          <div className="vision-chat-empty">
-            <span className="vision-chat-empty-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><circle cx="10.5" cy="10.5" r="6.5" fill="currentColor" fillOpacity="0.12" /><circle cx="10.5" cy="10.5" r="6.5" /><path d="m20.5 20.5-4-4" /></svg></span>
-            <p>Pregúntame sobre cualquier imagen o escribe un mensaje</p>
-            <div className="vision-chat-suggestions">
+          <div className="text-center py-12">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="mx-auto mb-3 text-white/15">
+              <circle cx="10.5" cy="10.5" r="6.5" />
+              <path d="m20.5 20.5-4-4" />
+            </svg>
+            <p className="text-xs text-white/30 mb-4">Pregúntame sobre cualquier imagen o escribe un mensaje</p>
+            <div className="flex flex-wrap gap-2 justify-center">
               {SUGGESTIONS.map((s, i) => (
-                <button key={i} className="btn btn-sm btn-outline" onClick={() => sendMessage(s)}>
-                  {s}
-                </button>
+                <button key={i} className="btn-ghost text-[0.55rem]" onClick={() => sendMessage(s)}>{s}</button>
               ))}
             </div>
           </div>
         )}
 
         {messages.map((msg, i) => (
-          <div key={i} className={`vision-chat-msg ${msg.role}`}>
-            <div className="vision-chat-bubble">
+          <motion.div key={i} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
+            <div className={`max-w-[80%] px-3.5 py-2 text-xs leading-relaxed ${
+              msg.role === 'user'
+                ? 'bg-emerald/10 text-white/80 rounded-2xl rounded-br-sm'
+                : 'bg-white/[0.04] text-white/60 rounded-2xl rounded-bl-sm'
+            }`}>
               {msg.content}
             </div>
-          </div>
+          </motion.div>
         ))}
 
         {loading && (
-          <div className="vision-chat-msg assistant">
-            <div className="vision-chat-bubble vision-chat-thinking">
-              <span className="vision-chat-dot" />
-              <span className="vision-chat-dot" />
-              <span className="vision-chat-dot" />
+          <div className="flex justify-start">
+            <div className="px-3.5 py-2.5 bg-white/[0.04] rounded-2xl rounded-bl-sm">
+              <span className="inline-flex gap-1">
+                <span className="w-1 h-1 rounded-full bg-white/30 animate-bounce" />
+                <span className="w-1 h-1 rounded-full bg-white/30 animate-bounce" style={{ animationDelay: '0.1s' }} />
+                <span className="w-1 h-1 rounded-full bg-white/30 animate-bounce" style={{ animationDelay: '0.2s' }} />
+              </span>
             </div>
           </div>
         )}
 
-        {error && <div className="alert alert-error">{error}</div>}
+        {error && <div className="px-3.5 py-2 bg-rose-500/8 text-rose-400/60 text-xs">{error}</div>}
         <div ref={chatEnd} />
       </div>
 
       {image && (
-        <div className="vision-chat-preview">
-          <img src={image} alt="Preview" />
-          <button className="vision-chat-remove-img" onClick={removeImage}>×</button>
+        <div className="relative w-16 h-16 rounded-xl overflow-hidden mb-3 flex-shrink-0">
+          <img src={image} alt="Preview" className="w-full h-full object-cover" />
+          <button className="absolute top-0.5 right-0.5 w-4 h-4 rounded-full bg-black/50 text-white text-[0.4rem] flex items-center justify-center hover:bg-black/70" onClick={removeImage}>×</button>
         </div>
       )}
 
-      <div className="vision-chat-input">
-        <button className="vision-chat-attach" onClick={() => fileInput.current?.click()} title="Adjuntar imagen">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5" /><circle cx="8.5" cy="9.5" r="1.5" /><path d="m4 17 4.5-4.5 3 3L16 11l4 4.5" /></svg>
+      <div className="flex items-center gap-2 flex-shrink-0">
+        <button className="w-8 h-8 rounded-xl bg-white/[0.04] flex items-center justify-center text-white/30 hover:text-white/60 hover:bg-white/[0.06] transition-all flex-shrink-0" onClick={() => fileInput.current?.click()} title="Adjuntar imagen">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="3" y="4" width="18" height="16" rx="2.5" /><circle cx="8.5" cy="9.5" r="1.5" /><path d="m4 17 4.5-4.5 3 3L16 11l4 4.5" /></svg>
         </button>
         <input ref={fileInput} type="file" accept="image/*" onChange={handleImageSelect} hidden />
         <textarea
@@ -172,17 +183,24 @@ export default function VisionChat() {
           value={input}
           onChange={e => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder={image ? "Describe esta imagen..." : "Escribe un mensaje... (Enter para enviar)"}
+          placeholder={image ? "Describe esta imagen..." : "Escribe un mensaje..."}
           rows={1}
+          className="glass-input flex-1 text-xs resize-none py-2"
         />
         <button
-          className="btn vision-chat-send"
+          className="w-8 h-8 rounded-xl bg-emerald text-white flex items-center justify-center hover:bg-emerald-dark transition-all disabled:opacity-25 flex-shrink-0"
           onClick={() => sendMessage()}
           disabled={loading || (!input.trim() && !image)}
         >
-          {loading ? '...' : <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>}
+          {loading ? (
+            <span className="w-1 h-1 rounded-full bg-white animate-ping" />
+          ) : (
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M5 12h14" /><path d="m13 6 6 6-6 6" />
+            </svg>
+          )}
         </button>
       </div>
-    </div>
+    </NeuralGlassCard>
   )
 }

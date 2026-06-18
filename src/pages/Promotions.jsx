@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { supabase } from '../supabase'
 import { useCart } from '../CartContext'
+import { motion, AnimatePresence } from 'framer-motion'
 
 export default function Promotions() {
   const [products, setProducts] = useState([])
@@ -14,36 +15,26 @@ export default function Promotions() {
   useEffect(() => { loadPromotedProducts() }, [])
 
   async function loadPromotedProducts() {
-    const { data } = await supabase
-      .from('products')
-      .select('*')
-      .not('precio_promocion', 'is', null)
-      .order('created_at', { ascending: false })
-    setProducts(data || [])
-    setLoading(false)
+    const { data } = await supabase.from('products').select('*').not('precio_promocion', 'is', null).order('created_at', { ascending: false })
+    setProducts(data || []); setLoading(false)
   }
 
   async function activatePromotion() {
-    setActivating(true)
-    setError('')
-    setSuccess('')
+    setActivating(true); setError(''); setSuccess('')
     const { data, error: fnError } = await supabase.functions.invoke('promotions', {})
     if (fnError) {
       let msg = fnError.message
       try { const c = JSON.parse(fnError.context || '{}'); if (c.error) msg = c.error } catch {}
-      setError(msg)
-      setActivating(false)
-      return
+      setError(msg); setActivating(false); return
     }
-    setSuccess(`¡Promoción activada! ${data.count} productos con 20% de descuento.`)
-    setActivating(false)
-    loadPromotedProducts()
+    setSuccess(`${data.count} productos con 20% descuento.`)
+    setActivating(false); loadPromotedProducts()
   }
 
   async function addToCart(productId, titulo) {
     const { data: { session } } = await supabase.auth.getSession()
     if (!session) { window.location.href = '/login'; return }
-    const { data: existing } = await supabase.from('cart_items').select('*').eq('comprador_id', session.user.id).eq('product_id', productId)    .maybeSingle()
+    const { data: existing } = await supabase.from('cart_items').select('*').eq('comprador_id', session.user.id).eq('product_id', productId).maybeSingle()
     if (existing) {
       await supabase.from('cart_items').update({ cantidad: existing.cantidad + 1 }).eq('id', existing.id)
     } else {
@@ -53,50 +44,54 @@ export default function Promotions() {
   }
 
   return (
-    <div className="page">
-      <h2 className="section-title">Promociones</h2>
-      <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
-        Activa una promoción del 20% de descuento en 20 productos seleccionados aleatoriamente.
-      </p>
-      <button className="btn btn-lg" onClick={activatePromotion} disabled={activating} style={{ marginBottom: '2rem' }}>
-        {activating ? 'Activando...' : 'Iniciar Nueva Promoción'}
-      </button>
-      {error && <div className="alert alert-error">{error}</div>}
-      {success && <div className="alert alert-success">{success}</div>}
+    <div className="space-y-6">
+      <div className="rounded-2xl bg-white/[0.03] p-5">
+        <h1 className="text-lg font-medium text-white/85 mb-2">Promociones</h1>
+        <p className="text-sm text-white/35 mb-4">Activa 20% de descuento en 20 productos aleatorios.</p>
+        <button className="btn-primary text-sm" onClick={activatePromotion} disabled={activating}>
+          {activating ? 'Activando...' : 'Nueva Promoción'}
+        </button>
+        <AnimatePresence>
+          {error && <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-xs text-rose-400/60 mt-3">{error}</motion.p>}
+          {success && <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="text-xs text-emerald/60 mt-3">{success}</motion.p>}
+        </AnimatePresence>
+      </div>
+
       {loading ? (
-        <div className="skeleton-grid">
-          {Array.from({ length: 4 }).map((_, i) => <div key={i} className="skeleton-card" />)}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+          {Array.from({ length: 4 }).map((_, i) => <div key={i} className="aspect-square rounded-2xl bg-white/[0.02]" />)}
         </div>
       ) : products.length === 0 ? (
-        <div className="empty-state">
-          <span className="empty-icon"><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M3.6 11.2 11 3.8a2 2 0 0 1 1.4-.6H19a2 2 0 0 1 2 2v6.6a2 2 0 0 1-.6 1.4l-7.4 7.4a2 2 0 0 1-2.8 0l-6.6-6.6a2 2 0 0 1 0-2.8Z" fill="currentColor" fillOpacity="0.12" /><path d="M3.6 11.2 11 3.8a2 2 0 0 1 1.4-.6H19a2 2 0 0 1 2 2v6.6a2 2 0 0 1-.6 1.4l-7.4 7.4a2 2 0 0 1-2.8 0l-6.6-6.6a2 2 0 0 1 0-2.8Z" /><circle cx="16" cy="8" r="1.3" fill="currentColor" /></svg></span>
-          <p>No hay promociones activas.</p>
+        <div className="rounded-2xl bg-white/[0.03] p-8 text-center">
+          <p className="text-sm text-white/30">No hay promociones activas.</p>
         </div>
       ) : (
         <>
-          <h3 style={{ marginBottom: '1rem' }}>Productos en oferta ({products.length})</h3>
-          <div className="products-grid">
+          <p className="text-sm text-white/40">En oferta ({products.length})</p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
             {products.map(p => (
-              <div key={p.id} className="product-card">
+              <motion.div key={p.id} initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} className="rounded-2xl bg-white/[0.03] p-4 group">
                 <Link to={`/product/${p.id}`}>
-                  <div className="product-card-img">
-                    <img src={p.imagen_url} alt={p.titulo} loading="lazy" />
+                  <div className="aspect-square rounded-xl bg-white/[0.04] mb-3 flex items-center justify-center p-4 overflow-hidden">
+                    <img src={p.imagen_url} alt={p.titulo} loading="lazy" className="max-w-full max-h-full object-contain transition-all duration-700 group-hover:scale-[1.03]" />
                   </div>
                 </Link>
-                <div className="product-info">
-                  <span className="category-badge">{p.categoria}</span>
-                  <span className="sale-badge">-20%</span>
-                  <h3><Link to={`/product/${p.id}`}>{p.titulo}</Link></h3>
-                  <p className="price">
-                    <span className="price-original">${p.precio}</span>
-                    ${p.precio_promocion}
+                <div className="space-y-1.5">
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-[0.5rem] font-semibold text-white/35 uppercase tracking-[0.08em]">{p.categoria}</span>
+                    <span className="text-[0.5rem] font-medium text-emerald/60">-20%</span>
+                  </div>
+                  <h3 className="text-xs font-medium leading-snug">
+                    <Link to={`/product/${p.id}`} className="text-white/75 hover:text-white transition-colors duration-300">{p.titulo}</Link>
+                  </h3>
+                  <p className="text-sm font-medium text-white/85">
+                    <span className="text-[0.6rem] text-white/30 line-through mr-1">${p.precio}</span> ${p.precio_promocion}
                   </p>
-                  <p className="stock">{p.stock > 0 ? `${p.stock} en stock` : 'Agotado'}</p>
-                  <button className="btn" onClick={() => addToCart(p.id, p.titulo)} disabled={p.stock < 1}>
-                    {p.stock < 1 ? 'Agotado' : 'Agregar al carrito'}
+                  <button className="btn-primary w-full text-[0.55rem] py-1.5" onClick={() => addToCart(p.id, p.titulo)} disabled={p.stock < 1}>
+                    {p.stock < 1 ? 'Agotado' : 'Agregar'}
                   </button>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </>

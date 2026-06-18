@@ -12,27 +12,30 @@ import Promotions from './pages/Promotions'
 import Recipes from './pages/Recipes'
 import RecipeDetail from './pages/RecipeDetail'
 import Footer from './components/Footer'
+import NeuralCanvas from './components/NeuralCanvas'
 
 export default function App() {
   return (
-    <div className="app-shell">
-      <Navbar />
-      <main className="container">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/product/:id" element={<ProductDetail />} />
-          <Route path="/new-product" element={<NewProduct />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/orders" element={<Orders />} />
-          <Route path="/promotions" element={<Promotions />} />
-          <Route path="/recipes" element={<Recipes />} />
-          <Route path="/recipe/:slug" element={<RecipeDetail />} />
-        </Routes>
-      </main>
-      <Footer />
-    </div>
+    <NeuralCanvas>
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/product/:id" element={<ProductDetail />} />
+            <Route path="/new-product" element={<NewProduct />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/orders" element={<Orders />} />
+            <Route path="/promotions" element={<Promotions />} />
+            <Route path="/recipes" element={<Recipes />} />
+            <Route path="/recipe/:slug" element={<RecipeDetail />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </NeuralCanvas>
   )
 }

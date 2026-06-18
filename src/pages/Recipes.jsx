@@ -43,62 +43,59 @@ export default function Recipes() {
 
   function Pagination() {
     if (totalPages <= 1) return null
-    const pages = []
-    const start = Math.max(1, page - 2)
-    const end = Math.min(totalPages, page + 2)
+    const pages = []; const start = Math.max(1, page - 2); const end = Math.min(totalPages, page + 2)
     for (let i = start; i <= end; i++) pages.push(i)
-
     return (
-      <div className="pagination">
-        <button className="btn btn-sm" disabled={page <= 1} onClick={() => setPage(p => p - 1)}>
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="m15 18-6-6 6-6" /></svg> Anterior
+      <div className="flex items-center justify-center gap-2 py-4 flex-wrap">
+        <button className="btn-ghost text-xs" disabled={page <= 1} onClick={() => setPage(p => p - 1)}>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="inline-block align-text-bottom"><path d="m15 18-6-6 6-6" /></svg> Anterior
         </button>
-        <div className="pagination-pages">
-          {start > 1 && <span className="pagination-ellipsis">...</span>}
+        <div className="flex items-center gap-1">
+          {start > 1 && <span className="text-xs text-white/20">...</span>}
           {pages.map(p => (
-            <button key={p} className={`btn btn-sm ${p === page ? 'btn-active' : ''}`} onClick={() => setPage(p)}>{p}</button>
+            <button key={p} className={`w-7 h-7 rounded-lg text-xs font-medium transition-all duration-300 ${p === page ? 'text-white bg-white/[0.06]' : 'text-white/30 hover:text-white/60'}`} onClick={() => setPage(p)}>{p}</button>
           ))}
-          {end < totalPages && <span className="pagination-ellipsis">...</span>}
+          {end < totalPages && <span className="text-xs text-white/20">...</span>}
         </div>
-        <button className="btn btn-sm" disabled={page >= totalPages} onClick={() => setPage(p => p + 1)}>
-          Siguiente <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><path d="m9 18 6-6-6-6" /></svg>
+        <button className="btn-ghost text-xs" disabled={page >= totalPages} onClick={() => setPage(p => p + 1)}>
+          Siguiente <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="inline-block align-text-bottom"><path d="m9 18 6-6-6-6" /></svg>
         </button>
       </div>
     )
   }
 
   return (
-    <div className="page">
-      <h2>Recetas</h2>
-      <p className="page-subtitle">Encuentra recetas deliciosas y agrega todos los ingredientes a tu carrito</p>
-      <div className="filters">
-        <input placeholder="Buscar recetas..." value={search} onChange={e => setSearch(e.target.value)} />
-        <select value={dificultad} onChange={e => setDificultad(e.target.value)}>
-          <option value="">Todas las dificultades</option>
-          <option value="facil">Fácil</option>
-          <option value="medio">Media</option>
-          <option value="dificil">Difícil</option>
-        </select>
-        <select value={categoria} onChange={e => setCategoria(e.target.value)}>
-          <option value="">Todas las categorías</option>
-          {categories.map(c => <option key={c} value={c}>{c}</option>)}
-        </select>
+    <div className="space-y-6">
+      <div className="rounded-2xl bg-white/[0.03] p-5">
+        <h1 className="text-lg font-medium text-white/85 mb-2">Recetas</h1>
+        <p className="text-sm text-white/35 mb-4">Encuentra recetas y agrega ingredientes a tu carrito.</p>
+        <div className="flex gap-3 flex-col sm:flex-row">
+          <input placeholder="Buscar recetas..." value={search} onChange={e => setSearch(e.target.value)} className="glass-input flex-1 text-sm" />
+          <select value={dificultad} onChange={e => setDificultad(e.target.value)} className="glass-select text-sm sm:w-36">
+            <option value="">Dificultad</option>
+            <option value="facil">Fácil</option>
+            <option value="medio">Media</option>
+            <option value="dificil">Difícil</option>
+          </select>
+          <select value={categoria} onChange={e => setCategoria(e.target.value)} className="glass-select text-sm sm:w-36">
+            <option value="">Categoría</option>
+            {categories.map(c => <option key={c} value={c}>{c}</option>)}
+          </select>
+        </div>
       </div>
+
       {loading ? (
-        <div className="skeleton-grid">
-          {Array.from({ length: 8 }).map((_, i) => <div key={i} className="skeleton-card" />)}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+          {Array.from({ length: 8 }).map((_, i) => <div key={i} className="aspect-[16/10] rounded-2xl bg-white/[0.02]" />)}
         </div>
       ) : recipes.length === 0 ? (
-        <div className="empty-state">
-          <span className="empty-icon">
-            <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" fill="currentColor" fillOpacity="0.12"/><path d="M3 6h18"/></svg>
-          </span>
-          <p>No se encontraron recetas. Intenta con otros filtros.</p>
+        <div className="rounded-2xl bg-white/[0.03] p-8 text-center">
+          <p className="text-sm text-white/30">No se encontraron recetas.</p>
         </div>
       ) : (
         <>
           <Pagination />
-          <div className="recipes-grid">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
             {recipes.map(r => <RecipeCard key={r.id} recipe={r} />)}
           </div>
           <Pagination />
