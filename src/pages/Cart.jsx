@@ -43,7 +43,7 @@ export default function Cart() {
       try { const context = JSON.parse(error.context || '{}'); if (context.error) errorMsg = context.error } catch { try { if (typeof error.context === 'string') errorMsg = error.context } catch {} }
       setError(errorMsg); return
     }
-    setSuccess(`Orden #${data.order_id.slice(0, 8)} creada · $${data.total}`)
+    setSuccess(`Orden #${data.order_id.slice(0, 8)} creada · S/${data.total}`)
     setItems([]); fetchCartCount()
 
     if (telefono.trim()) {
@@ -82,15 +82,15 @@ export default function Cart() {
             <h4 className="text-sm font-medium text-white/75 truncate">{i.products.titulo}</h4>
             <p className="text-xs text-white/35">
               {i.products.precio_promocion != null ? (
-                <><span className="line-through text-white/20">${i.products.precio}</span> ${i.products.precio_promocion} c/u</>
-              ) : <>${i.products.precio} c/u</>}
+                <><span className="line-through text-white/20">S/{i.products.precio}</span> S/{i.products.precio_promocion} c/u</>
+              ) : <>S/{i.products.precio} c/u</>}
             </p>
           </div>
           <div className="flex items-center gap-1.5 flex-shrink-0">
             <button className="w-7 h-7 rounded-lg bg-white/[0.06] flex items-center justify-center text-white/40 hover:text-white/80 transition-all text-sm" onClick={() => updateQty(i.id, i.cantidad - 1)} disabled={i.cantidad <= 1}>−</button>
             <span className="text-sm font-medium text-white/70 w-5 text-center">{i.cantidad}</span>
             <button className="w-7 h-7 rounded-lg bg-white/[0.06] flex items-center justify-center text-white/40 hover:text-white/80 transition-all text-sm" onClick={() => updateQty(i.id, i.cantidad + 1)}>+</button>
-            <span className="text-sm font-medium text-white/70 w-16 text-right">${(effectivePrice(i.products) * i.cantidad).toFixed(2)}</span>
+            <span className="text-sm font-medium text-white/70 w-16 text-right">S/{(effectivePrice(i.products) * i.cantidad).toFixed(2)}</span>
             <button onClick={() => removeItem(i.id)} className="text-xs text-white/20 hover:text-rose-400/60 transition-colors ml-1">×</button>
           </div>
         </motion.div>
@@ -100,7 +100,7 @@ export default function Cart() {
         <div className="rounded-2xl bg-white/[0.03] p-5 space-y-4">
           <div className="flex justify-between items-center">
             <span className="text-sm text-white/50">Total</span>
-            <span className="text-xl font-light text-white/85">${total.toFixed(2)}</span>
+            <span className="text-xl font-light text-white/85">S/{total.toFixed(2)}</span>
           </div>
           <div>
             <label htmlFor="wa-phone" className="glass-label">WhatsApp (opcional)</label>

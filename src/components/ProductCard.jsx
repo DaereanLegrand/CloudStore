@@ -26,9 +26,9 @@ export default function ProductCard({ product, onAddToCart }) {
         </h3>
         <p className="text-sm font-medium text-white/85">
           {onSale ? (
-            <><span className="text-[0.6rem] text-white/30 line-through mr-1">${product.precio}</span> ${product.precio_promocion}</>
+            <><span className="text-[0.6rem] text-white/30 line-through mr-1">S/{product.precio}</span> S/{product.precio_promocion}</>
           ) : (
-            <>${product.precio}</>
+            <>S/{product.precio}</>
           )}
         </p>
         <p className="text-[0.5rem] text-white/30">{product.stock > 0 ? `${product.stock} en stock` : 'Agotado'}</p>
