@@ -1,0 +1,139 @@
+version: "3.8"
+
+services:
+  db:
+    image: supabase/postgres:15.1.0.131
+    container_name: cloudstore-db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: pg_isready -U postgres
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  auth:
+    image: supabase/gotrue:v2.135.0
+    container_name: cloudstore-auth
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "9999:9999"
+    environment:
+      GOTRUE_API_HOST: 0.0.0.0
+      GOTRUE_DB_DRIVER: postgres
+      GOTRUE_DB_DATABASE_URL: postgres://postgres:${POSTGRES_PASSWORD:-postgres}@db:5432/postgres
+      GOTRUE_SITE_URL: http://localhost:3333
+      GOTRUE_URI_ALLOW_LIST: http://localhost:3333
+      GOTRUE_JWT_SECRET: ${JWT_SECRET:-super-secret-jwt-key-change-in-production}
+      GOTRUE_MAILER_AUTOCONFIRM: "true"
+      GOTRUE_LOG_LEVEL: debug
+
+  rest:
+    image: postgrest/postgrest:v12.0.1
+    container_name: cloudstore-rest
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "3001:3000"
+    environment:
+      PGRST_DB_URI: postgres://postgres:${POSTGRES_PASSWORD:-postgres}@db:5432/postgres
+      PGRST_DB_SCHEMA: public,storage
+      PGRST_DB_ANON_ROLE: anon
+      PGRST_JWT_SECRET: ${JWT_SECRET:-super-secret-jwt-key-change-in-production}
+      PGRST_OPENAPI_SERVER_PROXY_URI: http://localhost:3001
+
+  storage:
+    image: supabase/storage-api:v1.0.6
+    container_name: cloudstore-storage
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "5000:5000"
+    environment:
+      ANON_KEY: ${ANON_KEY:-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0}
+      SERVICE_KEY: ${SERVICE_KEY:-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImV4cCI6MTk4MzgxMjk5Nn0.EGIM96RAZx35lJzdJsyH-qQwv8Hdp7fsn3W0YpN81IU}
+      PROJECT_ID: cloudstore
+      REGION: local
+      GLOBAL_S3_BUCKET: cloudstore-storage
+      STORAGE_BACKEND: file
+      FILE_SIZE_LIMIT: 5242880
+      TENANT_ID: default
+      REGION: local
+
+  realtime:
+    image: supabase/realtime:v2.25.50
+    container_name: cloudstore-realtime
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "4000:4000"
+    environment:
+      PORT: 4000
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: postgres
+      DB_USER: postgres
+      DB_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      JWT_SECRET: ${JWT_SECRET:-super-secret-jwt-key-change-in-production}
+      REPLICATION_MODE: RLS
+      REPLICATION_POLL_INTERVAL: 100
+
+  functions:
+    image: supabase/edge-runtime:v1.60.4
+    container_name: cloudstore-functions
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./supabase/functions:/functions
+    environment:
+      RUNTIME_PORT: 9000
+      SUPABASE_URL: http://rest:3000
+      SUPABASE_ANON_KEY: ${ANON_KEY:-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0}
+      SUPABASE_SERVICE_ROLE_KEY: ${SERVICE_KEY:-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImV4cCI6MTk4MzgxMjk5Nn0.EGIM96RAZx35lJzdJsyH-qQwv8Hdp7fsn3W0YpN81IU}
+      JWT_SECRET: ${JWT_SECRET:-super-secret-jwt-key-change-in-production}
+      VERIFICATION_JWT_SECRET: ${JWT_SECRET:-super-secret-jwt-key-change-in-production}
+
+  studio:
+    image: supabase/studio:20241202-9e8f7a5
+    container_name: cloudstore-studio
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "3333:3000"
+    environment:
+      STUDIO_PG_META_URL: http://meta:8080
+      SUPABASE_URL: http://localhost:3333
+      SUPABASE_ANON_KEY: ${ANON_KEY:-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0}
+      SUPABASE_SERVICE_KEY: ${SERVICE_KEY:-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImV4cCI6MTk4MzgxMjk5Nn0.EGIM96RAZx35lJzdJsyH-qQwv8Hdp7fsn3W0YpN81IU}
+
+  meta:
+    image: supabase/pgmeta:v1.16.0
+    container_name: cloudstore-meta
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8080:8080"
+    environment:
+      PG_META_PORT: 8080
+      PG_META_DB_HOST: db
+      PG_META_DB_NAME: postgres
+      PG_META_DB_PORT: 5432
+      PG_META_DB_USER: postgres
+      PG_META_DB_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+
+volumes:
+  db-data:

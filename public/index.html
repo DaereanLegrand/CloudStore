@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudStore</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="logo">☁️ CloudStore</a>
+      <div class="nav-links">
+        <a href="pages/products.html">Productos</a>
+        <a href="pages/cart.html" id="cart-link">Carrito (<span id="cart-count">0</span>)</a>
+        <a href="pages/orders.html">Mis Órdenes</a>
+        <div id="auth-section">
+          <a href="pages/login.html" id="login-link">Iniciar Sesión</a>
+          <a href="pages/register.html" id="register-link">Registrarse</a>
+          <span id="user-info" style="display:none;">
+            <span id="user-name"></span>
+            <a href="pages/new-product.html" id="sell-link" style="display:none;">Vender</a>
+            <button id="logout-btn">Cerrar Sesión</button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1>Bienvenido a CloudStore</h1>
+    <p>El marketplace más simple de la nube.</p>
+    <div id="products-grid" class="products-grid"></div>
+  </main>
+
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <script src="js/config.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

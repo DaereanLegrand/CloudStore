@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito - CloudStore</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="logo">☁️ CloudStore</a>
+      <div class="nav-links">
+        <a href="../">Inicio</a>
+        <a href="products.html">Productos</a>
+        <a href="orders.html">Mis Órdenes</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h2>Tu Carrito</h2>
+    <div id="cart-items"></div>
+    <div id="cart-summary" style="display:none;">
+      <h3>Total: $<span id="cart-total">0.00</span></h3>
+      <button id="checkout-btn" class="btn">Pagar (Simulado)</button>
+      <p class="error" id="checkout-error"></p>
+      <p class="success" id="checkout-success"></p>
+    </div>
+    <p id="cart-empty">Tu carrito está vacío.</p>
+  </main>
+
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <script src="../js/config.js"></script>
+  <script src="../js/auth.js"></script>
+  <script>
+    let cartItems = []
+
+    async function loadCart() {
+      const user = await getCurrentUser()
+      if (!user) {
+        document.getElementById('cart-items').innerHTML = '<p>Inicia sesión para ver tu carrito.</p>'
+        return
+      }
+
+      const { data, error } = await supabase
+        .from('cart_items')
+        .select('*, products(*)')
+        .eq('comprador_id', user.id)
+
+      if (error) {
+        console.error(error)
+        return
+      }
+
+      cartItems = data || []
+      renderCart()
+    }
+
+    function renderCart() {
+      const container = document.getElementById('cart-items')
+      const summary = document.getElementById('cart-summary')
+      const empty = document.getElementById('cart-empty')
+
+      if (cartItems.length === 0) {
+        container.innerHTML = ''
+        summary.style.display = 'none'
+        empty.style.display = 'block'
+        return
+      }
+
+      empty.style.display = 'none'
+      summary.style.display = 'block'
+      let total = 0
+
+      container.innerHTML = cartItems.map(item => {
+        const subtotal = item.products.precio * item.cantidad
+        total += subtotal
+        return `
+          <div class="cart-item">
+            <img src="${item.products.imagen_url}" alt="${item.products.titulo}" width="80">
+            <div class="cart-item-info">
+              <h4>${item.products.titulo}</h4>
+              <p>$${item.products.precio} x ${item.cantidad}</p>
+              <p>Subtotal: $${subtotal.toFixed(2)}</p>
+            </div>
+            <div class="cart-item-actions">
+              <button onclick="updateQty('${item.id}', ${item.cantidad - 1})" ${item.cantidad <= 1 ? 'disabled' : ''}>-</button>
+              <span>${item.cantidad}</span>
+              <button onclick="updateQty('${item.id}', ${item.cantidad + 1})">+</button>
+              <button onclick="removeItem('${item.id}')" class="btn-danger">Eliminar</button>
+            </div>
+          </div>
+        `
+      }).join('')
+
+      document.getElementById('cart-total').textContent = total.toFixed(2)
+    }
+
+    async function updateQty(cartItemId, newQty) {
+      if (newQty <= 0) {
+        await removeItem(cartItemId)
+        return
+      }
+      await supabase.from('cart_items').update({ cantidad: newQty }).eq('id', cartItemId)
+      loadCart()
+      updateCartCount()
+    }
+
+    async function removeItem(cartItemId) {
+      await supabase.from('cart_items').delete().eq('id', cartItemId)
+      loadCart()
+      updateCartCount()
+    }
+
+    document.getElementById('checkout-btn').addEventListener('click', async () => {
+      const user = await getCurrentUser()
+      if (!user) return
+
+      const errEl = document.getElementById('checkout-error')
+      const successEl = document.getElementById('checkout-success')
+      errEl.textContent = ''
+      successEl.textContent = ''
+
+      const items = cartItems.map(item => ({
+        product_id: item.product_id,
+        cantidad: item.cantidad,
+      }))
+
+      const { data, error } = await supabase.functions.invoke('checkout', {
+        body: { items },
+      })
+
+      if (error) {
+        errEl.textContent = error.message
+      } else if (data.error) {
+        errEl.textContent = data.error
+      } else {
+        successEl.textContent = `¡Orden #${data.order_id} creada! Total pagado: $${data.total}`
+        cartItems = []
+        renderCart()
+        updateCartCount()
+      }
+    })
+
+    loadCart()
+  </script>
+</body>
+</html>

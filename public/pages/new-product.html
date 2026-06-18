@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publicar Producto - CloudStore</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="logo">☁️ CloudStore</a>
+      <div class="nav-links">
+        <a href="../">Inicio</a>
+        <a href="products.html">Productos</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container auth-form">
+    <h2>Publicar Producto</h2>
+    <form id="product-form">
+      <div class="form-group">
+        <label for="titulo">Título</label>
+        <input type="text" id="titulo" required>
+      </div>
+      <div class="form-group">
+        <label for="descripcion">Descripción</label>
+        <textarea id="descripcion" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="precio">Precio ($)</label>
+        <input type="number" id="precio" step="0.01" min="0.01" required>
+      </div>
+      <div class="form-group">
+        <label for="stock">Stock</label>
+        <input type="number" id="stock" min="1" required>
+      </div>
+      <div class="form-group">
+        <label for="categoria">Categoría</label>
+        <select id="categoria" required>
+          <option value="electronica">Electrónica</option>
+          <option value="ropa">Ropa</option>
+          <option value="hogar">Hogar</option>
+          <option value="deportes">Deportes</option>
+          <option value="libros">Libros</option>
+          <option value="otros">Otros</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="imagen">Foto del producto</label>
+        <input type="file" id="imagen" accept="image/*" required>
+      </div>
+      <button type="submit" class="btn">Publicar</button>
+      <p class="error" id="product-error"></p>
+      <p class="success" id="product-success"></p>
+    </form>
+  </main>
+
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <script src="../js/config.js"></script>
+  <script src="../js/auth.js"></script>
+  <script>
+    document.getElementById('product-form').addEventListener('submit', async (e) => {
+      e.preventDefault()
+      const errEl = document.getElementById('product-error')
+      const successEl = document.getElementById('product-success')
+      errEl.textContent = ''
+      successEl.textContent = ''
+
+      const user = await getCurrentUser()
+      if (!user) {
+        errEl.textContent = 'Debes iniciar sesión como vendedor.'
+        return
+      }
+
+      const file = document.getElementById('imagen').files[0]
+      const fileExt = file.name.split('.').pop()
+      const fileName = `${user.id}/${Date.now()}.${fileExt}`
+
+      const { error: uploadError } = await supabase.storage
+        .from('productos')
+        .upload(fileName, file)
+
+      if (uploadError) {
+        errEl.textContent = 'Error al subir la imagen: ' + uploadError.message
+        return
+      }
+
+      const { data: { publicUrl } } = supabase.storage
+        .from('productos')
+        .getPublicUrl(fileName)
+
+      const titulo = document.getElementById('titulo').value
+      const descripcion = document.getElementById('descripcion').value
+      const precio = parseFloat(document.getElementById('precio').value)
+      const stock = parseInt(document.getElementById('stock').value)
+      const categoria = document.getElementById('categoria').value
+
+      const { error: insertError } = await supabase.from('products').insert({
+        vendedor_id: user.id,
+        titulo,
+        descripcion,
+        precio,
+        stock,
+        categoria,
+        imagen_url: publicUrl,
+      })
+
+      if (insertError) {
+        errEl.textContent = insertError.message
+      } else {
+        successEl.textContent = 'Producto publicado exitosamente.'
+        document.getElementById('product-form').reset()
+      }
+    })
+  </script>
+</body>
+</html>
