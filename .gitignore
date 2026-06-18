@@ -8,3 +8,5 @@ __pycache__/
 volumes/db/data/
 volumes/storage/
 *.old
+scripts/output/*.json
+tmp/
