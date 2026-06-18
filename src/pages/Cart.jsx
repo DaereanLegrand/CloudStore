@@ -107,6 +107,20 @@ export default function Cart() {
             <input id="wa-phone" type="tel" placeholder="999888777" value={telefono} onChange={e => setTelefono(e.target.value)} className="glass-input text-sm" />
           </div>
           <button className="btn-primary w-full text-sm py-3" onClick={checkout}>Pagar</button>
+          <button
+            className="w-full text-xs text-white/20 hover:text-rose-400/60 transition-colors py-2 text-center"
+            onClick={async () => {
+              if (!confirm('¿Estás seguro? Todo el progreso será perdido.')) return
+              const { data: { session } } = await supabase.auth.getSession()
+              if (session) {
+                await supabase.from('cart_items').delete().eq('comprador_id', session.user.id)
+                await loadCart()
+                fetchCartCount()
+              }
+            }}
+          >
+            Vaciar carrito
+          </button>
         </div>
       )}
 

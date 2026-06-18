@@ -15,12 +15,12 @@ const ORBS = [
 
 export default function NeuralCanvas({ children }) {
   return (
-    <div className="relative min-h-screen w-full overflow-x-hidden bg-deep-forest">
+    <div className="relative w-full bg-deep-forest" style={{ minHeight: '100dvh' }}>
       {ORBS.map((orb, i) => (
         <motion.div key={i} animate={orb.animate} transition={orb.transition} className={orb.className} />
       ))}
       <div className="relative z-10 w-full">
-        <div className="fixed inset-0 pointer-events-none bg-emerald-glow" />
+        <div className="absolute inset-0 pointer-events-none bg-emerald-glow" />
         {children}
       </div>
     </div>
