@@ -17,6 +17,8 @@ export default function RecipeDetail() {
   const [searchQuery, setSearchQuery] = useState('')
   const [searchResults, setSearchResults] = useState(null)
   const [searching, setSearching] = useState(false)
+  const [selectedProduct, setSelectedProduct] = useState(null)
+  const [replaceQty, setReplaceQty] = useState(1)
   const { fetchCartCount } = useCart()
 
   useEffect(() => { loadRecipe() }, [slug])
@@ -67,23 +69,45 @@ export default function RecipeDetail() {
     setTimeout(() => setToast(null), 3000)
   }
 
-  async function replaceProduct(ingId, newProduct) {
+  function cancelReplace() {
+    setReplacingId(null)
+    setSearchQuery('')
+    setSearchResults(null)
+    setSelectedProduct(null)
+    setReplaceQty(1)
+  }
+
+  async function confirmReplace(ingId) {
+    if (!selectedProduct) return
     const { error } = await supabase
       .from('recipe_ingredients')
-      .update({ product_id: newProduct.id, mapeado: true, notas: newProduct.titulo, cantidad_producto: 1 })
+      .update({ product_id: selectedProduct.id, mapeado: true, notas: selectedProduct.titulo, cantidad_producto: replaceQty })
       .eq('id', ingId)
     if (!error) {
       setIngredients(prev => prev.map(ing =>
         ing.id === ingId
-          ? { ...ing, product_id: newProduct.id, mapeado: true, notas: newProduct.titulo, products: newProduct }
+          ? { ...ing, product_id: selectedProduct.id, mapeado: true, notas: selectedProduct.titulo, products: { ...selectedProduct }, cantidad_producto: replaceQty }
           : ing
       ))
     }
-    setReplacingId(null)
-    setSearchQuery('')
-    setSearchResults(null)
-    setToast(`Reemplazado: ${newProduct.titulo}`)
+    setToast(`✓ ${selectedProduct.titulo}${replaceQty > 1 ? ` ×${replaceQty}` : ''}`)
     setTimeout(() => setToast(null), 2000)
+    cancelReplace()
+  }
+
+  async function skipIngredient(ingId) {
+    await supabase
+      .from('recipe_ingredients')
+      .update({ product_id: null, mapeado: false, notas: 'Ya tienes' })
+      .eq('id', ingId)
+    setIngredients(prev => prev.map(ing =>
+      ing.id === ingId
+        ? { ...ing, product_id: null, mapeado: false, notas: 'Ya tienes', products: null }
+        : ing
+    ))
+    setToast('✓ Marcado como ya lo tienes')
+    setTimeout(() => setToast(null), 2000)
+    cancelReplace()
   }
 
   async function handleSearchProducts(query) {
@@ -161,35 +185,75 @@ export default function RecipeDetail() {
               <div key={ing.id} className={`${!ing.mapeado ? 'opacity-40' : ''}`}>
                 {replacingId === ing.id ? (
                   <div className="space-y-2 py-2">
-                    <div className="flex items-center gap-2">
-                      <input
-                        type="text"
-                        className="glass-input text-xs flex-1"
-                        placeholder="Buscar producto..."
-                        value={searchQuery}
-                        onChange={e => handleSearchProducts(e.target.value)}
-                        autoFocus
-                      />
-                      <button className="text-xs text-white/30 hover:text-white/60 px-2 py-1" onClick={() => { setReplacingId(null); setSearchQuery(''); setSearchResults(null) }}>×</button>
-                    </div>
-                    {searching && <p className="text-xs text-white/25">Buscando...</p>}
-                    {searchResults && searchResults.length === 0 && <p className="text-xs text-white/20">Sin resultados</p>}
-                    {searchResults && searchResults.length > 0 && (
-                      <div className="space-y-1 max-h-48 overflow-y-auto">
-                        {searchResults.map(p => (
-                          <button
-                            key={p.id}
-                            className="w-full text-left flex items-center gap-2 px-3 py-2 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] transition-all text-xs"
-                            onClick={() => replaceProduct(ing.id, p)}
-                          >
-                            {p.imagen_url && <img src={p.imagen_url} alt="" className="w-8 h-8 rounded object-cover flex-shrink-0" />}
-                            <div className="min-w-0 flex-1">
-                              <span className="text-white/75 block truncate">{p.titulo}</span>
-                              <span className="text-white/30">S/.{p.precio}</span>
-                            </div>
-                            <span className="text-[0.5rem] text-emerald/50 uppercase flex-shrink-0">{p.categoria}</span>
+                    {!selectedProduct ? (
+                      <>
+                        <div className="flex items-center gap-2">
+                          <input
+                            type="text"
+                            className="glass-input text-xs flex-1"
+                            placeholder="Buscar producto..."
+                            value={searchQuery}
+                            onChange={e => handleSearchProducts(e.target.value)}
+                            autoFocus
+                          />
+                          <button className="text-xs text-white/30 hover:text-white/60 px-2 py-1" onClick={cancelReplace}>×</button>
+                        </div>
+                        {searching && <p className="text-xs text-white/25">Buscando...</p>}
+                        {searchResults && searchResults.length === 0 && <p className="text-xs text-white/20">Sin resultados</p>}
+                        {searchResults && searchResults.length > 0 && (
+                          <div className="space-y-1 max-h-40 overflow-y-auto">
+                            {searchResults.map(p => (
+                              <button
+                                key={p.id}
+                                className="w-full text-left flex items-center gap-2 px-3 py-2 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] transition-all text-xs"
+                                onClick={() => { setSelectedProduct(p); setReplaceQty(Math.max(1, Math.round(ing.cantidad_producto || 1))) }}
+                              >
+                                <div className="w-9 h-9 rounded-lg bg-white/[0.04] flex items-center justify-center flex-shrink-0 overflow-hidden">
+                                  {p.imagen_url ? <img src={p.imagen_url} alt="" className="w-full h-full object-cover" /> : <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-white/20"><rect x="3" y="4" width="18" height="16" rx="2.5"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="m4 17 4.5-4.5 3 3L16 11l4 4.5"/></svg>}
+                                </div>
+                                <div className="min-w-0 flex-1">
+                                  <span className="text-white/75 block truncate text-xs">{p.titulo}</span>
+                                  <span className="text-white/30 text-[0.55rem]">S/.{p.precio}</span>
+                                </div>
+                                <span className="text-[0.45rem] text-emerald/50 uppercase flex-shrink-0">{p.categoria}</span>
+                              </button>
+                            ))}
+                          </div>
+                        )}
+                      </>
+                    ) : (
+                      <div className="space-y-3">
+                        <div className="flex items-center gap-3">
+                          <div className="w-12 h-12 rounded-xl bg-white/[0.04] flex items-center justify-center flex-shrink-0 overflow-hidden">
+                            {selectedProduct.imagen_url ? <img src={selectedProduct.imagen_url} alt="" className="w-full h-full object-cover" /> : <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-white/20"><rect x="3" y="4" width="18" height="16" rx="2.5"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="m4 17 4.5-4.5 3 3L16 11l4 4.5"/></svg>}
+                          </div>
+                          <div className="min-w-0 flex-1">
+                            <p className="text-xs text-white/75 font-medium truncate">{selectedProduct.titulo}</p>
+                            <p className="text-[0.55rem] text-white/30">S/.{selectedProduct.precio} c/u</p>
+                          </div>
+                          <button className="text-xs text-white/30 hover:text-white/60 px-1" onClick={() => setSelectedProduct(null)} title="Volver a buscar">
+                            ←
                           </button>
-                        ))}
+                        </div>
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center gap-2">
+                            <span className="text-[0.55rem] text-white/40">Cantidad:</span>
+                            <button className="w-6 h-6 rounded-lg bg-white/[0.06] flex items-center justify-center text-white/40 hover:text-white/80 text-xs" onClick={() => setReplaceQty(q => Math.max(1, q - 1))} disabled={replaceQty <= 1}>−</button>
+                            <span className="text-xs font-medium text-white/70 w-4 text-center">{replaceQty}</span>
+                            <button className="w-6 h-6 rounded-lg bg-white/[0.06] flex items-center justify-center text-white/40 hover:text-white/80 text-xs" onClick={() => setReplaceQty(q => q + 1)}>+</button>
+                          </div>
+                          <span className="text-xs font-medium text-white/80">
+                            Total: <span className="text-emerald/80">S/.{(selectedProduct.precio * replaceQty).toFixed(2)}</span>
+                          </span>
+                        </div>
+                        <div className="flex gap-2">
+                          <button className="btn-primary text-[0.55rem] flex-1 py-2" onClick={() => confirmReplace(ing.id)}>
+                            Confirmar
+                          </button>
+                          <button className="text-[0.5rem] text-white/30 hover:text-white/60 px-3 py-2" onClick={() => skipIngredient(ing.id)} title="Ya tienes este producto en casa">
+                            Ya tengo
+                          </button>
+                        </div>
                       </div>
                     )}
                   </div>
