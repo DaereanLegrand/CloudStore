@@ -108,7 +108,7 @@ export default function Cart() {
           </div>
           <button className="btn-primary w-full text-sm py-3" onClick={checkout}>Pagar</button>
           <button
-            className="w-full text-xs text-white/40 hover:text-rose-400 transition-colors py-2 text-center"
+            className="w-full text-xs text-rose-400/80 hover:text-rose-300 bg-rose-500/10 hover:bg-rose-500/20 rounded-xl py-2.5 text-center font-medium transition-all"
             onClick={async () => {
               if (!confirm('¿Estás seguro? Todo el progreso será perdido.')) return
               const { data: { session } } = await supabase.auth.getSession()
