@@ -258,36 +258,39 @@ export default function RecipeDetail() {
                     )}
                   </div>
                 ) : (
-                  <div className="flex items-center justify-between gap-3 py-2">
-                    <div className="flex-1 min-w-0">
-                      <span className="text-sm text-white/65">{ing.ingredient_raw}</span>
+                  <div className="py-2 border-b border-white/[0.03] last:border-0">
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="flex-1 min-w-0">
+                        <span className="text-sm text-white/65">{ing.ingredient_raw}</span>
+                        {ing.mapeado && ing.products && (
+                          <div className="mt-0.5 space-y-0.5">
+                            <span className="text-xs text-emerald/50">→ {ing.products.titulo}</span>
+                            <span className="text-xs text-white/25 block">
+                              {ing.cantidad_producto} {Math.round(ing.cantidad_producto) === 1 ? 'unidad' : 'unidades'}
+                              {ing.notas && !ing.notas.startsWith('Ya tienes') && <span className="italic"> ({ing.notas})</span>}
+                            </span>
+                          </div>
+                        )}
+                        {!ing.mapeado && <span className="text-xs text-rose-400/40 italic block">No disponible</span>}
+                      </div>
                       {ing.mapeado && ing.products && (
-                        <div className="mt-0.5 space-y-0.5">
-                          <span className="text-xs text-emerald/50">→ {ing.products.titulo}</span>
-                          <span className="text-xs text-white/25 block">
-                            {ing.cantidad_producto} {Math.round(ing.cantidad_producto) === 1 ? 'unidad' : 'unidades'}
-                            {ing.notas && <span className="italic"> ({ing.notas})</span>}
-                          </span>
+                        <div className="text-right flex-shrink-0">
+                          <span className="text-xs font-medium text-emerald/80">S/.{(ing.cantidad_producto * ing.products.precio).toFixed(2)}</span>
                         </div>
                       )}
-                      {!ing.mapeado && <span className="text-xs text-rose-400/40 italic block">No disponible</span>}
                     </div>
-                    <div className="flex items-center gap-1 flex-shrink-0">
+                    <div className="flex items-center justify-end gap-1.5 mt-1">
                       {ing.mapeado && ing.products && (
-                        <>
-                          <button className="text-[0.5rem] text-white/25 hover:text-white/60 transition-colors px-1.5 py-1" onClick={() => { setReplacingId(ing.id); setSearchQuery(''); setSearchResults(null) }} title="Reemplazar producto">
-                            ↻
-                          </button>
-                          <button className="btn-primary text-xs px-3 py-1.5" onClick={() => addToCart(ing.product_id, Math.max(1, Math.round(ing.cantidad_producto)))}>
-                            +1
-                          </button>
-                        </>
-                      )}
-                      {!ing.mapeado && (
-                        <button className="text-[0.5rem] text-white/25 hover:text-white/60 transition-colors px-1.5 py-1" onClick={() => { setReplacingId(ing.id); setSearchQuery(''); setSearchResults(null) }} title="Buscar producto">
-                          ↻
+                        <button className="text-[0.55rem] text-white/50 hover:text-white transition-colors px-2 py-0.5 rounded-md hover:bg-white/[0.06]" onClick={() => addToCart(ing.product_id, Math.max(1, Math.round(ing.cantidad_producto)))}>
+                          + Carrito
                         </button>
                       )}
+                      <button className="text-[0.55rem] text-white/60 hover:text-white transition-colors px-2 py-0.5 rounded-md hover:bg-white/[0.06]" onClick={() => { setReplacingId(ing.id); setSearchQuery(''); setSearchResults(null); setSelectedProduct(null) }}>
+                        ↻ Reemplazar
+                      </button>
+                      <button className="text-[0.55rem] text-amber-400/60 hover:text-amber-300 transition-colors px-2 py-0.5 rounded-md hover:bg-white/[0.06]" onClick={() => skipIngredient(ing.id)}>
+                        ✓ Ya tengo
+                      </button>
                     </div>
                   </div>
                 )}
