@@ -17,7 +17,11 @@ export default defineConfig({
         changeOrigin: true,
         proxyTimeout: 180000,
         timeout: 180000,
-        pathRewrite: { '^/model': '' },
+        configure: (proxy) => {
+          proxy.on('proxyReq', (proxyReq, req) => {
+            proxyReq.path = req.url.replace(/^\/model/, '')
+          })
+        },
       },
     }
   }
