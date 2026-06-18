@@ -17,10 +17,8 @@ export default function Home() {
   }, [])
 
   async function loadProducts() {
-    setLoading(true)
     const { data } = await supabase.from('products').select('*').order('created_at', { ascending: false }).limit(8)
     setProducts(data || [])
-    setLoading(false)
   }
 
   async function loadPromoted() {

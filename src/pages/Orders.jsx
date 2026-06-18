@@ -8,7 +8,6 @@ export default function Orders() {
   useEffect(() => { loadOrders() }, [])
 
   async function loadOrders() {
-    setLoading(true)
     const { data: { session } } = await supabase.auth.getSession()
     if (!session) { setLoading(false); return }
     const { data } = await supabase.from('orders').select('*, order_items(*)').eq('comprador_id', session.user.id).order('created_at', { ascending: false })

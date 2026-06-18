@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useNavigate, Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { supabase } from '../supabase'
 import { useCart } from '../CartContext'
 
@@ -8,14 +8,12 @@ export default function Cart() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
   const [success, setSuccess] = useState('')
-  const [loading, setLoading] = useState(true)
   const navigate = useNavigate()
   const { fetchCartCount } = useCart()
 
   useEffect(() => { loadCart() }, [])
 
   async function loadCart() {
-    setLoading(true)
     const { data: { session } } = await supabase.auth.getSession()
     if (!session) { setItems([]); setLoading(false); return }
     const { data } = await supabase.from('cart_items').select('*, products(*)').eq('comprador_id', session.user.id)
