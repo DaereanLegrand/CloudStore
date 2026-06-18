@@ -111,14 +111,16 @@ export default function RecipeDetail() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="rounded-2xl bg-white/[0.03] p-5">
-          <h3 className="text-sm font-medium text-white/75 mb-3">Ingredientes</h3>
-          {mappedCount > 0 && (
-            <button className="btn-primary text-xs mb-4" onClick={addAllToCart} disabled={adding}>
-              {adding ? 'Agregando...' : `Agregar ${mappedCount} al carrito`}
-            </button>
-          )}
-          <div className="space-y-1">
+        <div className="rounded-2xl bg-white/[0.03] p-5 flex flex-col" style={{ maxHeight: '70vh' }}>
+          <div className="flex-shrink-0">
+            <h3 className="text-sm font-medium text-white/75 mb-3">Ingredientes</h3>
+            {mappedCount > 0 && (
+              <button className="btn-primary text-xs mb-4" onClick={addAllToCart} disabled={adding}>
+                {adding ? 'Agregando...' : `Agregar ${mappedCount} al carrito`}
+              </button>
+            )}
+          </div>
+          <div className="space-y-1 overflow-y-auto scrollbar-thin flex-1 pr-1">
             {ingredients.map(ing => (
               <div key={ing.id} className={`flex items-center justify-between gap-3 py-2 ${!ing.mapeado ? 'opacity-40' : ''}`}>
                 <div className="flex-1 min-w-0">
@@ -144,7 +146,7 @@ export default function RecipeDetail() {
           </div>
         </div>
 
-        <div className="rounded-2xl bg-white/[0.03] p-5">
+        <div className="rounded-2xl bg-white/[0.03] p-5 overflow-y-auto scrollbar-thin" style={{ maxHeight: '70vh' }}>
           <h3 className="text-sm font-medium text-white/75 mb-3">Preparación</h3>
           {recipe.instrucciones && typeof recipe.instrucciones === 'string' && (
             (() => {
