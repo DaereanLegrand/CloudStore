@@ -3,6 +3,7 @@ import { writeFileSync } from 'fs'
 const SUPABASE_URL = process.env.SUPABASE_URL || 'http://localhost:3333'
 const SERVICE_KEY = process.env.SERVICE_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoic2VydmljZV9yb2xlIiwiaXNzIjoic3VwYWJhc2UiLCJpYXQiOjE3ODE3NTgxMTgsImV4cCI6MjA5NzExODExOH0.1kr05HglaLLweQp-cXUy3NnA1vCf7ImoTQPAfk2sLjo'
 const OLLAMA_URL = 'http://localhost:11434/api/embeddings'
+const EMBED_MODEL = 'bge-m3'
 const BATCH_SIZE = 5
 
 const restUrl = `${SUPABASE_URL}/rest/v1`
@@ -23,7 +24,7 @@ async function generateEmbedding(text) {
   const res = await fetch(OLLAMA_URL, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ model: 'nomic-embed-text', prompt: text }),
+    body: JSON.stringify({ model: EMBED_MODEL, prompt: text }),
   })
   if (!res.ok) throw new Error(`Ollama error: ${res.status} ${await res.text()}`)
   const data = await res.json()

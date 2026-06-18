@@ -1,7 +1,7 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.39.0"
 
 const OLLAMA_URL = "http://host.docker.internal:11434/api/embeddings"
-const EMBED_MODEL = "nomic-embed-text"
+const EMBED_MODEL = "bge-m3"
 const JSON_HEADERS = { "Content-Type": "application/json" }
 
 Deno.serve(async (req) => {
