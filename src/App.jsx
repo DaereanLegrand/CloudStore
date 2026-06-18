@@ -9,10 +9,11 @@ import NewProduct from './pages/NewProduct'
 import Cart from './pages/Cart'
 import Orders from './pages/Orders'
 import Promotions from './pages/Promotions'
+import Footer from './components/Footer'
 
 export default function App() {
   return (
-    <div>
+    <div className="app-shell">
       <Navbar />
       <main className="container">
         <Routes>
@@ -27,6 +28,7 @@ export default function App() {
           <Route path="/promotions" element={<Promotions />} />
         </Routes>
       </main>
+      <Footer />
     </div>
   )
 }

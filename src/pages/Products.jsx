@@ -69,7 +69,7 @@ export default function Products() {
     return (
       <div className="pagination">
         <button className="btn btn-sm" disabled={page <= 1} onClick={() => setPage(p => p - 1)}>
-          ⬅ Anterior
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ verticalAlign: '-2px' }}><path d="m15 18-6-6 6-6" /></svg> Anterior
         </button>
         <div className="pagination-pages">
           {start > 1 && <span className="pagination-ellipsis">...</span>}
@@ -81,7 +81,7 @@ export default function Products() {
           {end < totalPages && <span className="pagination-ellipsis">...</span>}
         </div>
         <button className="btn btn-sm" disabled={page >= totalPages} onClick={() => setPage(p => p + 1)}>
-          Siguiente ➡
+          Siguiente <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ verticalAlign: '-2px' }}><path d="m9 18 6-6-6-6" /></svg>
         </button>
       </div>
     )
@@ -89,7 +89,7 @@ export default function Products() {
 
   return (
     <div className="page">
-      {toast && <div className="toast">✓ {toast} agregado al carrito</div>}
+      {toast && <div className="toast">{toast} agregado al carrito</div>}
       <h2>Productos</h2>
       <div className="filters">
         <input placeholder="Buscar productos..." value={search} onChange={e => setSearch(e.target.value)} />
@@ -104,7 +104,7 @@ export default function Products() {
         </div>
       ) : products.length === 0 ? (
         <div className="empty-state">
-          <span className="empty-icon">📦</span>
+          <span className="empty-icon"><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="m21 8-9-5-9 5 9 5 9-5Z" fill="currentColor" fillOpacity="0.12" /><path d="M3 8v8l9 5 9-5V8" /><path d="m21 8-9-5-9 5 9 5 9-5Z" /><path d="M12 13v8" /></svg></span>
           <p>No hay productos disponibles.</p>
         </div>
       ) : (

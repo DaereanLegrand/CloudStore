@@ -18,8 +18,23 @@ export default defineConfig({
         proxyTimeout: 180000,
         timeout: 180000,
         configure: (proxy) => {
+          const startMap = new Map()
           proxy.on('proxyReq', (proxyReq, req) => {
+            startMap.set(req, Date.now())
             proxyReq.path = req.url.replace(/^\/model/, '')
+          })
+          proxy.on('proxyRes', (proxyRes, req) => {
+            const ms = Date.now() - (startMap.get(req) || Date.now())
+            const body = []
+            proxyRes.on('data', chunk => body.push(chunk))
+            proxyRes.on('end', () => {
+              const bodyStr = Buffer.concat(body).toString('utf8').slice(0, 500)
+              console.log(`[LLM] ${req.method} ${req.url} → ${proxyRes.statusCode} (${ms}ms) ${bodyStr}`)
+            })
+            startMap.delete(req)
+          })
+          proxy.on('error', (err, req) => {
+            console.error(`[LLM ERROR] ${req?.url} ${err.message}`)
           })
         },
       },

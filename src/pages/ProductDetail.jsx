@@ -53,7 +53,7 @@ export default function ProductDetail() {
 
   return (
     <div className="page product-detail">
-      <Link to="/products" className="back-link">← Volver a productos</Link>
+      <Link to="/products" className="back-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ verticalAlign: '-2px' }}><path d="m15 18-6-6 6-6" /></svg> Volver a productos</Link>
       <div className="product-detail-content">
         <div className="product-detail-image">
           <img src={product.imagen_url} alt={product.titulo} />
@@ -78,7 +78,7 @@ export default function ProductDetail() {
             </div>
           )}
           <button className="btn btn-lg" onClick={addToCart} disabled={product.stock < 1}>
-            {product.stock < 1 ? 'Agotado' : added ? '✓ Agregado al carrito' : 'Agregar al carrito'}
+            {product.stock < 1 ? 'Agotado' : added ? 'Agregado al carrito' : 'Agregar al carrito'}
           </button>
         </div>
       </div>

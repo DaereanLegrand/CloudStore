@@ -54,7 +54,7 @@ export default function Promotions() {
 
   return (
     <div className="page">
-      <h2>🔥 Promociones</h2>
+      <h2 className="section-title">Promociones</h2>
       <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
         Activa una promoción del 20% de descuento en 20 productos seleccionados aleatoriamente.
       </p>
@@ -69,7 +69,7 @@ export default function Promotions() {
         </div>
       ) : products.length === 0 ? (
         <div className="empty-state">
-          <span className="empty-icon">🏷️</span>
+          <span className="empty-icon"><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M3.6 11.2 11 3.8a2 2 0 0 1 1.4-.6H19a2 2 0 0 1 2 2v6.6a2 2 0 0 1-.6 1.4l-7.4 7.4a2 2 0 0 1-2.8 0l-6.6-6.6a2 2 0 0 1 0-2.8Z" fill="currentColor" fillOpacity="0.12" /><path d="M3.6 11.2 11 3.8a2 2 0 0 1 1.4-.6H19a2 2 0 0 1 2 2v6.6a2 2 0 0 1-.6 1.4l-7.4 7.4a2 2 0 0 1-2.8 0l-6.6-6.6a2 2 0 0 1 0-2.8Z" /><circle cx="16" cy="8" r="1.3" fill="currentColor" /></svg></span>
           <p>No hay promociones activas.</p>
         </div>
       ) : (

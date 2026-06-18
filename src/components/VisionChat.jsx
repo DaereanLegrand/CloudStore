@@ -121,7 +121,7 @@ export default function VisionChat() {
       <div className="vision-chat-messages">
         {messages.length === 0 && !image && (
           <div className="vision-chat-empty">
-            <span className="vision-chat-empty-icon">🔍</span>
+            <span className="vision-chat-empty-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><circle cx="10.5" cy="10.5" r="6.5" fill="currentColor" fillOpacity="0.12" /><circle cx="10.5" cy="10.5" r="6.5" /><path d="m20.5 20.5-4-4" /></svg></span>
             <p>Pregúntame sobre cualquier imagen o escribe un mensaje</p>
             <div className="vision-chat-suggestions">
               {SUGGESTIONS.map((s, i) => (
@@ -164,7 +164,7 @@ export default function VisionChat() {
 
       <div className="vision-chat-input">
         <button className="vision-chat-attach" onClick={() => fileInput.current?.click()} title="Adjuntar imagen">
-          🖼️
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5" /><circle cx="8.5" cy="9.5" r="1.5" /><path d="m4 17 4.5-4.5 3 3L16 11l4 4.5" /></svg>
         </button>
         <input ref={fileInput} type="file" accept="image/*" onChange={handleImageSelect} hidden />
         <textarea
@@ -180,7 +180,7 @@ export default function VisionChat() {
           onClick={() => sendMessage()}
           disabled={loading || (!input.trim() && !image)}
         >
-          {loading ? '...' : '→'}
+          {loading ? '...' : <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>}
         </button>
       </div>
     </div>
