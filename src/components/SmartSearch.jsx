@@ -10,6 +10,7 @@ export default function SmartSearch() {
   const [image, setImage] = useState(null)
   const [imagePreview, setImagePreview] = useState(null)
   const [products, setProducts] = useState(null)
+  const [recipeResults, setRecipeResults] = useState(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const { fetchCartCount } = useCart()
@@ -45,6 +46,7 @@ export default function SmartSearch() {
     setLoading(true)
     setError('')
     setProducts(null)
+    setRecipeResults(null)
     const startTime = performance.now()
 
     try {
@@ -67,8 +69,10 @@ export default function SmartSearch() {
       }
 
       const results = data?.products || []
-      logLLM({ query: text, response: `${results.length} productos encontrados`, timing })
+      const recipes = data?.recipes || null
+      logLLM({ query: text, response: `${results.length} productos encontrados${recipes ? `, ${recipes.length} recetas` : ''}`, timing })
       setProducts(results)
+      setRecipeResults(recipes)
     } catch (err) {
       setError(err.message)
     } finally {
@@ -203,9 +207,31 @@ export default function SmartSearch() {
         </div>
       )}
 
+      {products !== null && recipeResults !== null && recipeResults.length > 0 && !loading && (
+        <div className="smart-search-recipe-results" style={{ marginTop: '1.5rem' }}>
+          <h3>Receta sugerida</h3>
+          <div className="recipe-results-list">
+            {recipeResults.map(r => (
+              <a key={r.slug} href={`/recipe/${r.slug}`} className="recipe-result-card">
+                <div className="recipe-result-info">
+                  <h4>{r.titulo}</h4>
+                  {r.descripcion && <p>{r.descripcion.substring(0, 120)}</p>}
+                  <div className="recipe-result-meta">
+                    {r.tiempo_preparacion > 0 && <span>{r.tiempo_preparacion} min</span>}
+                    {r.porciones > 0 && <span>{r.porciones} porciones</span>}
+                    {r.dificultad && <span className="badge-green">{r.dificultad}</span>}
+                  </div>
+                </div>
+                <span className="btn btn-sm">Ver receta</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
       {products !== null && !loading && (
         <div className="smart-search-results">
-          <h3>{products.length > 0 ? `Resultados (${products.length})` : 'Sin resultados'}</h3>
+          <h3>{products.length > 0 ? `Productos (${products.length})` : 'Sin resultados'}</h3>
           {products.length === 0 ? (
             <div className="empty-state">
               <span className="empty-icon">

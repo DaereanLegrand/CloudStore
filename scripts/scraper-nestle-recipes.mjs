@@ -90,8 +90,11 @@ async function scrapeRecipe(url) {
     }
 
     const slug = url.replace(BASE, '').replace('/recetas/', '')
-    const instructions = recipe.recipeInstructions || []
-    const instrucciones = instructions.map((section, si) => {
+  const instructions = recipe.recipeInstructions || []
+  if (instructions.length === 0 && recipe.recipeInstructionsRaw) {
+    instructions.push({ text: recipe.recipeInstructionsRaw })
+  }
+  const instrucciones = instructions.map((section, si) => {
       if (section['@type'] === 'HowToSection' && section.itemListElement) {
         return {
           section: section.name,
@@ -119,7 +122,17 @@ async function scrapeRecipe(url) {
       tiempo_preparacion: parseDuration(recipe.totalTime) || parseDuration(recipe.cookTime) + parseDuration(recipe.prepTime),
       porciones: parseInt(recipe.recipeYield) || 1,
       calorias: recipe.nutrition?.calories ? parseInt(recipe.nutrition.calories) : 0,
-      imagen_url: recipe.image?.url || '',
+      imagen_url: (() => {
+        const img = recipe.image
+        if (!img) return ''
+        let url = ''
+        if (typeof img === 'string') url = img
+        else if (Array.isArray(img.url)) url = img.url[0]
+        else if (typeof img.url === 'string') url = img.url
+        else if (typeof img === 'object') url = img.representativeOfPage ? (Array.isArray(img.url) ? img.url[0] : '') : ''
+        if (!url) return ''
+        return url.startsWith('http') ? url : `${BASE}${url}`
+      })(),
       url_origen: url,
       ingredients
     }
@@ -159,7 +172,7 @@ async function main() {
       process.stdout.write(` (${recipes.length} saved)`)
     }
 
-    await delay(1500 + Math.random() * 1000)
+    await delay(500 + Math.random() * 500)
   }
 
   writeFileSync(OUTPUT_FILE, JSON.stringify(recipes, null, 2))

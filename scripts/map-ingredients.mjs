@@ -146,6 +146,27 @@ function convertAndRound(cantidad, unidadOrigen, targetPrice) {
   return { cantidad_producto: Math.ceil(cantidad), nota: `${cantidad} ${unidadOrigen}` }
 }
 
+const embeddingCache = new Map()
+const DIRECT_PRODUCT_CACHE = new Map()
+
+async function fastSearchProduct(query) {
+  const lower = query.toLowerCase()
+  if (DIRECT_PRODUCT_CACHE.has(lower)) return DIRECT_PRODUCT_CACHE.get(lower)
+  try {
+    const resp = await fetch(`${REST_URL}/products?select=id,titulo,precio,categoria&or=(titulo.ilike.*${encodeURIComponent(lower)}*,descripcion.ilike.*${encodeURIComponent(lower)}*)&limit=5&order=precio.asc`, {
+      headers: { 'apikey': SERVICE_KEY, 'Authorization': `Bearer ${SERVICE_KEY}` }
+    })
+    if (resp.ok) {
+      const data = await resp.json()
+      if (data && data.length > 0) {
+        DIRECT_PRODUCT_CACHE.set(lower, data)
+        return data
+      }
+    }
+  } catch {}
+  return null
+}
+
 async function main() {
   const recipes = JSON.parse(readFileSync('scripts/output/nestle-recipes.json', 'utf-8'))
   console.log(`Mapping ingredients for ${recipes.length} recipes...`)
@@ -166,18 +187,21 @@ async function main() {
 
       let bestMatch = null
       let bestScore = 0
-      let products = []
+      let products = null
 
-      try {
-        products = await searchProduct(ing.nombre)
-      } catch (err) {
-        // Fallback to direct DB query
+      const keyWords = lowerName.split(/\s+/).filter(w => w.length > 2)
+      const simpleIngredient = keyWords.length <= 3
+
+      if (simpleIngredient) {
+        products = await fastSearchProduct(keyWords.slice(0, 2).join(' '))
+      }
+
+      if (!products) {
         try {
-          const resp = await fetch(`${REST_URL}/products?select=id,titulo,precio,categoria&titulo=ilike.*${encodeURIComponent(lowerName.split(' ').slice(0, 3).join('%'))}*&limit=3`, {
-            headers: { 'apikey': SERVICE_KEY, 'Authorization': `Bearer ${SERVICE_KEY}` }
-          })
-          if (resp.ok) products = await resp.json()
-        } catch {}
+          products = await searchProduct(ing.nombre, 1)
+        } catch {
+          products = await fastSearchProduct(ing.nombre)
+        }
       }
 
       if (products && products.length > 0) {
@@ -223,7 +247,7 @@ async function main() {
         totalUnmapped++
       }
 
-      await new Promise(r => setTimeout(r, 300))
+      if ((totalMapped + totalUnmapped) % 20 === 0) await new Promise(r => setTimeout(r, 10))
     }
 
     allIngredients.push(...mappedIngredients)

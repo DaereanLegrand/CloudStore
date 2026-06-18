@@ -87,6 +87,36 @@ const EXPANSIONS: Expansion[] = [
   // === COMPARTIR ===
   { keywords: ["compartir", "reunirse", "amigos", "pasar el rato"], replacement: "snack OR cerveza OR gaseosa OR galleta OR papas OR vino OR pisco OR botana OR chocolate" },
 
+  // === PLATOS PERUANOS (dish names → ingredients) ===
+  { keywords: ["papa rellena"], replacement: "papa OR carne molida OR cebolla OR aceituna OR pasas OR harina OR aceite OR ajo OR sal OR pimienta OR huevo" },
+  { keywords: ["lomo saltado"], replacement: "carne OR cebolla OR tomate OR ajo OR culantro OR arroz OR papa OR vinagre OR sillao OR pimienta OR comino OR aceite" },
+  { keywords: ["aji de gallina"], replacement: "pollo OR pan OR leche OR queso OR ají OR nuez OR arroz OR papa OR huevo OR aceite OR ajo OR cebolla" },
+  { keywords: ["ceviche", "cebiche", "causa", "tiradito"], replacement: "pescado OR limon OR cebolla OR ají OR camote OR cancha OR lechuga OR sal" },
+  { keywords: ["arroz con pollo"], replacement: "arroz OR pollo OR cebolla OR ajo OR culantro OR cerveza OR papa OR zanahoria OR alverja OR aceite" },
+  { keywords: ["seco", "seco de pollo", "seco de carne"], replacement: "carne OR pollo OR cilantro OR culantro OR cebolla OR ajo OR arroz OR frejol ORaceite OR cerveza" },
+  { keywords: ["carapulcra"], replacement: "papa seca OR carne OR cerdo OR mani OR cebolla OR ajo OR ají OR chocolate OR comino OR aceite" },
+  { keywords: ["cau cau"], replacement: "mondongo OR pollo OR papa OR cebolla OR ajo OR ají OR hierbabuena OR arroz OR vinagre OR sal" },
+  { keywords: ["tacu tacu"], replacement: "frejol OR arroz OR cebolla OR ajo OR ají OR aceite OR huevo OR camote OR salsa" },
+  { keywords: ["pollo a la brasa"], replacement: "pollo OR cerveza OR sillao OR ajo OR comino OR pimienta OR papa OR ensalada OR aceite OR sal" },
+  { keywords: ["anticucho"], replacement: "corazon OR carne OR ají OR panca OR vinagre OR ajo OR comino OR cerveza OR papa OR choclo" },
+  { keywords: ["causa"], replacement: "papa OR ají OR limon OR atun OR pollo OR palta OR mayonesa OR aceituna OR huevo OR sal" },
+  { keywords: ["estofado", "estofado de pollo", "estofado de carne"], replacement: "carne OR pollo OR papa OR zanahoria OR cebolla OR ajo OR arveja OR vino OR aceite OR caldo" },
+  { keywords: ["saltado", "salteado"], replacement: "carne OR pollo OR verduras OR cebolla OR tomate OR ajo OR sillao OR arroz OR papa OR aceite" },
+  { keywords: ["sopa"], replacement: "fideo OR verdura OR pollo OR caldo OR papa OR zanahoria OR apio OR cebolla OR ajo OR sal" },
+  { keywords: ["caldo", "caldo de gallina", "caldo de pollo"], replacement: "pollo OR gallina OR fideo OR papa OR zanahoria OR apio OR cebolla OR ajo OR huevo OR sal" },
+  { keywords: ["chaufa", "arroz chaufa"], replacement: "arroz OR pollo OR huevo OR sillao OR cebolla OR ajo OR aceite OR sal OR verduras" },
+  { keywords: ["adobo", "adobo de cerdo"], replacement: "cerdo OR cebolla OR ajo OR ají OR vinagre OR chicha OR camote OR arroz OR comino OR sal" },
+  { keywords: ["tamal", "humita", "tamales"], replacement: "maiz OR harina OR manteca OR pollo OR cebolla OR ajo OR ají OR aceituna OR huevo OR sal" },
+  { keywords: ["picante", "picante de pollo", "picante de carne"], replacement: "carne OR pollo OR papa OR arroz OR cebolla OR ajo OR ají OR aceite OR sal OR comino" },
+  { keywords: ["crocante", "chicharron"], replacement: "cerdo OR pescado OR pollo OR limon OR camote OR salsa OR cebolla OR sal OR aceite OR yuca" },
+  { keywords: ["sudado", "sudado de pescado", "pescado sudado"], replacement: "pescado OR cebolla OR tomate OR ajo OR ají OR cilantro OR limon OR arroz OR camote OR sal" },
+  { keywords: ["jalea", "jalea de pescado", "jalea mixta"], replacement: "pescado OR mariscos OR yuca OR limon OR cebolla OR salsa OR sal OR aceite" },
+  { keywords: ["rocoto relleno"], replacement: "rocoto OR carne OR queso OR cebolla OR ajo OR leche OR huevo OR aceite OR pasas OR arroz OR sal" },
+  { keywords: ["pachamanca"], replacement: "carne OR cerdo OR pollo OR camote OR papa OR choclo OR haba OR sal OR aceite OR hierbabuena" },
+  { keywords: ["olluquito"], replacement: "olluco OR carne OR cebolla OR ajo OR ají OR queso OR leche OR arroz OR hierbabuena OR aceite" },
+  { keywords: ["frejol", "frejoles", "frijol", "tacu tacu", "frejol colado"], replacement: "frejol OR frijol OR cebolla OR ajo OR aceite OR azucar OR leche OR canela OR pan OR arroz" },
+  { keywords: ["crema", "crema de zapallo", "crema de esparrago"], replacement: "zapallo OR esparrago OR verdura OR leche OR mantequilla OR pan OR pollo OR caldo OR sal" },
+
   // === OFICINA / ESTUDIO ===
   { keywords: ["oficina", "escritorio", "trabajo", "estudiar", "estudio", "universidad"], replacement: "cuaderno OR lapicero OR computadora OR escritorio OR silla OR utiles OR papel OR impresora OR oficina" },
   { keywords: ["escuela", "colegio", "clases", "utiles escolares"], replacement: "cuaderno OR lapicero OR mochila OR colores OR carpeta OR papel OR tijera OR escolar" },
@@ -186,8 +216,22 @@ Deno.serve(async (req) => {
       return new Response(JSON.stringify({ error: dbError.message }), { status: 500, headers: JSON_HEADERS })
     }
 
+    let matchedRecipe = null
+    try {
+      const { data: recipeResults } = await supabase
+        .from("recipes")
+        .select("slug, titulo, descripcion, dificultad, tiempo_preparacion, porciones, calorias, imagen_url, categoria")
+        .ilike("titulo", `%${query}%`)
+        .limit(3)
+      if (recipeResults && recipeResults.length > 0) {
+        matchedRecipe = recipeResults
+      }
+    } catch {
+      // Silently ignore recipe search errors
+    }
+
     const expanded = expandedQuery !== null
-    return new Response(JSON.stringify({ products: products || [], expanded }), { headers: JSON_HEADERS })
+    return new Response(JSON.stringify({ products: products || [], recipes: matchedRecipe, expanded }), { headers: JSON_HEADERS })
   } catch (err) {
     return new Response(JSON.stringify({ error: err.message }), { status: 500, headers: JSON_HEADERS })
   }
