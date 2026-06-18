@@ -58,20 +58,14 @@ body {
 h1 { margin-bottom: 1rem; }
 h2 { margin-bottom: 1.5rem; }
 
-.auth-form {
-  max-width: 440px;
-  margin-top: 3rem;
-}
+.auth-form { max-width: 440px; margin-top: 3rem; }
 
-.form-group {
-  margin-bottom: 1rem;
-}
+.form-group { margin-bottom: 1rem; }
 
 .form-group label {
   display: block;
   margin-bottom: 0.3rem;
   font-weight: 500;
-  color: var(--text);
 }
 
 .form-group input,
@@ -185,10 +179,7 @@ h2 { margin-bottom: 1.5rem; }
 }
 .cart-item-actions button:disabled { opacity: 0.5; cursor: not-allowed; }
 
-#cart-summary {
-  margin-top: 2rem;
-  text-align: right;
-}
+#cart-summary { margin-top: 2rem; text-align: right; }
 
 .order-card {
   background: var(--card-bg);
