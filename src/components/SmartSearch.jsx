@@ -18,7 +18,7 @@ export default function SmartSearch() {
   async function addToCart(productId, titulo) {
     const { data: { session } } = await supabase.auth.getSession()
     if (!session) { window.location.href = '/login'; return }
-    const { data: existing } = await supabase.from('cart_items').select('*').eq('comprador_id', session.user.id).eq('product_id', productId).single()
+    const { data: existing } = await supabase.from('cart_items').select('*').eq('comprador_id', session.user.id).eq('product_id', productId).maybeSingle()
     if (existing) {
       await supabase.from('cart_items').update({ cantidad: existing.cantidad + 1 }).eq('id', existing.id)
     } else {
