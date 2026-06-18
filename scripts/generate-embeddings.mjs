@@ -9,26 +9,61 @@ const BATCH_SIZE = 5
 const restUrl = `${SUPABASE_URL}/rest/v1`
 
 async function fetchAllProducts() {
-  const res = await fetch(`${restUrl}/products?select=id,titulo,descripcion`, {
-    headers: {
-      'apikey': SERVICE_KEY,
-      'Authorization': `Bearer ${SERVICE_KEY}`,
-      'Accept': 'application/json',
-    },
-  })
-  if (!res.ok) throw new Error(`Failed to fetch products: ${res.status} ${await res.text()}`)
-  return res.json()
+  const allProducts = []
+  let offset = 0
+  const pageLimit = 500
+  while (true) {
+    const url = `${restUrl}/products?select=id,titulo,descripcion&order=id&limit=${pageLimit}&offset=${offset}`
+    const res = await fetch(url, {
+      headers: {
+        'apikey': SERVICE_KEY,
+        'Authorization': `Bearer ${SERVICE_KEY}`,
+        'Accept': 'application/json',
+      },
+    })
+    if (!res.ok) throw new Error(`Failed to fetch products: ${res.status} ${await res.text()}`)
+    const page = await res.json()
+    if (page.length === 0) break
+    allProducts.push(...page)
+    offset += page.length
+  }
+  return allProducts
 }
 
-async function generateEmbedding(text) {
-  const res = await fetch(OLLAMA_URL, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ model: EMBED_MODEL, prompt: text }),
-  })
-  if (!res.ok) throw new Error(`Ollama error: ${res.status} ${await res.text()}`)
-  const data = await res.json()
-  return data.embedding
+async function generateEmbedding(text, retries = 2) {
+  const cleanText = text.replace(/[^\x20-\x7E\s]/g, '').substring(0, 512)
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const res = await fetch(OLLAMA_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ model: EMBED_MODEL, prompt: cleanText }),
+      })
+      if (!res.ok) {
+        const body = await res.text()
+        if (res.status === 500 && body.includes('NaN')) {
+          if (attempt < retries) {
+            const shorter = cleanText.substring(0, 100 * (attempt + 1))
+            await new Promise(r => setTimeout(r, 500 * (attempt + 1)))
+            return await generateEmbedding(shorter, retries - attempt - 1)
+          }
+          throw new Error(`NaN error after ${retries} retries`)
+        }
+        throw new Error(`Ollama error: ${res.status} ${body}`)
+      }
+      const data = await res.json()
+      if (data.embedding && data.embedding.some(v => Number.isNaN(v))) {
+        throw new Error('NaN values in embedding')
+      }
+      return data.embedding
+    } catch (err) {
+      if (attempt < retries) {
+        await new Promise(r => setTimeout(r, 1000))
+        continue
+      }
+      throw err
+    }
+  }
 }
 
 async function updateProductEmbedding(id, embedding) {

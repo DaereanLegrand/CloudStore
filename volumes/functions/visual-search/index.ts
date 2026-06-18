@@ -5,7 +5,14 @@ const OLLAMA_URL = "http://host.docker.internal:11434/api/embeddings"
 const EMBED_MODEL = "bge-m3"
 const JSON_HEADERS = { "Content-Type": "application/json" }
 
-const VISION_PROMPT = "Describe este producto en una oración concisa para búsqueda en un catálogo. Menciona tipo, categoría y características clave."
+const VISION_PROMPT = `Eres un clasificador de productos para un supermercado online.
+Describe esta imagen ÚNICAMENTE con el nombre exacto del producto y su categoría.
+Formato: "PRODUCTO: [nombre preciso] | CATEGORIA: [categoría]"
+NO añadas descripciones, colores, marcas o texto adicional.
+Ejemplos:
+- Una imagen de spaghetti → "PRODUCTO: Fideos spaghetti | CATEGORIA: abarrotes"
+- Una imagen de pasta dental → "PRODUCTO: Pasta dental | CATEGORIA: cuidado-personal"
+- Una imagen de un jabón → "PRODUCTO: Jabon de lavar | CATEGORIA: cuidado-personal"`
 
 function sanitize(text: string): string {
   return text
@@ -15,6 +22,17 @@ function sanitize(text: string): string {
     .replace(/\s+/g, " ")
     .trim()
     .slice(0, 512)
+}
+
+function extractProductName(description: string): string {
+  const match = description.match(/PRODUCTO:\s*([^|]+)/i)
+  if (match) return match[1].trim()
+  return description.replace(/CATEGORIA:\s*\S+/gi, "").trim() || description
+}
+
+function extractCategory(description: string): string | null {
+  const match = description.match(/CATEGORIA:\s*(\S+)/i)
+  return match ? match[1].trim().toLowerCase() : null
 }
 
 async function getEmbedding(text: string): Promise<number[] | null> {
@@ -50,7 +68,7 @@ Deno.serve(async (req) => {
       headers: JSON_HEADERS,
       body: JSON.stringify({
         messages: [{ role: "user", content: VISION_PROMPT, image }],
-        max_tokens: 100,
+        max_tokens: 80,
         stream: false,
       }),
     })
@@ -64,7 +82,11 @@ Deno.serve(async (req) => {
     if (!rawDescription) return new Response(JSON.stringify({ error: "El modelo no generó una descripción" }), { status: 502, headers: JSON_HEADERS })
 
     const description = sanitize(rawDescription)
-    const queryEmbedding = await getEmbedding(description)
+    const productName = extractProductName(description)
+    const detectedCategory = extractCategory(description)
+
+    const embedText = productName || description
+    const queryEmbedding = await getEmbedding(embedText)
     if (!queryEmbedding) return new Response(JSON.stringify({ error: "No se pudo generar el embedding" }), { status: 502, headers: JSON_HEADERS })
 
     const supabaseUrl = Deno.env.get("SUPABASE_URL")
@@ -72,13 +94,23 @@ Deno.serve(async (req) => {
     if (!supabaseUrl || !serviceRoleKey) return new Response(JSON.stringify({ error: "Configuración incompleta" }), { status: 500, headers: JSON_HEADERS })
     const supabase = createClient(supabaseUrl, serviceRoleKey)
 
-    const { data: products, error: dbError } = await supabase.rpc("match_products", {
+    const { data: products, error: dbError } = await supabase.rpc("hybrid_search", {
       query_embedding: queryEmbedding,
+      text_query: productName,
       match_count: 20,
+      vector_threshold: 0.15,
+      keyword_boost: 0.3,
     })
     if (dbError) return new Response(JSON.stringify({ error: dbError.message }), { status: 500, headers: JSON_HEADERS })
 
-    return new Response(JSON.stringify({ products: products || [], description }), { headers: JSON_HEADERS })
+    let results = products || []
+    if (detectedCategory && results.length > 1) {
+      const catBoosted = results.filter((p: any) => p.categoria === detectedCategory)
+      const catRest = results.filter((p: any) => p.categoria !== detectedCategory)
+      results = [...catBoosted, ...catRest]
+    }
+
+    return new Response(JSON.stringify({ products: results, description, productName, detectedCategory }), { headers: JSON_HEADERS })
   } catch (err) {
     return new Response(JSON.stringify({ error: err.message }), { status: 500, headers: JSON_HEADERS })
   }
