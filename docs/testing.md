@@ -347,3 +347,116 @@ Usage:
 ```bash
 node scripts/generate-keys.mjs
 ```
+
+---
+
+## 8. Recipe System Tests
+
+### 8.1. Database Verification
+
+```bash
+# Check recipe count and ingredient mapping stats
+docker exec supabase-db psql -U postgres -d postgres -c "
+  SELECT COUNT(*) as recetas FROM recipes;
+  SELECT COUNT(*) as total_ingredientes,
+         COUNT(*) FILTER (WHERE mapeado) as mapeados,
+         COUNT(*) FILTER (WHERE NOT mapeado) as no_mapeados
+  FROM recipe_ingredients;
+"
+
+# Check a specific recipe
+docker exec supabase-db psql -U postgres -d postgres -c "
+  SELECT r.titulo, COUNT(ri.id) as ingredientes,
+         COUNT(*) FILTER (WHERE ri.mapeado) as mapeados
+  FROM recipes r
+  JOIN recipe_ingredients ri ON ri.recipe_id = r.id
+  GROUP BY r.id, r.titulo ORDER BY random() LIMIT 5;
+"
+```
+
+### 8.2. API Tests
+
+```bash
+ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlzcyI6InN1cGFiYXNlIiwiaWF0IjoxNzgxNzU4MTE4LCJleHAiOjIwOTcxMTgxMTh9._h-ey3emNeKEpHDVUvEKAdnuO385vQV6SBHNAOyEuD0"
+
+# Test recipe listing
+curl -s "http://localhost:3333/rest/v1/recipes?select=slug,titulo,dificultad&limit=5" \
+  -H "apikey: $ANON_KEY" \
+  -H "Authorization: Bearer $ANON_KEY" | jq .
+
+# Test recipe detail + ingredients
+RECIPE_SLUG="papa-rellena"
+RECIPE_ID=$(curl -s "http://localhost:3333/rest/v1/recipes?select=id&slug=eq.$RECIPE_SLUG" \
+  -H "apikey: $ANON_KEY" \
+  -H "Authorization: Bearer $ANON_KEY" | jq -r '.[0].id')
+
+curl -s "http://localhost:3333/rest/v1/recipe_ingredients?select=ingredient_raw,mapeado,product_id:product_id(titulo,precio)&recipe_id=eq.$RECIPE_ID" \
+  -H "apikey: $ANON_KEY" \
+  -H "Authorization: Bearer $ANON_KEY" | jq .
+
+# Test semantic search returning recipes
+curl -s -X POST "http://localhost:3333/functions/v1/semantic-search" \
+  -H "apikey: $ANON_KEY" \
+  -H "Authorization: Bearer $ANON_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query":"papa rellena"}' | jq '{ products: [.products[0]?.titulo], recipes: [.recipes[0]?.titulo] }'
+```
+
+### 8.3. Full Scraping Pipeline Test
+
+```bash
+# Time the full pipeline (expect ~5-7 min)
+time (
+  # 1. Scrape
+  node scripts/scraper-nestle-recipes.mjs
+
+  # 2. Map ingredients
+  SERVICE_KEY="<service_role_key>" \
+    OLLAMA_URL=http://172.17.0.1:11434/api/embeddings \
+    node scripts/map-ingredients.mjs
+
+  # 3. Fix mappings
+  SERVICE_KEY="<service_role_key>" \
+    OLLAMA_URL=http://172.17.0.1:11434/api/embeddings \
+    node scripts/fix-mappings.mjs
+
+  # 4. Seed
+  node scripts/seed-recipes.mjs
+
+  echo "Pipeline complete."
+)
+```
+
+### 8.4. Mapping Quality Check
+
+Script to verify no bad mappings exist:
+
+```bash
+SERVICE_KEY="<service_role_key>"
+
+# Check for known bad mapping patterns
+echo "=== Bad mapping checks ==="
+for pattern in \
+  "papa.*chips" \
+  "huevo.*fideo" \
+  "aceite.*atun" \
+  "pasta tomate.*dental"; do
+  count=$(docker exec supabase-db psql -U postgres -d postgres -t -c "
+    SELECT COUNT(*) FROM recipe_ingredients ri
+    JOIN products p ON p.id = ri.product_id
+    WHERE ri.ingredient_raw ~* '${pattern%%|*}'
+      AND p.titulo ~* '${pattern##*|}';")
+  echo "  ${pattern}: ${count} instances"
+done
+
+# Check for unmapped ingredients (these should be Nestlé-specific only)
+echo ""
+echo "=== Sample unmapped (should be Nestlé brands) ==="
+docker exec supabase-db psql -U postgres -d postgres -c "
+  SELECT ri.ingredient_raw, r.titulo as recipe
+  FROM recipe_ingredients ri
+  JOIN recipes r ON r.id = ri.recipe_id
+  WHERE NOT ri.mapeado
+  ORDER BY random() LIMIT 10;
+"
+```

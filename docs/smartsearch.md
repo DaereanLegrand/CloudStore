@@ -46,8 +46,14 @@ Edge Runtime (supabase-edge-functions)
   │        ├─ POST http://host.docker.internal:11434/api/embeddings
   │        │   └─ Ollama → bge-m3 → vector(1024)
   │        │
-  │        └─ supabase.rpc('match_products', { query_embedding })
-  │            └─ PostgreSQL + pgvector → HNSW index → top 20
+    │   ├─ Análisis de expansión de consulta (intent → keywords)
+    │   ├─ supabase.rpc('hybrid_search', {
+    │   │     query_embedding, text_query, keyword_boost: 0.3 })
+    │   │   └─ PostgreSQL + pgvector + tsvector → HNSW index → top 20
+    │   │   └─ Scoring = keyword_boost + vec_sim * (1-keyword_boost)
+    │   │       si hay coincidencia de texto (ts_rank > 0)
+    │   └─ supabase.from('recipes').ilike('titulo', query)
+    │       └─ Retorna recetas que coinciden con la búsqueda
   │
   └─ Retorna { products: [...], description? }
       │
@@ -561,7 +567,21 @@ const text = descripcion
 
 | Archivo | Propósito |
 |---|---|
-| `volumes/db/vector.sql` | Migración: pgvector, columna embedding, índice HNSW, función RPC `match_products` |
+| `volumes/db/vector.sql` | Migración: pgvector, columna embedding, índice HNSW + tsvector + GIN + pg_trgm, funciones RPC `match_products` y `hybrid_search` |
+
+### Funciones RPC
+
+**`match_products(query_embedding, match_count, match_threshold)`**
+- Búsqueda puramente vectorial (cosine distance)
+- Retorna productos con `similarity >= match_threshold`
+
+**`hybrid_search(query_embedding, text_query, match_count, vector_threshold, keyword_boost)`**
+- Combina similitud coseno + ranking de texto completo (`ts_rank`)
+- Usa `websearch_to_tsquery('spanish', text_query)` para parsear la consulta
+  con soporte de operador `OR` entre términos
+- Scoring: si `txt_sim > 0` → `keyword_boost + vec_sim * (1-keyword_boost)`,
+  si no → `vec_sim`
+- Garantiza que productos con coincidencia de texto siempre superen a los que no
 
 ### Scripts
 
