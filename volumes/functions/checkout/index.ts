@@ -1,103 +1,201 @@
-import { serve } from "https://deno.land/std@0.177.0/http/server.ts"
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.39.0"
+import * as jose from "https://deno.land/x/jose@v4.14.4/index.ts"
 
-serve(async (req) => {
+const JSON_HEADERS = { "Content-Type": "application/json" }
+
+function log(...args: unknown[]) {
+  console.log(`[checkout]`, ...args)
+}
+
+function logError(...args: unknown[]) {
+  console.error(`[checkout ERROR]`, ...args)
+}
+
+Deno.serve(async (req) => {
+  const requestId = crypto.randomUUID().slice(0, 8)
+  log(`[${requestId}] Request started`, req.method, req.url)
+
   try {
-    const supabaseClient = createClient(
-      Deno.env.get("SUPABASE_URL") ?? "",
-      Deno.env.get("SUPABASE_ANON_KEY") ?? "",
-      { global: { headers: { Authorization: req.headers.get("Authorization")! } } }
-    )
+    // --- Auth: verify JWT ---
+    const authHeader = req.headers.get("Authorization")
+    log(`[${requestId}] Auth header present:`, !!authHeader)
+    if (!authHeader) {
+      logError(`[${requestId}] Missing Authorization header`)
+      return new Response(JSON.stringify({ error: "No autorizado" }), { status: 401, headers: JSON_HEADERS })
+    }
 
-    const { items } = await req.json()
+    const jwt = authHeader.replace("Bearer ", "")
+    const encoder = new TextEncoder()
+    const jwtSecret = Deno.env.get("JWT_SECRET")
+    log(`[${requestId}] JWT_SECRET available:`, !!jwtSecret)
+    if (!jwtSecret) {
+      logError(`[${requestId}] JWT_SECRET env var is empty or missing`)
+      return new Response(JSON.stringify({ error: "JWT_SECRET no configurado" }), { status: 500, headers: JSON_HEADERS })
+    }
+    const secret = encoder.encode(jwtSecret)
+
+    let userId: string
+    try {
+      const { payload } = await jose.jwtVerify(jwt, secret)
+      userId = payload.sub as string
+      log(`[${requestId}] JWT verified, userId:`, userId)
+    } catch (jwtErr) {
+      logError(`[${requestId}] JWT verification failed:`, jwtErr)
+      return new Response(JSON.stringify({ error: `JWT inválido: ${jwtErr}` }), { status: 401, headers: JSON_HEADERS })
+    }
+
+    // --- Init Supabase client ---
+    const supabaseUrl = Deno.env.get("SUPABASE_URL")
+    const serviceRoleKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")
+    log(`[${requestId}] SUPABASE_URL present:`, !!supabaseUrl)
+    log(`[${requestId}] SUPABASE_SERVICE_ROLE_KEY present:`, !!serviceRoleKey)
+    if (!supabaseUrl || !serviceRoleKey) {
+      logError(`[${requestId}] Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY env vars`)
+      return new Response(JSON.stringify({ error: "Configuración del servidor incompleta" }), { status: 500, headers: JSON_HEADERS })
+    }
+    const supabaseClient = createClient(supabaseUrl, serviceRoleKey)
+
+    // --- Parse request body ---
+    let body: { items?: { product_id: string; cantidad: number }[] }
+    try {
+      body = await req.json()
+      log(`[${requestId}] Body parsed, items count:`, body.items?.length ?? 0)
+    } catch (parseErr) {
+      logError(`[${requestId}] Failed to parse request body:`, parseErr)
+      return new Response(JSON.stringify({ error: `Error al leer el cuerpo de la solicitud: ${parseErr}` }), { status: 400, headers: JSON_HEADERS })
+    }
+
+    const { items } = body
     if (!items || items.length === 0) {
-      return new Response(JSON.stringify({ error: "Carrito vacío" }), { status: 400 })
+      logError(`[${requestId}] Cart is empty`)
+      return new Response(JSON.stringify({ error: "Carrito vacío" }), { status: 400, headers: JSON_HEADERS })
     }
+    log(`[${requestId}] Items:`, JSON.stringify(items))
 
-    const { data: { user }, error: userError } = await supabaseClient.auth.getUser()
-    if (userError || !user) {
-      return new Response(JSON.stringify({ error: "No autorizado" }), { status: 401 })
-    }
-
+    // --- Fetch products ---
     const productIds = items.map((i: any) => i.product_id)
+    log(`[${requestId}] Fetching products:`, productIds)
+
     const { data: products, error: prodError } = await supabaseClient
       .from("products")
-      .select("id, titulo, precio, stock")
+      .select("id, titulo, precio, precio_promocion, stock")
       .in("id", productIds)
 
-    if (prodError || !products) {
-      return new Response(JSON.stringify({ error: "Error al leer productos" }), { status: 500 })
+    if (prodError) {
+      logError(`[${requestId}] Products query failed:`, prodError)
+      return new Response(JSON.stringify({ error: `Error al leer productos: ${prodError.message} (${prodError.code || prodError.hint || ''})` }), { status: 500, headers: JSON_HEADERS })
     }
+    if (!products || products.length === 0) {
+      logError(`[${requestId}] No products found for IDs:`, productIds)
+      return new Response(JSON.stringify({ error: "No se encontraron productos" }), { status: 400, headers: JSON_HEADERS })
+    }
+    log(`[${requestId}] Products found:`, products.length)
 
+    // --- Validate stock ---
     for (const item of items) {
       const product = products.find((p: any) => p.id === item.product_id)
       if (!product) {
-        return new Response(JSON.stringify({ error: `Producto ${item.product_id} no encontrado` }), { status: 400 })
+        logError(`[${requestId}] Product not found:`, item.product_id)
+        return new Response(JSON.stringify({ error: `Producto no encontrado: ${item.product_id}` }), { status: 400, headers: JSON_HEADERS })
       }
       if (product.stock < item.cantidad) {
-        return new Response(JSON.stringify({ error: `Stock insuficiente para ${product.titulo}` }), { status: 400 })
+        logError(`[${requestId}] Insufficient stock for`, product.titulo, `requested:`, item.cantidad, `available:`, product.stock)
+        return new Response(JSON.stringify({ error: `Stock insuficiente para ${product.titulo}` }), { status: 400, headers: JSON_HEADERS })
       }
     }
+    log(`[${requestId}] Stock validation passed`)
 
+    // --- Calculate total and prepare order items ---
     let total = 0
     const orderItems = items.map((item: any) => {
       const product = products.find((p: any) => p.id === item.product_id)!
-      const subtotal = Number(product.precio) * item.cantidad
+      const effectivePrice = Number(product.precio_promocion || product.precio)
+      const subtotal = effectivePrice * item.cantidad
       total += subtotal
       return {
         product_id: product.id,
         titulo: product.titulo,
-        precio: Number(product.precio),
+        precio: effectivePrice,
         cantidad: item.cantidad,
       }
     })
+    log(`[${requestId}] Total calculated:`, total)
 
+    // --- Insert order ---
+    log(`[${requestId}] Creating order for userId:`, userId, `total:`, total)
     const { data: order, error: orderError } = await supabaseClient
       .from("orders")
-      .insert({
-        comprador_id: user.id,
-        total,
-        estado: "pagado",
-      })
+      .insert({ comprador_id: userId, total, estado: "pagado" })
       .select()
       .single()
 
-    if (orderError || !order) {
-      return new Response(JSON.stringify({ error: "Error al crear la orden" }), { status: 500 })
+    if (orderError) {
+      logError(`[${requestId}] Order insert failed:`, orderError)
+      return new Response(JSON.stringify({ error: `Error al crear la orden: ${orderError.message} (${orderError.code || ''})` }), { status: 500, headers: JSON_HEADERS })
     }
+    if (!order) {
+      logError(`[${requestId}] Order insert returned no data`)
+      return new Response(JSON.stringify({ error: "No se pudo crear la orden" }), { status: 500, headers: JSON_HEADERS })
+    }
+    log(`[${requestId}] Order created:`, order.id)
 
-    const orderItemsWithOrderId = orderItems.map((item: any) => ({
-      ...item,
-      order_id: order.id,
-    }))
+    // --- Insert order items ---
+    const orderItemsWithOrderId = orderItems.map((item: any) => ({ ...item, order_id: order.id }))
+    log(`[${requestId}] Inserting order items:`, orderItemsWithOrderId.length)
 
     const { error: itemsError } = await supabaseClient
       .from("order_items")
       .insert(orderItemsWithOrderId)
 
     if (itemsError) {
-      await supabaseClient.from("orders").delete().eq("id", order.id)
-      return new Response(JSON.stringify({ error: "Error al guardar items de la orden" }), { status: 500 })
+      logError(`[${requestId}] Order items insert failed:`, itemsError)
+      log(`[${requestId}] Rolling back order:`, order.id)
+      const { error: deleteError } = await supabaseClient.from("orders").delete().eq("id", order.id)
+      if (deleteError) {
+        logError(`[${requestId}] Rollback delete also failed:`, deleteError)
+      }
+      return new Response(JSON.stringify({ error: `Error al guardar items de la orden: ${itemsError.message} (${itemsError.code || ''})` }), { status: 500, headers: JSON_HEADERS })
     }
+    log(`[${requestId}] Order items inserted successfully`)
 
+    // --- Decrement stock ---
     for (const item of items) {
       const product = products.find((p: any) => p.id === item.product_id)!
+      log(`[${requestId}] Updating stock for product`, product.id, `:`, product.stock, `->`, product.stock - item.cantidad)
       const { error: stockError } = await supabaseClient
         .from("products")
         .update({ stock: product.stock - item.cantidad })
         .eq("id", item.product_id)
-
       if (stockError) {
-        console.error(`Error al descontar stock de ${item.product_id}:`, stockError)
+        logError(`[${requestId}] Stock update failed for product`, item.product_id, `:`, stockError)
       }
     }
+    log(`[${requestId}] Stock updated`)
 
-    await supabaseClient.from("cart_items").delete().eq("comprador_id", user.id)
+    // --- Clear cart ---
+    log(`[${requestId}] Clearing cart for userId:`, userId)
+    const { error: cartError, count } = await supabaseClient
+      .from("cart_items")
+      .delete({ count: "exact" })
+      .eq("comprador_id", userId)
+    if (cartError) {
+      logError(`[${requestId}] Cart clear failed:`, cartError)
+    } else {
+      log(`[${requestId}] Cart cleared, deleted:`, count, `items`)
+    }
 
+    log(`[${requestId}] Checkout complete, order:`, order.id)
     return new Response(JSON.stringify({ success: true, order_id: order.id, total }), {
-      headers: { "Content-Type": "application/json" },
+      headers: JSON_HEADERS,
     })
   } catch (err) {
-    return new Response(JSON.stringify({ error: String(err) }), { status: 500 })
+    logError(`[${requestId}] Unhandled exception:`, err)
+    if (err instanceof Error) {
+      logError(`[${requestId}] Stack:`, err.stack)
+    }
+    return new Response(JSON.stringify({ error: `Error interno: ${err}` }), {
+      status: 500,
+      headers: JSON_HEADERS,
+    })
   }
 })

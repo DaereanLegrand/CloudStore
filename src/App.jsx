@@ -4,9 +4,11 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import Products from './pages/Products'
+import ProductDetail from './pages/ProductDetail'
 import NewProduct from './pages/NewProduct'
 import Cart from './pages/Cart'
 import Orders from './pages/Orders'
+import Promotions from './pages/Promotions'
 
 export default function App() {
   return (
@@ -18,9 +20,11 @@ export default function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/new-product" element={<NewProduct />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/orders" element={<Orders />} />
+          <Route path="/promotions" element={<Promotions />} />
         </Routes>
       </main>
     </div>

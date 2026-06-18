@@ -12,6 +12,13 @@ export default defineConfig({
       '/auth': 'http://localhost:3333',
       '/storage': 'http://localhost:3333',
       '/functions': 'http://localhost:3333',
+      '/model': {
+        target: 'http://192.168.0.121:8000',
+        changeOrigin: true,
+        proxyTimeout: 180000,
+        timeout: 180000,
+        pathRewrite: { '^/model': '' },
+      },
     }
   }
 })

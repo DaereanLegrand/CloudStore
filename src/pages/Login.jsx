@@ -6,33 +6,37 @@ export default function Login() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
+  const [submitting, setSubmitting] = useState(false)
   const navigate = useNavigate()
 
   async function handleSubmit(e) {
     e.preventDefault()
-    setError('')
+    setError(''); setSubmitting(true)
     const { error } = await supabase.auth.signInWithPassword({ email, password })
+    setSubmitting(false)
     if (error) setError(error.message)
     else navigate('/')
   }
 
   return (
-    <div className="page">
-      <div className="auth-form">
+    <div className="page auth-page">
+      <div className="auth-card">
         <h2>Iniciar Sesión</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label>Correo electrónico</label>
-            <input type="email" value={email} onChange={e => setEmail(e.target.value)} required />
+            <label htmlFor="email">Correo electrónico</label>
+            <input id="email" type="email" value={email} onChange={e => setEmail(e.target.value)} required />
           </div>
           <div className="form-group">
-            <label>Contraseña</label>
-            <input type="password" value={password} onChange={e => setPassword(e.target.value)} required />
+            <label htmlFor="password">Contraseña</label>
+            <input id="password" type="password" value={password} onChange={e => setPassword(e.target.value)} required />
           </div>
-          <button type="submit" className="btn btn-block">Entrar</button>
-          {error && <p className="error">{error}</p>}
-          <p>¿No tienes cuenta? <Link to="/register">Regístrate</Link></p>
+          {error && <div className="alert alert-error">{error}</div>}
+          <button type="submit" className="btn btn-lg btn-block" disabled={submitting}>
+            {submitting ? 'Entrando...' : 'Entrar'}
+          </button>
         </form>
+        <p className="auth-footer">¿No tienes cuenta? <Link to="/register">Regístrate</Link></p>
       </div>
     </div>
   )
