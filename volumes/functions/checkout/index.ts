@@ -78,7 +78,7 @@ Deno.serve(async (req) => {
 
     const { data: products, error: prodError } = await supabaseClient
       .from("products")
-      .select("id, titulo, precio, stock")
+      .select("id, titulo, precio, precio_promocion, stock")
       .in("id", productIds)
 
     if (prodError) {
@@ -109,12 +109,13 @@ Deno.serve(async (req) => {
     let total = 0
     const orderItems = items.map((item: any) => {
       const product = products.find((p: any) => p.id === item.product_id)!
-      const subtotal = Number(product.precio) * item.cantidad
+      const effectivePrice = Number(product.precio_promocion || product.precio)
+      const subtotal = effectivePrice * item.cantidad
       total += subtotal
       return {
         product_id: product.id,
         titulo: product.titulo,
-        precio: Number(product.precio),
+        precio: effectivePrice,
         cantidad: item.cantidad,
       }
     })

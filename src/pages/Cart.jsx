@@ -54,7 +54,10 @@ export default function Cart() {
     fetchCartCount()
   }
 
-  const total = items.reduce((sum, i) => sum + Number(i.products.precio) * i.cantidad, 0)
+  function effectivePrice(p) {
+    return Number(p.precio_promocion || p.precio)
+  }
+  const total = items.reduce((sum, i) => sum + effectivePrice(i.products) * i.cantidad, 0)
 
   if (loading) return (
     <div className="page">
@@ -79,13 +82,19 @@ export default function Cart() {
           <img src={i.products.imagen_url} alt={i.products.titulo} />
           <div className="cart-item-info">
             <h4>{i.products.titulo}</h4>
-            <p className="cart-item-price">${i.products.precio} c/u</p>
+            <p className="cart-item-price">
+              {i.products.precio_promocion != null ? (
+                <><span className="price-original" style={{ fontSize: '0.8125rem' }}>${i.products.precio}</span> ${i.products.precio_promocion} c/u</>
+              ) : (
+                <>${i.products.precio} c/u</>
+              )}
+            </p>
           </div>
           <div className="cart-item-actions">
             <button onClick={() => updateQty(i.id, i.cantidad - 1)} disabled={i.cantidad <= 1}>−</button>
             <span className="cart-qty">{i.cantidad}</span>
             <button onClick={() => updateQty(i.id, i.cantidad + 1)}>+</button>
-            <span className="cart-subtotal">${(Number(i.products.precio) * i.cantidad).toFixed(2)}</span>
+            <span className="cart-subtotal">${(effectivePrice(i.products) * i.cantidad).toFixed(2)}</span>
             <button onClick={() => removeItem(i.id)} className="btn-remove">Eliminar</button>
           </div>
         </div>

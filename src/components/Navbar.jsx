@@ -43,6 +43,7 @@ export default function Navbar() {
             {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
           </Link>
           <Link to="/orders">Mis Órdenes</Link>
+          {user && <Link to="/promotions">🔥 Promociones</Link>}
           {user ? (
             <span className="nav-user">
               <span className="nav-user-name">{profile?.nombre}</span>

@@ -60,8 +60,15 @@ export default function ProductDetail() {
         </div>
         <div className="product-detail-info">
           <span className="category-badge">{product.categoria}</span>
+          {product.precio_promocion != null && <span className="sale-badge" style={{ fontSize: '0.875rem' }}>-20% EN OFERTA</span>}
           <h1>{product.titulo}</h1>
-          <p className="price">${product.precio}</p>
+          <p className="price">
+            {product.precio_promocion != null ? (
+              <><span className="price-original" style={{ fontSize: '1.25rem' }}>${product.precio}</span> ${product.precio_promocion}</>
+            ) : (
+              <>${product.precio}</>
+            )}
+          </p>
           <p className="stock-label">{product.stock > 0 ? `${product.stock} en stock` : 'Agotado'}</p>
           <p className="seller">Vendido por {product.profiles?.nombre || 'CloudStore'}</p>
           {product.descripcion && (

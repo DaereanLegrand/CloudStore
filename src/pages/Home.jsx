@@ -5,16 +5,29 @@ import { useCart } from '../CartContext'
 
 export default function Home() {
   const [products, setProducts] = useState([])
+  const [promoted, setPromoted] = useState([])
   const [loading, setLoading] = useState(true)
   const [toast, setToast] = useState(null)
   const { fetchCartCount } = useCart()
 
-  useEffect(() => { loadProducts() }, [])
+  useEffect(() => {
+    Promise.all([loadProducts(), loadPromoted()])
+      .finally(() => setLoading(false))
+  }, [])
 
   async function loadProducts() {
     const { data } = await supabase.from('products').select('*').order('created_at', { ascending: false }).limit(8)
     setProducts(data || [])
-    setLoading(false)
+  }
+
+  async function loadPromoted() {
+    const { data } = await supabase
+      .from('products')
+      .select('*')
+      .not('precio_promocion', 'is', null)
+      .order('created_at', { ascending: false })
+      .limit(20)
+    setPromoted(data || [])
   }
 
   async function addToCart(productId, titulo) {
@@ -31,6 +44,35 @@ export default function Home() {
     setTimeout(() => setToast(null), 2000)
   }
 
+  function ProductCard(p) {
+    const onSale = p.precio_promocion != null
+    return (
+      <div key={p.id} className="product-card">
+        <Link to={`/product/${p.id}`}>
+          <div className="product-card-img">
+            <img src={p.imagen_url} alt={p.titulo} loading="lazy" />
+          </div>
+        </Link>
+        <div className="product-info">
+          <span className="category-badge">{p.categoria}</span>
+          {onSale && <span className="sale-badge">-20%</span>}
+          <h3><Link to={`/product/${p.id}`}>{p.titulo}</Link></h3>
+          <p className="price">
+            {onSale ? (
+              <><span className="price-original">${p.precio}</span> ${p.precio_promocion}</>
+            ) : (
+              <>${p.precio}</>
+            )}
+          </p>
+          <p className="stock">{p.stock > 0 ? `${p.stock} en stock` : 'Agotado'}</p>
+          <button className="btn" onClick={() => addToCart(p.id, p.titulo)} disabled={p.stock < 1}>
+            {p.stock < 1 ? 'Agotado' : 'Agregar al carrito'}
+          </button>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="page">
       {toast && <div className="toast">✓ {toast} agregado al carrito</div>}
@@ -44,25 +86,20 @@ export default function Home() {
         </div>
       ) : (
         <>
-          <div className="products-grid">
-            {products.map(p => (
-              <div key={p.id} className="product-card">
-                <Link to={`/product/${p.id}`}>
-                  <div className="product-card-img">
-                    <img src={p.imagen_url} alt={p.titulo} loading="lazy" />
-                  </div>
-                </Link>
-                <div className="product-info">
-                  <span className="category-badge">{p.categoria}</span>
-                  <h3><Link to={`/product/${p.id}`}>{p.titulo}</Link></h3>
-                  <p className="price">${p.precio}</p>
-                  <p className="stock">{p.stock > 0 ? `${p.stock} en stock` : 'Agotado'}</p>
-                  <button className="btn" onClick={() => addToCart(p.id, p.titulo)} disabled={p.stock < 1}>
-                    {p.stock < 1 ? 'Agotado' : 'Agregar al carrito'}
-                  </button>
-                </div>
+          {promoted.length > 0 && (
+            <>
+              <div className="promo-header">
+                <h2>🔥 Promociones</h2>
+                <Link to="/promotions" className="btn btn-sm btn-outline">Administrar</Link>
               </div>
-            ))}
+              <div className="products-grid promo-grid">
+                {promoted.slice(0, 4).map(p => <ProductCard key={p.id} {...p} />)}
+              </div>
+            </>
+          )}
+          <h2 style={promoted.length > 0 ? { marginTop: '2rem' } : {}}>Últimos productos</h2>
+          <div className="products-grid">
+            {products.map(p => <ProductCard key={p.id} {...p} />)}
           </div>
           {products.length > 0 && (
             <div className="section-footer">

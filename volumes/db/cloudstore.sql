@@ -138,5 +138,7 @@ CREATE POLICY "Only edge function can insert order items"
     EXISTS (SELECT 1 FROM orders WHERE orders.id = order_items.order_id AND orders.comprador_id = auth.uid())
   );
 
+ALTER TABLE products ADD COLUMN IF NOT EXISTS precio_promocion NUMERIC(10,2) DEFAULT NULL;
+
 INSERT INTO storage.buckets (id, name, public) VALUES ('productos', 'productos', true)
 ON CONFLICT (id) DO NOTHING;

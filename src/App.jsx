@@ -8,6 +8,7 @@ import ProductDetail from './pages/ProductDetail'
 import NewProduct from './pages/NewProduct'
 import Cart from './pages/Cart'
 import Orders from './pages/Orders'
+import Promotions from './pages/Promotions'
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="/new-product" element={<NewProduct />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/orders" element={<Orders />} />
+          <Route path="/promotions" element={<Promotions />} />
         </Routes>
       </main>
     </div>

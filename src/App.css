@@ -330,6 +330,44 @@ h4 { font-weight: 600; }
   letter-spacing: 0.2px;
 }
 
+/* Sale Badge */
+.sale-badge {
+  display: inline-block;
+  background: #dc2626;
+  color: #fff;
+  padding: 0.125rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  margin-left: 0.35rem;
+  letter-spacing: 0.3px;
+  vertical-align: middle;
+}
+
+/* Price Original (strikethrough) */
+.price-original {
+  text-decoration: line-through;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-right: 0.35rem;
+}
+
+/* Promotions Header */
+.promo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.promo-header h2 {
+  margin-bottom: 0;
+}
+
+/* Promotions Grid */
+.promo-grid {
+  margin-bottom: 0.5rem;
+}
+
 /* Filters */
 .filters {
   display: flex;
