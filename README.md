@@ -67,13 +67,15 @@ CloudStore/
 ├── src/                            # Frontend React
 │   ├── main.jsx                    # Punto de entrada React
 │   ├── App.jsx                     # Componente raíz con rutas
-│   ├── App.css                     # Estilos globales (CSS custom properties)
+│   ├── App.css                     # Estilos globales (indigo, skeletons, toast)
 │   ├── supabase.js                 # Cliente Supabase
+│   ├── CartContext.jsx             # Contexto de carrito (contador reactivo)
 │   ├── components/
-│   │   └── Navbar.jsx              # Barra de navegación con auth y carrito
+│   │   └── Navbar.jsx              # Barra de navegación con badge de carrito
 │   └── pages/
 │       ├── Home.jsx                # Landing page (últimos 8 productos)
 │       ├── Products.jsx            # Listado con búsqueda y filtros
+│       ├── ProductDetail.jsx       # Detalle de producto individual
 │       ├── Login.jsx               # Inicio de sesión
 │       ├── Register.jsx            # Registro (comprador/vendedor)
 │       ├── Cart.jsx                # Carrito de compras
@@ -152,7 +154,9 @@ CloudStore/
 
 ### Checkout: `volumes/functions/checkout/index.ts`
 - Recibe `{ items: [{ product_id, cantidad }] }`
-- Valida autenticación del usuario
+- Decodifica JWT localmente con `jose` en vez de llamar `auth.getUser()` (evita loop de autenticación con Kong)
+- Extrae `userId` del payload del JWT (el main router ya verificó la firma)
+- Usa `SUPABASE_SERVICE_ROLE_KEY` para el cliente Supabase (Kong acepta la key)
 - Verifica existencia de productos y stock suficiente
 - Calcula total, crea orden con estado `pagado`
 - Inserta items de orden (snapshot de título y precio)
@@ -191,22 +195,25 @@ Kong actúa como puerta de enlace para todos los servicios de Supabase:
 | Ruta | Página | Acceso |
 |---|---|---|
 | `/` | Home | Público |
-| `/products` | Productos | Público |
+| `/products` | Products | Público |
+| `/product/:id` | ProductDetail | Público |
 | `/login` | Login | Público |
-| `/register` | Registro | Público |
-| `/cart` | Carrito | Requiere auth |
-| `/orders` | Órdenes | Requiere auth |
-| `/new-product` | Nuevo producto | Requiere rol `vendedor` |
+| `/register` | Register | Público |
+| `/cart` | Cart | Requiere auth |
+| `/orders` | Orders | Requiere auth |
+| `/new-product` | NewProduct | Requiere rol `vendedor` |
 
 ### Componentes
 
-- **Navbar:** Muestra logo, enlaces, estado de autenticación, contador del carrito y botón de logout. Detecta cambios de sesión via `onAuthStateChange`.
-- **Home:** Carga los 8 productos más recientes. Botón "Agregar al carrito" que redirige al login si no hay sesión.
-- **Products:** Listado completo con búsqueda por título (`ilike`) y filtro por categoría.
-- **Login/Register:** Formularios de auth con manejo de errores. Register permite elegir entre `comprador` y `vendedor`.
-- **Cart:** Lista items del carrito con controles de cantidad, eliminación y total. Botón "Pagar" que invoca la Edge Function `checkout`.
-- **NewProduct:** Formulario para vendedores con subida de imagen a Storage.
-- **Orders:** Historial de órdenes con items, totales y estado.
+- **CartContext:** Proveedor global que expone `cartCount` y `fetchCartCount`. Se actualiza automáticamente al cambiar sesión. Todas las páginas llaman `fetchCartCount` tras modificar el carrito.
+- **Navbar:** Sticky, con badge circular en el link del carrito que refleja `cartCount` del contexto en tiempo real. Muestra nombre de perfil, enlace "Vender" (solo vendedores) y botón de logout. Detecta cambios de sesión via `onAuthStateChange`.
+- **Home:** Carga los 8 productos más recientes. Muestra skeleton durante carga. Agregar al carrito muestra un toast animado. Botón deshabilitado si stock = 0.
+- **Products:** Listado completo con búsqueda por título (`ilike`) y filtro por categoría. Skeleton grid, empty state con icono.
+- **ProductDetail:** Página individual con imagen grande, precio, stock, vendedor, descripción y botón "Agregar al carrito". Skeleton durante carga.
+- **Login/Register:** Formularios con botón de submit con estado "Entrando..."/"Registrando...". Errores mostrados como alertas. Register permite elegir entre `comprador` y `vendedor`.
+- **Cart:** Items con controles de cantidad, subtotales y total. Botón "Pagar" invoca la Edge Function `checkout`. Skeleton durante carga, empty state con icono.
+- **NewProduct:** Formulario con precio y stock en fila, subida de imagen a Storage.
+- **Orders:** Historial de órdenes con estado coloreado (`pagado` verde, `pendiente` amarillo). Skeleton y empty state.
 
 ### Conexión a Supabase
 
@@ -299,11 +306,21 @@ node scripts/scraper.mjs
 node scripts/seed-products.mjs
 ```
 
+## UI/UX
+
+- **Paleta:** Indigo (`#6366f1`) como color primario, fondo gris claro, tarjetas blancas con sombras sutiles.
+- **Esqueletos (skeletons):** Animaciones shimmer en Home, Products, ProductDetail, Cart y Orders mientras cargan datos.
+- **Toast:** Notificación animada "✓ {producto} agregado al carrito" al hacer add-to-cart (desaparece a los 2s).
+- **Estados vacíos:** Iconos grandes (📦, 🛒, 📋) y texto informativo cuando no hay datos.
+- **Responsive:** Navbar compacto, layout de una columna en mobile para detail, filtros y carrito.
+- **Transiciones:** Hover con elevación en cards, zoom en imágenes, focus ring en inputs.
+
 ## Seguridad
 
 - Row-Level Security (RLS) en todas las tablas de PostgreSQL
 - Autenticación JWT con verificación híbrida (HS256 simétrico o ES256/RS256 asimétrico via JWKS)
 - Kong API Gateway con key-auth y ACL groups
 - Las Edge Functions verifican JWT antes de procesar requests
+- La función checkout decodifica el JWT internamente con `jose`, evita loop de auth contra Kong
 - Los buckets de storage tienen políticas de acceso público/privado
 - El dashboard de Studio está protegido con basic-auth
