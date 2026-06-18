@@ -71,6 +71,14 @@ const COMMON_PRODUCT_WEIGHTS = {
   'diente ajo': 5,
 }
 
+function cleanIngredientName(raw) {
+  return raw
+    .replace(/^[\d\/\.\s]+/, "")
+    .replace(/^(rebanadas?|cucharadas?|cucharaditas?|tazas?|unidades?|kilos?|gramos?|litros?|mililitros?|sobres?|paquetes?|latas?|botellas?|dientes?|pizcas?|gotas?|ruedas?|ramas?|hojas?|trocitos?|pedazos?)\s+(de\s+)?/i, "")
+    .replace(/^(pasta|puré|pure|salsa|crema|caldo|polvo|jugo|concentrado)\s+de\s+/i, "")
+    .trim()
+}
+
 async function getEmbedding(text) {
   const resp = await fetch(OLLAMA_URL, {
     method: 'POST',
