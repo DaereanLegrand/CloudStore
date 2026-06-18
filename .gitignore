@@ -3,4 +3,6 @@ node_modules/
 __pycache__/
 *.pyc
 .DS_Store
-supabase/.temp/
+volumes/db/data/
+volumes/storage/
+*.old

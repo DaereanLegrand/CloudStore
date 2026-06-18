@@ -1,7 +1,5 @@
--- Create enum for user roles
 CREATE TYPE user_role AS ENUM ('comprador', 'vendedor');
 
--- Profiles table (extends auth.users)
 CREATE TABLE profiles (
   id UUID PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
   nombre TEXT NOT NULL,
@@ -27,7 +25,6 @@ CREATE POLICY "Users can update their own profile"
   TO authenticated
   USING (auth.uid() = id);
 
--- Products table
 CREATE TABLE products (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   vendedor_id UUID NOT NULL REFERENCES profiles(id) ON DELETE CASCADE,
@@ -65,7 +62,6 @@ CREATE POLICY "Vendors can delete their own products"
   TO authenticated
   USING (auth.uid() = vendedor_id);
 
--- Cart items table
 CREATE TABLE cart_items (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   comprador_id UUID NOT NULL REFERENCES profiles(id) ON DELETE CASCADE,
@@ -97,7 +93,6 @@ CREATE POLICY "Buyers can delete from their own cart"
   TO authenticated
   USING (auth.uid() = comprador_id);
 
--- Orders table
 CREATE TABLE orders (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   comprador_id UUID NOT NULL REFERENCES profiles(id) ON DELETE CASCADE,
@@ -118,7 +113,6 @@ CREATE POLICY "Only edge function can create orders"
   TO authenticated
   WITH CHECK (auth.uid() = comprador_id);
 
--- Order items table
 CREATE TABLE order_items (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   order_id UUID NOT NULL REFERENCES orders(id) ON DELETE CASCADE,
@@ -144,20 +138,5 @@ CREATE POLICY "Only edge function can insert order items"
     EXISTS (SELECT 1 FROM orders WHERE orders.id = order_items.order_id AND orders.comprador_id = auth.uid())
   );
 
--- Create storage bucket for product images
-INSERT INTO storage.buckets (id, name, public) VALUES ('productos', 'productos', true);
-
-CREATE POLICY "Anyone can read product images"
-  ON storage.objects FOR SELECT
-  TO anon, authenticated
-  USING (bucket_id = 'productos');
-
-CREATE POLICY "Authenticated users can upload product images"
-  ON storage.objects FOR INSERT
-  TO authenticated
-  WITH CHECK (bucket_id = 'productos');
-
-CREATE POLICY "Owners can delete their product images"
-  ON storage.objects FOR DELETE
-  TO authenticated
-  USING (bucket_id = 'productos' AND auth.uid() = owner);
+INSERT INTO storage.buckets (id, name, public) VALUES ('productos', 'productos', true)
+ON CONFLICT (id) DO NOTHING;

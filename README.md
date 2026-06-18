@@ -6,8 +6,9 @@ Marketplace minimalista construido con Supabase self-hosted.
 
 - **Base de datos:** PostgreSQL (Supabase)
 - **Auth:** GoTrue (Supabase Auth)
-- **Storage:** Supabase Storage
+- **Storage:** Supabase Storage + imgproxy
 - **Backend:** Edge Functions (Deno)
+- **API Gateway:** Kong
 - **Frontend:** HTML + CSS + JS vanilla
 
 ## Requisitos
@@ -17,47 +18,79 @@ Marketplace minimalista construido con Supabase self-hosted.
 ## Inicio rápido
 
 ```bash
-# Clonar
 git clone <repo-url>
 cd CloudStore
 
 # Iniciar Supabase self-hosted
-docker compose up -d
+sh run.sh start
 
-# Aplicar migraciones
-docker compose exec db psql -U postgres -d postgres -f /docker-entrypoint-initdb.d/001_schema.sql
-
-# Abrir Studio
+# Abrir Studio (Dashboard)
 open http://localhost:3333
+# Usuario: admin / Contraseña: admin123
+
+# Aplicar migraciones de la app
+docker compose exec db psql -U postgres -d postgres -f /docker-entrypoint-initdb.d/cloudstore.sql
+
+# O via el SQL Editor en Studio (http://localhost:3333)
 ```
 
 ## Estructura
 
 ```
 CloudStore/
-├── docker-compose.yml          # Stack Supabase self-hosted
-├── supabase/
-│   ├── config.toml
-│   ├── migrations/
-│   │   └── 001_schema.sql      # Tablas + RLS
-│   └── functions/
-│       └── checkout/
-│           └── index.ts         # Edge Function de checkout
+├── docker-compose.yml          # Stack oficial de Supabase
+├── .env                        # Variables de entorno
+├── run.sh                      # Script de gestión
+├── reset.sh                    # Reset completo
+├── volumes/
+│   ├── api/
+│   │   ├── kong.yml            # Configuración de Kong
+│   │   └── kong-entrypoint.sh
+│   ├── db/
+│   │   ├── data/               # Datos persistentes de PostgreSQL
+│   │   ├── realtime.sql
+│   │   ├── webhooks.sql
+│   │   ├── roles.sql
+│   │   ├── jwt.sql
+│   │   ├── _supabase.sql
+│   │   ├── logs.sql
+│   │   ├── pooler.sql
+│   │   └── cloudstore.sql      # Migración de la app (tablas + RLS)
+│   ├── storage/                # Archivos subidos
+│   ├── pooler/pooler.exs
+│   ├── functions/
+│   │   ├── main/index.ts       # Router de funciones
+│   │   └── checkout/index.ts   # Edge Function de checkout
+│   └── snippets/
 ├── public/
 │   ├── index.html
 │   ├── css/style.css
 │   ├── js/{config,auth,products,app}.js
 │   └── pages/{login,register,products,new-product,cart,orders}.html
-└── .env
+└── README.md
 ```
 
-## Endpoints
+## Endpoints (acceso vía Kong en puerto 3333)
 
-| Servicio | Puerto |
+| Servicio | Ruta |
 |---|---|
-| Studio (UI) | 3333 |
-| REST API (PostgREST) | 3001 |
-| Auth (GoTrue) | 9999 |
-| Storage | 5000 |
-| Edge Functions | 9000 |
-| PostgreSQL | 5432 |
+| Studio (Dashboard) | `http://localhost:3333` |
+| REST API | `http://localhost:3333/rest/v1/` |
+| Auth | `http://localhost:3333/auth/v1/` |
+| Storage | `http://localhost:3333/storage/v1/` |
+| Edge Functions | `http://localhost:3333/functions/v1/` |
+| Realtime | `ws://localhost:3333/realtime/v1/` |
+| PostgreSQL (directo) | `localhost:5432` |
+
+## Comandos útiles
+
+```bash
+sh run.sh start                 # Iniciar stack
+sh run.sh stop                  # Detener stack
+sh run.sh status                # Estado de servicios
+sh run.sh logs                  # Ver logs
+sh run.sh logs storage          # Logs de un servicio específico
+sh run.sh recreate functions    # Recargar funciones después de cambios
+sh run.sh secrets               # Ver credenciales
+sh run.sh pull                  # Actualizar imágenes
+```
