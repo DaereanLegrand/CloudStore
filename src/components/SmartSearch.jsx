@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react'
 import { supabase } from '../supabase'
 import { useCart } from '../CartContext'
 import ProductCard from './ProductCard'
+import { logLLM } from '../utils/llm-logger'
 
 const SYSTEM_PROMPT =
   'Eres un asistente de búsqueda de productos en español. Del mensaje del usuario, extrae términos de búsqueda y una categoría. Categorías: abarrotes, bebes, bebidas, carnes, congelados, cuidado-personal, deportes, electronica, fiambres, frutas-verduras, hogar, lacteos, libros, licores, mascotas, otros, panaderia, ropa, snacks. Responde ÚNICAMENTE con JSON, sin explicaciones: {"search": "palabras clave separadas por espacio", "category": "categoria o vacío"}'
@@ -37,6 +38,7 @@ export default function SmartSearch() {
     setLoading(true)
     setError('')
     setProducts(null)
+    const startTime = performance.now()
 
     try {
       const res = await fetch('/model/chat/completions', {
@@ -52,10 +54,18 @@ export default function SmartSearch() {
         }),
       })
 
-      if (!res.ok) throw new Error('Error del modelo')
+      const modelTiming = (performance.now() - startTime) / 1000
+
+      if (!res.ok) {
+        const errText = await res.text().catch(() => '')
+        logLLM({ query: text, error: `HTTP ${res.status}: ${errText}`, timing: modelTiming })
+        throw new Error(`Error del modelo (${res.status})`)
+      }
 
       const data = await res.json()
       const content = data.choices?.[0]?.message?.content || ''
+
+      logLLM({ query: text, response: content, timing: modelTiming })
 
       let searchTerm = ''
       let category = ''
