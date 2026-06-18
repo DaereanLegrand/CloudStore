@@ -8,6 +8,7 @@ export default function Cart() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
   const [success, setSuccess] = useState('')
+  const [telefono, setTelefono] = useState('')
   const navigate = useNavigate()
   const { fetchCartCount } = useCart()
 
@@ -35,6 +36,7 @@ export default function Cart() {
   async function checkout() {
     setError(''); setSuccess('')
     const payload = items.map(i => ({ product_id: i.product_id, cantidad: i.cantidad }))
+    const resumen = items.map(i => ({ titulo: i.products.titulo, cantidad: i.cantidad }))
     const { data, error } = await supabase.functions.invoke('checkout', { body: { items: payload } })
     if (error) {
       let errorMsg = error.message
@@ -52,6 +54,18 @@ export default function Cart() {
     setSuccess(`¡Orden #${data.order_id.slice(0, 8)} creada! Total pagado: $${data.total}`)
     setItems([])
     fetchCartCount()
+
+    // Confirmacion por WhatsApp (opcional, si puso numero)
+    if (telefono.trim()) {
+      const { data: notifyData, error: notifyErr } = await supabase.functions.invoke('notify', {
+        body: { telefono: telefono.trim(), items: resumen, total: data.total, order_id: data.order_id },
+      })
+      if (notifyErr || notifyData?.error) {
+        setSuccess(prev => prev + ' (no se pudo enviar el WhatsApp)')
+      } else if (notifyData?.enviados > 0) {
+        setSuccess(prev => prev + ' 📲 Confirmación enviada por WhatsApp.')
+      }
+    }
   }
 
   function effectivePrice(p) {
@@ -105,7 +119,17 @@ export default function Cart() {
             <span>Total</span>
             <span className="cart-total-amount">${total.toFixed(2)}</span>
           </div>
-          <button className="btn btn-lg btn-block" onClick={checkout}>Pagar</button>
+          <div className="form-group" style={{ marginBottom: '0.75rem' }}>
+            <label htmlFor="wa-phone">📱 WhatsApp para confirmación (opcional)</label>
+            <input
+              id="wa-phone"
+              type="tel"
+              placeholder="Ej: 999888777"
+              value={telefono}
+              onChange={e => setTelefono(e.target.value)}
+            />
+          </div>
+          <button className="btn btn-lg btn-block" onClick={checkout}>Confirmar compra</button>
         </div>
       )}
       {error && <div className="alert alert-error">{error}</div>}
