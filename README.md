@@ -1,13 +1,13 @@
 # CloudStore
 
-Marketplace minimalista construido con Supabase self-hosted. Los compradores pueden explorar productos, agregarlos al carrito y realizar pedidos. Los vendedores pueden publicar productos con imágenes.
+Marketplace con búsqueda por IA construido con Supabase self-hosted. Los compradores exploran productos mediante búsqueda semántica (texto + imagen), siguen recetas con ingredientes mapeados al catálogo, y compran en un solo clic.
 
 ## Stack
 
 | Capa | Tecnología |
 |---|---|
-| **Frontend** | React 18 + Vite 5 + React Router DOM v6 |
-| **Base de datos** | PostgreSQL 17 (Supabase) |
+| **Frontend** | React 18 + Vite 5 + React Router DOM v6 + Framer Motion + Tailwind CSS |
+| **Base de datos** | PostgreSQL 17 (Supabase) + pgvector |
 | **Auth** | GoTrue v2.189 (Supabase Auth) |
 | **API REST** | PostgREST v14 |
 | **API Gateway** | Kong 3.9 |
@@ -17,6 +17,8 @@ Marketplace minimalista construido con Supabase self-hosted. Los compradores pue
 | **Connection Pooler** | Supavisor (Elixir) |
 | **Orquestación** | Docker Compose |
 | **Scraping** | Node.js (ESM) |
+| **AI local** | Ollama (bge-m3) + Gemma 4 (visión) |
+| **Túnel** | Cloudflare (cloudflared) |
 
 ## Requisitos
 
@@ -60,54 +62,86 @@ CloudStore/
 ├── .env                            # 85+ variables de entorno (no versionado)
 ├── run.sh                          # Script de gestión del stack
 ├── reset.sh                        # Reset destructivo del stack
-├── vite.config.js                  # Configuración de Vite (dev proxy a Kong)
-├── package.json                    # Dependencias del frontend React
-├── index.html                      # Entry point HTML del SPA
+├── vite.config.js                  # Configuración Vite (proxy + allowedHosts Cloudflare)
+├── postcss.config.js               # PostCSS + Tailwind CSS
+├── tailwind.config.js              # Tailwind (deep-forest, emerald, liquid-edge shadows)
+├── package.json                    # Dependencias: React, Framer Motion, Supabase, Tailwind
+├── index.html                      # Entry point SPA
 │
 ├── src/                            # Frontend React
-│   ├── main.jsx                    # Punto de entrada React
-│   ├── App.jsx                     # Componente raíz con rutas
-│   ├── App.css                     # Estilos globales (indigo, skeletons, toast)
+│   ├── main.jsx                    # Entry point React
+│   ├── App.jsx                     # Layout: NeuralCanvas > flex > Navbar + Routes + Footer
+│   ├── index.css                   # Tailwind + clases glass/btn custom (sin @apply)
 │   ├── supabase.js                 # Cliente Supabase
-│   ├── CartContext.jsx             # Contexto de carrito (contador reactivo)
+│   ├── CartContext.jsx             # Contexto carrito (contador reactivo)
+│   ├── categories.js              # Taxonomía categorías
+│   ├── utils/
+│   │   └── llm-logger.js          # Logger local para queries LLM
 │   ├── components/
-│   │   └── Navbar.jsx              # Barra de navegación con badge de carrito
+│   │   ├── NeuralCanvas.jsx       # Layout: fondo deep-forest + orbes cinéticos + glow
+│   │   ├── NeuralGlassCard.jsx    # Panel vidrio con Spring Physics + highlight
+│   │   ├── Navbar.jsx             # Sticky glass-sm nav + badge carrito animado
+│   │   ├── Footer.jsx             # Glass-sm footer minimalista
+│   │   ├── ProductCard.jsx        # Card producto con imagen, precio S/., oferta
+│   │   ├── RecipeCard.jsx         # Card receta con dificultad, tiempo
+│   │   ├── SmartSearch.jsx       # Búsqueda IA (texto + imagen), resultados + recetas
+│   │   └── VisionChat.jsx         # Chat con Gemma 4 (imagen + texto)
 │   └── pages/
-│       ├── Home.jsx                # Landing page (últimos 8 productos)
-│       ├── Products.jsx            # Listado con búsqueda y filtros
-│       ├── ProductDetail.jsx       # Detalle de producto individual
-│       ├── Login.jsx               # Inicio de sesión
-│       ├── Register.jsx            # Registro (comprador/vendedor)
-│       ├── Cart.jsx                # Carrito de compras
-│       ├── NewProduct.jsx          # Publicar producto (solo vendedores)
-│       └── Orders.jsx              # Historial de órdenes
+│       ├── Home.jsx               # AI-first: solo SmartSearch en centro
+│       ├── Products.jsx           # Grid + filtros + paginación
+│       ├── ProductDetail.jsx      # Detalle producto + S/. precio
+│       ├── Recipes.jsx            # Catálogo recetas + filtros + paginación
+│       ├── RecipeDetail.jsx       # Ingredientes scrollables + replace + skip + total S/.
+│       ├── Cart.jsx               # Carrito + Vaciar (con confirmación)
+│       ├── Orders.jsx             # Historial órdenes
+│       ├── Promotions.jsx         # Activar 20% descuento
+│       ├── NewProduct.jsx         # Publicar producto (vendedor)
+│       ├── Login.jsx              # Inicio sesión
+│       └── Register.jsx           # Registro (comprador/vendedor)
 │
-├── scripts/                        # Scrapers de datos
-│   ├── scraper.mjs                 # Scraper por API de categorías (Plazavea VTEX)
-│   └── seed-products.mjs           # Scraper por sitemaps XML
+├── scripts/                        # Scrapers + mapping + seeds
+│   ├── scraper.mjs                 # Scraper Plazavea VTEX API
+│   ├── seed-products.mjs           # Scraper por sitemaps XML
+│   ├── scraper-nestle-recipes.mjs  # Scraper recetas Nestlé (444 recetas)
+│   ├── map-ingredients.mjs         # Mapeo ingredientes → productos (semántico + ILIKE)
+│   ├── map-ingredients-worker.mjs  # Worker paralelo para mapping rápido
+│   ├── fix-mappings.mjs           # Corrector mappings con scoring mejorado
+│   ├── seed-recipes.mjs           # Insertar recetas + ingredientes en BD
+│   ├── generate-embeddings.mjs    # Pre-cómputo embeddings para pgvector
+│   ├── generate-dish-expansions.mjs # Expansiones semánticas por plato
+│   └── output/                    # Outputs generados (*.json, gitignored)
 │
-└── volumes/                        # Configuración de servicios Docker
-    ├── api/
-    │   ├── kong.yml                # Configuración declarativa de Kong
-    │   └── kong-entrypoint.sh      # Script de entrypoint con sustitución de vars
-    ├── db/
-    │   ├── cloudstore.sql          # Schema de la aplicación (tablas + RLS)
-    │   ├── _supabase.sql           # Base de datos auxiliar _supabase
-    │   ├── jwt.sql                 # Configuración JWT en PostgreSQL
-    │   ├── roles.sql               # Passwords de roles de base de datos
-    │   ├── realtime.sql            # Schema _realtime
-    │   ├── webhooks.sql            # Infraestructura de webhooks
-    │   ├── logs.sql                # Schema _analytics (Logflare)
-    │   ├── pooler.sql              # Schema _supavisor
-    │   └── data/                   # Datos persistentes (no versionado)
-    ├── functions/
-    │   ├── main/index.ts           # Router de Edge Functions (JWT + dispatch)
-    │   └── checkout/index.ts       # Edge Function de checkout
-    ├── nginx/
-    │   └── default.conf            # Nginx (servir SPA + proxy reverso a Kong)
-    ├── pooler/
-    │   └── pooler.exs              # Configuración de Supavisor (Elixir)
-    └── storage/                    # Archivos subidos (no versionado)
+├── volumes/                        # Configuración servicios Docker
+│   ├── api/
+│   │   ├── kong.yml               # Config declarativa Kong
+│   │   └── kong-entrypoint.sh     # Entrypoint con sustitución de vars
+│   ├── db/
+│   │   ├── cloudstore.sql         # Schema app: recipes, recipe_ingredients, + columnas
+│   │   ├── vector.sql             # pgvector + hybrid_search RPC + índices HNSW/GIN
+│   │   ├── _supabase.sql, jwt.sql, roles.sql, realtime.sql, webhooks.sql, logs.sql, pooler.sql
+│   │   └── data/                  # Datos persistentes (no versionado)
+│   ├── functions/
+│   │   ├── main/index.ts          # Router Edge Functions (JWT + dispatch workers)
+│   │   ├── checkout/index.ts      # Checkout (orden, stock, carrito)
+│   │   ├── semantic-search/index.ts # Búsqueda semántica texto + expansión + recetas
+│   │   ├── visual-search/index.ts # Búsqueda por imagen (Gemma 4 → embedding → pgvector + recetas)
+│   │   ├── promotions/index.ts    # Promociones (descuento 20%)
+│   │   ├── notify/index.ts        # Notificación WhatsApp (Twilio)
+│   │   ├── whatsapp/index.ts      # Chatbot WhatsApp (Twilio)
+│   │   └── vision-chat/index.ts   # Chat con imagen (Gemma 4 vía MLX)
+│   ├── nginx/
+│   │   └── default.conf           # Nginx (SPA + proxy Kong + log LLM)
+│   ├── pooler/
+│   │   └── pooler.exs             # Supavisor config
+│   └── storage/                   # Archivos subidos (no versionado)
+│
+├── docs/                           # Documentación
+│   ├── arquitectura.md            # Arquitectura completa + diagramas
+│   ├── recetas.md                 # Sistema de recetas + mapping ingredientes
+│   ├── smartsearch.md             # Búsqueda semántica + visual
+│   └── testing.md                 # Guía de testing
+│
+└── public/                         # Build producción (nginx docker, no versionado)
 ```
 
 ## Endpoints
@@ -188,32 +222,65 @@ Kong actúa como puerta de enlace para todos los servicios de Supabase:
 - Sustituye variables `$VAR` en `kong.yml` con valores de entorno via `awk`
 - Remueve entradas `key:` vacías
 
-## Frontend (React)
+## Frontend (React) — Diseño Liquid Glass
+
+El frontend implementa un diseño **Neural Expressive + Liquid Glass** basado en Spring Physics Motion Tailwind.
+
+### Paleta
+
+- **Fondo:** `linear-gradient(145deg, #0a1a14 → #143028)` — verde bosque profundo
+- **Primario:** `#15966a` — esmeralda
+- **Hover:** `#0f7a57` — esmeralda oscuro
+- **Vidrio:** `rgba(255,255,255,0.03)` con `backdrop-blur-xl`
+- **Brillo especular:** Gradiente radial en esquina superior
+- **Órbitas cinéticas:** 2 orbes animados con Framer Motion (movimiento perpetuo suave)
+
+### Componentes de diseño
+
+| Componente | Propósito |
+|---|---|
+| `NeuralCanvas.jsx` | Layout maestro: fondo deep-forest, orbes animados, capa de brillo |
+| `NeuralGlassCard.jsx` | Panel de vidrio con Spring Physics (stiffness: 200, damping: 24) |
+| `SmartSearch.jsx` | Búsqueda por IA con expansión semántica + keywords |
 
 ### Rutas
 
 | Ruta | Página | Acceso |
 |---|---|---|
-| `/` | Home | Público |
+| `/` | Home (AI-first: solo buscador) | Público |
 | `/products` | Products | Público |
 | `/product/:id` | ProductDetail | Público |
+| `/recipes` | Recipes (catálogo con filtros) | Público |
+| `/recipe/:slug` | RecipeDetail (ingredientes + replace) | Público |
 | `/login` | Login | Público |
 | `/register` | Register | Público |
 | `/cart` | Cart | Requiere auth |
 | `/orders` | Orders | Requiere auth |
 | `/new-product` | NewProduct | Requiere rol `vendedor` |
+| `/promotions` | Promotions | Requiere auth |
 
 ### Componentes
 
-- **CartContext:** Proveedor global que expone `cartCount` y `fetchCartCount`. Se actualiza automáticamente al cambiar sesión. Todas las páginas llaman `fetchCartCount` tras modificar el carrito.
-- **Navbar:** Sticky, con badge circular en el link del carrito que refleja `cartCount` del contexto en tiempo real. Muestra nombre de perfil, enlace "Vender" (solo vendedores) y botón de logout. Detecta cambios de sesión via `onAuthStateChange`.
-- **Home:** Carga los 8 productos más recientes. Muestra skeleton durante carga. Agregar al carrito muestra un toast animado. Botón deshabilitado si stock = 0.
-- **Products:** Listado completo con búsqueda por título (`ilike`) y filtro por categoría. Skeleton grid, empty state con icono.
-- **ProductDetail:** Página individual con imagen grande, precio, stock, vendedor, descripción y botón "Agregar al carrito". Skeleton durante carga.
-- **Login/Register:** Formularios con botón de submit con estado "Entrando..."/"Registrando...". Errores mostrados como alertas. Register permite elegir entre `comprador` y `vendedor`.
-- **Cart:** Items con controles de cantidad, subtotales y total. Botón "Pagar" invoca la Edge Function `checkout`. Skeleton durante carga, empty state con icono.
-- **NewProduct:** Formulario con precio y stock en fila, subida de imagen a Storage.
-- **Orders:** Historial de órdenes con estado coloreado (`pagado` verde, `pendiente` amarillo). Skeleton y empty state.
+- **Navbar:** Barra glass-sm, sticky, con badge animado de carrito, enlace "Vender" solo para vendedores
+- **Home:** AI-first — solo muestra el buscador SmartSearch con placeholder "Escribe algo..." y título "¿Qué necesitas hoy?".
+- **SmartSearch:** Búsqueda semántica con expansión de consulta (intenciones del usuario mapeadas a productos). Extrae keywords eliminando stop words. También busca recetas relacionadas. Thinking pill animado durante carga.
+- **ProductCard:** Card glass con hover elevación, imagen con zoom, precio S/., badge de categoría y oferta, botón "Agregar".
+- **RecipeCard:** Card glass con imagen, dificultad, tiempo, porciones.
+- **RecipeDetail:** Panel de ingredientes con scroll propio (max 70vh). Cada ingrediente muestra:
+  - Nombre del ingrediente + cantidad
+  - Producto asignado por IA (→ nombre + precio)
+  - **Total parcial** S/. (cantidad × precio unitario) al lado
+  - Botón **+ Carrito** (agrega 1 unidad)
+  - Botón **↻ Reemplazar** (abre buscador con imágenes para re-asignar producto)
+  - Botón **✓ Ya tengo** (marca como saltado, resta del total)
+  - **Total general** de la receta (se actualiza dinámicamente al reemplazar/saltar)
+  - Panel de instrucciones con scroll propio
+- **Cart:** Items con controles de cantidad, subtotales por item, total general. Botón **Vaciar carrito** rojo con confirmación "¿Estás seguro? Todo el progreso será perdido."
+- **Products:** Filtros por categoría + búsqueda ILIKE. Paginación con números.
+- **ProductDetail:** Imagen grande, precio S/., stock, vendedor, descripción, botón "Agregar".
+- **Orders:** Historial con estado coloreado, items snapshot.
+- **Promotions:** Activar descuento del 20% en 20 productos aleatorios via Edge Function.
+- **Footer:** Glass-sm minimalista con enlaces.
 
 ### Conexión a Supabase
 
@@ -308,12 +375,19 @@ node scripts/seed-products.mjs
 
 ## UI/UX
 
-- **Paleta:** Indigo (`#6366f1`) como color primario, fondo gris claro, tarjetas blancas con sombras sutiles.
-- **Esqueletos (skeletons):** Animaciones shimmer en Home, Products, ProductDetail, Cart y Orders mientras cargan datos.
-- **Toast:** Notificación animada "✓ {producto} agregado al carrito" al hacer add-to-cart (desaparece a los 2s).
-- **Estados vacíos:** Iconos grandes (📦, 🛒, 📋) y texto informativo cuando no hay datos.
-- **Responsive:** Navbar compacto, layout de una columna en mobile para detail, filtros y carrito.
-- **Transiciones:** Hover con elevación en cards, zoom en imágenes, focus ring en inputs.
+### Sistema de Diseño: Neural Expressive + Liquid Glass
+
+- **Backdrop:** Fondo `deep-forest` (gradiente verde oscuro 145°) con 2 orbes cinéticos animados (30-35s loop) y brillo radial emerald en la zona superior.
+- **Superficies:** Vidrio translúcido `rgba(255,255,255,0.03)` con `backdrop-blur-xl`. Sin bordes — las tarjetas se funden con el canvas. La separación visual viene dada por opacidad y tipografía.
+- **Botones:** Fondo sólido `#15966a` (emerald) con hover `#0f7a57`. Únicos elementos con fondo opaco.
+- **Tipografía:** Inter, jerarquía por opacidad (15% → 90%). Sin decoraciones.
+- **Moneda:** `S/.` (Sol Peruano con punto)
+- **Motion:** Spring Physics de Framer Motion (`stiffness: 200, damping: 24, mass: 0.5`). Entradas con `opacity: 0, y: 6 → 1, 0`. Hover con `y: -1`.
+- **Pensando:** Pill animado con dots "Pensando..." durante carga de búsqueda semántica.
+- **Toast:** Fixed top, `rgba(255,255,255,0.06)` con `backdrop-blur-2xl`.
+- **Scroll:** Custom thin scrollbar. Paneles de ingredientes/instrucciones con `max-height: 70vh` y scroll interno.
+- **Responsive:** Una columna en mobile, 2-5 columnas en desktop según página.
+- **Transiciones:** 300ms en colores, 700ms en escalas de imagen. Active scale 0.97 en botones.
 
 ## Seguridad
 

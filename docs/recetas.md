@@ -64,8 +64,9 @@ CREATE TABLE recipe_ingredients (
 | Archivo | Propósito |
 |---------|-----------|
 | `src/pages/Recipes.jsx` | Lista de recetas con búsqueda, filtros (dificultad, categoría), paginación |
-| `src/pages/RecipeDetail.jsx` | Vista detalle: ingredientes, instrucciones paso a paso, "Agregar todo al carrito" |
+| `src/pages/RecipeDetail.jsx` | Vista detalle: ingredientes con scroll propio, replace/skip/total S/., instrucciones |
 | `src/components/RecipeCard.jsx` | Tarjeta de receta reutilizable |
+| `src/components/SmartSearch.jsx` | Búsqueda semántica con extracción de keywords y búsqueda de recetas |
 
 ### 2.3 Scripts de Scraping y Mapping
 
@@ -241,7 +242,149 @@ mapeando el nombre del plato a sus ingredientes clave:
 
 ---
 
-## 5. Híbrid Search (vector + texto)
+## 5. Interacción del Usuario en RecipeDetail
+
+### 5.1 Layout
+
+```
+┌─────────────────────────────────────────────────────┐
+│  Header: Imagen (380px) + Título + Metadatos         │
+├──────────────────────────────┬──────────────────────┤
+│  Ingredientes (scroll 70vh) │  Instrucciones        │
+│                              │  (scroll 70vh)        │
+│  ┌────────────────────────┐  │                       │
+│  │ 1 Unidad de Cebolla    │  │  Masa                 │
+│  │ → Cebolla Blanca x kg  │  │  1. Diluir levadura   │
+│  │   S/.3.50              │  │  2. Colocar harina    │
+│  │   [+ Carrito] [↻ Repl] │  │                       │
+│  │   [✓ Ya tengo]         │  │  Salsa de Tomate      │
+│  ├────────────────────────┤  │  1. Cortar cebolla    │
+│  │ 2 Cucharadas de Ajo    │  │                       │
+│  │ → Ajo Entero x kg      │  │                       │
+│  │   S/.1.20              │  │                       │
+│  │   [+ Carrito] [↻ Repl] │  │                       │
+│  │   [✓ Ya tengo]         │  │                       │
+│  ├────────────────────────┤  │                       │
+│  │ Total: S/.24.80        │  │                       │
+│  │ 12 prod (3 ya tienes)  │  │                       │
+│  └────────────────────────┘  │                       │
+└──────────────────────────────┴──────────────────────┘
+```
+
+### 5.2 Acciones por Ingrediente
+
+Cada ingrediente muestra tres botones de acción:
+
+| Botón | Acción | Comportamiento |
+|-------|--------|----------------|
+| **+ Carrito** | Agregar al carrito | Añade `cantidad_producto` unidades al carrito del usuario |
+| **↻ Reemplazar** | Buscar otro producto | Abre buscador inline con imágenes de productos. Al seleccionar, muestra selector de cantidad + total parcial + confirmar. Persiste en BD vía PATCH. |
+| **✓ Ya tengo** | Saltar ingrediente | Marca como `mapeado=false, notas="Ya tienes"`. Excluye del total y del "Agregar todo". |
+
+### 5.3 Flujo de Reemplazo
+
+```
+Usuario hace clic en "↻ Reemplazar"
+  │
+  ▼
+Se abre input de búsqueda inline (autofocus)
+  │  Escribe nombre de producto
+  ▼
+Resultados de búsqueda (ILIKE sobre products):
+  ┌─────────────────────────────────────┐
+  │ [img] Producto sugerido  S/.9.30   │
+  │ [img] Otro producto      S/.5.50   │  ← categoría
+  └─────────────────────────────────────┘
+  │  Selecciona un resultado
+  ▼
+Panel de confirmación:
+  ┌─────────────────────────────────────┐
+  │ [img grande] Nombre producto       │
+  │              S/.9.30 c/u           │
+  │  Cantidad: [−] 2 [+]              │
+  │  Total: S/.18.60                   │
+  │  [ Confirmar ]       [ Ya tengo ]  │
+  └─────────────────────────────────────┘
+  │  Confirma
+  ▼
+  PATCH recipe_ingredients con nuevo product_id + cantidad_producto
+  Toast: "Producto reemplazado correctamente"
+  Total de receta se actualiza dinámicamente
+```
+
+### 5.4 Total Dinámico de Receta
+
+El total de la receta se calcula como:
+
+```
+total = Σ (cantidad_producto × products.precio)
+  para cada ingrediente donde:
+    mapeado = true
+    AND notas != "Ya tienes"
+    AND products IS NOT NULL
+```
+
+Se muestra en una barra fija sobre la lista de ingredientes:
+```
+Total: S/.24.80    12 productos (3 ya tienes)
+```
+
+Se actualiza automáticamente cuando:
+- Se reemplaza un producto (nuevo precio)
+- Se cambia la cantidad en el reemplazo
+- Se marca "Ya tengo" (ingrediente excluido)
+
+### 5.5 "Agregar todo al carrito"
+
+El botón bulk recorre todos los ingredientes **mapeados y no saltados**:
+- Por cada uno, busca si ya existe en `cart_items` del usuario
+- Si existe: incrementa cantidad
+- Si no existe: inserta con `cantidad = cantidad_producto`
+- Muestra toast con total de productos agregados
+
+### 5.6 Búsqueda de Recetas en SmartSearch
+
+El SmartSearch ahora busca recetas junto con productos:
+
+```
+query → extraer keywords (remover stop words)
+  ├─ Buscar productos semanticamente (hybrid_search RPC)
+  └─ Buscar recetas:
+      1. Intentar con frase exacta (ILIKE sobre titulo + descripcion)
+      2. Por cada keyword: ILIKE sobre titulo, descripcion, categoria
+      3. Deducar por slug
+      4. Limitar a 4 resultados
+      5. Ordenar: match exacto de título > título contiene keyword
+```
+
+Stop words incluyen: "quiero", "hacer", "preparar", "aprende", "como", "para", verbos comunes y sus conjugaciones. Esto evita que "preparar un ceviche" retorne recetas de frejoles solo porque contienen "preparar" en la descripción.
+
+### 5.7 Corrección de Mappings (fix-mappings.mjs)
+
+El script `fix-mappings.mjs` corrige mappings incorrectos con un sistema de scoring mejorado:
+
+```javascript
+function scoreProduct(preferredWords, productTitle, productCategory) {
+  // Por cada palabra del ingrediente:
+  //   +2 si el título EMPIEZA con la palabra
+  //   +1.5 si la palabra aparece en límite de palabra
+  //   +0.5 si aparece como substring
+  // +1 si la categoría del producto coincide con la preferida
+  // -3 si el ingrediente es comida y el producto es no-comida
+  // -1 si <50% de palabras del ingrediente aparecen en el título
+  // -1 si no hay match fuerte para ingredientes multi-palabra
+  // Normaliza singular/plural: "manzanas" → "manzana"
+  // Ignora palabras débiles (colores) como único match fuerte
+}
+```
+
+Esto previene errores como:
+- ❌ "2 Manzanas Verdes" → "Jabón Líquido ARO Frutos Verdes"
+- ✅ "2 Manzanas Verdes" → "Manzana Verde Importada x kg"
+
+El ILIKE fallback también normaliza plurales: "manzanas" → "manzana" para encontrar "Manzana Roja Importada x kg".
+
+---
 
 ### 5.1 Función SQL `hybrid_search`
 
