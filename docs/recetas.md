@@ -219,7 +219,7 @@ mapeando el nombre del plato a sus ingredientes clave:
 | Búsqueda | Expansión |
 |----------|-----------|
 | `"papa rellena"` | `carne OR papa OR cebolla OR ajo OR aceituna OR pasas OR harina OR aceite` |
-| `"lomo saltado"` | `carne OR cebolla OR tomate OR ajo OR culantro OR arroz OR papa` |
+| `"lomo saltado"` | `carne OR cebolla OR tomate OR ajo OR culantro OR arroz OR papa OR vinagre OR sillao OR pimienta OR comino OR aceite OR aji amarillo OR maicena` |
 | `"aji de gallina"` | `pollo OR pan OR leche OR queso OR aji OR nuez OR arroz` |
 | `"arroz con pollo"` | `arroz OR pollo OR cebolla OR ajo OR culantro OR cerveza` |
 

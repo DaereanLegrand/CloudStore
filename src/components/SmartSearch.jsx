@@ -5,22 +5,6 @@ import ProductCard from './ProductCard'
 import { logLLM } from '../utils/llm-logger'
 import { motion, AnimatePresence } from 'framer-motion'
 
-function ThinkingPill() {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: -2 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -2 }}
-      className="thinking-pill"
-    >
-      <span className="thinking-dot animate-bounce" style={{ animationDelay: '0ms' }} />
-      <span className="thinking-dot animate-bounce" style={{ animationDelay: '150ms' }} />
-      <span className="thinking-dot animate-bounce" style={{ animationDelay: '300ms' }} />
-      <span className="ml-1.5">Pensando</span>
-    </motion.div>
-  )
-}
-
 export default function SmartSearch({ standalone }) {
   const [query, setQuery] = useState('')
   const [image, setImage] = useState(null)
@@ -114,39 +98,43 @@ export default function SmartSearch({ standalone }) {
     setRecipeResults(null)
     const startTime = performance.now()
 
-    let recipes = []
+    const timeout = setTimeout(() => { setLoading(false) }, 15000)
+
     try {
-      const { data, error: fnError } = await supabase.functions.invoke('semantic-search', { body: { query: text } })
-      const timing = (performance.now() - startTime) / 1000
+      let recipes = []
+      try {
+        const { data, error: fnError } = await supabase.functions.invoke('semantic-search', { body: { query: text } })
+        const timing = (performance.now() - startTime) / 1000
 
-      if (fnError) {
-        let msg = fnError.message
-        try { const c = JSON.parse(fnError.context || '{}'); if (c.error) msg = c.error } catch {}
-        logLLM({ query: text, error: msg, timing })
-        throw new Error(msg)
-      }
-      if (data?.error) {
-        logLLM({ query: text, error: data.error, timing })
-        throw new Error(data.error)
-      }
+        if (fnError) {
+          let msg = fnError.message
+          try { const c = JSON.parse(fnError.context || '{}'); if (c.error) msg = c.error } catch {}
+          logLLM({ query: text, error: msg, timing })
+          throw new Error(msg)
+        }
+        if (data?.error) {
+          logLLM({ query: text, error: data.error, timing })
+          throw new Error(data.error)
+        }
 
-      logLLM({ query: text, response: `${(data?.products || []).length} productos`, timing })
-      setProducts(data?.products || [])
+        logLLM({ query: text, response: `${(data?.products || []).length} productos`, timing })
+        setProducts(data?.products || [])
 
-      recipes = data?.recipes || []
-      if (recipes.length === 0) {
-        recipes = await searchRecipes(text)
+        recipes = data?.recipes || []
+        if (recipes.length === 0) {
+          try { recipes = await searchRecipes(text) } catch {}
+        }
+      } catch {
+        try { recipes = await searchRecipes(text) } catch {}
+        if (!recipes.length) {
+          setError('No se encontraron resultados. Intenta con otros términos.')
+        }
       }
-    } catch (err) {
-      recipes = await searchRecipes(text)
-      if (!recipes.length) {
-        setError(err.message)
-        setLoading(false)
-        return
-      }
+      setRecipeResults(recipes)
+    } finally {
+      clearTimeout(timeout)
+      setLoading(false)
     }
-    setRecipeResults(recipes)
-    setLoading(false)
   }
 
   function handleImageSelect(e) {
@@ -217,13 +205,10 @@ export default function SmartSearch({ standalone }) {
 
             <form onSubmit={handleSearch} className="max-w-xl mx-auto">
               <div className="relative">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="absolute left-4 top-1/2 -translate-y-1/2 text-white/25 pointer-events-none">
-                  <circle cx="11" cy="11" r="7" /><path d="m21 21-4.3-4.3" />
-                </svg>
                 <input
                   ref={inputRef}
                   type="text"
-                  className="glass-input w-full pl-11 pr-4 text-base h-12"
+                  className="glass-input w-full pr-4 text-base h-12"
                   placeholder="Escribe algo..."
                   value={query}
                   onChange={e => setQuery(e.target.value)}
@@ -247,19 +232,15 @@ export default function SmartSearch({ standalone }) {
               <input ref={fileInputRef} type="file" accept="image/*" onChange={handleImageSelect} hidden />
             </div>
 
-            <AnimatePresence>{loading && !imagePreview && <ThinkingPill />}</AnimatePresence>
           </motion.div>
         ) : (
           <div className="space-y-4">
             <form onSubmit={handleSearch}>
               <div className="relative">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="absolute left-3.5 top-1/2 -translate-y-1/2 text-white/25 pointer-events-none">
-                  <circle cx="11" cy="11" r="7" /><path d="m21 21-4.3-4.3" />
-                </svg>
                 <input
                   ref={inputRef}
                   type="text"
-                  className="glass-input w-full pl-10 pr-10 text-sm h-11"
+                  className="glass-input w-full pr-10 text-sm h-11"
                   placeholder="Escribe algo..."
                   value={query}
                   onChange={e => setQuery(e.target.value)}

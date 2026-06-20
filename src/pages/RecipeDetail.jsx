@@ -19,9 +19,18 @@ export default function RecipeDetail() {
   const [searching, setSearching] = useState(false)
   const [selectedProduct, setSelectedProduct] = useState(null)
   const [replaceQty, setReplaceQty] = useState(1)
+  const [qty, setQty] = useState({})
   const { fetchCartCount } = useCart()
 
   useEffect(() => { loadRecipe() }, [slug])
+
+  useEffect(() => {
+    if (ingredients.length > 0) {
+      const initial = {}
+      ingredients.forEach(ing => { initial[ing.id] = 1 })
+      setQty(initial)
+    }
+  }, [ingredients])
 
   async function loadRecipe() {
     setLoading(true)
@@ -53,13 +62,14 @@ export default function RecipeDetail() {
     let count = 0
     for (const ing of ingredients) {
       if (!ing.mapeado || !ing.product_id) continue
+      const c = qty[ing.id] || 0
+      if (c <= 0) continue
       try {
-        const qty = Math.max(1, Math.round(ing.cantidad_producto))
         const { data: existing } = await supabase.from('cart_items').select('*').eq('comprador_id', session.user.id).eq('product_id', ing.product_id).maybeSingle()
         if (existing) {
-          await supabase.from('cart_items').update({ cantidad: existing.cantidad + qty }).eq('id', existing.id)
+          await supabase.from('cart_items').update({ cantidad: existing.cantidad + c }).eq('id', existing.id)
         } else {
-          await supabase.from('cart_items').insert({ comprador_id: session.user.id, product_id: ing.product_id, cantidad: qty })
+          await supabase.from('cart_items').insert({ comprador_id: session.user.id, product_id: ing.product_id, cantidad: c })
         }
         count++
       } catch {}
@@ -89,25 +99,23 @@ export default function RecipeDetail() {
           ? { ...ing, product_id: selectedProduct.id, mapeado: true, notas: selectedProduct.titulo, products: { ...selectedProduct }, cantidad_producto: replaceQty }
           : ing
       ))
+      setQty(prev => ({ ...prev, [ingId]: replaceQty }))
     }
     setToast(`✓ ${selectedProduct.titulo}${replaceQty > 1 ? ` ×${replaceQty}` : ''}`)
     setTimeout(() => setToast(null), 2000)
     cancelReplace()
   }
 
-  async function skipIngredient(ingId) {
-    await supabase
-      .from('recipe_ingredients')
-      .update({ product_id: null, mapeado: false, notas: 'Ya tienes' })
-      .eq('id', ingId)
-    setIngredients(prev => prev.map(ing =>
-      ing.id === ingId
-        ? { ...ing, product_id: null, mapeado: false, notas: 'Ya tienes', products: null }
-        : ing
-    ))
-    setToast('✓ Marcado como ya lo tienes')
+  function skipIngredient(ingId) {
+    const c = qty[ingId] || 0
+    if (c > 0) {
+      setQty(prev => ({ ...prev, [ingId]: 0 }))
+      setToast('✓ Marcado como ya lo tienes')
+    } else {
+      setQty(prev => ({ ...prev, [ingId]: 1 }))
+      setToast('Restaurado')
+    }
     setTimeout(() => setToast(null), 2000)
-    cancelReplace()
   }
 
   async function handleSearchProducts(query) {
@@ -132,7 +140,7 @@ export default function RecipeDetail() {
     </div>
   )
 
-  const mappedCount = ingredients.filter(i => i.mapeado).length
+  const selectedCount = ingredients.filter(i => i.mapeado && (qty[i.id] || 0) > 0).length
 
   return (
     <div className="space-y-6">
@@ -174,28 +182,23 @@ export default function RecipeDetail() {
         <div className="rounded-2xl bg-white/[0.03] p-5 flex flex-col" style={{ maxHeight: '70vh' }}>
           <div className="flex-shrink-0">
             <h3 className="text-sm font-medium text-white/75 mb-3">Ingredientes</h3>
-            {mappedCount > 0 && (
+            {selectedCount > 0 && (
               <button className="btn-primary text-xs mb-4" onClick={addAllToCart} disabled={adding}>
-                {adding ? 'Agregando...' : `Agregar ${mappedCount} al carrito`}
+                {adding ? 'Agregando...' : `Agregar ${selectedCount} al carrito`}
               </button>
             )}
           </div>
           {(() => {
-            const total = ingredients.reduce((sum, ing) => {
-              if (!ing.mapeado || !ing.products || ing.notas === 'Ya tienes') return sum
-              return sum + (ing.cantidad_producto || 1) * Number(ing.products.precio)
-            }, 0)
-            const skipped = ingredients.filter(i => i.notas === 'Ya tienes').length
-            return total > 0 && (
-              <div className="flex-shrink-0 px-1 py-2 mb-2 flex items-center justify-between border-t border-white/[0.04]">
-                <span className="text-xs text-white/40">{ingredients.filter(i => i.mapeado && i.notas !== 'Ya tienes').length} productos{skipped > 0 ? ` (${skipped} ya tienes)` : ''}</span>
-                <span className="text-sm font-semibold text-white/80">Total: <span className="text-emerald">S/.{total.toFixed(2)}</span></span>
+            const skipped = ingredients.filter(i => i.mapeado && (qty[i.id] || 0) === 0).length
+            return (selectedCount > 0 || skipped > 0) && (
+              <div className="flex-shrink-0 px-1 py-2 mb-2 border-t border-white/[0.04]">
+                <span className="text-xs text-white/40">{selectedCount} productos{skipped > 0 ? ` (${skipped} ya tienes)` : ''}</span>
               </div>
             )
           })()}
           <div className="space-y-1 overflow-y-auto scrollbar-thin flex-1 pr-1">
             {ingredients.map(ing => (
-              <div key={ing.id} className={`${!ing.mapeado ? 'opacity-40' : ''}`}>
+              <div key={ing.id} className={`${!ing.mapeado || (qty[ing.id] || 1) === 0 ? 'opacity-40' : ''}`}>
                 {replacingId === ing.id ? (
                   <div className="space-y-2 py-2">
                     {!selectedProduct ? (
@@ -271,38 +274,35 @@ export default function RecipeDetail() {
                     )}
                   </div>
                 ) : (
-                  <div className="py-2 border-b border-white/[0.03] last:border-0">
-                    <div className="flex items-start justify-between gap-3">
+                  <div className={`py-2.5 border-b border-white/[0.04] last:border-0 ${(qty[ing.id] || 1) === 0 ? 'opacity-40' : ''}`}>
+                    <div className="flex items-start gap-3">
                       <div className="flex-1 min-w-0">
                         <span className="text-sm text-white/65">{ing.ingredient_raw}</span>
                         {ing.mapeado && ing.products && (
                           <div className="mt-0.5 space-y-0.5">
                             <span className="text-xs text-emerald/50">→ {ing.products.titulo}</span>
-                            <span className="text-xs text-white/25 block">
-                              {ing.cantidad_producto} {Math.round(ing.cantidad_producto) === 1 ? 'unidad' : 'unidades'}
-                              {ing.notas && !ing.notas.startsWith('Ya tienes') && <span className="italic"> ({ing.notas})</span>}
-                            </span>
+                            <span className="text-[0.5rem] text-white/30 block">S/.{Number(ing.products.precio).toFixed(2)} c/u</span>
                           </div>
                         )}
                         {!ing.mapeado && <span className="text-xs text-rose-400/40 italic block">No disponible</span>}
                       </div>
                       {ing.mapeado && ing.products && (
-                        <div className="text-right flex-shrink-0">
-                          <span className="text-xs font-medium text-emerald/80">S/.{(ing.cantidad_producto * ing.products.precio).toFixed(2)}</span>
+                        <div className="flex items-center gap-1.5 bg-white/[0.03] rounded-lg px-2 py-1 flex-shrink-0">
+                          <button className="w-6 h-6 rounded-md bg-white/[0.06] flex items-center justify-center text-white/40 hover:text-white/80 text-xs font-medium" onClick={() => setQty(prev => ({ ...prev, [ing.id]: Math.max(0, (prev[ing.id] || 1) - 1) }))}>−</button>
+                          <input type="number" className="w-10 bg-transparent text-center text-xs font-medium text-white/70 tabular-nums outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" value={qty[ing.id] || 0} onChange={e => setQty(prev => ({ ...prev, [ing.id]: Math.max(0, parseInt(e.target.value) || 0) }))} />
+                          <button className="w-6 h-6 rounded-md bg-white/[0.06] flex items-center justify-center text-white/40 hover:text-white/80 text-xs font-medium" onClick={() => setQty(prev => ({ ...prev, [ing.id]: (prev[ing.id] || 1) + 1 }))}>+</button>
                         </div>
                       )}
                     </div>
-                    <div className="flex items-center justify-end gap-1.5 mt-1">
-                      {ing.mapeado && ing.products && (
-                        <button className="text-[0.55rem] text-white/50 hover:text-white transition-colors px-2 py-0.5 rounded-md hover:bg-white/[0.06]" onClick={() => addToCart(ing.product_id, Math.max(1, Math.round(ing.cantidad_producto)))}>
-                          + Carrito
-                        </button>
-                      )}
-                      <button className="text-[0.55rem] text-white/60 hover:text-white transition-colors px-2 py-0.5 rounded-md hover:bg-white/[0.06]" onClick={() => { setReplacingId(ing.id); setSearchQuery(''); setSearchResults(null); setSelectedProduct(null) }}>
-                        ↻ Reemplazar
+                    <div className="flex items-center justify-end gap-1 mt-1.5">
+                      <button className="text-[0.5rem] text-white/50 hover:text-white transition-colors px-2.5 py-1 rounded-md hover:bg-white/[0.06]" onClick={() => { const c = qty[ing.id] || 0; if (c <= 0) { skipIngredient(ing.id) } else { addToCart(ing.product_id, c) } }}>
+                        {qty[ing.id] === 0 ? '✓ Ya tengo' : '+ Carrito'}
                       </button>
-                      <button className="text-[0.55rem] text-amber-400/60 hover:text-amber-300 transition-colors px-2 py-0.5 rounded-md hover:bg-white/[0.06]" onClick={() => skipIngredient(ing.id)}>
-                        ✓ Ya tengo
+                      <button className="text-[0.5rem] text-white/60 hover:text-white transition-colors px-2 py-1 rounded-md hover:bg-white/[0.06]" onClick={() => { setReplacingId(ing.id); setSearchQuery(''); setSearchResults(null); setSelectedProduct(null) }}>
+                        ↻
+                      </button>
+                      <button className="text-[0.5rem] text-amber-400/60 hover:text-amber-300 transition-colors px-2 py-1 rounded-md hover:bg-white/[0.06]" onClick={() => skipIngredient(ing.id)}>
+                        ✓
                       </button>
                     </div>
                   </div>
@@ -310,6 +310,21 @@ export default function RecipeDetail() {
               </div>
             ))}
           </div>
+          {(() => {
+            const total = ingredients.reduce((sum, ing) => {
+              if (!ing.mapeado || !ing.products) return sum
+              const c = qty[ing.id] || 0
+              return sum + c * Number(ing.products.precio)
+            }, 0)
+            return total > 0 && (
+              <div className="flex-shrink-0 px-1 pt-3 mt-2 border-t border-white/[0.04]">
+                <div className="flex items-center justify-between">
+                  <span className="text-xs text-white/40">Total</span>
+                  <span className="text-sm font-semibold text-emerald">S/.{total.toFixed(2)}</span>
+                </div>
+              </div>
+            )
+          })()}
         </div>
 
         <div className="rounded-2xl bg-white/[0.03] p-5 overflow-y-auto scrollbar-thin" style={{ maxHeight: '70vh' }}>
@@ -318,9 +333,10 @@ export default function RecipeDetail() {
             (() => {
               try {
                 const parsed = JSON.parse(recipe.instrucciones)
+                const onlyPreparacion = parsed.length === 1 && parsed[0].section === 'Preparación'
                 return parsed.map((section, si) => (
                   <div key={si} className="mb-4">
-                    {section.section && <h4 className="text-xs font-medium text-white/45 mb-2">{section.section}</h4>}
+                    {section.section && !onlyPreparacion && <h4 className="text-xs font-medium text-white/45 mb-2">{section.section}</h4>}
                     <ol className="space-y-2">
                       {section.steps?.map((step, spi) => (
                         <li key={spi} className="flex gap-2 text-sm text-white/40 leading-relaxed">
@@ -335,19 +351,22 @@ export default function RecipeDetail() {
             })()
           )}
           {recipe.instrucciones && Array.isArray(recipe.instrucciones) && (
-            recipe.instrucciones.map((section, si) => (
-              <div key={si} className="mb-4">
-                {section.section && <h4 className="text-xs font-medium text-white/45 mb-2">{section.section}</h4>}
-                <ol className="space-y-2">
-                  {section.steps?.map((step, spi) => (
-                    <li key={spi} className="flex gap-2 text-sm text-white/40 leading-relaxed">
-                      <span className="flex-shrink-0 w-5 h-5 rounded-full bg-white/[0.05] text-xs font-medium flex items-center justify-center text-white/30">{spi + 1}</span>
-                      <span className="pt-0.5">{step.text}</span>
-                    </li>
-                  ))}
-                </ol>
-              </div>
-            ))
+            (() => {
+              const onlyPreparacion = recipe.instrucciones.length === 1 && recipe.instrucciones[0].section === 'Preparación'
+              return recipe.instrucciones.map((section, si) => (
+                <div key={si} className="mb-4">
+                  {section.section && !onlyPreparacion && <h4 className="text-xs font-medium text-white/45 mb-2">{section.section}</h4>}
+                  <ol className="space-y-2">
+                    {section.steps?.map((step, spi) => (
+                      <li key={spi} className="flex gap-2 text-sm text-white/40 leading-relaxed">
+                        <span className="flex-shrink-0 w-5 h-5 rounded-full bg-white/[0.05] text-xs font-medium flex items-center justify-center text-white/30">{spi + 1}</span>
+                        <span className="pt-0.5">{step.text}</span>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              ))
+            })()
           )}
           {recipe.calorias > 0 && (
             <div className="pt-3 mt-3 border-t border-white/[0.04]">

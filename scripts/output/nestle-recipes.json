@@ -50325,5 +50325,146 @@
         "nombre": "Palta Mayar"
       }
     ]
+  },
+  {
+    "slug": "lomo-saltado",
+    "titulo": "Lomo Saltado",
+    "descripcion": "Descubre recetas tradicionales peruanas con nuestro Caldo en Polvo MAGGI® para darles un sabor único y delicioso.",
+    "instrucciones": [
+      {
+        "section": "Preparación",
+        "steps": [
+          {
+            "step": 1,
+            "text": "Cortar los filetes en tiras gruesas y cortas. Sazonar con pimienta y comino. En una sartén a fuego alto con 1 cucharada de aceite dorar la carne en 4 tandas para evitar que la carne se sancoche. Reservar."
+          },
+          {
+            "step": 2,
+            "text": "En la misma sartén agregar 1/2 cucharada de aceite, el ají amarillo y la cebolla. Saltear por 30 segundos. Agregar el sobre de Caldo en polvo MAGGI® Sabor Carne, el vinagre, la salsa de soja y regresar la carne."
+          },
+          {
+            "step": 3,
+            "text": "Mezclar todo por 1 minuto y agregar la maicena diluida en la 1/2 taza de agua."
+          },
+          {
+            "step": 4,
+            "text": "Terminar agregando el tomate y el culantro picado."
+          },
+          {
+            "step": 5,
+            "text": "Sancochar las papas amarillas con cáscara y luego en una sartén con aceite dorarlas."
+          },
+          {
+            "step": 6,
+            "text": "Servir el lomo con las papas y 1 taza de arroz cocido."
+          }
+        ]
+      }
+    ],
+    "categoria": "Plato principal",
+    "dificultad": "facil",
+    "tiempo_preparacion": 30,
+    "porciones": 4,
+    "calorias": 649,
+    "imagen_url": "https://www.recetasnestle.com.pe/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/d0bd5fbfcbb5231c896b8d33ff171a29.png",
+    "url_origen": "https://www.recetasnestle.com.pe/recetas/lomo-saltado",
+    "ingredients": [
+      {
+        "raw": "4 Rebanadas de Carne de Res",
+        "cantidad": 4,
+        "unidad": "rebanadas de",
+        "nombre": "Carne de Res"
+      },
+      {
+        "raw": "2 Unidades de Cebolla Roja",
+        "cantidad": 2,
+        "unidad": "unidades de",
+        "nombre": "Cebolla Roja"
+      },
+      {
+        "raw": "2 Cucharadas de Ajo Molido",
+        "cantidad": 2,
+        "unidad": "cucharadas de",
+        "nombre": "Ajo Molido"
+      },
+      {
+        "raw": "2 Cucharadas de Culantro",
+        "cantidad": 2,
+        "unidad": "cucharadas de",
+        "nombre": "Culantro"
+      },
+      {
+        "raw": "2 Unidades de Tomate",
+        "cantidad": 2,
+        "unidad": "unidades de",
+        "nombre": "Tomate"
+      },
+      {
+        "raw": "1 Sobre de Caldo en polvo MAGGI® Sabor Carne",
+        "cantidad": 1,
+        "unidad": "sobre de",
+        "nombre": "Caldo en polvo MAGGI Sabor Carne"
+      },
+      {
+        "raw": "1 Unidad de Ají Amarillo",
+        "cantidad": 1,
+        "unidad": "unidad de",
+        "nombre": "Ají Amarillo"
+      },
+      {
+        "raw": "1 Cucharada de Vinagre Tinto",
+        "cantidad": 1,
+        "unidad": "cucharada de",
+        "nombre": "Vinagre Tinto"
+      },
+      {
+        "raw": "1 Cucharadita de Sillao",
+        "cantidad": 1,
+        "unidad": "cucharadita de",
+        "nombre": "Sillao"
+      },
+      {
+        "raw": "4 Tazas de Arroz Cocido",
+        "cantidad": 4,
+        "unidad": "tazas de",
+        "nombre": "Arroz Cocido"
+      },
+      {
+        "raw": "4 Unidades de Papa Amarilla",
+        "cantidad": 4,
+        "unidad": "unidades de",
+        "nombre": "Papa Amarilla"
+      },
+      {
+        "raw": "1 Pizca de Pimienta",
+        "cantidad": 1,
+        "unidad": "pizca de",
+        "nombre": "Pimienta"
+      },
+      {
+        "raw": "1 Pizca de Comino",
+        "cantidad": 1,
+        "unidad": "pizca de",
+        "nombre": "Comino"
+      },
+      {
+        "raw": "1/2 Taza de Agua",
+        "cantidad": 0.5,
+        "unidad": "taza de",
+        "nombre": "Agua"
+      },
+      {
+        "raw": "1 Taza de Aceite Vegetal",
+        "cantidad": 1,
+        "unidad": "taza de",
+        "nombre": "Aceite Vegetal"
+      },
+      {
+        "raw": "1/2 Cucharadita de Maicena",
+        "cantidad": 0.5,
+        "unidad": "cucharadita de",
+        "nombre": "Maicena"
+      }
+    ]
   }
 ]

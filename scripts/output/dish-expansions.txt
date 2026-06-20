@@ -1,4 +1,4 @@
-// Auto-generated dish→ingredient expansions (444 recipes)
+// Auto-generated dish→ingredient expansions (445 recipes)
 [
   { keywords: ["alfajor de quinua y chia 2", "alfajor quinua chía"], replacement: "margarina OR harina OR trigo OR taza OR maicena OR azúcar OR polvo OR chía" },
   { keywords: ["ecco con avena y manzana", "ecco avena manzana"], replacement: "agua OR ecco OR gramos OR avena OR unidades OR manzanas OR cucharaditas OR azúcar" },
@@ -444,4 +444,5 @@
   { keywords: ["gelatina mosaico de frutas", "gelatina mosaico frutas"], replacement: "(picada) OR piña OR fresas OR ideal OR cremosita OR leche OR condensada OR nestlé" },
   { keywords: ["arroz con leche 2", "prepara arroz leche lleno"], replacement: "canela OR 1/2 OR tazas OR agua OR bastón OR clavos OR olor OR arroz" },
   { keywords: ["arroz con chancho lambayecano", "arroz chancho lambayecano sorprender"], replacement: "cerdo OR molido OR ají OR amarillo OR costilla OR panceta OR arroz OR cebollas" },
+  { keywords: ["lomo saltado", "lomo saltado"], replacement: "carne OR res OR cebolla OR roja OR ajo OR molido OR culantro OR tomate" },
 ]

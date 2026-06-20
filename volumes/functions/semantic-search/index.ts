@@ -89,7 +89,9 @@ const EXPANSIONS: Expansion[] = [
 
   // === PLATOS PERUANOS (dish names → ingredients) ===
   { keywords: ["papa rellena"], replacement: "papa OR carne molida OR cebolla OR aceituna OR pasas OR harina OR aceite OR ajo OR sal OR pimienta OR huevo" },
-  { keywords: ["lomo saltado"], replacement: "carne OR cebolla OR tomate OR ajo OR culantro OR arroz OR papa OR vinagre OR sillao OR pimienta OR comino OR aceite" },
+  { keywords: ["lomo saltado"], replacement: "carne OR cebolla OR tomate OR ajo OR culantro OR arroz OR papa OR vinagre OR sillao OR pimienta OR comino OR aceite OR aji amarillo OR maicena" },
+  { keywords: ["lomo montado"], replacement: "carne OR arroz OR huevo OR platano OR cebolla OR tomate OR aceite OR sal OR lechuga" },
+  { keywords: ["lomo a lo pobre"], replacement: "carne OR papa OR huevo OR cebolla OR aceite OR arroz OR sal OR tomate" },
   { keywords: ["aji de gallina"], replacement: "pollo OR pan OR leche OR queso OR ají OR nuez OR arroz OR papa OR huevo OR aceite OR ajo OR cebolla" },
   { keywords: ["ceviche", "cebiche", "causa", "tiradito"], replacement: "pescado OR limon OR cebolla OR ají OR camote OR cancha OR lechuga OR sal" },
   { keywords: ["arroz con pollo"], replacement: "arroz OR pollo OR cebolla OR ajo OR culantro OR cerveza OR papa OR zanahoria OR alverja OR aceite" },
