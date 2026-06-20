@@ -83,7 +83,7 @@ Deno.serve(async (req) => {
 
     if (prodError) {
       logError(`[${requestId}] Products query failed:`, prodError)
-      return new Response(JSON.stringify({ error: `Error al leer productos: ${prodError.message} (${prodError.code || prodError.hint || ''})` }), { status: 500, headers: JSON_HEADERS })
+      return new Response(JSON.stringify({ error: "Error al leer productos" }), { status: 500, headers: JSON_HEADERS })
     }
     if (!products || products.length === 0) {
       logError(`[${requestId}] No products found for IDs:`, productIds)
@@ -131,7 +131,7 @@ Deno.serve(async (req) => {
 
     if (orderError) {
       logError(`[${requestId}] Order insert failed:`, orderError)
-      return new Response(JSON.stringify({ error: `Error al crear la orden: ${orderError.message} (${orderError.code || ''})` }), { status: 500, headers: JSON_HEADERS })
+      return new Response(JSON.stringify({ error: "Error al crear la orden" }), { status: 500, headers: JSON_HEADERS })
     }
     if (!order) {
       logError(`[${requestId}] Order insert returned no data`)
@@ -154,21 +154,45 @@ Deno.serve(async (req) => {
       if (deleteError) {
         logError(`[${requestId}] Rollback delete also failed:`, deleteError)
       }
-      return new Response(JSON.stringify({ error: `Error al guardar items de la orden: ${itemsError.message} (${itemsError.code || ''})` }), { status: 500, headers: JSON_HEADERS })
+      return new Response(JSON.stringify({ error: "Error al guardar items de la orden" }), { status: 500, headers: JSON_HEADERS })
     }
     log(`[${requestId}] Order items inserted successfully`)
 
-    // --- Decrement stock ---
-    for (const item of items) {
+    // --- Decrement stock with rollback on failure ---
+    const stockUpdates: Array<{id: string; originalStock: number; decrement: number}> = items.map((item: any) => {
       const product = products.find((p: any) => p.id === item.product_id)!
-      log(`[${requestId}] Updating stock for product`, product.id, `:`, product.stock, `->`, product.stock - item.cantidad)
+      return { id: item.product_id, originalStock: product.stock, decrement: item.cantidad }
+    })
+    const updatedStockIds: string[] = []
+    let stockErrorOccurred = false
+    for (const update of stockUpdates) {
+      log(`[${requestId}] Updating stock for product`, update.id, `:`, update.originalStock, `->`, update.originalStock - update.decrement)
       const { error: stockError } = await supabaseClient
         .from("products")
-        .update({ stock: product.stock - item.cantidad })
-        .eq("id", item.product_id)
+        .update({ stock: update.originalStock - update.decrement })
+        .eq("id", update.id)
       if (stockError) {
-        logError(`[${requestId}] Stock update failed for product`, item.product_id, `:`, stockError)
+        logError(`[${requestId}] Stock update failed for product`, update.id, `:`, stockError)
+        stockErrorOccurred = true
+        break
       }
+      updatedStockIds.push(update.id)
+    }
+    if (stockErrorOccurred) {
+      log(`[${requestId}] Rolling back stock updates for`, updatedStockIds.length, `products`)
+      for (const rollbackId of updatedStockIds) {
+        const rollbackUpdate = stockUpdates.find(u => u.id === rollbackId)!
+        const { error: rollbackError } = await supabaseClient
+          .from("products")
+          .update({ stock: rollbackUpdate.originalStock })
+          .eq("id", rollbackId)
+        if (rollbackError) {
+          logError(`[${requestId}] Stock rollback failed for product`, rollbackId, `:`, rollbackError)
+        }
+      }
+      log(`[${requestId}] Rolling back order:`, order.id)
+      await supabaseClient.from("orders").delete().eq("id", order.id)
+      return new Response(JSON.stringify({ error: "Error al actualizar stock" }), { status: 500, headers: JSON_HEADERS })
     }
     log(`[${requestId}] Stock updated`)
 

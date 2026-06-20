@@ -1,6 +1,6 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.39.0"
 
-const GEMMA_API = "http://192.168.0.121:8001/model/chat/completions"
+const GEMMA_API = "http://host.docker.internal:8001/model/chat/completions"
 const OLLAMA_URL = "http://host.docker.internal:11434/api/embeddings"
 const EMBED_MODEL = "bge-m3"
 const JSON_HEADERS = { "Content-Type": "application/json" }

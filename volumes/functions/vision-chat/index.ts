@@ -1,4 +1,4 @@
-const MODEL_API = "http://192.168.0.121:8000/v1/chat/completions"
+const MODEL_API = "http://host.docker.internal:8000/v1/chat/completions"
 const MODEL_NAME = "mlx-community/gemma-4-12B-it-8bit"
 const JSON_HEADERS = { "Content-Type": "application/json" }
 const FETCH_TIMEOUT = 120000
